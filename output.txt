@@ -3,98 +3,6 @@
 Date: 24-Feb-2025
 
 From Station : Khulna
-To Station   : Bheramara
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 57   (৳225)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳512)
-   SNIGDHA   : 0    (৳426)
-   S_CHAIR   : 17   (৳225)
-
-(3) CHITRA EXPRESS (763)
-   SNIGDHA   : 9    (৳426)
-   AC_S      : 0    (৳512)
-   S_CHAIR   : 4    (৳225)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
-To Station   : Ishwardi
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 60   (৳290)
-   AC_S      : 0    (৳667)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 4    (৳667)
-   SNIGDHA   : 4    (৳558)
-   S_CHAIR   : 18   (৳290)
-   F_SEAT    : 4    (৳449)
-
-(3) CHITRA EXPRESS (763)
-   SNIGDHA   : 11   (৳558)
-   AC_S      : 6    (৳667)
-   S_CHAIR   : 1    (৳290)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
-To Station   : Natore
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳765)
-   SNIGDHA   : 1    (৳639)
-   S_CHAIR   : 0    (৳335)
-   F_SEAT    : 0    (৳512)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
-To Station   : Santahar
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳880)
-   SNIGDHA   : 0    (৳736)
-   S_CHAIR   : 0    (৳385)
-   F_SEAT    : 0    (৳587)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
-To Station   : Akkelpur
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳932)
-   SNIGDHA   : 0    (৳777)
-   S_CHAIR   : 0    (৳405)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
-To Station   : Joypurhat
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 1    (৳972)
-   SNIGDHA   : 0    (৳811)
-   S_CHAIR   : 0    (৳425)
-
-=====================================================================================================================
-
-Date: 24-Feb-2025
-
-From Station : Khulna
 To Station   : Birampur
 
 (1) RUPSHA EXPRESS (727)
@@ -144,8 +52,8 @@ To Station   : Saidpur
 
 Date: 24-Feb-2025
 
-From Station : Daulatpur
-To Station   : Bheramara
+From Station : Noapara
+To Station   : Birampur
 
 No train found for selected dates or cities.
 Please try different dates or cities.
@@ -154,8 +62,8 @@ Please try different dates or cities.
 
 Date: 24-Feb-2025
 
-From Station : Daulatpur
-To Station   : Ishwardi
+From Station : Noapara
+To Station   : Fulbari
 
 No train found for selected dates or cities.
 Please try different dates or cities.
@@ -164,16 +72,42 @@ Please try different dates or cities.
 
 Date: 24-Feb-2025
 
-From Station : Daulatpur
-To Station   : Natore
+From Station : Noapara
+To Station   : Parbatipur
 
-No train found for selected dates or cities.
-Please try different dates or cities.
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳1058)
+   SNIGDHA   : 0    (৳880)
+   S_CHAIR   : 0    (৳460)
 
 =====================================================================================================================
 
 Date: 24-Feb-2025
 
-From Station : Daulatpur
-To Station   : Santahar
+From Station : Noapara
+To Station   : Saidpur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳1099)
+   SNIGDHA   : 0    (৳915)
+   S_CHAIR   : 0    (৳480)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Jashore
+To Station   : Birampur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳909)
+   SNIGDHA   : 0    (৳759)
+   S_CHAIR   : 0    (৳395)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Jashore
+To Station   : Fulbari
 

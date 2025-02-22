@@ -90,29 +90,34 @@ if __name__ == "__main__":
         print("Invalid date format. Please use dd-mm-yyyy format.")
     
     # Prompt the user to enter the starting and ending station numbers (1-based)
-    start_index = int(input("Enter the starting station number (1-based): ")) - 1  # Convert to 0-based
-    end_index = int(input("Enter the ending station number (1-based): ")) - 1  # Convert to 0-based
+    start_index = int(input("Enter the starting station number (1-based): ")) - 1
+    end_index = int(input("Enter the ending station number (1-based): ")) - 1
     
-    # Open the output file with UTF-8 encoding
-    with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
-        # Generate combinations between start_index and end_index
-        station_combinations = []
-        for i, from_station in enumerate(stations):
-            # For each source station, use combinations between start_index and end_index
-            start = max(i + 1, start_index)
-            end = min(end_index + 1, len(stations))  # +1 because slice is exclusive
-            for to_station in stations[start:end]:
-                if from_station != to_station:
-                    station_combinations.append((from_station, to_station))
-        
-        # Check ticket availability for each combination of stations
-        total_combinations = len(station_combinations)
+    # Generate combinations between start_index and end_index
+    station_combinations = []
+    for i, from_station in enumerate(stations):
+        start = max(i + 1, start_index)
+        end = min(end_index + 1, len(stations))
+        for to_station in stations[start:end]:
+            if from_station != to_station:
+                station_combinations.append((from_station, to_station))
+    
+    # Process each combination and write results immediately
+    total_combinations = len(station_combinations)
+    output_file = open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8')
+    
+    try:
         for i, (from_station, to_station) in enumerate(station_combinations, 1):
             remaining = total_combinations - i
             print(f"Processing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
             doubleEqualLine(output_file)
             url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
             print_ticket_availability(url, output_file)
+            # Flush the buffer to write immediately
+            output_file.flush()
         
         endExecution(output_file)
         print("-----------------Execution completed--------------------")
+    
+    finally:
+        output_file.close()
