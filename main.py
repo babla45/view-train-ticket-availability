@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 import re
 import itertools
+from datetime import datetime
 
 def doubleEqualLine(file):
     file.write('=====================================================================================================================\n')
@@ -10,6 +11,17 @@ def endExecution(file):
     file.write('=====================================================================================================================\n')
     file.write('||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||   Finished Execution    ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||\n')
     file.write('=====================================================================================================================\n')
+
+def validate_date(date_str):
+    try:
+        return bool(datetime.strptime(date_str, "%d-%m-%Y"))
+    except ValueError:
+        return False
+
+def convert_date_format(date_str):
+    # Convert from dd-mm-yyyy to dd-MMM-yyyy
+    date_obj = datetime.strptime(date_str, "%d-%m-%Y")
+    return date_obj.strftime("%d-%b-%Y")
 
 def print_ticket_availability(url, file):
     # Extract the date, from, and to stations from the URL
@@ -69,6 +81,14 @@ if __name__ == "__main__":
         print(f"{idx}: {station}")
     print("\n")
     
+    # Get and validate date input
+    while True:
+        date_str = input("Enter date (dd-mm-yyyy): ")
+        if validate_date(date_str):
+            formatted_date = convert_date_format(date_str)
+            break
+        print("Invalid date format. Please use dd-mm-yyyy format.")
+    
     # Prompt the user to enter the starting and ending station numbers (1-based)
     start_index = int(input("Enter the starting station number (1-based): ")) - 1  # Convert to 0-based
     end_index = int(input("Enter the ending station number (1-based): ")) - 1  # Convert to 0-based
@@ -91,7 +111,7 @@ if __name__ == "__main__":
             remaining = total_combinations - i
             print(f"Processing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
             doubleEqualLine(output_file)
-            url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj=23-Feb-2025&class=S_CHAIR"
+            url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
             print_ticket_availability(url, output_file)
         
         endExecution(output_file)

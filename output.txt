@@ -1,97 +1,179 @@
 =====================================================================================================================
 
-Date: 23-Feb-2025
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Bheramara
+
+(1) KAPOTAKSHA EXPRESS (715)
+   S_CHAIR   : 57   (৳225)
+
+(2) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳512)
+   SNIGDHA   : 0    (৳426)
+   S_CHAIR   : 17   (৳225)
+
+(3) CHITRA EXPRESS (763)
+   SNIGDHA   : 9    (৳426)
+   AC_S      : 0    (৳512)
+   S_CHAIR   : 4    (৳225)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715)
+   S_CHAIR   : 60   (৳290)
+   AC_S      : 0    (৳667)
+
+(2) RUPSHA EXPRESS (727)
+   AC_S      : 4    (৳667)
+   SNIGDHA   : 4    (৳558)
+   S_CHAIR   : 18   (৳290)
+   F_SEAT    : 4    (৳449)
+
+(3) CHITRA EXPRESS (763)
+   SNIGDHA   : 11   (৳558)
+   AC_S      : 6    (৳667)
+   S_CHAIR   : 1    (৳290)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Natore
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳765)
+   SNIGDHA   : 1    (৳639)
+   S_CHAIR   : 0    (৳335)
+   F_SEAT    : 0    (৳512)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Santahar
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳880)
+   SNIGDHA   : 0    (৳736)
+   S_CHAIR   : 0    (৳385)
+   F_SEAT    : 0    (৳587)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Akkelpur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳932)
+   SNIGDHA   : 0    (৳777)
+   S_CHAIR   : 0    (৳405)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Joypurhat
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 1    (৳972)
+   SNIGDHA   : 0    (৳811)
+   S_CHAIR   : 0    (৳425)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Birampur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳1064)
+   SNIGDHA   : 0    (৳886)
+   S_CHAIR   : 0    (৳465)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Fulbari
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳1093)
+   SNIGDHA   : 0    (৳909)
+   S_CHAIR   : 0    (৳475)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
 
 From Station : Khulna
 To Station   : Parbatipur
 
 (1) RUPSHA EXPRESS (727)
-   AC_S      : 4    (৳1133)
+   AC_S      : 0    (৳1133)
    SNIGDHA   : 0    (৳943)
    S_CHAIR   : 0    (৳495)
-   F_SEAT    : 0    (৳754)
-
-(2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1697)
-   SNIGDHA   : 0    (৳943)
-   S_CHAIR   : 0    (৳495)
-   F_BERTH   : 0    (৳1133)
+   F_SEAT    : 1    (৳754)
 
 =====================================================================================================================
 
-Date: 23-Feb-2025
+Date: 24-Feb-2025
+
+From Station : Khulna
+To Station   : Saidpur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳1179)
+   SNIGDHA   : 0    (৳984)
+   S_CHAIR   : 0    (৳515)
+   F_SEAT    : 0    (৳788)
+
+=====================================================================================================================
+
+Date: 24-Feb-2025
 
 From Station : Daulatpur
-To Station   : Parbatipur
+To Station   : Bheramara
 
 No train found for selected dates or cities.
 Please try different dates or cities.
 
 =====================================================================================================================
 
-Date: 23-Feb-2025
+Date: 24-Feb-2025
 
-From Station : Noapara
-To Station   : Parbatipur
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳1058)
-   SNIGDHA   : 0    (৳880)
-   S_CHAIR   : 0    (৳460)
-
-(2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1587)
-   SNIGDHA   : 0    (৳880)
-   S_CHAIR   : 0    (৳460)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Jashore
-To Station   : Parbatipur
-
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳989)
-   SNIGDHA   : 0    (৳823)
-   S_CHAIR   : 0    (৳430)
-
-(2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1478)
-   SNIGDHA   : 0    (৳823)
-   S_CHAIR   : 0    (৳430)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Mubarakganj
-To Station   : Parbatipur
+From Station : Daulatpur
+To Station   : Ishwardi
 
 No train found for selected dates or cities.
 Please try different dates or cities.
 
 =====================================================================================================================
 
-Date: 23-Feb-2025
+Date: 24-Feb-2025
 
-From Station : Kotchandpur
-To Station   : Parbatipur
+From Station : Daulatpur
+To Station   : Natore
 
-(1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳874)
-   SNIGDHA   : 0    (৳731)
-   S_CHAIR   : 0    (৳380)
-
-(2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1311)
-   SNIGDHA   : 0    (৳731)
-   S_CHAIR   : 0    (৳380)
+No train found for selected dates or cities.
+Please try different dates or cities.
 
 =====================================================================================================================
 
-Date: 23-Feb-2025
+Date: 24-Feb-2025
 
-From Station : Darshana_Halt
-To Station   : Parbatipur
+From Station : Daulatpur
+To Station   : Santahar
 
