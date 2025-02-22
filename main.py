@@ -4,8 +4,6 @@ import re
 
 def doubleEqualLine():
     print('=====================================================================================================================')
-    print('=====================================================================================================================')
-
 def print_ticket_availability(url):
     # Extract the date, from, and to stations from the URL
     date_match = re.search(r"doj=([^&]+)", url)
@@ -25,24 +23,29 @@ def print_ticket_availability(url):
         # Navigate to the URL
         page.goto(url)
         # Wait for the seat availability elements to load
-        page.wait_for_selector('span.all-seats.text-left')
+        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg')
         
-        # Select all train elements
-        train_elements = page.query_selector_all('app-single-trip')
-        for index, train_el in enumerate(train_elements, 1):
-            # Get the train name
-            train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
-            if train_name_el:
-                print(f"({index})", train_name_el.inner_text())
-                # Get the seat availability for each class
-                seat_blocks = train_el.query_selector_all('.single-seat-class')
-                for block in seat_blocks:
-                    seat_class_el = block.query_selector('.seat-class-name')
-                    seat_fare_el = block.query_selector('.seat-class-fare')
-                    if seat_class_el and seat_fare_el:
-                        seat_count_el = block.query_selector('.all-seats.text-left')
-                        print("   ", f"{seat_class_el.inner_text():<10}:", f"{seat_count_el.inner_text():<4}", "(", seat_fare_el.inner_text(), ")")
-                print("\n")
+        # Check if no trains are found
+        no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
+        if no_trains_el:
+            print("No train found for selected dates or cities.\nPlease try different dates or cities.\n")
+        else:
+            # Select all train elements
+            train_elements = page.query_selector_all('app-single-trip')
+            for index, train_el in enumerate(train_elements, 1):
+                # Get the train name
+                train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
+                if train_name_el:
+                    print(f"({index})", train_name_el.inner_text())
+                    # Get the seat availability for each class
+                    seat_blocks = train_el.query_selector_all('.single-seat-class')
+                    for block in seat_blocks:
+                        seat_class_el = block.query_selector('.seat-class-name')
+                        seat_fare_el = block.query_selector('.seat-class-fare')
+                        if seat_class_el and seat_fare_el:
+                            seat_count_el = block.query_selector('.all-seats.text-left')
+                            print("   ", f"{seat_class_el.inner_text():<10}:", f"{seat_count_el.inner_text():<4}", "(", seat_fare_el.inner_text(), ")")
+                    print("\n")
         
         # Close the browser
         browser.close()
@@ -54,15 +57,15 @@ if __name__ == "__main__":
     doubleEqualLine()   
     print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=23-Feb-2025&class=S_CHAIR")
     doubleEqualLine()
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=24-Feb-2025&class=S_CHAIR")
+    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Daulatpur&doj=23-Feb-2025&class=S_CHAIR")
     doubleEqualLine()
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=25-Feb-2025&class=S_CHAIR")
-    doubleEqualLine()
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=26-Feb-2025&class=S_CHAIR")
+    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=24-Feb-2025&class=S_CHAIR")
+    # doubleEqualLine()
+    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=25-Feb-2025&class=S_CHAIR")
+    # doubleEqualLine()
+    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=26-Feb-2025&class=S_CHAIR")
 
     print("\n\n")
     print('=====================================================================================================================')
-    print('=====================================================================================================================')
-    print('||                                         Finished Execution                                                      ||')
-    print('=====================================================================================================================')
+    print('||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||   Finished Execution    ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||')
     print('=====================================================================================================================')
