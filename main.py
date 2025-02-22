@@ -1,19 +1,26 @@
 from playwright.sync_api import sync_playwright
 import re
+import itertools
 
+def doubleEqualLine(file):
+    file.write('=====================================================================================================================\n')
 
-def doubleEqualLine():
-    print('=====================================================================================================================')
-def print_ticket_availability(url):
+def endExecution(file):
+    file.write("\n\n")
+    file.write('=====================================================================================================================\n')
+    file.write('||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||   Finished Execution    ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||\n')
+    file.write('=====================================================================================================================\n')
+
+def print_ticket_availability(url, file):
     # Extract the date, from, and to stations from the URL
     date_match = re.search(r"doj=([^&]+)", url)
     from_match = re.search(r"fromcity=([^&]+)", url)
     to_match = re.search(r"tocity=([^&]+)", url)
     
     if date_match and from_match and to_match:
-        print("\nDate:", date_match.group(1),"\n")
-        print("From Station :", from_match.group(1))
-        print("To Station   :", to_match.group(1), "\n")
+        file.write(f"\nDate: {date_match.group(1)}\n\n")
+        file.write(f"From Station : {from_match.group(1)}\n")
+        file.write(f"To Station   : {to_match.group(1)}\n\n")
     
     with sync_playwright() as p:
         # Launch the browser
@@ -28,7 +35,7 @@ def print_ticket_availability(url):
         # Check if no trains are found
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
-            print("No train found for selected dates or cities.\nPlease try different dates or cities.\n")
+            file.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
         else:
             # Select all train elements
             train_elements = page.query_selector_all('app-single-trip')
@@ -36,7 +43,7 @@ def print_ticket_availability(url):
                 # Get the train name
                 train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
                 if train_name_el:
-                    print(f"({index})", train_name_el.inner_text())
+                    file.write(f"({index}) {train_name_el.inner_text()}\n")
                     # Get the seat availability for each class
                     seat_blocks = train_el.query_selector_all('.single-seat-class')
                     for block in seat_blocks:
@@ -44,28 +51,30 @@ def print_ticket_availability(url):
                         seat_fare_el = block.query_selector('.seat-class-fare')
                         if seat_class_el and seat_fare_el:
                             seat_count_el = block.query_selector('.all-seats.text-left')
-                            print("   ", f"{seat_class_el.inner_text():<10}:", f"{seat_count_el.inner_text():<4}", "(", seat_fare_el.inner_text(), ")")
-                    print("\n")
+                            file.write(f"   {seat_class_el.inner_text():<10}: {seat_count_el.inner_text():<4} ({seat_fare_el.inner_text()})\n")
+                    file.write("\n")
         
         # Close the browser
         browser.close()
 
-if __name__ == "__main__": 
-    # Check ticket availability for different dates and routes
-    doubleEqualLine()
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=04-Mar-2025&class=S_CHAIR")
-    doubleEqualLine()   
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=23-Feb-2025&class=S_CHAIR")
-    doubleEqualLine()
-    print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Daulatpur&doj=23-Feb-2025&class=S_CHAIR")
-    doubleEqualLine()
-    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=24-Feb-2025&class=S_CHAIR")
-    # doubleEqualLine()
-    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=25-Feb-2025&class=S_CHAIR")
-    # doubleEqualLine()
-    # print_ticket_availability("https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=26-Feb-2025&class=S_CHAIR")
-
-    print("\n\n")
-    print('=====================================================================================================================')
-    print('||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||   Finished Execution    ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||')
-    print('=====================================================================================================================')
+if __name__ == "__main__":
+    # Open the output file with UTF-8 encoding
+    with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
+        # Read station combinations from stations.txt
+        with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
+            stations = [line.strip() for line in file.readlines()]
+        
+        # Generate all combinations of stations
+        station_combinations = list(itertools.combinations(stations, 2))
+        
+        # Check ticket availability for each combination of stations
+        total_combinations = len(station_combinations)
+        for i, (from_station, to_station) in enumerate(station_combinations, 1):
+            remaining = total_combinations - i
+            print(f"Processing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
+            doubleEqualLine(output_file)
+            url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj=23-Feb-2025&class=S_CHAIR"
+            print_ticket_availability(url, output_file)
+        
+        endExecution(output_file)
+        print("-----------------Execution completed--------------------")
