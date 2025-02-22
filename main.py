@@ -5,7 +5,7 @@ def print_ticket_availability(url):
     # Extract the date from the URL
     date_match = re.search(r"doj=([^&]+)", url)
     if date_match:
-        print("Date:", date_match.group(1))
+        print("Date:", date_match.group(1),"\n")
     
     with sync_playwright() as p:
         # Launch the browser
@@ -19,18 +19,19 @@ def print_ticket_availability(url):
         
         # Select all train elements
         train_elements = page.query_selector_all('app-single-trip')
-        for train_el in train_elements:
+        for index, train_el in enumerate(train_elements, 1):
             # Get the train name
             train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
             if train_name_el:
-                print("Train Name:", train_name_el.inner_text())
+                print(f"({index})",train_name_el.inner_text())
                 # Get the seat availability for each class
                 seat_blocks = train_el.query_selector_all('.single-seat-class')
                 for block in seat_blocks:
                     seat_class_el = block.query_selector('.seat-class-name')
                     if seat_class_el:
                         seat_count_el = block.query_selector('.all-seats.text-left')
-                        print(seat_class_el.inner_text(), ":", seat_count_el.inner_text() if seat_count_el else 0)
+                        print("   ",seat_class_el.inner_text(), ":", seat_count_el.inner_text() if seat_count_el else 0)
+                print("")
         
         # Close the browser
         browser.close()
@@ -46,14 +47,14 @@ if __name__ == "__main__":
     )
     print('=====================================================================================================================')
     # Uncomment the following lines to check more dates and routes
-    print_ticket_availability(
-        "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=24-Feb-2025&class=S_CHAIR"
-    )
-    print('=====================================================================================================================')
-    print_ticket_availability(
-        "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=25-Feb-2025&class=S_CHAIR"
-    )
-    print('=====================================================================================================================')
-    print_ticket_availability(
-        "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=26-Feb-2025&class=S_CHAIR"
-    )
+    # print_ticket_availability(
+    #     "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=24-Feb-2025&class=S_CHAIR"
+    # )
+    # print('=====================================================================================================================')
+    # print_ticket_availability(
+    #     "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=25-Feb-2025&class=S_CHAIR"
+    # )
+    # print('=====================================================================================================================')
+    # print_ticket_availability(
+    #     "https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Chilahati&doj=26-Feb-2025&class=S_CHAIR"
+    # )
