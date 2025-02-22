@@ -3,330 +3,95 @@
 Date: 23-Feb-2025
 
 From Station : Khulna
-To Station   : Daulatpur
-
-(1) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳150)
-   SNIGDHA   : 0    (৳115)
-   S_CHAIR   : 0    (৳50)
-
-(2) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 2    (৳50)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Noapara
-
-(1) JAHANABAD EXPRESS (825)
-   SNIGDHA   : 16   (৳115)
-   S_CHAIR   : 60   (৳50)
-
-(2) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 40   (৳50)
-
-(3) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳127)
-   SNIGDHA   : 5    (৳115)
-   S_CHAIR   : 0    (৳50)
-
-(4) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 29   (৳50)
-
-(5) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳150)
-   SNIGDHA   : 5    (৳115)
-   S_CHAIR   : 0    (৳50)
-
-(6) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 10   (৳50)
-   SNIGDHA   : 0    (৳115)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Jashore
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 91   (৳70)
-   AC_S      : 3    (৳156)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 4    (৳156)
-   SNIGDHA   : 0    (৳133)
-   S_CHAIR   : 55   (৳70)
-   F_SEAT    : 4    (৳104)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 51   (৳70)
-   AC_S      : 7    (৳156)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 5    (৳236)
-   SNIGDHA   : 9    (৳133)
-   S_CHAIR   : 110  (৳70)
-   F_BERTH   : 4    (৳156)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 174  (৳70)
-   AC_B      : 0    (৳236)
-   SNIGDHA   : 110  (৳133)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Mubarakganj
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 5    (৳105)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳236)
-   SNIGDHA   : 1    (৳196)
-   S_CHAIR   : 0    (৳105)
-   F_SEAT    : 2    (৳156)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 28   (৳105)
-
-(4) SIMANTA EXPRESS (747)
-   SNIGDHA   : 0    (৳196)
-   S_CHAIR   : 0    (৳105)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 10   (৳105)
-   SNIGDHA   : 20   (৳196)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Kotchandpur
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 25   (৳120)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳271)
-   SNIGDHA   : 0    (৳225)
-   S_CHAIR   : 0    (৳120)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 27   (৳120)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳403)
-   SNIGDHA   : 5    (৳225)
-   S_CHAIR   : 0    (৳120)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 8    (৳120)
-   SNIGDHA   : 20   (৳225)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Darshana_Halt
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 60   (৳150)
-   AC_S      : 3    (৳340)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳340)
-   SNIGDHA   : 3    (৳282)
-   S_CHAIR   : 0    (৳150)
-   F_SEAT    : 3    (৳225)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 67   (৳150)
-   AC_S      : 0    (৳340)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳506)
-   SNIGDHA   : 5    (৳282)
-   S_CHAIR   : 20   (৳150)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Chuadanga
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 77   (৳165)
-   AC_S      : 2    (৳380)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 3    (৳380)
-   SNIGDHA   : 0    (৳317)
-   S_CHAIR   : 19   (৳165)
-   F_SEAT    : 0    (৳253)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 50   (৳165)
-   AC_S      : 2    (৳380)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 2    (৳564)
-   SNIGDHA   : 5    (৳317)
-   S_CHAIR   : 22   (৳165)
-   F_BERTH   : 2    (৳380)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 34   (৳165)
-   AC_B      : 8    (৳564)
-   SNIGDHA   : 35   (৳317)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Alamdanga
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 26   (৳185)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳420)
-   SNIGDHA   : 0    (৳351)
-   S_CHAIR   : 6    (৳185)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 36   (৳185)
-
-(4) SIMANTA EXPRESS (747)
-   SNIGDHA   : 0    (৳351)
-   S_CHAIR   : 19   (৳185)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 20   (৳185)
-   SNIGDHA   : 20   (৳351)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Poradaha
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 23   (৳205)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳466)
-   SNIGDHA   : 0    (৳386)
-   S_CHAIR   : 1    (৳205)
-   F_SEAT    : 3    (৳311)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 45   (৳205)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳696)
-   SNIGDHA   : 0    (৳386)
-   S_CHAIR   : 16   (৳205)
-   F_BERTH   : 2    (৳466)
-
-(5) SUNDARBAN EXPRESS (725)
-   S_CHAIR   : 25   (৳205)
-   AC_B      : 0    (৳696)
-   SNIGDHA   : 30   (৳386)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Bheramara
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 41   (৳225)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳512)
-   SNIGDHA   : 0    (৳426)
-   S_CHAIR   : 0    (৳225)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 28   (৳225)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳765)
-   SNIGDHA   : 0    (৳426)
-   S_CHAIR   : 17   (৳225)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Ishwardi
-
-(1) KAPOTAKSHA EXPRESS (715)
-   S_CHAIR   : 0    (৳290)
-   AC_S      : 0    (৳667)
-
-(2) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳667)
-   SNIGDHA   : 0    (৳558)
-   S_CHAIR   : 0    (৳290)
-   F_SEAT    : 0    (৳449)
-
-(3) SAGARDARI EXPRESS (761)
-   S_CHAIR   : 15   (৳290)
-   AC_S      : 0    (৳667)
-
-(4) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1001)
-   SNIGDHA   : 0    (৳558)
-   S_CHAIR   : 0    (৳290)
-   F_BERTH   : 0    (৳667)
-
-=====================================================================================================================
-
-Date: 23-Feb-2025
-
-From Station : Khulna
-To Station   : Natore
+To Station   : Parbatipur
 
 (1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳765)
-   SNIGDHA   : 0    (৳639)
-   S_CHAIR   : 0    (৳335)
-   F_SEAT    : 0    (৳512)
+   AC_S      : 4    (৳1133)
+   SNIGDHA   : 0    (৳943)
+   S_CHAIR   : 0    (৳495)
+   F_SEAT    : 0    (৳754)
 
 (2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1145)
-   SNIGDHA   : 0    (৳639)
-   S_CHAIR   : 0    (৳335)
+   AC_B      : 0    (৳1697)
+   SNIGDHA   : 0    (৳943)
+   S_CHAIR   : 0    (৳495)
+   F_BERTH   : 0    (৳1133)
 
 =====================================================================================================================
 
 Date: 23-Feb-2025
 
-From Station : Khulna
-To Station   : Santahar
+From Station : Daulatpur
+To Station   : Parbatipur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 23-Feb-2025
+
+From Station : Noapara
+To Station   : Parbatipur
 
 (1) RUPSHA EXPRESS (727)
-   AC_S      : 0    (৳880)
-   SNIGDHA   : 0    (৳736)
-   S_CHAIR   : 0    (৳385)
-   F_SEAT    : 0    (৳587)
+   AC_S      : 0    (৳1058)
+   SNIGDHA   : 0    (৳880)
+   S_CHAIR   : 0    (৳460)
 
 (2) SIMANTA EXPRESS (747)
-   AC_B      : 0    (৳1317)
-   SNIGDHA   : 0    (৳736)
-   S_CHAIR   : 0    (৳385)
+   AC_B      : 0    (৳1587)
+   SNIGDHA   : 0    (৳880)
+   S_CHAIR   : 0    (৳460)
+
+=====================================================================================================================
+
+Date: 23-Feb-2025
+
+From Station : Jashore
+To Station   : Parbatipur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳989)
+   SNIGDHA   : 0    (৳823)
+   S_CHAIR   : 0    (৳430)
+
+(2) SIMANTA EXPRESS (747)
+   AC_B      : 0    (৳1478)
+   SNIGDHA   : 0    (৳823)
+   S_CHAIR   : 0    (৳430)
+
+=====================================================================================================================
+
+Date: 23-Feb-2025
+
+From Station : Mubarakganj
+To Station   : Parbatipur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 23-Feb-2025
+
+From Station : Kotchandpur
+To Station   : Parbatipur
+
+(1) RUPSHA EXPRESS (727)
+   AC_S      : 0    (৳874)
+   SNIGDHA   : 0    (৳731)
+   S_CHAIR   : 0    (৳380)
+
+(2) SIMANTA EXPRESS (747)
+   AC_B      : 0    (৳1311)
+   SNIGDHA   : 0    (৳731)
+   S_CHAIR   : 0    (৳380)
+
+=====================================================================================================================
+
+Date: 23-Feb-2025
+
+From Station : Darshana_Halt
+To Station   : Parbatipur
 

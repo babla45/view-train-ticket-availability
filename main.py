@@ -58,14 +58,32 @@ def print_ticket_availability(url, file):
         browser.close()
 
 if __name__ == "__main__":
+    # Read station combinations from stations.txt first
+    with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
+        stations = [line.strip() for line in file.readlines()]
+    
+    # Print available stations with one-based indices
+    print("\nAvailable stations:")
+    print("------------------")
+    for idx, station in enumerate(stations, 1):
+        print(f"{idx}: {station}")
+    print("\n")
+    
+    # Prompt the user to enter the starting and ending station numbers (1-based)
+    start_index = int(input("Enter the starting station number (1-based): ")) - 1  # Convert to 0-based
+    end_index = int(input("Enter the ending station number (1-based): ")) - 1  # Convert to 0-based
+    
     # Open the output file with UTF-8 encoding
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
-        # Read station combinations from stations.txt
-        with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
-            stations = [line.strip() for line in file.readlines()]
-        
-        # Generate all combinations of stations
-        station_combinations = list(itertools.combinations(stations, 2))
+        # Generate combinations between start_index and end_index
+        station_combinations = []
+        for i, from_station in enumerate(stations):
+            # For each source station, use combinations between start_index and end_index
+            start = max(i + 1, start_index)
+            end = min(end_index + 1, len(stations))  # +1 because slice is exclusive
+            for to_station in stations[start:end]:
+                if from_station != to_station:
+                    station_combinations.append((from_station, to_station))
         
         # Check ticket availability for each combination of stations
         total_combinations = len(station_combinations)
