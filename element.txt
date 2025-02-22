@@ -1,0 +1,1551 @@
+<div
+  _ngcontent-bvb-c61=""
+  class="col-lg-9 col-md-8 col-sm-12 col-xs-12 px-xs-1"
+>
+  <!----><!---->
+  <div
+    _ngcontent-bvb-c61=""
+    class="row mx-sm-0 hidden-md hidden-lg mobile-counter ng-star-inserted"
+  >
+    <div _ngcontent-bvb-c61="" class="col-sm-12 px-sm-0">
+      <div _ngcontent-bvb-c61="" class="active-user-count">
+        <p _ngcontent-bvb-c61="">
+          Total Active Users on this page: <span _ngcontent-bvb-c61="">1</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    _ngcontent-bvb-c61=""
+    class="row mx-sm-0 hidden-md hidden-lg ng-star-inserted"
+  >
+    <div _ngcontent-bvb-c61="" class="col-sm-12 px-sm-0"><!----><!----></div>
+  </div>
+  <div _ngcontent-bvb-c61="" class="row mx-sm-0 ng-star-inserted">
+    <div _ngcontent-bvb-c61="" class="col-sm-12 px-sm-0">
+      <div _ngcontent-bvb-c61="" class="alert-text">
+        <div _ngcontent-bvb-c61="" class="alert-icon">
+          <svg
+            _ngcontent-bvb-c61=""
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c61=""
+              d="M10 10H8V4H10V10ZM8 12H10V14H8V12ZM12.73 0H5.27L0 5.27V12.73L5.27 18H12.73L18 12.73V5.27L12.73 0Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <p _ngcontent-bvb-c61="">
+          Please Note: Other users may be in the process of purchasing tickets
+          at this moment. But in case of payment failure, those tickets may
+          become available time-to-time.
+        </p>
+      </div>
+    </div>
+  </div>
+  <app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            BARENDRA EXPRESS (732)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 06:55 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 41m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 09:36 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >10</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-85 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            CHILAHATI EXPRESS (806)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 07:30 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 30m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 10:00 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-86 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            RUPSHA EXPRESS (728)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 10:15 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 37m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 12:52 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">AC_S</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳386</span
+              ><span
+                _ngcontent-bvb-c59=""
+                class="seat-class-vat ng-star-inserted"
+                >Including VAT</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!---->
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">SNIGDHA</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳322</span
+              ><span
+                _ngcontent-bvb-c59=""
+                class="seat-class-vat ng-star-inserted"
+                >Including VAT</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!---->
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-87 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            DRUTOJAN EXPRESS (758)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 10:45 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 59m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 01:44 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >10</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-88 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            BANGLABANDHA EXPRESS (804)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 12:20 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">03h 18m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 03:38 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">AC_S</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳363</span
+              ><span
+                _ngcontent-bvb-c59=""
+                class="seat-class-vat ng-star-inserted"
+                >Including VAT</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!---->
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >10</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-89 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            PANCHAGARH EXPRESS (794)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 03:20 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 16m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 05:36 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >20</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-90 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            TITUMIR EXPRESS (734)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 04:50 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">03h 00m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 07:50 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >15</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-91 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            SIMANTA EXPRESS (748)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed trip-collapsed-departed-from-parent"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 08:25 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">02h 30m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 10:55 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!---->
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">AC_B</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳575</span
+              ><span
+                _ngcontent-bvb-c59=""
+                class="seat-class-vat ng-star-inserted"
+                >Including VAT</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!---->
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class no-seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">SNIGDHA</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳322</span
+              ><span
+                _ngcontent-bvb-c59=""
+                class="seat-class-vat ng-star-inserted"
+                >Including VAT</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >0</span
+                >
+              </div>
+              <!----><!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <div
+          _ngcontent-bvb-c59=""
+          class="train-depart-alert-wrapper ng-star-inserted"
+        >
+          <div _ngcontent-bvb-c59="" class="train-depart-alert-body">
+            <span _ngcontent-bvb-c59="">Info</span> Departs from Chilahati on 04
+            MAR at 06:45 PM.
+          </div>
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-92 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><app-single-trip
+    _ngcontent-bvb-c61=""
+    _nghost-bvb-c59=""
+    class="ng-star-inserted"
+    ><div
+      _ngcontent-bvb-c59=""
+      class="row single-trip-wrapper list_rows ng-star-inserted"
+    >
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-name d-flex justify-content-between items-center"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-left-info">
+          <h2 _ngcontent-bvb-c59="" style="text-transform: uppercase">
+            EKOTA EXPRESS (706)
+          </h2>
+          <div
+            _ngcontent-bvb-c59=""
+            class="active-trip-users d-flex align-items-center"
+          >
+            <img
+              _ngcontent-bvb-c59=""
+              src="assets/img/users-icon.svg"
+              alt="Users icon"
+            />
+            <p _ngcontent-bvb-c59="">
+              <span _ngcontent-bvb-c59="">0</span>+ users are trying to book
+              ticket(s)
+            </p>
+          </div>
+        </div>
+        <button
+          _ngcontent-bvb-c59=""
+          type="button"
+          class="trip-collapse-btn rotate-collapse-btn"
+        >
+          <svg
+            _ngcontent-bvb-c59=""
+            width="14"
+            height="7"
+            viewBox="0 0 14 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              _ngcontent-bvb-c59=""
+              d="M6.23256 6.2203L6.98656 6.9237L13.0216 1.29373L12.2676 0.590332L6.98656 5.5169L1.73056 0.613654L0.976562 1.31705L3.98956 4.12783L6.23256 6.2203Z"
+              fill="#231f2040"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        _ngcontent-bvb-c59=""
+        class="trip-collapsible trip-div trip-collapsed trip-collapsed-departed-from-parent"
+      >
+        <div _ngcontent-bvb-c59="" class="trip-info-details">
+          <div
+            _ngcontent-bvb-c59=""
+            class="journey-route-date d-flex justify-content-between"
+          >
+            <div _ngcontent-bvb-c59="" class="journey-start">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >04 MAR, 11:55 PM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Parbatipur</span
+              >
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-route">
+              <div _ngcontent-bvb-c59="" class="route-line"></div>
+              <div _ngcontent-bvb-c59="" class="journey-duration">03h 18m</div>
+            </div>
+            <div _ngcontent-bvb-c59="" class="journey-end">
+              <span _ngcontent-bvb-c59="" class="journey-date"
+                >05 MAR, 03:13 AM</span
+              ><span _ngcontent-bvb-c59="" class="journey-location"
+                >Natore</span
+              >
+            </div>
+          </div>
+          <button _ngcontent-bvb-c59="" type="button" class="trip-details-btn">
+            <div _ngcontent-bvb-c59="" class="train-details-icon">
+              <svg
+                _ngcontent-bvb-c59=""
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  _ngcontent-bvb-c59=""
+                  d="M8 7.99999H2L0 5.99999L2 3.99999H8V0.99999L9 0L10 0.99999V1.99999L16 2L18 4L16 5.99999H10V7.99999H16L18 9.99999L16 12H10V18C11.1046 18 12 18.8954 12 20H6C6 18.8954 6.89543 18 8 18V7.99999Z"
+                  fill="#DA924E"
+                ></path>
+              </svg>
+            </div>
+            <p _ngcontent-bvb-c59="">Train Details</p>
+          </button>
+        </div>
+        <div _ngcontent-bvb-c59="" class="seat-classes-row d-flex">
+          <div
+            _ngcontent-bvb-c59=""
+            class="single-seat-class selected-seat-type seat-available-wrap ng-star-inserted"
+          >
+            <div _ngcontent-bvb-c59="" class="seat-class-and-fare">
+              <span _ngcontent-bvb-c59="" class="seat-class-name">S_CHAIR</span
+              ><span _ngcontent-bvb-c59="" class="seat-class-fare">৳170</span
+              ><!---->
+            </div>
+            <div _ngcontent-bvb-c59="" class="seat-availability-box">
+              <div
+                _ngcontent-bvb-c59=""
+                class="available-text open-for-all ng-star-inserted"
+              >
+                <span _ngcontent-bvb-c59="" class="open-for-all-head"
+                  >Available Tickets
+                  <br _ngcontent-bvb-c59="" class="ng-star-inserted" />(Counter
+                  + Online)
+                  <!----><!----></span
+                ><span _ngcontent-bvb-c59="" class="all-seats text-left"
+                  >3</span
+                >
+              </div>
+              <!----><!---->
+              <div
+                _ngcontent-bvb-c59=""
+                class="book-now-btn-wrapper ng-star-inserted"
+              >
+                <button
+                  _ngcontent-bvb-c59=""
+                  type="button"
+                  class="book-now-btn"
+                >
+                  BOOK NOW
+                  <!---->
+                </button>
+              </div>
+              <!----><!---->
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+        <div
+          _ngcontent-bvb-c59=""
+          class="train-depart-alert-wrapper ng-star-inserted"
+        >
+          <div _ngcontent-bvb-c59="" class="train-depart-alert-body">
+            <span _ngcontent-bvb-c59="">Info</span> Departs from B Sirajul Islam
+            on 04 MAR at 09:10 PM.
+          </div>
+        </div>
+        <!----><!----><!---->
+      </div>
+    </div>
+    <!----><app-train-details-modal
+      _ngcontent-bvb-c59=""
+      _nghost-bvb-c58=""
+      class="ng-tns-c58-93 ng-star-inserted"
+      ><!----></app-train-details-modal
+    ></app-single-trip
+  ><!----><!----><!----><!---->
+</div>
