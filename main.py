@@ -55,7 +55,16 @@ def print_ticket_availability(url, file):
                 # Get the train name
                 train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
                 if train_name_el:
-                    file.write(f"({index}) {train_name_el.inner_text()}\n")
+                    # Get journey times
+                    start_time = train_el.query_selector('.journey-start .journey-date')
+                    end_time = train_el.query_selector('.journey-end .journey-date')
+                    
+                    start_time_text = start_time.inner_text().split(", ")[1] if start_time else "N/A"
+                    end_time_text = end_time.inner_text().split(", ")[1] if end_time else "N/A"
+                    
+                    # Print train name with journey times
+                    file.write(f"({index}) {train_name_el.inner_text()} ({start_time_text}-{end_time_text})\n")
+                    
                     # Get the seat availability for each class
                     seat_blocks = train_el.query_selector_all('.single-seat-class')
                     for block in seat_blocks:
