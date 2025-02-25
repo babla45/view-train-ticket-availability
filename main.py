@@ -107,6 +107,20 @@ def print_ticket_availability(url, file, max_retries=3):
                 file.write(f"Error accessing this route after {max_retries} attempts.\n\n")
                 print(f"Failed after {max_retries} attempts")
 
+def get_search_date():
+    while True:
+        use_current = input("Use current date for search? (y/n): ").lower()
+        if use_current in ['y', 'n']:
+            if use_current == 'y':
+                return datetime.now().strftime("%d-%m-%Y")
+            else:
+                while True:
+                    date_str = input("Enter date (dd-mm-yyyy): ")
+                    if validate_date(date_str):
+                        return date_str
+                    print("Invalid date format. Please use dd-mm-yyyy format.")
+        print("Please enter 'y' or 'n'")
+
 if __name__ == "__main__":
     # Read station combinations from stations.txt first
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
@@ -119,13 +133,9 @@ if __name__ == "__main__":
         print(f"{idx}: {station}")
     print("\n")
     
-    # Get and validate date input
-    while True:
-        date_str = input("Enter date (dd-mm-yyyy): ")
-        if validate_date(date_str):
-            formatted_date = convert_date_format(date_str)
-            break
-        print("Invalid date format. Please use dd-mm-yyyy format.")
+    # Get and validate date input using the new function
+    date_str = get_search_date()
+    formatted_date = convert_date_format(date_str)
     
     # Prompt the user to enter the starting and ending station numbers (1-based)
     start_index = int(input("Enter the starting station number (1-based): ")) - 1
@@ -148,9 +158,13 @@ if __name__ == "__main__":
         for i, (from_station, to_station) in enumerate(station_combinations, 1):
             remaining = total_combinations - i
             print(f"\nProcessing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
+            start_time = time.time()  # Start timing
             doubleEqualLine(output_file)
             url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
             print_ticket_availability(url, output_file)
+            end_time = time.time()  # End timing
+            elapsed_time = end_time - start_time
+            print(f"Time taken for {from_station} to {to_station}: {elapsed_time:.2f} seconds")
             # Flush the buffer to write immediately
             output_file.flush()
         
