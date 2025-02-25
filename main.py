@@ -1,36 +1,59 @@
-from playwright.sync_api import sync_playwright
-import re
-import itertools
-from datetime import datetime
-from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError
-import time
+# Import required libraries
+from playwright.sync_api import sync_playwright  # For web automation
+import re  # For regular expressions
+import itertools  # For generating combinations
+from datetime import datetime  # For date handling
+from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError  # For handling timeouts
+import time  # For timing operations
 
 def doubleEqualLine(file):
-    file.write('=====================================================================================================================\n')
+    # Add a separator line to the output file
+    file.write('='*117 + '\n')
 
 def endExecution(file):
+    # Write execution completion message with decorative formatting
     file.write("\n\n")
-    file.write('=====================================================================================================================\n')
-    file.write('||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||   Finished Execution    ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||\n')
-    file.write('=====================================================================================================================\n')
+    file.write('='*117 + '\n')
+    file.write('||' + '~'*43 + '||   Finished Execution    ||' + '~'*41 + '||\n')
+    file.write('='*117 + '\n')
 
 def validate_date(date_str):
+    # Check if the provided date string is in valid dd-mm-yyyy format
     try:
         return bool(datetime.strptime(date_str, "%d-%m-%Y"))
     except ValueError:
         return False
 
 def convert_date_format(date_str):
-    # Convert from dd-mm-yyyy to dd-MMM-yyyy
+    # Convert date from dd-mm-yyyy to dd-MMM-yyyy format (required by the website)
     date_obj = datetime.strptime(date_str, "%d-%m-%Y")
     return date_obj.strftime("%d-%b-%Y")
 
+def get_search_date():
+    # Function to get and validate search date from user
+    while True:
+        # Ask if user wants to use current date
+        use_current = input("Use current date for search? (y/n): ").lower()
+        if use_current in ['y', 'n']:
+            if use_current == 'y':
+                # Return current date in required format
+                return datetime.now().strftime("%d-%m-%Y")
+            else:
+                # Get user input date and validate it
+                while True:
+                    date_str = input("Enter date (dd-mm-yyyy): ")
+                    if validate_date(date_str):
+                        return date_str
+                    print("Invalid date format. Please use dd-mm-yyyy format.")
+        print("Please enter 'y' or 'n'")
+
 def print_ticket_availability(url, file, max_retries=3):
-    # Extract the date, from, and to stations from the URL
+    # Extract search parameters from URL for logging
     date_match = re.search(r"doj=([^&]+)", url)
     from_match = re.search(r"fromcity=([^&]+)", url)
     to_match = re.search(r"tocity=([^&]+)", url)
     
+    # Write search parameters to output file
     if date_match and from_match and to_match:
         file.write(f"\nDate: {date_match.group(1)}\n\n")
         file.write(f"From Station : {from_match.group(1)}\n")
@@ -107,41 +130,27 @@ def print_ticket_availability(url, file, max_retries=3):
                 file.write(f"Error accessing this route after {max_retries} attempts.\n\n")
                 print(f"Failed after {max_retries} attempts")
 
-def get_search_date():
-    while True:
-        use_current = input("Use current date for search? (y/n): ").lower()
-        if use_current in ['y', 'n']:
-            if use_current == 'y':
-                return datetime.now().strftime("%d-%m-%Y")
-            else:
-                while True:
-                    date_str = input("Enter date (dd-mm-yyyy): ")
-                    if validate_date(date_str):
-                        return date_str
-                    print("Invalid date format. Please use dd-mm-yyyy format.")
-        print("Please enter 'y' or 'n'")
-
 if __name__ == "__main__":
-    # Read station combinations from stations.txt first
+    # Read and display available stations
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
         stations = [line.strip() for line in file.readlines()]
     
-    # Print available stations with one-based indices
+    # Display available stations with numbering
     print("\nAvailable stations:")
     print("------------------")
     for idx, station in enumerate(stations, 1):
         print(f"{idx}: {station}")
     print("\n")
     
-    # Get and validate date input using the new function
+    # Get search date and format it
     date_str = get_search_date()
     formatted_date = convert_date_format(date_str)
     
-    # Prompt the user to enter the starting and ending station numbers (1-based)
+    # Get station range from user
     start_index = int(input("Enter the starting station number (1-based): ")) - 1
     end_index = int(input("Enter the ending station number (1-based): ")) - 1
     
-    # Generate combinations between start_index and end_index
+    # Generate valid station combinations
     station_combinations = []
     for i, from_station in enumerate(stations):
         start = max(i + 1, start_index)
@@ -150,26 +159,36 @@ if __name__ == "__main__":
             if from_station != to_station:
                 station_combinations.append((from_station, to_station))
     
-    # Process each combination and write results immediately
+    # Process combinations and write results
     total_combinations = len(station_combinations)
     output_file = open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8')
     
     try:
         for i, (from_station, to_station) in enumerate(station_combinations, 1):
+            # Display progress
             remaining = total_combinations - i
             print(f"\nProcessing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
-            start_time = time.time()  # Start timing
+            
+            # Time the operation
+            start_time = time.time()
+            
+            # Write separator and process the route
             doubleEqualLine(output_file)
             url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
             print_ticket_availability(url, output_file)
-            end_time = time.time()  # End timing
+            
+            # Calculate and display time taken
+            end_time = time.time()
             elapsed_time = end_time - start_time
             print(f"Time taken for {from_station} to {to_station}: {elapsed_time:.2f} seconds")
-            # Flush the buffer to write immediately
+            
+            # Ensure output is written immediately
             output_file.flush()
         
+        # Write completion message
         endExecution(output_file)
         print("\n-----------------Execution completed--------------------")
     
     finally:
+        # Ensure file is closed properly
         output_file.close()
