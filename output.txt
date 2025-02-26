@@ -1,113 +1,527 @@
-
+=====================================================================================================================
 Available 0 tickets for the route Khulna-Fulbari
+=====================================================================================================================
 Available 0 tickets for the route Khulna-Parbatipur
-
-
-Date         : 26-Feb-2025
-From-To      : Khulna-Saidpur
-
-(1) SIMANTA EXPRESS (747) (09:15 PM-05:27 AM)
-   AC_B      : 1    (৳1766)
-   SNIGDHA   : 0    (৳984)
-   S_CHAIR   : 0    (৳515)
-   F_BERTH   : 0    (৳1179)
+=====================================================================================================================
+Available 0 tickets for the route Khulna-Saidpur
+=====================================================================================================================
+No train found for route Daulatpur-Fulbari
+=====================================================================================================================
+No train found for route Daulatpur-Parbatipur
+=====================================================================================================================
+No train found for route Daulatpur-Saidpur
+=====================================================================================================================
+No train found for route Noapara-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Noapara-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Noapara-Saidpur
+=====================================================================================================================
+Available 0 tickets for the route Jashore-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Jashore-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Jashore-Saidpur
+=====================================================================================================================
+No train found for route Mubarakganj-Fulbari
+=====================================================================================================================
+No train found for route Mubarakganj-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Mubarakganj-Saidpur
+=====================================================================================================================
+No train found for route Kotchandpur-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Kotchandpur-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Kotchandpur-Saidpur
+=====================================================================================================================
+No train found for route Darshana_Halt-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Darshana_Halt-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Darshana_Halt-Saidpur
+=====================================================================================================================
+No train found for route Chuadanga-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Chuadanga-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Chuadanga-Saidpur
+=====================================================================================================================
+No train found for route Alamdanga-Fulbari
+=====================================================================================================================
+No train found for route Alamdanga-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Alamdanga-Saidpur
+=====================================================================================================================
+No train found for route Poradaha-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Poradaha-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Poradaha-Saidpur
+=====================================================================================================================
+No train found for route Bheramara-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Bheramara-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Bheramara-Saidpur
+=====================================================================================================================
+No train found for route Ishwardi-Fulbari
+=====================================================================================================================
+Available 0 tickets for the route Ishwardi-Parbatipur
+=====================================================================================================================
+Available 0 tickets for the route Ishwardi-Saidpur
 =====================================================================================================================
 
-
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Natore-Fulbari
 
-(1) BANGLABANDHA EXPRESS (803) (10:24 PM-01:04 AM)
+(1) SIMANTA EXPRESS (747) (02:23 AM-04:40 AM)
+   AC_B      : 0    (৳501)
+   SNIGDHA   : 0    (৳276)
+   S_CHAIR   : 0    (৳145)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-10:31 AM)
+   S_CHAIR   : 0    (৳145)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-01:56 PM)
+   S_CHAIR   : 0    (৳145)
+
+(4) BARENDRA EXPRESS (731) (04:23 PM-07:04 PM)
+   S_CHAIR   : 3    (৳145)
+
+(5) BANGLABANDHA EXPRESS (803) (10:24 PM-01:04 AM)
    AC_B      : 0    (৳483)
    S_CHAIR   : 5    (৳145)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Natore-Parbatipur
 
-(1) CHILAHATI EXPRESS (805) (09:47 PM-01:00 AM)
-   S_CHAIR   : 1    (৳170)
+(1) DRUTOJAN EXPRESS (757) (12:35 AM-03:25 AM)
+   SNIGDHA   : 0    (৳322)
+   S_CHAIR   : 0    (৳170)
 
-(2) BANGLABANDHA EXPRESS (803) (10:24 PM-01:35 AM)
+(2) SIMANTA EXPRESS (747) (02:23 AM-05:00 AM)
+   AC_B      : 0    (৳575)
+   SNIGDHA   : 0    (৳322)
+   S_CHAIR   : 0    (৳170)
+
+(3) PANCHAGARH EXPRESS (793) (03:57 AM-06:20 AM)
+   SNIGDHA   : 0    (৳322)
+   S_CHAIR   : 4    (৳170)
+   AC_B      : 0    (৳575)
+
+(4) TITUMIR EXPRESS (733) (07:52 AM-11:10 AM)
+   S_CHAIR   : 0    (৳170)
+
+(5) NILSAGAR EXPRESS (765) (11:21 AM-02:15 PM)
+   AC_S      : 0    (৳386)
+   SNIGDHA   : 0    (৳322)
+   S_CHAIR   : 0    (৳170)
+
+(6) EKOTA EXPRESS (705) (03:06 PM-06:15 PM)
+   SNIGDHA   : 0    (৳322)
+   S_CHAIR   : 0    (৳170)
+   AC_S      : 0    (৳386)
+
+(7) BARENDRA EXPRESS (731) (04:23 PM-07:25 PM)
+   S_CHAIR   : 13   (৳170)
+
+(8) CHILAHATI EXPRESS (805) (09:47 PM-01:00 AM)
+   S_CHAIR   : 10   (৳170)
+
+(9) BANGLABANDHA EXPRESS (803) (10:24 PM-01:35 AM)
    AC_B      : 0    (৳541)
-   S_CHAIR   : 5    (৳170)
+   S_CHAIR   : 9    (৳170)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Natore-Saidpur
 
-(1) CHILAHATI EXPRESS (805) (09:47 PM-01:37 AM)
-   S_CHAIR   : 4    (৳185)
+(1) SIMANTA EXPRESS (747) (02:23 AM-05:27 AM)
+   AC_B      : 0    (৳639)
+   SNIGDHA   : 0    (৳357)
+   S_CHAIR   : 0    (৳185)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-11:47 AM)
+   S_CHAIR   : 0    (৳185)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-02:42 PM)
+   AC_S      : 0    (৳426)
+   SNIGDHA   : 0    (৳357)
+   S_CHAIR   : 0    (৳185)
+
+(4) BARENDRA EXPRESS (731) (04:23 PM-08:09 PM)
+   S_CHAIR   : 14   (৳185)
+
+(5) CHILAHATI EXPRESS (805) (09:47 PM-01:37 AM)
+   S_CHAIR   : 7    (৳185)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Santahar-Fulbari
 
-(1) CHILAHATI EXPRESS (805) (10:50 PM-12:26 AM)
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-02:57 AM)
    S_CHAIR   : 10   (৳95)
 
-(2) BANGLABANDHA EXPRESS (803) (11:30 PM-01:04 AM)
+(2) SIMANTA EXPRESS (747) (03:15 AM-04:40 AM)
+   AC_B      : 0    (৳322)
+   SNIGDHA   : 0    (৳179)
+   S_CHAIR   : 0    (৳95)
+
+(3) TITUMIR EXPRESS (733) (08:50 AM-10:34 AM)
+   S_CHAIR   : 1    (৳95)
+
+(4) NILSAGAR EXPRESS (765) (12:35 PM-01:56 PM)
+   AC_S      : 0    (৳213)
+   SNIGDHA   : 0    (৳179)
+   S_CHAIR   : 3    (৳95)
+
+(5) BARENDRA EXPRESS (731) (05:25 PM-07:04 PM)
+   S_CHAIR   : 6    (৳95)
+
+(6) CHILAHATI EXPRESS (805) (10:50 PM-12:26 AM)
+   S_CHAIR   : 10   (৳95)
+
+(7) BANGLABANDHA EXPRESS (803) (11:30 PM-01:04 AM)
    AC_B      : 0    (৳322)
    S_CHAIR   : 5    (৳95)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Santahar-Parbatipur
 
-(1) CHILAHATI EXPRESS (805) (10:50 PM-01:00 AM)
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-03:25 AM)
+   SNIGDHA   : 0    (৳219)
+   S_CHAIR   : 9    (৳115)
+
+(2) SIMANTA EXPRESS (747) (03:15 AM-05:00 AM)
+   AC_B      : 0    (৳397)
+   SNIGDHA   : 0    (৳219)
+   S_CHAIR   : 0    (৳115)
+
+(3) PANCHAGARH EXPRESS (793) (04:45 AM-06:20 AM)
+   SNIGDHA   : 0    (৳219)
+   S_CHAIR   : 9    (৳115)
+   AC_B      : 0    (৳397)
+
+(4) TITUMIR EXPRESS (733) (08:50 AM-11:10 AM)
+   S_CHAIR   : 6    (৳115)
+
+(5) NILSAGAR EXPRESS (765) (12:35 PM-02:15 PM)
+   AC_S      : 0    (৳265)
+   SNIGDHA   : 2    (৳219)
+   S_CHAIR   : 5    (৳115)
+
+(6) EKOTA EXPRESS (705) (04:00 PM-06:15 PM)
+   SNIGDHA   : 5    (৳219)
+   S_CHAIR   : 15   (৳115)
+   AC_S      : 0    (৳265)
+
+(7) BARENDRA EXPRESS (731) (05:25 PM-07:25 PM)
+   S_CHAIR   : 25   (৳115)
+
+(8) CHILAHATI EXPRESS (805) (10:50 PM-01:00 AM)
    SNIGDHA   : 5    (৳219)
    S_CHAIR   : 10   (৳115)
 
-(2) BANGLABANDHA EXPRESS (803) (11:30 PM-01:35 AM)
+(9) BANGLABANDHA EXPRESS (803) (11:30 PM-01:35 AM)
    AC_B      : 0    (৳397)
    S_CHAIR   : 20   (৳115)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Santahar-Saidpur
 
-(1) CHILAHATI EXPRESS (805) (10:50 PM-01:37 AM)
+(1) SIMANTA EXPRESS (747) (03:15 AM-05:27 AM)
+   AC_B      : 0    (৳449)
+   SNIGDHA   : 0    (৳253)
+   S_CHAIR   : 34   (৳130)
+
+(2) TITUMIR EXPRESS (733) (08:50 AM-11:47 AM)
+   S_CHAIR   : 13   (৳130)
+
+(3) NILSAGAR EXPRESS (765) (12:35 PM-02:42 PM)
+   AC_S      : 0    (৳299)
+   SNIGDHA   : 0    (৳253)
+   S_CHAIR   : 0    (৳130)
+
+(4) BARENDRA EXPRESS (731) (05:25 PM-08:09 PM)
+   S_CHAIR   : 26   (৳130)
+
+(5) CHILAHATI EXPRESS (805) (10:50 PM-01:37 AM)
    SNIGDHA   : 5    (৳253)
-   S_CHAIR   : 22   (৳130)
+   S_CHAIR   : 21   (৳130)
 
 =====================================================================================================================
-No train found for route Akkelpur-Fulbari
-=====================================================================================================================
-No train found for route Akkelpur-Parbatipur
-=====================================================================================================================
-No train found for route Akkelpur-Saidpur
-=====================================================================================================================
-Available 0 tickets for the route Joypurhat-Fulbari
+
+Date         : 27-Feb-2025
+From-To      : Akkelpur-Fulbari
+
+(1) DRUTOJAN EXPRESS (757) (01:52 AM-02:57 AM)
+   S_CHAIR   : 0    (৳75)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-10:31 AM)
+   S_CHAIR   : 7    (৳75)
+
+(3) BARENDRA EXPRESS (731) (05:52 PM-07:04 PM)
+   S_CHAIR   : 3    (৳75)
+
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
+From-To      : Akkelpur-Parbatipur
+
+(1) DRUTOJAN EXPRESS (757) (01:52 AM-03:25 AM)
+   S_CHAIR   : 0    (৳95)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-11:10 AM)
+   S_CHAIR   : 1    (৳95)
+
+(3) NILSAGAR EXPRESS (765) (12:57 PM-02:15 PM)
+   AC_S      : 0    (৳213)
+   SNIGDHA   : 0    (৳179)
+   S_CHAIR   : 4    (৳95)
+
+(4) EKOTA EXPRESS (705) (04:22 PM-06:15 PM)
+   S_CHAIR   : 9    (৳95)
+
+(5) BARENDRA EXPRESS (731) (05:52 PM-07:25 PM)
+   S_CHAIR   : 5    (৳95)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
+From-To      : Akkelpur-Saidpur
+
+(1) SIMANTA EXPRESS (747) (03:37 AM-05:27 AM)
+   AC_B      : 0    (৳380)
+   SNIGDHA   : 0    (৳213)
+   S_CHAIR   : 5    (৳110)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-11:47 AM)
+   S_CHAIR   : 9    (৳110)
+
+(3) NILSAGAR EXPRESS (765) (12:57 PM-02:42 PM)
+   AC_S      : 0    (৳253)
+   SNIGDHA   : 1    (৳213)
+   S_CHAIR   : 3    (৳110)
+
+(4) BARENDRA EXPRESS (731) (05:52 PM-08:09 PM)
+   S_CHAIR   : 10   (৳110)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
+From-To      : Joypurhat-Fulbari
+
+(1) BANGLABANDHA EXPRESS (803) (12:09 AM-01:04 AM)
+   AC_B      : 0    (৳184)
+   S_CHAIR   : 5    (৳55)
+
+(2) DRUTOJAN EXPRESS (757) (02:09 AM-03:00 AM)
+   S_CHAIR   : 0    (৳55)
+
+(3) SIMANTA EXPRESS (747) (03:54 AM-04:40 AM)
+   AC_B      : 0    (৳184)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳55)
+
+(4) TITUMIR EXPRESS (733) (09:33 AM-10:31 AM)
+   S_CHAIR   : 0    (৳55)
+
+(5) BARENDRA EXPRESS (731) (06:10 PM-07:04 PM)
+   S_CHAIR   : 15   (৳55)
+
+(6) CHILAHATI EXPRESS (805) (11:44 PM-12:26 AM)
+   S_CHAIR   : 0    (৳55)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
 From-To      : Joypurhat-Parbatipur
 
-(1) CHILAHATI EXPRESS (805) (11:44 PM-01:00 AM)
+(1) BANGLABANDHA EXPRESS (803) (12:09 AM-01:35 AM)
+   AC_B      : 0    (৳259)
+   S_CHAIR   : 8    (৳75)
+
+(2) DRUTOJAN EXPRESS (757) (02:09 AM-03:25 AM)
+   SNIGDHA   : 0    (৳144)
+   S_CHAIR   : 10   (৳75)
+
+(3) SIMANTA EXPRESS (747) (03:54 AM-05:00 AM)
+   AC_B      : 0    (৳259)
+   SNIGDHA   : 0    (৳144)
+   S_CHAIR   : 0    (৳75)
+
+(4) PANCHAGARH EXPRESS (793) (05:19 AM-06:20 AM)
+   SNIGDHA   : 0    (৳180)
+   S_CHAIR   : 10   (৳75)
+
+(5) TITUMIR EXPRESS (733) (09:33 AM-11:10 AM)
+   S_CHAIR   : 0    (৳75)
+
+(6) NILSAGAR EXPRESS (765) (01:14 PM-02:15 PM)
+   AC_S      : 0    (৳173)
+   SNIGDHA   : 0    (৳144)
+   S_CHAIR   : 0    (৳75)
+
+(7) EKOTA EXPRESS (705) (04:52 PM-06:15 PM)
+   SNIGDHA   : 0    (৳144)
+   S_CHAIR   : 19   (৳75)
+   AC_S      : 0    (৳173)
+
+(8) BARENDRA EXPRESS (731) (06:10 PM-07:25 PM)
+   S_CHAIR   : 19   (৳75)
+
+(9) CHILAHATI EXPRESS (805) (11:44 PM-01:00 AM)
    SNIGDHA   : 5    (৳144)
    S_CHAIR   : 0    (৳75)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
 From-To      : Joypurhat-Saidpur
 
-(1) CHILAHATI EXPRESS (805) (11:44 PM-01:37 AM)
-   SNIGDHA   : 5    (৳179)
-   S_CHAIR   : 29   (৳95)
+(1) SIMANTA EXPRESS (747) (03:54 AM-05:27 AM)
+   AC_B      : 0    (৳322)
+   SNIGDHA   : 0    (৳179)
+   S_CHAIR   : 15   (৳95)
 
+(2) TITUMIR EXPRESS (733) (09:33 AM-11:47 AM)
+   S_CHAIR   : 21   (৳95)
+
+(3) NILSAGAR EXPRESS (765) (01:14 PM-02:42 PM)
+   AC_S      : 0    (৳213)
+   SNIGDHA   : 0    (৳179)
+   S_CHAIR   : 0    (৳95)
+
+(4) BARENDRA EXPRESS (731) (06:10 PM-08:09 PM)
+   S_CHAIR   : 16   (৳95)
+
+(5) CHILAHATI EXPRESS (805) (11:44 PM-01:37 AM)
+   SNIGDHA   : 5    (৳179)
+   S_CHAIR   : 28   (৳95)
+
+=====================================================================================================================
+No train found for route Birampur-Fulbari
+=====================================================================================================================
+
+Date         : 27-Feb-2025
+From-To      : Birampur-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-01:00 AM)
+   S_CHAIR   : 10   (৳55)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-05:00 AM)
+   AC_B      : 0    (৳150)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-11:10 AM)
+   S_CHAIR   : 10   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-02:15 PM)
+   S_CHAIR   : 5    (৳55)
+
+(5) EKOTA EXPRESS (705) (05:37 PM-06:15 PM)
+   S_CHAIR   : 15   (৳50)
+
+(6) BARENDRA EXPRESS (731) (06:53 PM-07:25 PM)
+   S_CHAIR   : 12   (৳50)
 
 =====================================================================================================================
 
-Date         : 26-Feb-2025
+Date         : 27-Feb-2025
+From-To      : Birampur-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-01:37 AM)
+   S_CHAIR   : 0    (৳55)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-05:27 AM)
+   AC_B      : 0    (৳184)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳55)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-11:47 AM)
+   S_CHAIR   : 32   (৳55)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-02:42 PM)
+   AC_S      : 0    (৳127)
+   SNIGDHA   : 3    (৳115)
+   S_CHAIR   : 9    (৳55)
+
+(5) BARENDRA EXPRESS (731) (06:53 PM-08:09 PM)
+   S_CHAIR   : 9    (৳55)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
+From-To      : Fulbari-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-01:00 AM)
+   S_CHAIR   : 10   (৳50)
+
+(2) TITUMIR EXPRESS (733) (10:34 AM-11:10 AM)
+   S_CHAIR   : 10   (৳50)
+
+(3) EKOTA EXPRESS (705) (05:51 PM-06:15 PM)
+   S_CHAIR   : 10   (৳50)
+
+(4) BARENDRA EXPRESS (731) (07:07 PM-07:25 PM)
+   S_CHAIR   : 15   (৳50)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
+From-To      : Fulbari-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-01:37 AM)
+   S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (04:43 AM-05:27 AM)
+   AC_B      : 0    (৳150)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 19   (৳50)
+
+(3) TITUMIR EXPRESS (733) (10:34 AM-11:47 AM)
+   S_CHAIR   : 9    (৳50)
+
+(4) NILSAGAR EXPRESS (765) (01:58 PM-02:42 PM)
+   AC_S      : 0    (৳127)
+   SNIGDHA   : 3    (৳115)
+   S_CHAIR   : 10   (৳50)
+
+(5) BARENDRA EXPRESS (731) (07:07 PM-08:09 PM)
+   S_CHAIR   : 9    (৳50)
+
+=====================================================================================================================
+
+Date         : 27-Feb-2025
 From-To      : Parbatipur-Saidpur
 
-(1) BARENDRA EXPRESS (731) (07:40 PM-08:09 PM)
+(1) CHILAHATI EXPRESS (805) (01:20 AM-01:37 AM)
+   S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (05:10 AM-05:27 AM)
+   AC_B      : 0    (৳150)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (11:30 AM-11:47 AM)
+   S_CHAIR   : 41   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (02:25 PM-02:42 PM)
+   AC_S      : 0    (৳127)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳50)
+
+(5) BARENDRA EXPRESS (731) (07:40 PM-08:09 PM)
    S_CHAIR   : 30   (৳50)
 
 
