@@ -8,8 +8,8 @@ import os
 import io
 
 # Constants for performance tuning - adjusted for better performance
-MAX_WORKERS = 2  # Reduced from 3 - fewer workers but better resource utilization
-BATCH_SIZE = 8   # Increased from 5 - process more routes per browser instance
+MAX_WORKERS = 4  # Reduced from 3 - fewer workers but better resource utilization
+BATCH_SIZE = 12  # Increased from 5 - process more routes per browser instance
 
 def doubleEqualLine(file):
     # Add a separator line to the output file
@@ -42,14 +42,13 @@ def process_route(page, from_station, to_station, formatted_date):
     output_buffer = io.StringIO()
     
     # Write header information
-    output_buffer.write(f"\nDate: {formatted_date}\n\n")
-    output_buffer.write(f"From Station : {from_station}\n")
-    output_buffer.write(f"To Station   : {to_station}\n\n")
+    output_buffer.write(f"\nDate         : {formatted_date}\n")
+    output_buffer.write(f"From-To      : {from_station}-{to_station}\n\n")
     
     try:
         # Navigate and wait for critical elements - reduced timeouts
-        page.goto(url, wait_until='domcontentloaded', timeout=20000)
-        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=15000)
+        page.goto(url, wait_until='domcontentloaded', timeout=10000)
+        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=10000)
         
         # Check if no trains are found
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
@@ -121,8 +120,14 @@ def process_batch(route_batch, formatted_date, completed_routes_counter, total_c
                 completed = completed_routes_counter.value
                 remaining = total_combinations - completed
                 
-                # Print with route completion status
-                print(f"{completed}. Completed ({from_station} to {to_station}) in {elapsed_time:.2f} seconds - remaining {remaining} routes")
+                # Format the route with proper padding for alignment
+                route_text = f"( {from_station} to {to_station} )"
+                
+                # Calculate the width needed for the count based on total combinations
+                count_width = len(str(total_combinations))
+                
+                # Print with fixed width and better alignment - using right alignment for the count
+                print(f"{completed:>{count_width}}. Completed {route_text:<35} in {elapsed_time:.2f} seconds - remaining {remaining} routes")
                 
             except Exception as e:
                 print(f"Error processing {from_station} to {to_station}: {str(e)}")
@@ -200,7 +205,7 @@ if __name__ == "__main__":
                 route_index += 1
     
     total_combinations = len(station_combinations)
-    print(f"Total number of routes to process: {total_combinations}")
+    print(f"Total number of routes to process: {total_combinations}\nProcessing routes...\n")
     
     # Create batches for processing
     batches = [station_combinations[i:i+BATCH_SIZE] for i in range(0, len(station_combinations), BATCH_SIZE)]
