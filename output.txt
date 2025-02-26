@@ -3,6 +3,26 @@
 Date: 26-Feb-2025
 
 From Station : Lalmonirhat
+To Station   : Kurigram
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Lalmonirhat
+To Station   : Rangpur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Lalmonirhat
 To Station   : Kaunia
 
 (1) BURIMARI EXPRESS (810) (09:10 PM-09:33 PM)
@@ -28,8 +48,19 @@ To Station   : Dhaka
 
 (1) BURIMARI EXPRESS (810) (09:10 PM-07:00 AM)
    S_CHAIR   : 0    (৳635)
-   SNIGDHA   : 15   (৳1214)
+   SNIGDHA   : 14   (৳1214)
    AC_B      : 2    (৳2180)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Kurigram
+To Station   : Rangpur
+
+(1) RANGPUR EXPRESS (771) (07:50 PM-07:10 PM)
+   SNIGDHA   : 0    (৳115)
+   S_CHAIR   : 0    (৳50)
 
 =====================================================================================================================
 

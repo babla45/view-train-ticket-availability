@@ -94,7 +94,7 @@ def process_route(page, from_station, to_station, formatted_date):
     
     return output_buffer.getvalue()
 
-def process_batch(route_batch, formatted_date):
+def process_batch(route_batch, formatted_date, completed_routes_counter, total_combinations):
     """Process a batch of routes using a single browser instance"""
     with sync_playwright() as p:
         # Launch browser with reduced resource usage
@@ -115,13 +115,24 @@ def process_batch(route_batch, formatted_date):
                 output_text = process_route(page, from_station, to_station, formatted_date)
                 elapsed_time = time.time() - start_time
                 results.append((from_station, to_station, route_index, output_text))
-                print(f"Completed {from_station} to {to_station} in {elapsed_time:.2f} seconds")
+                
+                # Update completed routes counter and calculate remaining
+                completed_routes_counter.value += 1
+                completed = completed_routes_counter.value
+                remaining = total_combinations - completed
+                
+                # Print with route completion status
+                print(f"{completed}. Completed ({from_station} to {to_station}) in {elapsed_time:.2f} seconds - remaining {remaining} routes")
+                
             except Exception as e:
                 print(f"Error processing {from_station} to {to_station}: {str(e)}")
                 # Add error message to maintain sequence
                 error_output = f"\nDate: {formatted_date}\n\nFrom Station : {from_station}\nTo Station   : {to_station}\n\n"
                 error_output += f"Error: Could not retrieve data for this route: {str(e)}\n\n"
                 results.append((from_station, to_station, route_index, error_output))
+                
+                # Still update counter for failed routes
+                completed_routes_counter.value += 1
             finally:
                 page.close()  # Close page after each route
         
@@ -130,6 +141,11 @@ def process_batch(route_batch, formatted_date):
         browser.close()
         
         return results
+
+# Create a class to hold counter that can be shared between threads
+class Counter:
+    def __init__(self):
+        self.value = 0
 
 def get_search_date():
     # Function to get and validate search date from user
@@ -169,8 +185,8 @@ if __name__ == "__main__":
     formatted_date = convert_date_format(date_str)
     
     # Prompt the user to enter the starting and ending station numbers (1-based)
-    start_index = int(input("Enter the starting station number (1-based): ")) - 1
-    end_index = int(input("Enter the ending station number (1-based): ")) - 1
+    start_index = int(input("Enter the starting station range for combination: ")) - 1
+    end_index = int(input("Enter the ending station range for combination: ")) - 1
     
     # Generate combinations between start_index and end_index with index to preserve order
     station_combinations = []
@@ -184,17 +200,19 @@ if __name__ == "__main__":
                 route_index += 1
     
     total_combinations = len(station_combinations)
-    print(f"Total routes to process: {total_combinations}")
+    print(f"Total number of routes to process: {total_combinations}")
     
     # Create batches for processing
     batches = [station_combinations[i:i+BATCH_SIZE] for i in range(0, len(station_combinations), BATCH_SIZE)]
     
     # Process batches in parallel
     all_results = []
+    completed_routes_counter = Counter()  # Share counter between threads
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        # Submit batch processing tasks
+        # Submit batch processing tasks with shared counter
         future_to_batch = {
-            executor.submit(process_batch, batch, formatted_date): i 
+            executor.submit(process_batch, batch, formatted_date, completed_routes_counter, total_combinations): i 
             for i, batch in enumerate(batches)
         }
         
@@ -223,4 +241,5 @@ if __name__ == "__main__":
     total_time = time.time() - overall_start
     print(f"\nTotal execution time: {total_time:.2f} seconds for {total_combinations} routes")
     print(f"Average time per route: {total_time/total_combinations:.2f} seconds")
+    print(f"Status: Completed {completed_routes_counter.value} routes out of {total_combinations} total routes")
     print("\n-----------------Execution completed--------------------")
