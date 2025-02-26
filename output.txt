@@ -1,42 +1,6 @@
 =====================================================================================================================
 
-Date: 25-Feb-2025
-
-From Station : Lalmonirhat
-To Station   : Dhaka
-
-(1) BURIMARI EXPRESS (810) (09:10 PM-07:00 AM)
-   S_CHAIR   : 0    (৳635)
-   SNIGDHA   : 14   (৳1214)
-   AC_B      : 1    (৳2180)
-
-=====================================================================================================================
-
-Date: 25-Feb-2025
-
-From Station : Kurigram
-To Station   : Dhaka
-
-(1) RANGPUR EXPRESS (772) (07:50 PM-06:05 AM)
-   SNIGDHA   : 0    (৳1237)
-   S_CHAIR   : 0    (৳645)
-   AC_B      : 0    (৳2220)
-
-=====================================================================================================================
-
-Date: 25-Feb-2025
-
-From Station : Rangpur
-To Station   : Dhaka
-
-(1) RANGPUR EXPRESS (772) (08:10 PM-06:05 AM)
-   SNIGDHA   : 0    (৳1214)
-   S_CHAIR   : 0    (৳635)
-   AC_B      : 0    (৳2180)
-
-=====================================================================================================================
-
-Date: 25-Feb-2025
+Date: 26-Feb-2025
 
 From Station : Kaunia
 To Station   : Dhaka
@@ -48,11 +12,11 @@ To Station   : Dhaka
 
 (2) BURIMARI EXPRESS (810) (09:36 PM-07:00 AM)
    S_CHAIR   : 0    (৳635)
-   SNIGDHA   : 8    (৳1214)
+   SNIGDHA   : 0    (৳1214)
 
 =====================================================================================================================
 
-Date: 25-Feb-2025
+Date: 26-Feb-2025
 
 From Station : Joydebpur
 To Station   : Dhaka
@@ -70,6 +34,120 @@ To Station   : Dhaka
 (3) LALMONI EXPRESS (752) (06:43 PM-07:40 PM)
    SNIGDHA   : 0    (৳115)
    S_CHAIR   : 0    (৳50)
+
+(4) PADMA EXPRESS (760) (08:25 PM-09:25 PM)
+   SNIGDHA   : 3    (৳115)
+   S_CHAIR   : 5    (৳50)
+   AC_S      : 0    (৳127)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Lalmonirhat
+To Station   : Kaunia
+
+(1) BURIMARI EXPRESS (810) (09:10 PM-09:33 PM)
+   S_CHAIR   : 30   (৳50)
+   SNIGDHA   : 10   (৳115)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Lalmonirhat
+To Station   : Joydebpur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Lalmonirhat
+To Station   : Dhaka
+
+(1) BURIMARI EXPRESS (810) (09:10 PM-07:00 AM)
+   S_CHAIR   : 0    (৳635)
+   SNIGDHA   : 16   (৳1214)
+   AC_B      : 2    (৳2180)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Kurigram
+To Station   : Kaunia
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Kurigram
+To Station   : Joydebpur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Kurigram
+To Station   : Dhaka
+
+(1) RANGPUR EXPRESS (772) (07:50 PM-06:05 AM)
+   SNIGDHA   : 0    (৳1237)
+   S_CHAIR   : 0    (৳645)
+   AC_B      : 0    (৳2220)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Rangpur
+To Station   : Kaunia
+
+(1) RANGPUR EXPRESS (772) (08:10 PM-08:30 PM)
+   SNIGDHA   : 10   (৳115)
+   S_CHAIR   : 150  (৳50)
+   AC_B      : 0    (৳150)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Rangpur
+To Station   : Joydebpur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Rangpur
+To Station   : Dhaka
+
+(1) RANGPUR EXPRESS (772) (08:10 PM-06:05 AM)
+   SNIGDHA   : 0    (৳1214)
+   S_CHAIR   : 0    (৳635)
+   AC_B      : 0    (৳2180)
+
+=====================================================================================================================
+
+Date: 26-Feb-2025
+
+From Station : Kaunia
+To Station   : Joydebpur
+
+No train found for selected dates or cities.
+Please try different dates or cities.
 
 
 

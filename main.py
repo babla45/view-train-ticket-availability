@@ -1,10 +1,14 @@
-# Import required libraries
-from playwright.sync_api import sync_playwright  # For web automation
-import re  # For regular expressions
-import itertools  # For generating combinations
-from datetime import datetime  # For date handling
-from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError  # For handling timeouts
-import time  # For timing operations
+from playwright.sync_api import sync_playwright
+import re
+import concurrent.futures
+from datetime import datetime
+from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError
+import time
+import os
+
+# Constants for performance tuning
+MAX_WORKERS = 3  # Number of parallel browser instances
+BATCH_SIZE = 5   # Number of routes per browser instance
 
 def doubleEqualLine(file):
     # Add a separator line to the output file
@@ -29,6 +33,120 @@ def convert_date_format(date_str):
     date_obj = datetime.strptime(date_str, "%d-%m-%Y")
     return date_obj.strftime("%d-%b-%Y")
 
+def process_route(browser, from_station, to_station, formatted_date, output_file):
+    """Process a single route using the provided browser instance"""
+    url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
+    
+    # Create a new context for each route (lighter than new browser)
+    context = browser.new_context()
+    page = context.new_page()
+    
+    # Write header information
+    output_file.write(f"\nDate: {formatted_date}\n\n")
+    output_file.write(f"From Station : {from_station}\n")
+    output_file.write(f"To Station   : {to_station}\n\n")
+    
+    try:
+        # Set timeouts
+        page.set_default_timeout(30000)  # Reduced from 60000 for faster failure detection
+        page.set_default_navigation_timeout(30000)
+        
+        # Navigate and wait for critical elements
+        page.goto(url, wait_until='domcontentloaded')  # Changed from 'networkidle' for speed
+        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=30000)
+        
+        # Check if no trains are found
+        no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
+        if no_trains_el:
+            output_file.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
+        else:
+            # Process train elements more efficiently
+            train_elements = page.query_selector_all('app-single-trip')
+            
+            # Extract data from page more efficiently in one go
+            train_data = []
+            for index, train_el in enumerate(train_elements, 1):
+                train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
+                if not train_name_el:
+                    continue
+                
+                # Use JavaScript evaluation for faster data extraction
+                train_info = page.evaluate('''
+                    (trainEl) => {
+                        const nameEl = trainEl.querySelector('h2[style="text-transform: uppercase;"]');
+                        const startTimeEl = trainEl.querySelector('.journey-start .journey-date');
+                        const endTimeEl = trainEl.querySelector('.journey-end .journey-date');
+                        const seatBlocks = Array.from(trainEl.querySelectorAll('.single-seat-class'));
+                        
+                        const seatInfo = seatBlocks.map(block => {
+                            const classEl = block.querySelector('.seat-class-name');
+                            const fareEl = block.querySelector('.seat-class-fare');
+                            const countEl = block.querySelector('.all-seats.text-left');
+                            
+                            return {
+                                class: classEl ? classEl.textContent.trim() : 'N/A',
+                                fare: fareEl ? fareEl.textContent.trim() : 'N/A',
+                                count: countEl ? countEl.textContent.trim() : '0'
+                            };
+                        });
+                        
+                        return {
+                            name: nameEl ? nameEl.textContent.trim() : 'Unknown',
+                            startTime: startTimeEl ? startTimeEl.textContent.split(", ")[1] : 'N/A',
+                            endTime: endTimeEl ? endTimeEl.textContent.split(", ")[1] : 'N/A',
+                            seats: seatInfo
+                        };
+                    }
+                ''', train_el)
+                
+                train_data.append(train_info)
+            
+            # Write the data to file
+            for index, train in enumerate(train_data, 1):
+                output_file.write(f"({index}) {train['name']} ({train['startTime']}-{train['endTime']})\n")
+                
+                for seat in train['seats']:
+                    output_file.write(f"   {seat['class']:<10}: {seat['count']:<4} ({seat['fare']})\n")
+                
+                output_file.write("\n")
+    
+    except PlaywrightTimeoutError:
+        output_file.write(f"Timeout error accessing {from_station} to {to_station}\n\n")
+    except Exception as e:
+        output_file.write(f"Error processing {from_station} to {to_station}: {str(e)}\n\n")
+    finally:
+        # Always close the context to free resources
+        context.close()
+    
+    return from_station, to_station
+
+def process_batch(route_batch, formatted_date, output_lock):
+    """Process a batch of routes using a single browser instance"""
+    with sync_playwright() as p:
+        # Launch a browser instance to be reused across all routes in this batch
+        browser = p.chromium.launch(headless=True)
+        
+        results = []
+        for from_station, to_station in route_batch:
+            # Create a temporary file for this route
+            temp_filename = f"temp_{from_station}_{to_station}.txt"
+            with open(temp_filename, 'w', encoding='utf-8') as temp_file:
+                start_time = time.time()
+                
+                try:
+                    # Process the route
+                    process_route(browser, from_station, to_station, formatted_date, temp_file)
+                    elapsed_time = time.time() - start_time
+                    results.append((from_station, to_station, elapsed_time, temp_filename))
+                    print(f"Completed {from_station} to {to_station} in {elapsed_time:.2f} seconds")
+                except Exception as e:
+                    print(f"Error processing {from_station} to {to_station}: {str(e)}")
+        
+        # Close the browser when done with all routes in this batch
+        browser.close()
+        
+        return results
+
 def get_search_date():
     # Function to get and validate search date from user
     while True:
@@ -47,110 +165,30 @@ def get_search_date():
                     print("Invalid date format. Please use dd-mm-yyyy format.")
         print("Please enter 'y' or 'n'")
 
-def print_ticket_availability(url, file, max_retries=3):
-    # Extract search parameters from URL for logging
-    date_match = re.search(r"doj=([^&]+)", url)
-    from_match = re.search(r"fromcity=([^&]+)", url)
-    to_match = re.search(r"tocity=([^&]+)", url)
-    
-    # Write search parameters to output file
-    if date_match and from_match and to_match:
-        file.write(f"\nDate: {date_match.group(1)}\n\n")
-        file.write(f"From Station : {from_match.group(1)}\n")
-        file.write(f"To Station   : {to_match.group(1)}\n\n")
-    
-    attempt = 0
-    while attempt < max_retries:
-        try:
-            with sync_playwright() as p:
-                # Launch the browser
-                browser = p.chromium.launch(headless=True)
-                # Open a new page
-                page = browser.new_page()
-                
-                # Set longer timeout and handle navigation
-                page.set_default_timeout(60000)  # 60 seconds timeout
-                page.set_default_navigation_timeout(60000)
-                
-                # Navigate with custom timeout
-                try:
-                    page.goto(url, timeout=60000, wait_until='networkidle')
-                    page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=60000)
-                    
-                    # Check if no trains are found
-                    no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
-                    if no_trains_el:
-                        file.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
-                    else:
-                        # Select all train elements
-                        train_elements = page.query_selector_all('app-single-trip')
-                        for index, train_el in enumerate(train_elements, 1):
-                            # Get the train name
-                            train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
-                            if train_name_el:
-                                # Get journey times
-                                start_time = train_el.query_selector('.journey-start .journey-date')
-                                end_time = train_el.query_selector('.journey-end .journey-date')
-                                
-                                start_time_text = start_time.inner_text().split(", ")[1] if start_time else "N/A"
-                                end_time_text = end_time.inner_text().split(", ")[1] if end_time else "N/A"
-                                
-                                # Print train name with journey times
-                                file.write(f"({index}) {train_name_el.inner_text()} ({start_time_text}-{end_time_text})\n")
-                                
-                                # Get the seat availability for each class
-                                seat_blocks = train_el.query_selector_all('.single-seat-class')
-                                for block in seat_blocks:
-                                    seat_class_el = block.query_selector('.seat-class-name')
-                                    seat_fare_el = block.query_selector('.seat-class-fare')
-                                    if seat_class_el and seat_fare_el:
-                                        seat_count_el = block.query_selector('.all-seats.text-left')
-                                        file.write(f"   {seat_class_el.inner_text():<10}: {seat_count_el.inner_text():<4} ({seat_fare_el.inner_text()})\n")
-                                file.write("\n")
-                    
-                    browser.close()
-                    return  # Success - exit the retry loop
-                    
-                except PlaywrightTimeoutError:
-                    print(f"\nTimeout on attempt {attempt + 1} for {url}")
-                    browser.close()
-                    attempt += 1
-                    if attempt < max_retries:
-                        print("Retrying after 5 seconds...")
-                        time.sleep(5)
-                    continue
-                
-        except Exception as e:
-            print(f"\nError on attempt {attempt + 1}: {str(e)}")
-            attempt += 1
-            if attempt < max_retries:
-                print("Retrying after 5 seconds...")
-                time.sleep(5)
-            else:
-                file.write(f"Error accessing this route after {max_retries} attempts.\n\n")
-                print(f"Failed after {max_retries} attempts")
-
 if __name__ == "__main__":
-    # Read and display available stations
+    # Record overall start time
+    overall_start = time.time()
+    
+    # Read station combinations from stations.txt first
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/stations.txt', 'r') as file:
         stations = [line.strip() for line in file.readlines()]
     
-    # Display available stations with numbering
+    # Print available stations with one-based indices
     print("\nAvailable stations:")
     print("------------------")
     for idx, station in enumerate(stations, 1):
         print(f"{idx}: {station}")
     print("\n")
     
-    # Get search date and format it
+    # Get and validate date input
     date_str = get_search_date()
     formatted_date = convert_date_format(date_str)
     
-    # Get station range from user
+    # Prompt the user to enter the starting and ending station numbers (1-based)
     start_index = int(input("Enter the starting station number (1-based): ")) - 1
     end_index = int(input("Enter the ending station number (1-based): ")) - 1
     
-    # Generate valid station combinations
+    # Generate combinations between start_index and end_index
     station_combinations = []
     for i, from_station in enumerate(stations):
         start = max(i + 1, start_index)
@@ -159,36 +197,47 @@ if __name__ == "__main__":
             if from_station != to_station:
                 station_combinations.append((from_station, to_station))
     
-    # Process combinations and write results
     total_combinations = len(station_combinations)
-    output_file = open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8')
+    print(f"Total routes to process: {total_combinations}")
     
-    try:
-        for i, (from_station, to_station) in enumerate(station_combinations, 1):
-            # Display progress
-            remaining = total_combinations - i
-            print(f"\nProcessing route: {i} out of {total_combinations} ({from_station} to {to_station}) - Remaining: {remaining}")
-            
-            # Time the operation
-            start_time = time.time()
-            
-            # Write separator and process the route
-            doubleEqualLine(output_file)
-            url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
-            print_ticket_availability(url, output_file)
-            
-            # Calculate and display time taken
-            end_time = time.time()
-            elapsed_time = end_time - start_time
-            print(f"Time taken for {from_station} to {to_station}: {elapsed_time:.2f} seconds")
-            
-            # Ensure output is written immediately
-            output_file.flush()
+    # Create batches for processing
+    batches = [station_combinations[i:i+BATCH_SIZE] for i in range(0, len(station_combinations), BATCH_SIZE)]
+    
+    # Process batches in parallel
+    all_results = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        # Submit batch processing tasks
+        future_to_batch = {
+            executor.submit(process_batch, batch, formatted_date, None): i 
+            for i, batch in enumerate(batches)
+        }
         
-        # Write completion message
-        endExecution(output_file)
-        print("\n-----------------Execution completed--------------------")
+        # Process results as they complete
+        for future in concurrent.futures.as_completed(future_to_batch):
+            batch_index = future_to_batch[future]
+            try:
+                batch_results = future.result()
+                all_results.extend(batch_results)
+                print(f"Completed batch {batch_index+1}/{len(batches)}")
+            except Exception as e:
+                print(f"Batch {batch_index} generated an exception: {e}")
     
-    finally:
-        # Ensure file is closed properly
-        output_file.close()
+    # Combine results into final output file
+    with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
+        for from_station, to_station, elapsed_time, temp_filename in all_results:
+            doubleEqualLine(output_file)
+            
+            # Copy content from temp file
+            with open(temp_filename, 'r', encoding='utf-8') as temp_file:
+                output_file.write(temp_file.read())
+            
+            # Delete temp file
+            os.remove(temp_filename)
+        
+        endExecution(output_file)
+    
+    # Calculate and display total time
+    total_time = time.time() - overall_start
+    print(f"\nTotal execution time: {total_time:.2f} seconds for {total_combinations} routes")
+    print(f"Average time per route: {total_time/total_combinations:.2f} seconds")
+    print("\n-----------------Execution completed--------------------")
