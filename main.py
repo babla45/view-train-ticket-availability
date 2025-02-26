@@ -5,10 +5,11 @@ from datetime import datetime
 from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError
 import time
 import os
+import io
 
-# Constants for performance tuning
-MAX_WORKERS = 3  # Number of parallel browser instances
-BATCH_SIZE = 5   # Number of routes per browser instance
+# Constants for performance tuning - adjusted for better performance
+MAX_WORKERS = 2  # Reduced from 3 - fewer workers but better resource utilization
+BATCH_SIZE = 8   # Increased from 5 - process more routes per browser instance
 
 def doubleEqualLine(file):
     # Add a separator line to the output file
@@ -33,116 +34,99 @@ def convert_date_format(date_str):
     date_obj = datetime.strptime(date_str, "%d-%m-%Y")
     return date_obj.strftime("%d-%b-%Y")
 
-def process_route(browser, from_station, to_station, formatted_date, output_file):
-    """Process a single route using the provided browser instance"""
+def process_route(page, from_station, to_station, formatted_date):
+    """Process a single route using an existing page"""
     url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
     
-    # Create a new context for each route (lighter than new browser)
-    context = browser.new_context()
-    page = context.new_page()
+    # Use StringIO to avoid file I/O overhead
+    output_buffer = io.StringIO()
     
     # Write header information
-    output_file.write(f"\nDate: {formatted_date}\n\n")
-    output_file.write(f"From Station : {from_station}\n")
-    output_file.write(f"To Station   : {to_station}\n\n")
+    output_buffer.write(f"\nDate: {formatted_date}\n\n")
+    output_buffer.write(f"From Station : {from_station}\n")
+    output_buffer.write(f"To Station   : {to_station}\n\n")
     
     try:
-        # Set timeouts
-        page.set_default_timeout(30000)  # Reduced from 60000 for faster failure detection
-        page.set_default_navigation_timeout(30000)
-        
-        # Navigate and wait for critical elements
-        page.goto(url, wait_until='domcontentloaded')  # Changed from 'networkidle' for speed
-        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=30000)
+        # Navigate and wait for critical elements - reduced timeouts
+        page.goto(url, wait_until='domcontentloaded', timeout=20000)
+        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=15000)
         
         # Check if no trains are found
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
-            output_file.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
+            output_buffer.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
         else:
-            # Process train elements more efficiently
+            # More efficient data extraction using a simpler approach
             train_elements = page.query_selector_all('app-single-trip')
             
-            # Extract data from page more efficiently in one go
-            train_data = []
             for index, train_el in enumerate(train_elements, 1):
-                train_name_el = train_el.query_selector('h2[style="text-transform: uppercase;"]')
-                if not train_name_el:
+                # Extract train name
+                train_name = train_el.query_selector('h2[style="text-transform: uppercase;"]')
+                if not train_name:
                     continue
+                    
+                # Get times
+                start_time = train_el.query_selector('.journey-start .journey-date')
+                end_time = train_el.query_selector('.journey-end .journey-date')
                 
-                # Use JavaScript evaluation for faster data extraction
-                train_info = page.evaluate('''
-                    (trainEl) => {
-                        const nameEl = trainEl.querySelector('h2[style="text-transform: uppercase;"]');
-                        const startTimeEl = trainEl.querySelector('.journey-start .journey-date');
-                        const endTimeEl = trainEl.querySelector('.journey-end .journey-date');
-                        const seatBlocks = Array.from(trainEl.querySelectorAll('.single-seat-class'));
-                        
-                        const seatInfo = seatBlocks.map(block => {
-                            const classEl = block.querySelector('.seat-class-name');
-                            const fareEl = block.querySelector('.seat-class-fare');
-                            const countEl = block.querySelector('.all-seats.text-left');
-                            
-                            return {
-                                class: classEl ? classEl.textContent.trim() : 'N/A',
-                                fare: fareEl ? fareEl.textContent.trim() : 'N/A',
-                                count: countEl ? countEl.textContent.trim() : '0'
-                            };
-                        });
-                        
-                        return {
-                            name: nameEl ? nameEl.textContent.trim() : 'Unknown',
-                            startTime: startTimeEl ? startTimeEl.textContent.split(", ")[1] : 'N/A',
-                            endTime: endTimeEl ? endTimeEl.textContent.split(", ")[1] : 'N/A',
-                            seats: seatInfo
-                        };
-                    }
-                ''', train_el)
+                start_time_text = start_time.inner_text().split(", ")[1] if start_time else "N/A"
+                end_time_text = end_time.inner_text().split(", ")[1] if end_time else "N/A"
                 
-                train_data.append(train_info)
-            
-            # Write the data to file
-            for index, train in enumerate(train_data, 1):
-                output_file.write(f"({index}) {train['name']} ({train['startTime']}-{train['endTime']})\n")
+                # Write train info
+                output_buffer.write(f"({index}) {train_name.inner_text()} ({start_time_text}-{end_time_text})\n")
                 
-                for seat in train['seats']:
-                    output_file.write(f"   {seat['class']:<10}: {seat['count']:<4} ({seat['fare']})\n")
+                # Get seat info
+                seat_blocks = train_el.query_selector_all('.single-seat-class')
+                for block in seat_blocks:
+                    class_name = block.query_selector('.seat-class-name')
+                    fare = block.query_selector('.seat-class-fare')
+                    count = block.query_selector('.all-seats.text-left')
+                    
+                    if class_name and fare:
+                        output_buffer.write(f"   {class_name.inner_text():<10}: {count.inner_text() if count else '0':<4} ({fare.inner_text()})\n")
                 
-                output_file.write("\n")
+                output_buffer.write("\n")
     
     except PlaywrightTimeoutError:
-        output_file.write(f"Timeout error accessing {from_station} to {to_station}\n\n")
+        output_buffer.write(f"Timeout error accessing {from_station} to {to_station}\n\n")
     except Exception as e:
-        output_file.write(f"Error processing {from_station} to {to_station}: {str(e)}\n\n")
-    finally:
-        # Always close the context to free resources
-        context.close()
+        output_buffer.write(f"Error processing {from_station} to {to_station}: {str(e)}\n\n")
     
-    return from_station, to_station
+    return output_buffer.getvalue()
 
-def process_batch(route_batch, formatted_date, output_lock):
+def process_batch(route_batch, formatted_date):
     """Process a batch of routes using a single browser instance"""
     with sync_playwright() as p:
-        # Launch a browser instance to be reused across all routes in this batch
+        # Launch browser with reduced resource usage
         browser = p.chromium.launch(headless=True)
         
-        results = []
-        for from_station, to_station in route_batch:
-            # Create a temporary file for this route
-            temp_filename = f"temp_{from_station}_{to_station}.txt"
-            with open(temp_filename, 'w', encoding='utf-8') as temp_file:
-                start_time = time.time()
-                
-                try:
-                    # Process the route
-                    process_route(browser, from_station, to_station, formatted_date, temp_file)
-                    elapsed_time = time.time() - start_time
-                    results.append((from_station, to_station, elapsed_time, temp_filename))
-                    print(f"Completed {from_station} to {to_station} in {elapsed_time:.2f} seconds")
-                except Exception as e:
-                    print(f"Error processing {from_station} to {to_station}: {str(e)}")
+        # Create a single context for all routes in batch
+        context = browser.new_context()
         
-        # Close the browser when done with all routes in this batch
+        results = []
+        for from_station, to_station, route_index in route_batch:
+            start_time = time.time()
+            
+            # Create a new page for each route from the shared context
+            page = context.new_page()
+            
+            try:
+                # Process the route and get the output text
+                output_text = process_route(page, from_station, to_station, formatted_date)
+                elapsed_time = time.time() - start_time
+                results.append((from_station, to_station, route_index, output_text))
+                print(f"Completed {from_station} to {to_station} in {elapsed_time:.2f} seconds")
+            except Exception as e:
+                print(f"Error processing {from_station} to {to_station}: {str(e)}")
+                # Add error message to maintain sequence
+                error_output = f"\nDate: {formatted_date}\n\nFrom Station : {from_station}\nTo Station   : {to_station}\n\n"
+                error_output += f"Error: Could not retrieve data for this route: {str(e)}\n\n"
+                results.append((from_station, to_station, route_index, error_output))
+            finally:
+                page.close()  # Close page after each route
+        
+        # Clean up resources
+        context.close()
         browser.close()
         
         return results
@@ -188,14 +172,16 @@ if __name__ == "__main__":
     start_index = int(input("Enter the starting station number (1-based): ")) - 1
     end_index = int(input("Enter the ending station number (1-based): ")) - 1
     
-    # Generate combinations between start_index and end_index
+    # Generate combinations between start_index and end_index with index to preserve order
     station_combinations = []
+    route_index = 0
     for i, from_station in enumerate(stations):
         start = max(i + 1, start_index)
         end = min(end_index + 1, len(stations))
         for to_station in stations[start:end]:
             if from_station != to_station:
-                station_combinations.append((from_station, to_station))
+                station_combinations.append((from_station, to_station, route_index))
+                route_index += 1
     
     total_combinations = len(station_combinations)
     print(f"Total routes to process: {total_combinations}")
@@ -208,7 +194,7 @@ if __name__ == "__main__":
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit batch processing tasks
         future_to_batch = {
-            executor.submit(process_batch, batch, formatted_date, None): i 
+            executor.submit(process_batch, batch, formatted_date): i 
             for i, batch in enumerate(batches)
         }
         
@@ -222,17 +208,14 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"Batch {batch_index} generated an exception: {e}")
     
-    # Combine results into final output file
+    # Sort results by route_index to maintain original order
+    all_results.sort(key=lambda x: x[2])
+    
+    # Write directly to output file - no temp files
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
-        for from_station, to_station, elapsed_time, temp_filename in all_results:
+        for from_station, to_station, route_index, output_text in all_results:
             doubleEqualLine(output_file)
-            
-            # Copy content from temp file
-            with open(temp_filename, 'r', encoding='utf-8') as temp_file:
-                output_file.write(temp_file.read())
-            
-            # Delete temp file
-            os.remove(temp_filename)
+            output_file.write(output_text)
         
         endExecution(output_file)
     
