@@ -34,29 +34,54 @@ def convert_date_format(date_str):
     date_obj = datetime.strptime(date_str, "%d-%m-%Y")
     return date_obj.strftime("%d-%b-%Y")
 
-def process_route(page, from_station, to_station, formatted_date):
+def process_route(page, from_station, to_station, formatted_date, show_no_train_details):
     """Process a single route using an existing page"""
     url = f"https://eticket.railway.gov.bd/booking/train/search?fromcity={from_station}&tocity={to_station}&doj={formatted_date}&class=S_CHAIR"
     
     # Use StringIO to avoid file I/O overhead
     output_buffer = io.StringIO()
-    
-    # Write header information
-    output_buffer.write(f"\nDate         : {formatted_date}\n")
-    output_buffer.write(f"From-To      : {from_station}-{to_station}\n\n")
+    has_available_seats = False
     
     try:
         # Navigate and wait for critical elements - reduced timeouts
-        page.goto(url, wait_until='domcontentloaded', timeout=10000)
-        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=10000)
+        page.goto(url, wait_until='domcontentloaded', timeout=15000)
+        page.wait_for_selector('span.all-seats.text-left, span.no-ticket-found-first-msg', timeout=15000)
         
         # Check if no trains are found
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
-            output_buffer.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
+            if show_no_train_details:
+                # Write detailed output
+                output_buffer.write(f"\nDate         : {formatted_date}\n")
+                output_buffer.write(f"From-To      : {from_station}-{to_station}\n\n")
+                output_buffer.write("No train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
+            else:
+                # Write simplified output
+                output_buffer.write(f"No train found for route {from_station}-{to_station}\n")
+            return output_buffer.getvalue(), False
         else:
             # More efficient data extraction using a simpler approach
             train_elements = page.query_selector_all('app-single-trip')
+            
+            # First, check if any train has available seats
+            for train_el in train_elements:
+                seat_blocks = train_el.query_selector_all('.single-seat-class')
+                for block in seat_blocks:
+                    count = block.query_selector('.all-seats.text-left')
+                    if count and count.inner_text() != "0":
+                        has_available_seats = True
+                        break
+                if has_available_seats:
+                    break
+            
+            # If no available seats and user doesn't want details
+            if not has_available_seats and not show_no_train_details:
+                output_buffer.write(f"Available 0 tickets for the route {from_station}-{to_station}\n")
+                return output_buffer.getvalue(), False
+            
+            # Otherwise write full detailed output
+            output_buffer.write(f"\nDate         : {formatted_date}\n")
+            output_buffer.write(f"From-To      : {from_station}-{to_station}\n\n")
             
             for index, train_el in enumerate(train_elements, 1):
                 # Extract train name
@@ -91,9 +116,9 @@ def process_route(page, from_station, to_station, formatted_date):
     except Exception as e:
         output_buffer.write(f"Error processing {from_station} to {to_station}: {str(e)}\n\n")
     
-    return output_buffer.getvalue()
+    return output_buffer.getvalue(), has_available_seats
 
-def process_batch(route_batch, formatted_date, completed_routes_counter, total_combinations):
+def process_batch(route_batch, formatted_date, completed_routes_counter, total_combinations, show_no_train_details):
     """Process a batch of routes using a single browser instance"""
     with sync_playwright() as p:
         # Launch browser with reduced resource usage
@@ -111,9 +136,9 @@ def process_batch(route_batch, formatted_date, completed_routes_counter, total_c
             
             try:
                 # Process the route and get the output text
-                output_text = process_route(page, from_station, to_station, formatted_date)
+                output_text, has_seats = process_route(page, from_station, to_station, formatted_date, show_no_train_details)
                 elapsed_time = time.time() - start_time
-                results.append((from_station, to_station, route_index, output_text))
+                results.append((from_station, to_station, route_index, output_text, has_seats))
                 
                 # Update completed routes counter and calculate remaining
                 completed_routes_counter.value += 1
@@ -126,15 +151,18 @@ def process_batch(route_batch, formatted_date, completed_routes_counter, total_c
                 # Calculate the width needed for the count based on total combinations
                 count_width = len(str(total_combinations))
                 
+                # Add availability indicator to the status message
+                status = "✓" if has_seats else "✗"
+                
                 # Print with fixed width and better alignment - using right alignment for the count
-                print(f"{completed:>{count_width}}. Completed {route_text:<35} in {elapsed_time:.2f} seconds - remaining {remaining} routes")
+                print(f"{completed:>{count_width}}. [{status}] Completed {route_text:<35} in {elapsed_time:.2f} seconds - remaining {remaining} routes")
                 
             except Exception as e:
                 print(f"Error processing {from_station} to {to_station}: {str(e)}")
                 # Add error message to maintain sequence
                 error_output = f"\nDate: {formatted_date}\n\nFrom Station : {from_station}\nTo Station   : {to_station}\n\n"
                 error_output += f"Error: Could not retrieve data for this route: {str(e)}\n\n"
-                results.append((from_station, to_station, route_index, error_output))
+                results.append((from_station, to_station, route_index, error_output, False))
                 
                 # Still update counter for failed routes
                 completed_routes_counter.value += 1
@@ -193,6 +221,9 @@ if __name__ == "__main__":
     start_index = int(input("Enter the starting station range for combination: ")) - 1
     end_index = int(input("Enter the ending station range for combination: ")) - 1
     
+    # Ask if user wants detailed output for empty routes
+    show_no_train_details = input("Include detailed output for routes with no trains or no seats? (y/n): ").lower() == 'y'
+    
     # Generate combinations between start_index and end_index with index to preserve order
     station_combinations = []
     route_index = 0
@@ -217,7 +248,7 @@ if __name__ == "__main__":
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit batch processing tasks with shared counter
         future_to_batch = {
-            executor.submit(process_batch, batch, formatted_date, completed_routes_counter, total_combinations): i 
+            executor.submit(process_batch, batch, formatted_date, completed_routes_counter, total_combinations, show_no_train_details): i 
             for i, batch in enumerate(batches)
         }
         
@@ -227,7 +258,7 @@ if __name__ == "__main__":
             try:
                 batch_results = future.result()
                 all_results.extend(batch_results)
-                print(f"Completed batch {batch_index+1}/{len(batches)}")
+                print(f"        Completed batch {batch_index+1}/{len(batches)}")
             except Exception as e:
                 print(f"Batch {batch_index} generated an exception: {e}")
     
@@ -236,7 +267,7 @@ if __name__ == "__main__":
     
     # Write directly to output file - no temp files
     with open('C:/Users/babla/Desktop/folders/Projects/ticket/output.txt', 'w', encoding='utf-8') as output_file:
-        for from_station, to_station, route_index, output_text in all_results:
+        for from_station, to_station, route_index, output_text, has_seats in all_results:
             doubleEqualLine(output_file)
             output_file.write(output_text)
         

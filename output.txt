@@ -1,69 +1,114 @@
-=====================================================================================================================
+
+Available 0 tickets for the route Khulna-Fulbari
+Available 0 tickets for the route Khulna-Parbatipur
+
 
 Date         : 26-Feb-2025
-From-To      : Khulna-Daulatpur
+From-To      : Khulna-Saidpur
 
-(1) SIMANTA EXPRESS (747) (09:15 PM-09:26 PM)
-   AC_B      : 0    (৳150)
-   SNIGDHA   : 0    (৳115)
-   S_CHAIR   : 0    (৳50)
-
-(2) SUNDARBAN EXPRESS (725) (09:45 PM-09:56 PM)
-   S_CHAIR   : 2    (৳50)
-
+(1) SIMANTA EXPRESS (747) (09:15 PM-05:27 AM)
+   AC_B      : 1    (৳1766)
+   SNIGDHA   : 0    (৳984)
+   S_CHAIR   : 0    (৳515)
+   F_BERTH   : 0    (৳1179)
 =====================================================================================================================
 
+
 Date         : 26-Feb-2025
-From-To      : Khulna-Noapara
+From-To      : Natore-Fulbari
 
-(1) SIMANTA EXPRESS (747) (09:15 PM-09:49 PM)
-   AC_B      : 0    (৳150)
-   SNIGDHA   : 5    (৳115)
-   S_CHAIR   : 0    (৳50)
-
-(2) SUNDARBAN EXPRESS (725) (09:45 PM-10:21 PM)
-   S_CHAIR   : 10   (৳50)
-   SNIGDHA   : 2    (৳115)
+(1) BANGLABANDHA EXPRESS (803) (10:24 PM-01:04 AM)
+   AC_B      : 0    (৳483)
+   S_CHAIR   : 5    (৳145)
 
 =====================================================================================================================
 
 Date         : 26-Feb-2025
-From-To      : Khulna-Jashore
+From-To      : Natore-Parbatipur
 
-(1) SIMANTA EXPRESS (747) (09:15 PM-10:22 PM)
-   AC_B      : 4    (৳236)
-   SNIGDHA   : 6    (৳133)
-   S_CHAIR   : 96   (৳70)
-   F_BERTH   : 4    (৳156)
+(1) CHILAHATI EXPRESS (805) (09:47 PM-01:00 AM)
+   S_CHAIR   : 1    (৳170)
 
-(2) SUNDARBAN EXPRESS (725) (09:45 PM-10:52 PM)
-   S_CHAIR   : 190  (৳70)
-   AC_B      : 4    (৳236)
-   SNIGDHA   : 109  (৳133)
+(2) BANGLABANDHA EXPRESS (803) (10:24 PM-01:35 AM)
+   AC_B      : 0    (৳541)
+   S_CHAIR   : 5    (৳170)
 
 =====================================================================================================================
 
 Date         : 26-Feb-2025
-From-To      : Daulatpur-Noapara
+From-To      : Natore-Saidpur
 
-No train found for selected dates or cities.
-Please try different dates or cities.
-
-=====================================================================================================================
-
-Date         : 26-Feb-2025
-From-To      : Daulatpur-Jashore
-
-No train found for selected dates or cities.
-Please try different dates or cities.
+(1) CHILAHATI EXPRESS (805) (09:47 PM-01:37 AM)
+   S_CHAIR   : 4    (৳185)
 
 =====================================================================================================================
 
 Date         : 26-Feb-2025
-From-To      : Noapara-Jashore
+From-To      : Santahar-Fulbari
 
-No train found for selected dates or cities.
-Please try different dates or cities.
+(1) CHILAHATI EXPRESS (805) (10:50 PM-12:26 AM)
+   S_CHAIR   : 10   (৳95)
+
+(2) BANGLABANDHA EXPRESS (803) (11:30 PM-01:04 AM)
+   AC_B      : 0    (৳322)
+   S_CHAIR   : 5    (৳95)
+
+=====================================================================================================================
+
+Date         : 26-Feb-2025
+From-To      : Santahar-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (10:50 PM-01:00 AM)
+   SNIGDHA   : 5    (৳219)
+   S_CHAIR   : 10   (৳115)
+
+(2) BANGLABANDHA EXPRESS (803) (11:30 PM-01:35 AM)
+   AC_B      : 0    (৳397)
+   S_CHAIR   : 20   (৳115)
+
+=====================================================================================================================
+
+Date         : 26-Feb-2025
+From-To      : Santahar-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (10:50 PM-01:37 AM)
+   SNIGDHA   : 5    (৳253)
+   S_CHAIR   : 22   (৳130)
+
+=====================================================================================================================
+No train found for route Akkelpur-Fulbari
+=====================================================================================================================
+No train found for route Akkelpur-Parbatipur
+=====================================================================================================================
+No train found for route Akkelpur-Saidpur
+=====================================================================================================================
+Available 0 tickets for the route Joypurhat-Fulbari
+=====================================================================================================================
+
+Date         : 26-Feb-2025
+From-To      : Joypurhat-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (11:44 PM-01:00 AM)
+   SNIGDHA   : 5    (৳144)
+   S_CHAIR   : 0    (৳75)
+
+=====================================================================================================================
+
+Date         : 26-Feb-2025
+From-To      : Joypurhat-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (11:44 PM-01:37 AM)
+   SNIGDHA   : 5    (৳179)
+   S_CHAIR   : 29   (৳95)
+
+
+=====================================================================================================================
+
+Date         : 26-Feb-2025
+From-To      : Parbatipur-Saidpur
+
+(1) BARENDRA EXPRESS (731) (07:40 PM-08:09 PM)
+   S_CHAIR   : 30   (৳50)
 
 
 
