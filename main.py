@@ -10,18 +10,21 @@ from multiprocessing import Value
 
 # Constants for performance tuning
 MAX_WORKERS = 6  # Increased parallel browser instances
-BATCH_SIZE = 24  # Larger batches reduce browser launch overhead
+BATCH_SIZE = 30  # Larger batches reduce browser launch overhead
 NAVIGATION_TIMEOUT = 15000  # 15 seconds
 SELECTOR_TIMEOUT = 10000   # 10 seconds
+# Add counters for routes with and without seats
+ROUTES_WITH_SEATS = Value('i', 0)
+ROUTES_WITHOUT_SEATS = Value('i', 0)
 
 def doubleEqualLine(file):
-    file.write('='*117 + '\n')
+    file.write('='*84 + '\n')
 
 def endExecution(file):
     file.write("\n\n")
-    file.write('='*117 + '\n')
-    file.write('||' + '~'*43 + '||   Finished Execution    ||' + '~'*41 + '||\n')
-    file.write('='*117 + '\n')
+    file.write('='*84 + '\n')
+    file.write('|| ' + '~'*24 + ' ||   Finished Execution   || ' + '~'*24 + ' ||\n')
+    file.write('='*84 + '\n')
 
 def validate_date(date_str):
     try:
@@ -51,7 +54,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
             if show_no_train_details:
-                output_buffer.write(f"\nDate         : {formatted_date}\nFrom-To      : {from_station}-{to_station}\n\nNo train found for selected dates or cities.\nPlease try different dates or cities.\n\n")
+                output_buffer.write(f"\nFrom-To      : {from_station}-{to_station}\n✗ No train found for selected dates or cities. Please try different dates or cities.\n\n")
             else:
                 output_buffer.write(f"No train found for route {from_station}-{to_station}\n")
             return output_buffer.getvalue(), False
@@ -60,12 +63,20 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         available_seat = page.query_selector('.all-seats.text-left:not(:text-is("0"))')
         has_available_seats = available_seat is not None
 
+        # Update the seat availability counters
+        if has_available_seats:
+            with ROUTES_WITH_SEATS.get_lock():
+                ROUTES_WITH_SEATS.value += 1
+        else:
+            with ROUTES_WITHOUT_SEATS.get_lock():
+                ROUTES_WITHOUT_SEATS.value += 1
+
         if not has_available_seats and not show_no_train_details:
             output_buffer.write(f"Available 0 tickets for the route {from_station}-{to_station}\n")
             return output_buffer.getvalue(), False
 
         # Only process full details when necessary
-        output_buffer.write(f"\nDate         : {formatted_date}\nFrom-To      : {from_station}-{to_station}\n\n")
+        output_buffer.write(f"\nFrom-To      : {from_station}-{to_station}\n\n")
         
         train_elements = page.query_selector_all('app-single-trip')
         for index, train_el in enumerate(train_elements, 1):
@@ -153,14 +164,20 @@ def get_search_date():
         print("Please enter 'y' or 'n'")
 
 if __name__ == "__main__":
+    # Reset counters at the start
+    ROUTES_WITH_SEATS.value = 0
+    ROUTES_WITHOUT_SEATS.value = 0
+    
     overall_start = time.time()
     
     with open('stations.txt', 'r') as file:
         stations = [line.strip() for line in file.readlines()]
-
-    print("\nAvailable stations:\n------------------")
+    
+    print(f"\n{'.' * 116}\n{'.' * 40}|| _______  Find Tickets  _______ ||{'.' * 40}\n{'.' * 116}\n")
+    print("\nAvailable stations:\n-------------------\n")
     for idx, station in enumerate(stations, 1):
         print(f"{idx}: {station}")
+    print("")
 
     date_str = get_search_date()
     formatted_date = convert_date_format(date_str)
@@ -168,6 +185,7 @@ if __name__ == "__main__":
     start_index = int(input("Enter starting station range: ")) - 1
     end_index = int(input("Enter ending station range: ")) - 1
     show_no_train_details = input("Include details for no trains/seats? (y/n): ").lower() == 'y'
+    print("\nProcessing routes...\n")
 
     station_combinations = []
     route_index = 0
@@ -196,13 +214,31 @@ if __name__ == "__main__":
 
     all_results.sort(key=lambda x: x[2])
     
+    # Calculate totals
+    no_train_routes = total_combinations - (ROUTES_WITH_SEATS.value + ROUTES_WITHOUT_SEATS.value)
+    total_time = time.time() - overall_start
+    minutes = total_time / 60
+    
+    # Print summary once at the end
+    print("\n\n\n------------------------------  Summary  ----------------------------------\n")
+    print(f"Routes with available seats: {ROUTES_WITH_SEATS.value}/{total_combinations} ({ROUTES_WITH_SEATS.value/total_combinations*100:.1f}%)")
+    print(f"Routes without available seats: {ROUTES_WITHOUT_SEATS.value}/{total_combinations} ({ROUTES_WITHOUT_SEATS.value/total_combinations*100:.1f}%)")
+    print(f"Routes with no train service: {no_train_routes}/{total_combinations} ({no_train_routes/total_combinations*100:.1f}%)")
+    
+    # Write summary to file
     with open('output.txt', 'w', encoding='utf-8') as output_file:
+        output_file.write(f"\n{'.' * 84}\n{'.' * 24}|| _______ Md Babla Islam _______ ||{'.' * 24}\n{'.' * 84}\n\n\n\n")
+        output_file.write(f"Date: {formatted_date}\n\n")
+        output_file.write(f"Summary: \nTotal number of routes/combinations : {total_combinations}\n")
+        output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")
+        output_file.write(f"Average execution time per route    : {total_time/total_combinations:.2f} seconds\n")
+        output_file.write(f"Routes with seats                   : {ROUTES_WITH_SEATS.value}\nRoutes without seats                : {ROUTES_WITHOUT_SEATS.value}\nRoutes with no train service        : {no_train_routes}\n\n\n\n\n")
         for result in all_results:
             doubleEqualLine(output_file)
             output_file.write(result[3])
         endExecution(output_file)
 
-    total_time = time.time() - overall_start
-    print(f"\nTotal execution time: {total_time:.2f}s for {total_combinations} routes")
-    print(f"Average time per route: {total_time/total_combinations:.2f}s")
-    print("-----------------Execution completed--------------------")
+    print(f"\nTotal execution time: {total_time:.2f} seconds ({minutes:.2f} minutes) for {total_combinations} routes")
+    print(f"Average execution time per route: {total_time/total_combinations:.2f}s")
+    # Removed duplicate summary lines
+    print("\n------------------------  Execution completed  ----------------------------\n\n")

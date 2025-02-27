@@ -1,0 +1,65 @@
+
+....................................................................................
+........................|| _______ Md Babla Islam _______ ||........................
+....................................................................................
+
+
+
+Date: 27-Feb-2025
+
+Summary: 
+Total number of routes/combinations : 4
+Total execution time                : 13.74 seconds (0.23 minutes)
+Average execution time per route    : 3.44 seconds
+Routes with seats                   : 2
+Routes without seats                : 0
+Routes with no train service        : 2
+
+
+
+
+====================================================================================
+
+From-To      : Khulna-Mubarakganj
+
+(1) SAGARDARI EXPRESS (761) (04:00 PM-05:39 PM)
+   S_CHAIR   : 0    (৳105)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-10:53 PM)
+   SNIGDHA   : 0    (৳196)
+   S_CHAIR   : 0    (৳105)
+
+(3) SUNDARBAN EXPRESS (725) (09:45 PM-11:23 PM)
+   S_CHAIR   : 8    (৳105)
+   SNIGDHA   : 20   (৳196)
+
+====================================================================================
+
+From-To      : Daulatpur-Mubarakganj
+✗ No train found for selected dates or cities. Please try different dates or cities.
+
+====================================================================================
+
+From-To      : Noapara-Mubarakganj
+✗ No train found for selected dates or cities. Please try different dates or cities.
+
+====================================================================================
+
+From-To      : Jashore-Mubarakganj
+
+(1) CHITRA EXPRESS (763) (10:08 AM-10:49 AM)
+   S_CHAIR   : 15   (৳50)
+
+(2) BENAPOLE EXPRESS (795) (02:15 PM-02:55 PM)
+   S_CHAIR   : 42   (৳50)
+   SNIGDHA   : 5    (৳115)
+
+(3) SUNDARBAN EXPRESS (725) (10:56 PM-11:23 PM)
+   S_CHAIR   : 12   (৳50)
+   SNIGDHA   : 0    (৳115)
+
+
+
+====================================================================================
+|| ~~~~~~~~~~~~~~~~~~~~~~~~ ||   Finished Execution   || ~~~~~~~~~~~~~~~~~~~~~~~~ ||
+====================================================================================
