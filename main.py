@@ -40,10 +40,8 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
     has_available_seats = False
 
     try:
-        # Reset page state before navigation
-        page.goto('about:blank', wait_until='commit', timeout=NAVIGATION_TIMEOUT)
-        
-        # Faster navigation with reduced wait requirements
+        # Removed redundant navigation reset
+        # page.goto('about:blank', wait_until='commit', timeout=NAVIGATION_TIMEOUT)
         page.goto(url, wait_until='domcontentloaded', timeout=NAVIGATION_TIMEOUT)
         
         # Wait for critical elements with optimized timeout
@@ -84,14 +82,13 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
             
             output_buffer.write(f"({index}) {train_name.inner_text()} ({times['start']}-{times['end']})\n")
             
-            # Bulk seat information extraction
+            # Consolidated seat data extraction
             seats_data = train_el.evaluate('''el => {
-                return Array.from(el.querySelectorAll('.single-seat-class')).map(seat => {
-                    const class_name = seat.querySelector('.seat-class-name')?.innerText || '';
-                    const fare = seat.querySelector('.seat-class-fare')?.innerText || '';
-                    const count = seat.querySelector('.all-seats.text-left')?.innerText || '0';
-                    return {class_name, fare, count};
-                });
+                return [...el.querySelectorAll('.single-seat-class')].map(seat => ({
+                    class_name: seat.querySelector('.seat-class-name')?.innerText || '',
+                    fare: seat.querySelector('.seat-class-fare')?.innerText || '',
+                    count: seat.querySelector('.all-seats.text-left')?.innerText || '0'
+                }));
             }''')
             
             for seat in seats_data:
