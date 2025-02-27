@@ -1,6 +1,72 @@
+# Bangladesh Railway Ticket Explorer
 
+A Python-based tool to search and analyze train ticket availability across Bangladesh's railway network. This project helps users find available train routes, seats, and fare information.
+
+
+## 🚆 Features
+
+- **Multi-route Search**: Search for tickets across multiple origin-destination combinations
+- **Parallel Processing**: Efficiently handles multiple searches concurrently
+- **Detailed Output**: Provides information on:
+  - Train names and numbers
+  - Departure and arrival times
+  - Journey duration
+  - Seat availability across different classes
+  - Fare information
+- **Station Schedule Analysis**: Extract complete station-by-station schedules including:
+  - Arrival times
+  - Departure times
+  - Halt duration
+  - Station-to-station travel times
+- **Results Export**: Save search results for later analysis
+
+## 📋 Prerequisites
+
+- Python 3.8+
+- [Playwright](https://playwright.dev/python/)
+
+
+## 🛠️ Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/babla45/view-train-ticket-availability.git
+cd view-train-ticket-availability
+```
+
+2. Install Playwright:
+```bash
+pip install playwright
+```
+3. Install Playwright browsers:
+```bash
+playwright install chromium
+```
+
+## 📊 Usage
+
+### Ticket Availability Search
+
+Run the main script to search for tickets:
+
+```bash
+python main.py
+```
+
+Follow the prompts to:
+1. Select a search date
+2. Choose station range to search
+3. Set options for showing routes without available tickets
+
+
+
+
+
+## 🔍 Sample Output
+
+```
 ....................................................................................
-........................|| _______ Md Babla Islam _______ ||........................
+...................|| ___ Md Babla Islam ___ ||....................
 ....................................................................................
 
 
@@ -258,3 +324,26 @@ From-To      : Chuadanga-Alamdanga
 ====================================================================================
 || ~~~~~~~~~~~~~~~~~~~~~~~~ ||   Finished Execution   || ~~~~~~~~~~~~~~~~~~~~~~~~ ||
 ====================================================================================
+
+```
+
+
+## 📝 Notes
+
+- This project uses the official Bangladesh Railway e-ticket portal for data
+- Search results depend on the availability of seats at the time of search
+- Some routes may not have direct train services
+
+## 🛡️ Legal and Ethical Considerations
+
+This tool is designed for personal use and research purposes only. It respects the following principles:
+
+- Does not bypass any security measures
+- Uses reasonable request rates to avoid server load
+- Does not store personal information
+- Is not intended for ticket scalping or any other activity that violates Bangladesh Railway's terms of service
+
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

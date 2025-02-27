@@ -10,7 +10,7 @@ from multiprocessing import Value
 
 # Constants for performance tuning
 MAX_WORKERS = 6  # Increased parallel browser instances
-BATCH_SIZE = 30  # Larger batches reduce browser launch overhead
+BATCH_SIZE = 40  # Larger batches reduce browser launch overhead
 NAVIGATION_TIMEOUT = 15000  # 15 seconds
 SELECTOR_TIMEOUT = 10000   # 10 seconds
 # Add counters for routes with and without seats
@@ -81,6 +81,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         train_elements = page.query_selector_all('app-single-trip')
         for index, train_el in enumerate(train_elements, 1):
             train_name = train_el.query_selector('h2[style="text-transform: uppercase;"]')
+            journey_duration = train_el.query_selector('.journey-duration').inner_text()
             if not train_name:
                 continue
 
@@ -91,7 +92,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
                 return {start, end};
             }''')
             
-            output_buffer.write(f"({index}) {train_name.inner_text()} ({times['start']}-{times['end']})\n")
+            output_buffer.write(f"({index}) {train_name.inner_text()} ({times['start']}-{times['end']}) [{journey_duration}]\n")
             
             # Consolidated seat data extraction
             seats_data = train_el.evaluate('''el => {
