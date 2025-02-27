@@ -242,4 +242,5 @@ if __name__ == "__main__":
     print(f"\nTotal execution time: {total_time:.2f} seconds ({minutes:.2f} minutes) for {total_combinations} routes")
     print(f"Average execution time per route: {total_time/total_combinations:.2f}s")
     # Removed duplicate summary lines
-    print("\n------------------------  Execution completed  ----------------------------\n\n")
+    print("\n------------------------  Execution completed  ----------------------------\n")
+    print("\nResults are saven in output.txt file.\n\n")

@@ -62,7 +62,7 @@ Follow the prompts to:
 
 
 
-## 🔍 Sample Output
+## 🔍 Sample Output In "output.txt" File
 
 ```
 ....................................................................................
@@ -327,6 +327,86 @@ From-To      : Chuadanga-Alamdanga
 
 ```
 
+
+## Termanal Outputs:
+
+```
+
+....................................................................................................................
+........................................|| _______  Find Tickets  _______ ||........................................
+....................................................................................................................
+
+
+Available stations:
+-------------------
+
+1: Khulna
+2: Daulatpur       
+3: Noapara
+4: Jashore
+5: Mubarakganj     
+6: Kotchandpur     
+7: Darshana_Halt   
+8: Chuadanga       
+9: Alamdanga       
+10: Poradaha       
+11: Bheramara      
+12: Ishwardi       
+13: Natore
+14: Santahar       
+15: Akkelpur       
+16: Joypurhat      
+17: Birampur       
+18: Fulbari        
+19: Parbatipur     
+20: Saidpur        
+21: Nilphamari     
+22: Domar
+23: Chilahati      
+
+Use current date for search? (y/n): y
+Enter starting station range: 19
+Enter ending station range: 19
+Include details for no trains/seats? (y/n): y
+
+Processing routes...
+
+ 1. [✗] Completed ( Khulna to Parbatipur )            in 8.80s - remaining 17
+ 2. [✗] Completed ( Daulatpur to Parbatipur )         in 0.71s - remaining 16
+ 3. [✗] Completed ( Noapara to Parbatipur )           in 1.45s - remaining 15
+ 4. [✗] Completed ( Jashore to Parbatipur )           in 0.86s - remaining 14
+ 5. [✗] Completed ( Mubarakganj to Parbatipur )       in 0.82s - remaining 13
+ 6. [✗] Completed ( Kotchandpur to Parbatipur )       in 0.86s - remaining 12
+ 7. [✗] Completed ( Darshana_Halt to Parbatipur )     in 1.40s - remaining 11
+ 8. [✗] Completed ( Chuadanga to Parbatipur )         in 0.89s - remaining 10
+ 9. [✗] Completed ( Alamdanga to Parbatipur )         in 1.37s - remaining 9
+10. [✗] Completed ( Poradaha to Parbatipur )          in 0.68s - remaining 8
+11. [✗] Completed ( Bheramara to Parbatipur )         in 0.79s - remaining 7
+12. [✗] Completed ( Ishwardi to Parbatipur )          in 1.13s - remaining 6
+13. [✓] Completed ( Natore to Parbatipur )            in 1.60s - remaining 5
+14. [✓] Completed ( Santahar to Parbatipur )          in 1.95s - remaining 4
+15. [✓] Completed ( Akkelpur to Parbatipur )          in 1.51s - remaining 3
+16. [✓] Completed ( Joypurhat to Parbatipur )         in 2.04s - remaining 2
+17. [✓] Completed ( Birampur to Parbatipur )          in 1.51s - remaining 1
+18. [✓] Completed ( Fulbari to Parbatipur )           in 1.09s - remaining 0
+
+
+
+------------------------------  Summary  ----------------------------------
+
+Routes with available seats: 6/18 (33.3%)
+Routes without available seats: 6/18 (33.3%)
+Routes with no train service: 6/18 (33.3%)
+
+Total execution time: 42.95 seconds (0.72 minutes) for 18 routes
+Average execution time per route: 2.39s
+
+------------------------  Execution completed  ----------------------------
+
+
+Results are saven in output.txt file.
+
+```
 
 ## 📝 Notes
 
