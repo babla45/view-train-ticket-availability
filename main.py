@@ -1,10 +1,10 @@
 from playwright.sync_api import sync_playwright
-import re
+# import re
 import concurrent.futures
 from datetime import datetime
 from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError
 import time
-import os
+# import os
 import io
 from multiprocessing import Value
 
@@ -54,7 +54,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
             if show_no_train_details:
-                output_buffer.write(f"\nFrom-To      : {from_station}-{to_station}\n✗ No train found for selected dates or cities. Please try different dates or cities.\n\n")
+                output_buffer.write(f"\nFrom-To       : {from_station}-{to_station}\n✗ No train found for selected dates or cities. Please try different dates or cities.\n\n")
             else:
                 output_buffer.write(f"No train found for route {from_station}-{to_station}\n")
             return output_buffer.getvalue(), False
@@ -76,7 +76,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
             return output_buffer.getvalue(), False
 
         # Only process full details when necessary
-        output_buffer.write(f"\nFrom-To      : {from_station}-{to_station}\n\n")
+        output_buffer.write(f"\n    From-To   : {from_station}-{to_station}\n\n")
         
         train_elements = page.query_selector_all('app-single-trip')
         for index, train_el in enumerate(train_elements, 1):
@@ -104,7 +104,7 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
             }''')
             
             for seat in seats_data:
-                output_buffer.write(f"   {seat['class_name']:<10}: {seat['count']:<4} ({seat['fare']})\n")
+                output_buffer.write(f"    {seat['class_name']:<10}: {seat['count']:<4} ({seat['fare']})\n")
             output_buffer.write("\n")
 
     except PlaywrightTimeoutError:
@@ -140,7 +140,7 @@ def process_batch(route_batch, formatted_date, completed_routes_counter, total_c
                 print(f"{completed:>{count_width}}. [{status}] Completed {route_text:<35} in {elapsed_time:.2f}s - remaining {remaining}")
 
             except Exception as e:
-                error_output = f"\nDate: {formatted_date}\n\nFrom Station : {from_station}\nTo Station   : {to_station}\n\nError: {str(e)}\n\n"
+                error_output = f"\nJourney Date: {formatted_date}\n\nFrom Station : {from_station}\nTo Station   : {to_station}\n\nError: {str(e)}\n\n"
                 results.append((from_station, to_station, route_index, error_output, False))
                 with completed_routes_counter.get_lock():
                     completed_routes_counter.value += 1
@@ -229,8 +229,10 @@ if __name__ == "__main__":
     # Write summary to file
     with open('output.txt', 'w', encoding='utf-8') as output_file:
         output_file.write(f"\n{'.' * 84}\n{'.' * 24}|| _______ Md Babla Islam _______ ||{'.' * 24}\n{'.' * 84}\n\n\n\n")
-        output_file.write(f"Date: {formatted_date}\n\n")
-        output_file.write(f"Summary: \nTotal number of routes/combinations : {total_combinations}\n")
+        output_file.write(f"Summary: \n\n")
+        output_file.write("Execution date and time             : " + datetime.now().strftime("%Y-%m-%d %I:%M:%S %p") + '\n')
+        output_file.write(f"Journey Date                        : {formatted_date}\n")
+        output_file.write(f"Total number of routes/combinations : {total_combinations}\n")
         output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")
         output_file.write(f"Average execution time per route    : {total_time/total_combinations:.2f} seconds\n")
         output_file.write(f"Routes with seats                   : {ROUTES_WITH_SEATS.value}\nRoutes without seats                : {ROUTES_WITHOUT_SEATS.value}\nRoutes with no train service        : {no_train_routes}\n\n\n\n\n")

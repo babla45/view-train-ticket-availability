@@ -5,206 +5,3050 @@
 
 
 
-Date: 27-Feb-2025
-
 Summary: 
-Total number of routes/combinations : 18
-Total execution time                : 42.95 seconds (0.72 minutes)
-Average execution time per route    : 2.39 seconds
-Routes with seats                   : 6
-Routes without seats                : 6
-Routes with no train service        : 6
+
+Execution date and time             : 2025-02-27 11:49:57 PM
+Journey Date                        : 08-Mar-2025
+Total number of routes/combinations : 253
+Total execution time                : 194.51 seconds (3.24 minutes)
+Average execution time per route    : 0.77 seconds
+Routes with seats                   : 133
+Routes without seats                : 37
+Routes with no train service        : 83
 
 
 
 
 ====================================================================================
 
-From-To      : Khulna-Parbatipur
+    From-To   : Khulna-Daulatpur
 
-(1) SIMANTA EXPRESS (747) (09:15 PM-05:00 AM) [07h 45m]
-   AC_B      : 0    (৳1697)
-   SNIGDHA   : 0    (৳943)
-   S_CHAIR   : 0    (৳495)
-   F_BERTH   : 0    (৳1133)
+(1) SIMANTA EXPRESS (747) (09:15 PM-09:26 PM) [00h 11m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
 
-====================================================================================
-
-From-To      : Daulatpur-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
+(2) SUNDARBAN EXPRESS (725) (09:45 PM-09:56 PM) [00h 11m]
+    S_CHAIR   : 2    (৳50)
 
 ====================================================================================
 
-From-To      : Noapara-Parbatipur
+    From-To   : Khulna-Noapara
 
-(1) SIMANTA EXPRESS (747) (09:52 PM-05:00 AM) [07h 08m]
-   AC_B      : 0    (৳1587)
-   SNIGDHA   : 0    (৳880)
-   S_CHAIR   : 0    (৳460)
+(1) JAHANABAD EXPRESS (825) (06:00 AM-06:33 AM) [00h 33m]
+    SNIGDHA   : 20   (৳115)
+    S_CHAIR   : 60   (৳50)
 
-====================================================================================
+(2) KAPOTAKSHA EXPRESS (715) (06:45 AM-07:18 AM) [00h 33m]
+    S_CHAIR   : 40   (৳50)
 
-From-To      : Jashore-Parbatipur
+(3) RUPSHA EXPRESS (727) (07:15 AM-07:48 AM) [00h 33m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 0    (৳50)
 
-(1) SIMANTA EXPRESS (747) (10:26 PM-05:00 AM) [06h 34m]
-   AC_B      : 0    (৳1478)
-   SNIGDHA   : 0    (৳823)
-   S_CHAIR   : 0    (৳430)
+(4) CHITRA EXPRESS (763) (09:00 AM-09:33 AM) [00h 33m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 5    (৳50)
 
-====================================================================================
+(5) SAGARDARI EXPRESS (761) (04:00 PM-04:32 PM) [00h 32m]
+    S_CHAIR   : 30   (৳50)
 
-From-To      : Mubarakganj-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
+(6) SIMANTA EXPRESS (747) (09:15 PM-09:49 PM) [00h 34m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 0    (৳50)
 
-====================================================================================
-
-From-To      : Kotchandpur-Parbatipur
-
-(1) SIMANTA EXPRESS (747) (11:09 PM-05:00 AM) [05h 51m]
-   AC_B      : 0    (৳1311)
-   SNIGDHA   : 0    (৳731)
-   S_CHAIR   : 0    (৳380)
-
-====================================================================================
-
-From-To      : Darshana_Halt-Parbatipur
-
-(1) SIMANTA EXPRESS (747) (11:37 PM-05:00 AM) [05h 23m]
-   AC_B      : 0    (৳1208)
-   SNIGDHA   : 0    (৳673)
-   S_CHAIR   : 0    (৳350)
+(7) SUNDARBAN EXPRESS (725) (09:45 PM-10:21 PM) [00h 36m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
 
 ====================================================================================
 
-From-To      : Chuadanga-Parbatipur
+    From-To   : Khulna-Jashore
 
-(1) SIMANTA EXPRESS (747) (11:59 PM-05:00 AM) [05h 01m]
-   AC_B      : 0    (৳1150)
-   SNIGDHA   : 0    (৳639)
-   S_CHAIR   : 0    (৳335)
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-07:49 AM) [01h 04m]
+    S_CHAIR   : 140  (৳70)
+    AC_S      : 12   (৳156)
 
-====================================================================================
+(2) RUPSHA EXPRESS (727) (07:15 AM-08:19 AM) [01h 04m]
+    AC_S      : 12   (৳156)
+    SNIGDHA   : 10   (৳133)
+    S_CHAIR   : 54   (৳70)
+    F_SEAT    : 8    (৳104)
 
-From-To      : Alamdanga-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
+(3) CHITRA EXPRESS (763) (09:00 AM-10:04 AM) [01h 04m]
+    SNIGDHA   : 35   (৳133)
+    AC_S      : 8    (৳156)
+    S_CHAIR   : 132  (৳70)
 
-====================================================================================
+(4) SAGARDARI EXPRESS (761) (04:00 PM-05:03 PM) [01h 03m]
+    S_CHAIR   : 105  (৳70)
+    AC_S      : 12   (৳156)
 
-From-To      : Poradaha-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
+(5) SIMANTA EXPRESS (747) (09:15 PM-10:22 PM) [01h 07m]
+    AC_B      : 5    (৳236)
+    SNIGDHA   : 10   (৳133)
+    S_CHAIR   : 54   (৳70)
+    F_BERTH   : 4    (৳156)
 
-====================================================================================
-
-From-To      : Bheramara-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
-
-====================================================================================
-
-From-To      : Ishwardi-Parbatipur
-✗ No train found for selected dates or cities. Please try different dates or cities.
-
-====================================================================================
-
-From-To      : Natore-Parbatipur
-
-(1) EKOTA EXPRESS (705) (03:06 PM-06:15 PM) [03h 09m]
-   SNIGDHA   : 0    (৳322)
-   S_CHAIR   : 0    (৳170)
-   AC_S      : 0    (৳386)
-
-(2) BARENDRA EXPRESS (731) (04:23 PM-07:25 PM) [03h 02m]
-   S_CHAIR   : 0    (৳170)
-
-(3) CHILAHATI EXPRESS (805) (09:47 PM-01:00 AM) [03h 13m]
-   S_CHAIR   : 10   (৳170)
-
-(4) BANGLABANDHA EXPRESS (803) (10:24 PM-01:35 AM) [03h 11m]
-   AC_B      : 0    (৳541)
-   S_CHAIR   : 8    (৳170)
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-10:52 PM) [01h 07m]
+    S_CHAIR   : 123  (৳70)
+    AC_B      : 4    (৳236)
+    SNIGDHA   : 110  (৳133)
 
 ====================================================================================
 
-From-To      : Santahar-Parbatipur
+    From-To   : Khulna-Mubarakganj
 
-(1) NILSAGAR EXPRESS (765) (12:35 PM-02:15 PM) [01h 40m]
-   AC_S      : 0    (৳265)
-   SNIGDHA   : 0    (৳219)
-   S_CHAIR   : 0    (৳115)
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-08:19 AM) [01h 34m]
+    S_CHAIR   : 35   (৳105)
 
-(2) EKOTA EXPRESS (705) (04:00 PM-06:15 PM) [02h 15m]
-   SNIGDHA   : 4    (৳219)
-   S_CHAIR   : 2    (৳115)
-   AC_S      : 0    (৳265)
+(2) RUPSHA EXPRESS (727) (07:15 AM-08:50 AM) [01h 35m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 5    (৳196)
+    S_CHAIR   : 0    (৳105)
+    F_SEAT    : 4    (৳156)
 
-(3) BARENDRA EXPRESS (731) (05:25 PM-07:25 PM) [02h 00m]
-   S_CHAIR   : 24   (৳115)
+(3) CHITRA EXPRESS (763) (09:00 AM-10:49 AM) [01h 49m]
+    SNIGDHA   : 10   (৳196)
+    AC_S      : 0    (৳236)
+    S_CHAIR   : 10   (৳105)
 
-(4) CHILAHATI EXPRESS (805) (10:50 PM-01:00 AM) [02h 10m]
-   SNIGDHA   : 1    (৳219)
-   S_CHAIR   : 10   (৳115)
+(4) SAGARDARI EXPRESS (761) (04:00 PM-05:39 PM) [01h 39m]
+    S_CHAIR   : 40   (৳105)
 
-(5) BANGLABANDHA EXPRESS (803) (11:30 PM-01:35 AM) [02h 05m]
-   AC_B      : 0    (৳397)
-   S_CHAIR   : 20   (৳115)
+(5) SIMANTA EXPRESS (747) (09:15 PM-10:53 PM) [01h 38m]
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
 
-====================================================================================
-
-From-To      : Akkelpur-Parbatipur
-
-(1) NILSAGAR EXPRESS (765) (12:57 PM-02:15 PM) [01h 18m]
-   AC_S      : 0    (৳213)
-   SNIGDHA   : 0    (৳179)
-   S_CHAIR   : 3    (৳95)
-
-(2) EKOTA EXPRESS (705) (04:22 PM-06:15 PM) [01h 53m]
-   S_CHAIR   : 8    (৳95)
-
-(3) BARENDRA EXPRESS (731) (05:52 PM-07:25 PM) [01h 33m]
-   S_CHAIR   : 5    (৳95)
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-11:23 PM) [01h 38m]
+    S_CHAIR   : 10   (৳105)
+    SNIGDHA   : 10   (৳196)
 
 ====================================================================================
 
-From-To      : Joypurhat-Parbatipur
+    From-To   : Khulna-Kotchandpur
 
-(1) NILSAGAR EXPRESS (765) (01:14 PM-02:15 PM) [01h 01m]
-   AC_S      : 0    (৳173)
-   SNIGDHA   : 0    (৳144)
-   S_CHAIR   : 0    (৳75)
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-08:32 AM) [01h 47m]
+    S_CHAIR   : 40   (৳120)
 
-(2) EKOTA EXPRESS (705) (04:52 PM-06:15 PM) [01h 23m]
-   SNIGDHA   : 0    (৳144)
-   S_CHAIR   : 11   (৳75)
-   AC_S      : 0    (৳173)
+(2) RUPSHA EXPRESS (727) (07:15 AM-09:03 AM) [01h 48m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 5    (৳225)
+    S_CHAIR   : 0    (৳120)
 
-(3) BARENDRA EXPRESS (731) (06:10 PM-07:25 PM) [01h 15m]
-   S_CHAIR   : 19   (৳75)
+(3) CHITRA EXPRESS (763) (09:00 AM-11:02 AM) [02h 02m]
+    SNIGDHA   : 10   (৳225)
+    AC_S      : 0    (৳271)
+    S_CHAIR   : 10   (৳120)
 
-(4) CHILAHATI EXPRESS (805) (11:44 PM-01:00 AM) [01h 16m]
-   SNIGDHA   : 5    (৳144)
-   S_CHAIR   : 0    (৳75)
+(4) SAGARDARI EXPRESS (761) (04:00 PM-05:53 PM) [01h 53m]
+    S_CHAIR   : 40   (৳120)
 
-====================================================================================
+(5) SIMANTA EXPRESS (747) (09:15 PM-11:07 PM) [01h 52m]
+    AC_B      : 0    (৳403)
+    SNIGDHA   : 5    (৳225)
+    S_CHAIR   : 0    (৳120)
 
-From-To      : Birampur-Parbatipur
-
-(1) NILSAGAR EXPRESS (765) (01:45 PM-02:15 PM) [00h 30m]
-   S_CHAIR   : 5    (৳55)
-
-(2) EKOTA EXPRESS (705) (05:37 PM-06:15 PM) [00h 38m]
-   S_CHAIR   : 15   (৳50)
-
-(3) BARENDRA EXPRESS (731) (06:53 PM-07:25 PM) [00h 32m]
-   S_CHAIR   : 12   (৳50)
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-11:37 PM) [01h 52m]
+    S_CHAIR   : 10   (৳120)
+    SNIGDHA   : 10   (৳225)
 
 ====================================================================================
 
-From-To      : Fulbari-Parbatipur
+    From-To   : Khulna-Darshana_Halt
 
-(1) EKOTA EXPRESS (705) (05:51 PM-06:15 PM) [00h 24m]
-   S_CHAIR   : 10   (৳50)
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-09:03 AM) [02h 18m]
+    S_CHAIR   : 80   (৳150)
+    AC_S      : 8    (৳340)
 
-(2) BARENDRA EXPRESS (731) (07:07 PM-07:25 PM) [00h 18m]
-   S_CHAIR   : 15   (৳50)
+(2) RUPSHA EXPRESS (727) (07:15 AM-09:41 AM) [02h 26m]
+    AC_S      : 0    (৳340)
+    SNIGDHA   : 5    (৳282)
+    S_CHAIR   : 0    (৳150)
+    F_SEAT    : 4    (৳225)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-11:28 AM) [02h 28m]
+    SNIGDHA   : 15   (৳282)
+    AC_S      : 0    (৳340)
+    S_CHAIR   : 10   (৳150)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-06:23 PM) [02h 23m]
+    S_CHAIR   : 80   (৳150)
+    AC_S      : 8    (৳340)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-11:34 PM) [02h 19m]
+    AC_B      : 0    (৳506)
+    SNIGDHA   : 5    (৳282)
+    S_CHAIR   : 25   (৳150)
+
+====================================================================================
+
+    From-To   : Khulna-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-09:25 AM) [02h 40m]
+    S_CHAIR   : 105  (৳165)
+    AC_S      : 4    (৳380)
+
+(2) RUPSHA EXPRESS (727) (07:15 AM-10:03 AM) [02h 48m]
+    AC_S      : 4    (৳380)
+    SNIGDHA   : 5    (৳317)
+    S_CHAIR   : 40   (৳165)
+    F_SEAT    : 4    (৳253)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-11:50 AM) [02h 50m]
+    SNIGDHA   : 15   (৳317)
+    AC_S      : 8    (৳380)
+    S_CHAIR   : 15   (৳165)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-06:45 PM) [02h 45m]
+    S_CHAIR   : 80   (৳165)
+    AC_S      : 4    (৳380)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-11:56 PM) [02h 41m]
+    AC_B      : 2    (৳564)
+    SNIGDHA   : 5    (৳317)
+    S_CHAIR   : 30   (৳165)
+    F_BERTH   : 2    (৳380)
+
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-12:20 AM) [02h 35m]
+    S_CHAIR   : 34   (৳165)
+    AC_B      : 8    (৳564)
+    SNIGDHA   : 15   (৳317)
+
+====================================================================================
+
+    From-To   : Khulna-Alamdanga
+
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-09:44 AM) [02h 59m]
+    S_CHAIR   : 40   (৳185)
+
+(2) RUPSHA EXPRESS (727) (07:15 AM-10:22 AM) [03h 07m]
+    AC_S      : 0    (৳420)
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 20   (৳185)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-12:09 PM) [03h 09m]
+    SNIGDHA   : 10   (৳351)
+    AC_S      : 0    (৳420)
+    S_CHAIR   : 10   (৳185)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-07:04 PM) [03h 04m]
+    S_CHAIR   : 45   (৳185)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-12:15 AM) [03h 00m]
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 20   (৳185)
+
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-12:39 AM) [02h 54m]
+    S_CHAIR   : 20   (৳185)
+    SNIGDHA   : 10   (৳351)
+
+====================================================================================
+
+    From-To   : Khulna-Poradaha
+
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-10:00 AM) [03h 15m]
+    S_CHAIR   : 50   (৳205)
+
+(2) RUPSHA EXPRESS (727) (07:15 AM-10:38 AM) [03h 23m]
+    AC_S      : 0    (৳466)
+    SNIGDHA   : 5    (৳386)
+    S_CHAIR   : 20   (৳205)
+    F_SEAT    : 4    (৳311)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-12:26 PM) [03h 26m]
+    SNIGDHA   : 15   (৳386)
+    AC_S      : 4    (৳466)
+    S_CHAIR   : 10   (৳205)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-07:20 PM) [03h 20m]
+    S_CHAIR   : 65   (৳205)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-12:31 AM) [03h 16m]
+    AC_B      : 0    (৳696)
+    SNIGDHA   : 5    (৳386)
+    S_CHAIR   : 22   (৳205)
+    F_BERTH   : 2    (৳466)
+
+(6) SUNDARBAN EXPRESS (725) (09:45 PM-12:56 AM) [03h 11m]
+    S_CHAIR   : 25   (৳205)
+    AC_B      : 0    (৳696)
+    SNIGDHA   : 15   (৳386)
+
+====================================================================================
+
+    From-To   : Khulna-Bheramara
+
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-10:25 AM) [03h 40m]
+    S_CHAIR   : 60   (৳225)
+
+(2) RUPSHA EXPRESS (727) (07:15 AM-10:58 AM) [03h 43m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 20   (৳225)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-12:51 PM) [03h 51m]
+    SNIGDHA   : 10   (৳426)
+    AC_S      : 0    (৳512)
+    S_CHAIR   : 10   (৳225)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-07:48 PM) [03h 48m]
+    S_CHAIR   : 50   (৳225)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-12:52 AM) [03h 37m]
+    AC_B      : 0    (৳765)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 29   (৳225)
+
+====================================================================================
+
+    From-To   : Khulna-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (06:45 AM-10:50 AM) [04h 05m]
+    S_CHAIR   : 64   (৳290)
+    AC_S      : 4    (৳667)
+
+(2) RUPSHA EXPRESS (727) (07:15 AM-11:25 AM) [04h 10m]
+    AC_S      : 4    (৳667)
+    SNIGDHA   : 5    (৳558)
+    S_CHAIR   : 30   (৳290)
+    F_SEAT    : 4    (৳449)
+
+(3) CHITRA EXPRESS (763) (09:00 AM-01:15 PM) [04h 15m]
+    SNIGDHA   : 15   (৳558)
+    AC_S      : 8    (৳667)
+    S_CHAIR   : 25   (৳290)
+
+(4) SAGARDARI EXPRESS (761) (04:00 PM-08:15 PM) [04h 15m]
+    S_CHAIR   : 70   (৳290)
+    AC_S      : 4    (৳667)
+
+(5) SIMANTA EXPRESS (747) (09:15 PM-01:20 AM) [04h 05m]
+    AC_B      : 2    (৳1001)
+    SNIGDHA   : 5    (৳558)
+    S_CHAIR   : 0    (৳290)
+    F_BERTH   : 4    (৳667)
+
+====================================================================================
+
+    From-To   : Khulna-Natore
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-12:12 PM) [04h 57m]
+    AC_S      : 4    (৳765)
+    SNIGDHA   : 5    (৳639)
+    S_CHAIR   : 0    (৳335)
+    F_SEAT    : 2    (৳512)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-02:20 AM) [05h 05m]
+    AC_B      : 0    (৳1145)
+    SNIGDHA   : 2    (৳639)
+    S_CHAIR   : 0    (৳335)
+
+====================================================================================
+
+    From-To   : Khulna-Santahar
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-01:20 PM) [06h 05m]
+    AC_S      : 4    (৳880)
+    SNIGDHA   : 5    (৳736)
+    S_CHAIR   : 11   (৳385)
+    F_SEAT    : 4    (৳587)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-03:10 AM) [05h 55m]
+    AC_B      : 0    (৳1317)
+    SNIGDHA   : 5    (৳736)
+    S_CHAIR   : 38   (৳385)
+
+====================================================================================
+
+    From-To   : Khulna-Akkelpur
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-01:45 PM) [06h 30m]
+    AC_S      : 0    (৳932)
+    SNIGDHA   : 0    (৳777)
+    S_CHAIR   : 0    (৳405)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-03:35 AM) [06h 20m]
+    AC_B      : 0    (৳1398)
+    SNIGDHA   : 0    (৳777)
+    S_CHAIR   : 10   (৳405)
+
+====================================================================================
+
+    From-To   : Khulna-Joypurhat
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-02:02 PM) [06h 47m]
+    AC_S      : 4    (৳972)
+    SNIGDHA   : 5    (৳811)
+    S_CHAIR   : 0    (৳425)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-03:51 AM) [06h 36m]
+    AC_B      : 0    (৳1455)
+    SNIGDHA   : 1    (৳811)
+    S_CHAIR   : 14   (৳425)
+
+====================================================================================
+
+    From-To   : Khulna-Birampur
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-02:33 PM) [07h 18m]
+    AC_S      : 0    (৳1064)
+    SNIGDHA   : 0    (৳886)
+    S_CHAIR   : 0    (৳465)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-04:26 AM) [07h 11m]
+    AC_B      : 0    (৳1593)
+    SNIGDHA   : 0    (৳886)
+    S_CHAIR   : 20   (৳465)
+
+====================================================================================
+
+    From-To   : Khulna-Fulbari
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-02:46 PM) [07h 31m]
+    AC_S      : 0    (৳1093)
+    SNIGDHA   : 0    (৳909)
+    S_CHAIR   : 0    (৳475)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-04:40 AM) [07h 25m]
+    AC_B      : 0    (৳1639)
+    SNIGDHA   : 0    (৳909)
+    S_CHAIR   : 2    (৳475)
+
+====================================================================================
+
+    From-To   : Khulna-Parbatipur
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-03:05 PM) [07h 50m]
+    AC_S      : 0    (৳1133)
+    SNIGDHA   : 5    (৳943)
+    S_CHAIR   : 22   (৳495)
+    F_SEAT    : 4    (৳754)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-05:00 AM) [07h 45m]
+    AC_B      : 2    (৳1697)
+    SNIGDHA   : 4    (৳943)
+    S_CHAIR   : 11   (৳495)
+    F_BERTH   : 3    (৳1133)
+
+====================================================================================
+
+    From-To   : Khulna-Saidpur
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-03:32 PM) [08h 17m]
+    AC_S      : 4    (৳1179)
+    SNIGDHA   : 5    (৳984)
+    S_CHAIR   : 60   (৳515)
+    F_SEAT    : 4    (৳788)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-05:27 AM) [08h 12m]
+    AC_B      : 2    (৳1766)
+    SNIGDHA   : 5    (৳984)
+    S_CHAIR   : 36   (৳515)
+    F_BERTH   : 0    (৳1179)
+
+====================================================================================
+
+    From-To   : Khulna-Nilphamari
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-04:13 PM) [08h 58m]
+    AC_S      : 0    (৳1237)
+    SNIGDHA   : 0    (৳1030)
+    S_CHAIR   : 15   (৳540)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-05:50 AM) [08h 35m]
+    AC_B      : 0    (৳1852)
+    SNIGDHA   : 0    (৳1030)
+    S_CHAIR   : 15   (৳540)
+
+====================================================================================
+
+    From-To   : Khulna-Domar
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-04:32 PM) [09h 17m]
+    AC_S      : 0    (৳1323)
+    SNIGDHA   : 0    (৳1104)
+    S_CHAIR   : 0    (৳575)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-06:09 AM) [08h 54m]
+    AC_B      : 0    (৳1978)
+    SNIGDHA   : 0    (৳1104)
+    S_CHAIR   : 22   (৳575)
+
+====================================================================================
+
+    From-To   : Khulna-Chilahati
+
+(1) RUPSHA EXPRESS (727) (07:15 AM-05:05 PM) [09h 50m]
+    AC_S      : 0    (৳1323)
+    SNIGDHA   : 0    (৳1104)
+    S_CHAIR   : 7    (৳575)
+    F_SEAT    : 0    (৳880)
+
+(2) SIMANTA EXPRESS (747) (09:15 PM-06:45 AM) [09h 30m]
+    AC_B      : 3    (৳1978)
+    SNIGDHA   : 6    (৳1104)
+    S_CHAIR   : 10   (৳575)
+    F_BERTH   : 2    (৳1323)
+
+====================================================================================
+No train found for route Daulatpur-Noapara
+====================================================================================
+No train found for route Daulatpur-Jashore
+====================================================================================
+No train found for route Daulatpur-Mubarakganj
+====================================================================================
+No train found for route Daulatpur-Kotchandpur
+====================================================================================
+No train found for route Daulatpur-Darshana_Halt
+====================================================================================
+No train found for route Daulatpur-Chuadanga
+====================================================================================
+No train found for route Daulatpur-Alamdanga
+====================================================================================
+No train found for route Daulatpur-Poradaha
+====================================================================================
+No train found for route Daulatpur-Bheramara
+====================================================================================
+No train found for route Daulatpur-Ishwardi
+====================================================================================
+No train found for route Daulatpur-Natore
+====================================================================================
+No train found for route Daulatpur-Santahar
+====================================================================================
+No train found for route Daulatpur-Akkelpur
+====================================================================================
+No train found for route Daulatpur-Joypurhat
+====================================================================================
+No train found for route Daulatpur-Birampur
+====================================================================================
+No train found for route Daulatpur-Fulbari
+====================================================================================
+No train found for route Daulatpur-Parbatipur
+====================================================================================
+No train found for route Daulatpur-Saidpur
+====================================================================================
+No train found for route Daulatpur-Nilphamari
+====================================================================================
+No train found for route Daulatpur-Domar
+====================================================================================
+No train found for route Daulatpur-Chilahati
+====================================================================================
+No train found for route Noapara-Jashore
+====================================================================================
+No train found for route Noapara-Mubarakganj
+====================================================================================
+No train found for route Noapara-Kotchandpur
+====================================================================================
+No train found for route Noapara-Darshana_Halt
+====================================================================================
+
+    From-To   : Noapara-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (07:21 AM-09:25 AM) [02h 04m]
+    S_CHAIR   : 0    (৳130)
+
+(2) SAGARDARI EXPRESS (761) (04:35 PM-06:45 PM) [02h 10m]
+    S_CHAIR   : 5    (৳130)
+
+====================================================================================
+No train found for route Noapara-Alamdanga
+====================================================================================
+Available 0 tickets for the route Noapara-Poradaha
+====================================================================================
+No train found for route Noapara-Bheramara
+====================================================================================
+
+    From-To   : Noapara-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (07:21 AM-10:50 AM) [03h 29m]
+    S_CHAIR   : 5    (৳255)
+
+(2) SAGARDARI EXPRESS (761) (04:35 PM-08:15 PM) [03h 40m]
+    S_CHAIR   : 5    (৳255)
+
+====================================================================================
+Available 0 tickets for the route Noapara-Natore
+====================================================================================
+Available 0 tickets for the route Noapara-Santahar
+====================================================================================
+No train found for route Noapara-Akkelpur
+====================================================================================
+Available 0 tickets for the route Noapara-Joypurhat
+====================================================================================
+No train found for route Noapara-Birampur
+====================================================================================
+No train found for route Noapara-Fulbari
+====================================================================================
+Available 0 tickets for the route Noapara-Parbatipur
+====================================================================================
+Available 0 tickets for the route Noapara-Saidpur
+====================================================================================
+No train found for route Noapara-Nilphamari
+====================================================================================
+No train found for route Noapara-Domar
+====================================================================================
+
+    From-To   : Noapara-Chilahati
+
+(1) RUPSHA EXPRESS (727) (07:51 AM-05:05 PM) [09h 14m]
+    AC_S      : 0    (৳1237)
+    SNIGDHA   : 5    (৳1035)
+    S_CHAIR   : 0    (৳540)
+
+(2) SIMANTA EXPRESS (747) (09:52 PM-06:45 AM) [08h 53m]
+    AC_B      : 0    (৳1858)
+    SNIGDHA   : 5    (৳1035)
+    S_CHAIR   : 0    (৳540)
+
+====================================================================================
+
+    From-To   : Jashore-Mubarakganj
+
+(1) CHITRA EXPRESS (763) (10:08 AM-10:49 AM) [00h 41m]
+    S_CHAIR   : 16   (৳50)
+
+(2) BENAPOLE EXPRESS (795) (02:15 PM-02:55 PM) [00h 40m]
+    S_CHAIR   : 42   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(3) SUNDARBAN EXPRESS (725) (10:56 PM-11:23 PM) [00h 27m]
+    S_CHAIR   : 0    (৳50)
+    SNIGDHA   : 0    (৳115)
+
+====================================================================================
+
+    From-To   : Jashore-Kotchandpur
+
+(1) CHITRA EXPRESS (763) (10:08 AM-11:02 AM) [00h 54m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 25   (৳50)
+
+(2) BENAPOLE EXPRESS (795) (02:15 PM-03:08 PM) [00h 53m]
+    S_CHAIR   : 30   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(3) SUNDARBAN EXPRESS (725) (10:56 PM-11:37 PM) [00h 41m]
+    S_CHAIR   : 40   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+====================================================================================
+
+    From-To   : Jashore-Darshana_Halt
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-09:03 AM) [01h 11m]
+    S_CHAIR   : 10   (৳80)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-09:41 AM) [01h 18m]
+    AC_S      : 0    (৳184)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 0    (৳80)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-11:28 AM) [01h 20m]
+    SNIGDHA   : 0    (৳156)
+    AC_S      : 0    (৳184)
+    S_CHAIR   : 25   (৳80)
+
+(4) BENAPOLE EXPRESS (795) (02:15 PM-03:34 PM) [01h 19m]
+    S_CHAIR   : 36   (৳80)
+    SNIGDHA   : 10   (৳156)
+
+(5) SAGARDARI EXPRESS (761) (05:12 PM-06:23 PM) [01h 11m]
+    S_CHAIR   : 4    (৳80)
+
+====================================================================================
+
+    From-To   : Jashore-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-09:25 AM) [01h 33m]
+    S_CHAIR   : 10   (৳100)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-10:03 AM) [01h 40m]
+    AC_S      : 0    (৳225)
+    SNIGDHA   : 0    (৳184)
+    S_CHAIR   : 0    (৳100)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-11:50 AM) [01h 42m]
+    SNIGDHA   : 0    (৳184)
+    AC_S      : 0    (৳225)
+    S_CHAIR   : 12   (৳100)
+
+(4) BENAPOLE EXPRESS (795) (02:15 PM-03:56 PM) [01h 41m]
+    S_CHAIR   : 39   (৳100)
+    SNIGDHA   : 15   (৳184)
+
+(5) SAGARDARI EXPRESS (761) (05:12 PM-06:45 PM) [01h 33m]
+    S_CHAIR   : 4    (৳100)
+
+(6) SIMANTA EXPRESS (747) (10:26 PM-11:56 PM) [01h 30m]
+    AC_B      : 0    (৳334)
+    SNIGDHA   : 0    (৳184)
+    S_CHAIR   : 0    (৳100)
+
+(7) SUNDARBAN EXPRESS (725) (10:56 PM-12:20 AM) [01h 24m]
+    S_CHAIR   : 44   (৳100)
+    SNIGDHA   : 25   (৳184)
+
+====================================================================================
+
+    From-To   : Jashore-Alamdanga
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-09:44 AM) [01h 52m]
+    S_CHAIR   : 5    (৳120)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-10:22 AM) [01h 59m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 0    (৳120)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-12:09 PM) [02h 01m]
+    SNIGDHA   : 0    (৳225)
+    AC_S      : 0    (৳271)
+    S_CHAIR   : 0    (৳120)
+
+(4) SAGARDARI EXPRESS (761) (05:12 PM-07:04 PM) [01h 52m]
+    S_CHAIR   : 3    (৳120)
+
+(5) SUNDARBAN EXPRESS (725) (10:56 PM-12:39 AM) [01h 43m]
+    S_CHAIR   : 0    (৳120)
+    SNIGDHA   : 15   (৳225)
+
+====================================================================================
+
+    From-To   : Jashore-Poradaha
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-10:00 AM) [02h 08m]
+    S_CHAIR   : 20   (৳135)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-10:38 AM) [02h 15m]
+    AC_S      : 0    (৳311)
+    SNIGDHA   : 0    (৳259)
+    S_CHAIR   : 0    (৳135)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-12:26 PM) [02h 18m]
+    SNIGDHA   : 0    (৳259)
+    AC_S      : 0    (৳311)
+    S_CHAIR   : 0    (৳135)
+
+(4) BENAPOLE EXPRESS (795) (02:15 PM-04:40 PM) [02h 25m]
+    S_CHAIR   : 18   (৳135)
+    SNIGDHA   : 10   (৳259)
+
+(5) SAGARDARI EXPRESS (761) (05:12 PM-07:20 PM) [02h 08m]
+    S_CHAIR   : 5    (৳135)
+
+(6) SIMANTA EXPRESS (747) (10:26 PM-12:31 AM) [02h 05m]
+    AC_B      : 0    (৳466)
+    SNIGDHA   : 0    (৳259)
+    S_CHAIR   : 0    (৳135)
+
+(7) SUNDARBAN EXPRESS (725) (10:56 PM-12:56 AM) [02h 00m]
+    S_CHAIR   : 20   (৳135)
+    SNIGDHA   : 20   (৳259)
+
+====================================================================================
+
+    From-To   : Jashore-Bheramara
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-10:25 AM) [02h 33m]
+    S_CHAIR   : 10   (৳155)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-10:58 AM) [02h 35m]
+    AC_S      : 0    (৳357)
+    SNIGDHA   : 0    (৳299)
+    S_CHAIR   : 0    (৳155)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-12:51 PM) [02h 43m]
+    SNIGDHA   : 0    (৳299)
+    AC_S      : 0    (৳357)
+    S_CHAIR   : 0    (৳155)
+
+(4) SAGARDARI EXPRESS (761) (05:12 PM-07:48 PM) [02h 36m]
+    S_CHAIR   : 4    (৳155)
+
+(5) SIMANTA EXPRESS (747) (10:26 PM-12:52 AM) [02h 26m]
+    S_CHAIR   : 0    (৳155)
+
+====================================================================================
+
+    From-To   : Jashore-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (07:52 AM-10:50 AM) [02h 58m]
+    S_CHAIR   : 14   (৳225)
+
+(2) RUPSHA EXPRESS (727) (08:23 AM-11:25 AM) [03h 02m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳432)
+    S_CHAIR   : 0    (৳225)
+
+(3) CHITRA EXPRESS (763) (10:08 AM-01:15 PM) [03h 07m]
+    SNIGDHA   : 0    (৳432)
+    AC_S      : 0    (৳512)
+    S_CHAIR   : 10   (৳225)
+
+(4) SAGARDARI EXPRESS (761) (05:12 PM-08:15 PM) [03h 03m]
+    S_CHAIR   : 5    (৳225)
+
+(5) SIMANTA EXPRESS (747) (10:26 PM-01:20 AM) [02h 54m]
+    AC_B      : 0    (৳771)
+    SNIGDHA   : 0    (৳432)
+    S_CHAIR   : 0    (৳225)
+
+====================================================================================
+Available 0 tickets for the route Jashore-Natore
+====================================================================================
+Available 0 tickets for the route Jashore-Santahar
+====================================================================================
+Available 0 tickets for the route Jashore-Akkelpur
+====================================================================================
+Available 0 tickets for the route Jashore-Joypurhat
+====================================================================================
+Available 0 tickets for the route Jashore-Birampur
+====================================================================================
+Available 0 tickets for the route Jashore-Fulbari
+====================================================================================
+
+    From-To   : Jashore-Parbatipur
+
+(1) RUPSHA EXPRESS (727) (08:23 AM-03:05 PM) [06h 42m]
+    AC_S      : 0    (৳989)
+    SNIGDHA   : 0    (৳823)
+    S_CHAIR   : 15   (৳430)
+
+(2) SIMANTA EXPRESS (747) (10:26 PM-05:00 AM) [06h 34m]
+    AC_B      : 0    (৳1478)
+    SNIGDHA   : 0    (৳823)
+    S_CHAIR   : 0    (৳430)
+
+====================================================================================
+
+    From-To   : Jashore-Saidpur
+
+(1) RUPSHA EXPRESS (727) (08:23 AM-03:32 PM) [07h 09m]
+    AC_S      : 0    (৳1024)
+    SNIGDHA   : 0    (৳857)
+    S_CHAIR   : 35   (৳445)
+
+(2) SIMANTA EXPRESS (747) (10:26 PM-05:27 AM) [07h 01m]
+    AC_B      : 0    (৳1536)
+    SNIGDHA   : 0    (৳857)
+    S_CHAIR   : 33   (৳445)
+
+====================================================================================
+Available 0 tickets for the route Jashore-Nilphamari
+====================================================================================
+Available 0 tickets for the route Jashore-Domar
+====================================================================================
+
+    From-To   : Jashore-Chilahati
+
+(1) RUPSHA EXPRESS (727) (08:23 AM-05:05 PM) [08h 42m]
+    AC_S      : 12   (৳1168)
+    SNIGDHA   : 10   (৳972)
+    S_CHAIR   : 0    (৳510)
+    F_SEAT    : 8    (৳782)
+
+(2) SIMANTA EXPRESS (747) (10:26 PM-06:45 AM) [08h 19m]
+    AC_B      : 5    (৳1748)
+    SNIGDHA   : 10   (৳972)
+    S_CHAIR   : 13   (৳510)
+    F_BERTH   : 4    (৳1168)
+
+====================================================================================
+No train found for route Mubarakganj-Kotchandpur
+====================================================================================
+
+    From-To   : Mubarakganj-Darshana_Halt
+
+(1) KAPOTAKSHA EXPRESS (715) (08:21 AM-09:03 AM) [00h 42m]
+    S_CHAIR   : 5    (৳50)
+
+(2) SAGARDARI EXPRESS (761) (05:41 PM-06:23 PM) [00h 42m]
+    S_CHAIR   : 0    (৳50)
+
+====================================================================================
+
+    From-To   : Mubarakganj-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (08:21 AM-09:25 AM) [01h 04m]
+    S_CHAIR   : 5    (৳65)
+
+(2) CHITRA EXPRESS (763) (10:51 AM-11:50 AM) [00h 59m]
+    S_CHAIR   : 10   (৳65)
+
+(3) BENAPOLE EXPRESS (795) (02:57 PM-03:56 PM) [00h 59m]
+    S_CHAIR   : 10   (৳65)
+
+(4) SAGARDARI EXPRESS (761) (05:41 PM-06:45 PM) [01h 04m]
+    S_CHAIR   : 5    (৳65)
+
+====================================================================================
+No train found for route Mubarakganj-Alamdanga
+====================================================================================
+
+    From-To   : Mubarakganj-Poradaha
+
+(1) KAPOTAKSHA EXPRESS (715) (08:21 AM-10:00 AM) [01h 39m]
+    S_CHAIR   : 0    (৳105)
+
+(2) CHITRA EXPRESS (763) (10:51 AM-12:26 PM) [01h 35m]
+    S_CHAIR   : 6    (৳105)
+
+(3) BENAPOLE EXPRESS (795) (02:57 PM-04:40 PM) [01h 43m]
+    S_CHAIR   : 10   (৳105)
+
+(4) SAGARDARI EXPRESS (761) (05:41 PM-07:20 PM) [01h 39m]
+    S_CHAIR   : 0    (৳105)
+
+====================================================================================
+No train found for route Mubarakganj-Bheramara
+====================================================================================
+
+    From-To   : Mubarakganj-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (08:21 AM-10:50 AM) [02h 29m]
+    S_CHAIR   : 5    (৳190)
+
+(2) RUPSHA EXPRESS (727) (08:52 AM-11:25 AM) [02h 33m]
+    AC_S      : 0    (৳437)
+    SNIGDHA   : 0    (৳363)
+    S_CHAIR   : 0    (৳190)
+
+(3) SAGARDARI EXPRESS (761) (05:41 PM-08:15 PM) [02h 34m]
+    S_CHAIR   : 5    (৳190)
+
+====================================================================================
+Available 0 tickets for the route Mubarakganj-Natore
+====================================================================================
+Available 0 tickets for the route Mubarakganj-Santahar
+====================================================================================
+No train found for route Mubarakganj-Akkelpur
+====================================================================================
+Available 0 tickets for the route Mubarakganj-Joypurhat
+====================================================================================
+No train found for route Mubarakganj-Birampur
+====================================================================================
+No train found for route Mubarakganj-Fulbari
+====================================================================================
+No train found for route Mubarakganj-Parbatipur
+====================================================================================
+Available 0 tickets for the route Mubarakganj-Saidpur
+====================================================================================
+No train found for route Mubarakganj-Nilphamari
+====================================================================================
+No train found for route Mubarakganj-Domar
+====================================================================================
+
+    From-To   : Mubarakganj-Chilahati
+
+(1) RUPSHA EXPRESS (727) (08:52 AM-05:05 PM) [08h 13m]
+    AC_S      : 0    (৳1110)
+    SNIGDHA   : 5    (৳926)
+    S_CHAIR   : 0    (৳485)
+    F_SEAT    : 4    (৳742)
+
+(2) SIMANTA EXPRESS (747) (10:55 PM-06:45 AM) [07h 50m]
+    S_CHAIR   : 0    (৳485)
+
+====================================================================================
+
+    From-To   : Kotchandpur-Darshana_Halt
+
+(1) CHITRA EXPRESS (763) (11:04 AM-11:28 AM) [00h 24m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    From-To   : Kotchandpur-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (08:34 AM-09:25 AM) [00h 51m]
+    S_CHAIR   : 0    (৳50)
+
+(2) CHITRA EXPRESS (763) (11:04 AM-11:50 AM) [00h 46m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳50)
+
+(3) BENAPOLE EXPRESS (795) (03:10 PM-03:56 PM) [00h 46m]
+    S_CHAIR   : 5    (৳50)
+
+(4) SAGARDARI EXPRESS (761) (05:55 PM-06:45 PM) [00h 50m]
+    S_CHAIR   : 0    (৳50)
+
+(5) SUNDARBAN EXPRESS (725) (11:39 PM-12:20 AM) [00h 41m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+No train found for route Kotchandpur-Alamdanga
+====================================================================================
+
+    From-To   : Kotchandpur-Poradaha
+
+(1) KAPOTAKSHA EXPRESS (715) (08:34 AM-10:00 AM) [01h 26m]
+    S_CHAIR   : 5    (৳90)
+
+(2) BENAPOLE EXPRESS (795) (03:10 PM-04:40 PM) [01h 30m]
+    S_CHAIR   : 5    (৳90)
+
+(3) SAGARDARI EXPRESS (761) (05:55 PM-07:20 PM) [01h 25m]
+    S_CHAIR   : 5    (৳90)
+
+(4) SUNDARBAN EXPRESS (725) (11:39 PM-12:56 AM) [01h 17m]
+    S_CHAIR   : 5    (৳90)
+    SNIGDHA   : 5    (৳167)
+
+====================================================================================
+No train found for route Kotchandpur-Bheramara
+====================================================================================
+
+    From-To   : Kotchandpur-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (08:34 AM-10:50 AM) [02h 16m]
+    S_CHAIR   : 5    (৳175)
+
+(2) RUPSHA EXPRESS (727) (09:05 AM-11:25 AM) [02h 20m]
+    AC_S      : 0    (৳403)
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 0    (৳175)
+
+(3) CHITRA EXPRESS (763) (11:04 AM-01:15 PM) [02h 11m]
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 5    (৳175)
+
+(4) SAGARDARI EXPRESS (761) (05:55 PM-08:15 PM) [02h 20m]
+    S_CHAIR   : 5    (৳175)
+
+====================================================================================
+Available 0 tickets for the route Kotchandpur-Natore
+====================================================================================
+Available 0 tickets for the route Kotchandpur-Santahar
+====================================================================================
+No train found for route Kotchandpur-Akkelpur
+====================================================================================
+Available 0 tickets for the route Kotchandpur-Joypurhat
+====================================================================================
+No train found for route Kotchandpur-Birampur
+====================================================================================
+No train found for route Kotchandpur-Fulbari
+====================================================================================
+Available 0 tickets for the route Kotchandpur-Parbatipur
+====================================================================================
+Available 0 tickets for the route Kotchandpur-Saidpur
+====================================================================================
+No train found for route Kotchandpur-Nilphamari
+====================================================================================
+No train found for route Kotchandpur-Domar
+====================================================================================
+
+    From-To   : Kotchandpur-Chilahati
+
+(1) RUPSHA EXPRESS (727) (09:05 AM-05:05 PM) [08h 00m]
+    AC_S      : 0    (৳1053)
+    SNIGDHA   : 5    (৳880)
+    S_CHAIR   : 0    (৳460)
+
+(2) SIMANTA EXPRESS (747) (11:09 PM-06:45 AM) [07h 36m]
+    AC_B      : 0    (৳1582)
+    SNIGDHA   : 5    (৳880)
+    S_CHAIR   : 0    (৳460)
+
+====================================================================================
+
+    From-To   : Darshana_Halt-Chuadanga
+
+(1) KAPOTAKSHA EXPRESS (715) (09:06 AM-09:25 AM) [00h 19m]
+    S_CHAIR   : 0    (৳50)
+
+(2) CHITRA EXPRESS (763) (11:31 AM-11:50 AM) [00h 19m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳50)
+
+(3) SAGARDARI EXPRESS (761) (06:26 PM-06:45 PM) [00h 19m]
+    S_CHAIR   : 0    (৳50)
+
+====================================================================================
+No train found for route Darshana_Halt-Alamdanga
+====================================================================================
+
+    From-To   : Darshana_Halt-Poradaha
+
+(1) KAPOTAKSHA EXPRESS (715) (09:06 AM-10:00 AM) [00h 54m]
+    S_CHAIR   : 10   (৳55)
+
+(2) CHITRA EXPRESS (763) (11:31 AM-12:26 PM) [00h 55m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳55)
+
+(3) BENAPOLE EXPRESS (795) (03:37 PM-04:40 PM) [01h 03m]
+    S_CHAIR   : 5    (৳55)
+
+(4) SAGARDARI EXPRESS (761) (06:26 PM-07:20 PM) [00h 54m]
+    S_CHAIR   : 10   (৳55)
+
+====================================================================================
+Available 0 tickets for the route Darshana_Halt-Bheramara
+====================================================================================
+
+    From-To   : Darshana_Halt-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (09:06 AM-10:50 AM) [01h 44m]
+    S_CHAIR   : 10   (৳145)
+
+(2) CHITRA EXPRESS (763) (11:31 AM-01:15 PM) [01h 44m]
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 5    (৳145)
+
+(3) SAGARDARI EXPRESS (761) (06:26 PM-08:15 PM) [01h 49m]
+    S_CHAIR   : 10   (৳145)
+
+(4) SIMANTA EXPRESS (747) (11:37 PM-01:20 AM) [01h 43m]
+    S_CHAIR   : 5    (৳145)
+
+====================================================================================
+
+    From-To   : Darshana_Halt-Natore
+
+(1) RUPSHA EXPRESS (727) (09:44 AM-12:12 PM) [02h 28m]
+    AC_S      : 0    (৳432)
+    SNIGDHA   : 0    (৳363)
+    S_CHAIR   : 0    (৳190)
+
+(2) SIMANTA EXPRESS (747) (11:37 PM-02:20 AM) [02h 43m]
+    AC_B      : 0    (৳644)
+    SNIGDHA   : 0    (৳363)
+    S_CHAIR   : 5    (৳190)
+
+====================================================================================
+
+    From-To   : Darshana_Halt-Santahar
+
+(1) RUPSHA EXPRESS (727) (09:44 AM-01:20 PM) [03h 36m]
+    AC_S      : 0    (৳547)
+    SNIGDHA   : 0    (৳455)
+    S_CHAIR   : 0    (৳240)
+
+(2) SIMANTA EXPRESS (747) (11:37 PM-03:10 AM) [03h 33m]
+    AC_B      : 0    (৳817)
+    SNIGDHA   : 0    (৳455)
+    S_CHAIR   : 4    (৳240)
+
+====================================================================================
+No train found for route Darshana_Halt-Akkelpur
+====================================================================================
+Available 0 tickets for the route Darshana_Halt-Joypurhat
+====================================================================================
+No train found for route Darshana_Halt-Birampur
+====================================================================================
+No train found for route Darshana_Halt-Fulbari
+====================================================================================
+Available 0 tickets for the route Darshana_Halt-Parbatipur
+====================================================================================
+
+    From-To   : Darshana_Halt-Saidpur
+
+(1) RUPSHA EXPRESS (727) (09:44 AM-03:32 PM) [05h 48m]
+    AC_S      : 0    (৳846)
+    SNIGDHA   : 0    (৳708)
+    S_CHAIR   : 0    (৳370)
+
+(2) SIMANTA EXPRESS (747) (11:37 PM-05:27 AM) [05h 50m]
+    AC_B      : 0    (৳1265)
+    SNIGDHA   : 0    (৳708)
+    S_CHAIR   : 5    (৳370)
+
+====================================================================================
+No train found for route Darshana_Halt-Nilphamari
+====================================================================================
+No train found for route Darshana_Halt-Domar
+====================================================================================
+
+    From-To   : Darshana_Halt-Chilahati
+
+(1) RUPSHA EXPRESS (727) (09:44 AM-05:05 PM) [07h 21m]
+    AC_S      : 0    (৳989)
+    SNIGDHA   : 5    (৳823)
+    S_CHAIR   : 0    (৳430)
+    F_SEAT    : 4    (৳662)
+
+(2) SIMANTA EXPRESS (747) (11:37 PM-06:45 AM) [07h 08m]
+    AC_B      : 0    (৳1478)
+    SNIGDHA   : 5    (৳823)
+    S_CHAIR   : 5    (৳430)
+
+====================================================================================
+
+    From-To   : Chuadanga-Alamdanga
+
+(1) SUNDARBAN EXPRESS (725) (12:23 AM-12:39 AM) [00h 16m]
+    S_CHAIR   : 5    (৳50)
+
+(2) KAPOTAKSHA EXPRESS (715) (09:28 AM-09:44 AM) [00h 16m]
+    S_CHAIR   : 0    (৳50)
+
+(3) CHITRA EXPRESS (763) (11:53 AM-12:09 PM) [00h 16m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳50)
+
+(4) SAGARDARI EXPRESS (761) (06:48 PM-07:04 PM) [00h 16m]
+    S_CHAIR   : 0    (৳50)
+
+====================================================================================
+
+    From-To   : Chuadanga-Poradaha
+
+(1) SUNDARBAN EXPRESS (725) (12:23 AM-12:56 AM) [00h 33m]
+    S_CHAIR   : 14   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(2) KAPOTAKSHA EXPRESS (715) (09:28 AM-10:00 AM) [00h 32m]
+    S_CHAIR   : 0    (৳50)
+
+(3) CHITRA EXPRESS (763) (11:53 AM-12:26 PM) [00h 33m]
+    SNIGDHA   : 0    (৳115)
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳50)
+
+(4) SAGARDARI EXPRESS (761) (06:48 PM-07:20 PM) [00h 32m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+Available 0 tickets for the route Chuadanga-Bheramara
+====================================================================================
+
+    From-To   : Chuadanga-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (09:28 AM-10:50 AM) [01h 22m]
+    S_CHAIR   : 15   (৳130)
+
+(2) RUPSHA EXPRESS (727) (10:06 AM-11:25 AM) [01h 19m]
+    AC_S      : 0    (৳294)
+    SNIGDHA   : 0    (৳248)
+    S_CHAIR   : 0    (৳130)
+
+(3) CHITRA EXPRESS (763) (11:53 AM-01:15 PM) [01h 22m]
+    SNIGDHA   : 0    (৳248)
+    AC_S      : 0    (৳294)
+    S_CHAIR   : 5    (৳130)
+
+(4) SAGARDARI EXPRESS (761) (06:48 PM-08:15 PM) [01h 27m]
+    S_CHAIR   : 20   (৳130)
+
+(5) SIMANTA EXPRESS (747) (11:59 PM-01:20 AM) [01h 21m]
+    S_CHAIR   : 5    (৳130)
+
+====================================================================================
+
+    From-To   : Chuadanga-Natore
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-12:12 PM) [02h 06m]
+    AC_S      : 0    (৳391)
+    SNIGDHA   : 0    (৳328)
+    S_CHAIR   : 0    (৳170)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-02:20 AM) [02h 21m]
+    AC_B      : 0    (৳587)
+    SNIGDHA   : 0    (৳328)
+    S_CHAIR   : 5    (৳170)
+
+====================================================================================
+
+    From-To   : Chuadanga-Santahar
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-01:20 PM) [03h 14m]
+    AC_S      : 0    (৳506)
+    SNIGDHA   : 0    (৳420)
+    S_CHAIR   : 10   (৳220)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-03:10 AM) [03h 11m]
+    AC_B      : 0    (৳759)
+    SNIGDHA   : 0    (৳420)
+    S_CHAIR   : 5    (৳220)
+
+====================================================================================
+No train found for route Chuadanga-Akkelpur
+====================================================================================
+
+    From-To   : Chuadanga-Joypurhat
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-02:02 PM) [03h 56m]
+    AC_S      : 0    (৳598)
+    SNIGDHA   : 0    (৳501)
+    S_CHAIR   : 5    (৳260)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-03:51 AM) [03h 52m]
+    AC_B      : 0    (৳897)
+    SNIGDHA   : 0    (৳501)
+    S_CHAIR   : 4    (৳260)
+
+====================================================================================
+No train found for route Chuadanga-Birampur
+====================================================================================
+No train found for route Chuadanga-Fulbari
+====================================================================================
+
+    From-To   : Chuadanga-Parbatipur
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-03:05 PM) [04h 59m]
+    AC_S      : 0    (৳765)
+    SNIGDHA   : 0    (৳639)
+    S_CHAIR   : 5    (৳335)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-05:00 AM) [05h 01m]
+    AC_B      : 0    (৳1150)
+    SNIGDHA   : 0    (৳639)
+    S_CHAIR   : 5    (৳335)
+
+====================================================================================
+
+    From-To   : Chuadanga-Saidpur
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-03:32 PM) [05h 26m]
+    AC_S      : 0    (৳805)
+    SNIGDHA   : 0    (৳673)
+    S_CHAIR   : 10   (৳350)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-05:27 AM) [05h 28m]
+    AC_B      : 0    (৳1208)
+    SNIGDHA   : 0    (৳673)
+    S_CHAIR   : 5    (৳350)
+
+====================================================================================
+No train found for route Chuadanga-Nilphamari
+====================================================================================
+No train found for route Chuadanga-Domar
+====================================================================================
+
+    From-To   : Chuadanga-Chilahati
+
+(1) RUPSHA EXPRESS (727) (10:06 AM-05:05 PM) [06h 59m]
+    AC_S      : 4    (৳949)
+    SNIGDHA   : 5    (৳788)
+    S_CHAIR   : 10   (৳415)
+    F_SEAT    : 4    (৳633)
+
+(2) SIMANTA EXPRESS (747) (11:59 PM-06:45 AM) [06h 46m]
+    AC_B      : 2    (৳1421)
+    SNIGDHA   : 5    (৳788)
+    S_CHAIR   : 0    (৳415)
+    F_BERTH   : 2    (৳949)
+
+====================================================================================
+Available 0 tickets for the route Alamdanga-Poradaha
+====================================================================================
+No train found for route Alamdanga-Bheramara
+====================================================================================
+
+    From-To   : Alamdanga-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (09:46 AM-10:50 AM) [01h 04m]
+    S_CHAIR   : 0    (৳110)
+
+(2) CHITRA EXPRESS (763) (12:12 PM-01:15 PM) [01h 03m]
+    S_CHAIR   : 0    (৳110)
+
+(3) SAGARDARI EXPRESS (761) (07:06 PM-08:15 PM) [01h 09m]
+    S_CHAIR   : 5    (৳110)
+
+====================================================================================
+
+    From-To   : Alamdanga-Natore
+
+(1) RUPSHA EXPRESS (727) (10:24 AM-12:12 PM) [01h 48m]
+    AC_S      : 0    (৳345)
+    SNIGDHA   : 0    (৳288)
+    S_CHAIR   : 5    (৳150)
+
+====================================================================================
+
+    From-To   : Alamdanga-Santahar
+
+(1) RUPSHA EXPRESS (727) (10:24 AM-01:20 PM) [02h 56m]
+    AC_S      : 0    (৳466)
+    SNIGDHA   : 0    (৳386)
+    S_CHAIR   : 2    (৳205)
+
+====================================================================================
+No train found for route Alamdanga-Akkelpur
+====================================================================================
+Available 0 tickets for the route Alamdanga-Joypurhat
+====================================================================================
+No train found for route Alamdanga-Birampur
+====================================================================================
+No train found for route Alamdanga-Fulbari
+====================================================================================
+Available 0 tickets for the route Alamdanga-Parbatipur
+====================================================================================
+
+    From-To   : Alamdanga-Saidpur
+
+(1) SIMANTA EXPRESS (747) (12:17 AM-05:27 AM) [05h 10m]
+    S_CHAIR   : 10   (৳330)
+
+(2) RUPSHA EXPRESS (727) (10:24 AM-03:32 PM) [05h 08m]
+    AC_S      : 0    (৳759)
+    SNIGDHA   : 0    (৳633)
+    S_CHAIR   : 5    (৳330)
+
+====================================================================================
+No train found for route Alamdanga-Nilphamari
+====================================================================================
+No train found for route Alamdanga-Domar
+====================================================================================
+
+    From-To   : Alamdanga-Chilahati
+
+(1) SIMANTA EXPRESS (747) (12:17 AM-06:45 AM) [06h 28m]
+    SNIGDHA   : 0    (৳754)
+    S_CHAIR   : 10   (৳395)
+
+(2) RUPSHA EXPRESS (727) (10:24 AM-05:05 PM) [06h 41m]
+    AC_S      : 0    (৳903)
+    SNIGDHA   : 0    (৳754)
+    S_CHAIR   : 4    (৳395)
+
+====================================================================================
+
+    From-To   : Poradaha-Bheramara
+
+(1) KAPOTAKSHA EXPRESS (715) (10:03 AM-10:25 AM) [00h 22m]
+    S_CHAIR   : 0    (৳50)
+
+(2) CHITRA EXPRESS (763) (12:29 PM-12:51 PM) [00h 22m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) SAGARDARI EXPRESS (761) (07:23 PM-07:48 PM) [00h 25m]
+    S_CHAIR   : 0    (৳50)
+
+(4) MADHUMATI EXPRESS (755) (08:15 PM-08:37 PM) [00h 22m]
+    S_CHAIR   : 20   (৳50)
+
+====================================================================================
+
+    From-To   : Poradaha-Ishwardi
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-01:20 AM) [00h 46m]
+    S_CHAIR   : 5    (৳90)
+
+(2) KAPOTAKSHA EXPRESS (715) (10:03 AM-10:50 AM) [00h 47m]
+    S_CHAIR   : 10   (৳90)
+
+(3) TUNGIPARA EXPRESS (783) (11:00 AM-11:40 AM) [00h 40m]
+    SHOVAN    : 20   (৳75)
+    S_CHAIR   : 10   (৳90)
+
+(4) CHITRA EXPRESS (763) (12:29 PM-01:15 PM) [00h 46m]
+    SNIGDHA   : 5    (৳173)
+    AC_S      : 0    (৳207)
+    S_CHAIR   : 0    (৳90)
+
+(5) SAGARDARI EXPRESS (761) (07:23 PM-08:15 PM) [00h 52m]
+    S_CHAIR   : 20   (৳90)
+
+(6) MADHUMATI EXPRESS (755) (08:15 PM-09:10 PM) [00h 55m]
+    S_CHAIR   : 0    (৳90)
+
+====================================================================================
+
+    From-To   : Poradaha-Natore
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-02:20 AM) [01h 46m]
+    AC_B      : 0    (৳455)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 5    (৳135)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-12:12 PM) [01h 31m]
+    AC_S      : 0    (৳305)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 0    (৳135)
+
+====================================================================================
+
+    From-To   : Poradaha-Santahar
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-03:10 AM) [02h 36m]
+    AC_B      : 0    (৳627)
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 5    (৳185)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-01:20 PM) [02h 39m]
+    AC_S      : 0    (৳420)
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 0    (৳185)
+
+====================================================================================
+No train found for route Poradaha-Akkelpur
+====================================================================================
+
+    From-To   : Poradaha-Joypurhat
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-03:51 AM) [03h 17m]
+    AC_B      : 0    (৳765)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 0    (৳225)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-02:02 PM) [03h 21m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 3    (৳225)
+
+====================================================================================
+No train found for route Poradaha-Birampur
+====================================================================================
+No train found for route Poradaha-Fulbari
+====================================================================================
+
+    From-To   : Poradaha-Parbatipur
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-05:00 AM) [04h 26m]
+    AC_B      : 0    (৳1018)
+    SNIGDHA   : 0    (৳570)
+    S_CHAIR   : 0    (৳295)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-03:05 PM) [04h 24m]
+    AC_S      : 0    (৳679)
+    SNIGDHA   : 0    (৳570)
+    S_CHAIR   : 5    (৳295)
+
+====================================================================================
+
+    From-To   : Poradaha-Saidpur
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-05:27 AM) [04h 53m]
+    AC_B      : 0    (৳1076)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 0    (৳315)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-03:32 PM) [04h 51m]
+    AC_S      : 0    (৳719)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 4    (৳315)
+
+====================================================================================
+No train found for route Poradaha-Nilphamari
+====================================================================================
+No train found for route Poradaha-Domar
+====================================================================================
+
+    From-To   : Poradaha-Chilahati
+
+(1) SIMANTA EXPRESS (747) (12:34 AM-06:45 AM) [06h 11m]
+    AC_B      : 0    (৳1288)
+    SNIGDHA   : 5    (৳719)
+    S_CHAIR   : 7    (৳375)
+    F_BERTH   : 2    (৳863)
+
+(2) RUPSHA EXPRESS (727) (10:41 AM-05:05 PM) [06h 24m]
+    AC_S      : 0    (৳863)
+    SNIGDHA   : 5    (৳719)
+    S_CHAIR   : 4    (৳375)
+    F_SEAT    : 4    (৳575)
+
+====================================================================================
+
+    From-To   : Bheramara-Ishwardi
+
+(1) KAPOTAKSHA EXPRESS (715) (10:27 AM-10:50 AM) [00h 23m]
+    S_CHAIR   : 0    (৳70)
+
+(2) CHITRA EXPRESS (763) (12:54 PM-01:15 PM) [00h 21m]
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 0    (৳70)
+
+(3) SAGARDARI EXPRESS (761) (07:50 PM-08:15 PM) [00h 25m]
+    S_CHAIR   : 0    (৳70)
+
+(4) MADHUMATI EXPRESS (755) (08:40 PM-09:10 PM) [00h 30m]
+    S_CHAIR   : 10   (৳70)
+
+====================================================================================
+Available 0 tickets for the route Bheramara-Natore
+====================================================================================
+
+    From-To   : Bheramara-Santahar
+
+(1) SIMANTA EXPRESS (747) (12:55 AM-03:10 AM) [02h 15m]
+    AC_B      : 0    (৳558)
+    SNIGDHA   : 0    (৳311)
+    S_CHAIR   : 5    (৳165)
+
+(2) RUPSHA EXPRESS (727) (11:01 AM-01:20 PM) [02h 19m]
+    AC_S      : 0    (৳374)
+    SNIGDHA   : 0    (৳311)
+    S_CHAIR   : 0    (৳165)
+
+====================================================================================
+No train found for route Bheramara-Akkelpur
+====================================================================================
+No train found for route Bheramara-Joypurhat
+====================================================================================
+No train found for route Bheramara-Birampur
+====================================================================================
+No train found for route Bheramara-Fulbari
+====================================================================================
+
+    From-To   : Bheramara-Parbatipur
+
+(1) SIMANTA EXPRESS (747) (12:55 AM-05:00 AM) [04h 05m]
+    S_CHAIR   : 5    (৳275)
+
+(2) RUPSHA EXPRESS (727) (11:01 AM-03:05 PM) [04h 04m]
+    S_CHAIR   : 5    (৳275)
+
+====================================================================================
+
+    From-To   : Bheramara-Saidpur
+
+(1) SIMANTA EXPRESS (747) (12:55 AM-05:27 AM) [04h 32m]
+    AC_B      : 0    (৳1007)
+    SNIGDHA   : 0    (৳558)
+    S_CHAIR   : 5    (৳295)
+
+(2) RUPSHA EXPRESS (727) (11:01 AM-03:32 PM) [04h 31m]
+    AC_S      : 0    (৳673)
+    SNIGDHA   : 0    (৳558)
+    S_CHAIR   : 10   (৳295)
+
+====================================================================================
+No train found for route Bheramara-Nilphamari
+====================================================================================
+No train found for route Bheramara-Domar
+====================================================================================
+
+    From-To   : Bheramara-Chilahati
+
+(1) SIMANTA EXPRESS (747) (12:55 AM-06:45 AM) [05h 50m]
+    AC_B      : 0    (৳1219)
+    SNIGDHA   : 0    (৳679)
+    S_CHAIR   : 15   (৳355)
+
+(2) RUPSHA EXPRESS (727) (11:01 AM-05:05 PM) [06h 04m]
+    AC_S      : 0    (৳811)
+    SNIGDHA   : 0    (৳679)
+    S_CHAIR   : 5    (৳355)
+
+====================================================================================
+
+    From-To   : Ishwardi-Natore
+
+(1) SIMANTA EXPRESS (747) (01:30 AM-02:20 AM) [00h 50m]
+    S_CHAIR   : 0    (৳50)
+
+(2) RUPSHA EXPRESS (727) (11:40 AM-12:12 PM) [00h 32m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    From-To   : Ishwardi-Santahar
+
+(1) SIMANTA EXPRESS (747) (01:30 AM-03:10 AM) [01h 40m]
+    AC_B      : 0    (৳322)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(2) RUPSHA EXPRESS (727) (11:40 AM-01:20 PM) [01h 40m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 8    (৳95)
+
+====================================================================================
+No train found for route Ishwardi-Akkelpur
+====================================================================================
+Available 0 tickets for the route Ishwardi-Joypurhat
+====================================================================================
+No train found for route Ishwardi-Birampur
+====================================================================================
+Available 0 tickets for the route Ishwardi-Fulbari
+====================================================================================
+
+    From-To   : Ishwardi-Parbatipur
+
+(1) SIMANTA EXPRESS (747) (01:30 AM-05:00 AM) [03h 30m]
+    AC_B      : 0    (৳713)
+    SNIGDHA   : 0    (৳397)
+    S_CHAIR   : 0    (৳210)
+
+(2) RUPSHA EXPRESS (727) (11:40 AM-03:05 PM) [03h 25m]
+    AC_S      : 0    (৳478)
+    SNIGDHA   : 0    (৳397)
+    S_CHAIR   : 9    (৳210)
+
+====================================================================================
+Available 0 tickets for the route Ishwardi-Saidpur
+====================================================================================
+No train found for route Ishwardi-Nilphamari
+====================================================================================
+No train found for route Ishwardi-Domar
+====================================================================================
+
+    From-To   : Ishwardi-Chilahati
+
+(1) SIMANTA EXPRESS (747) (01:30 AM-06:45 AM) [05h 15m]
+    AC_B      : 2    (৳984)
+    SNIGDHA   : 5    (৳547)
+    S_CHAIR   : 15   (৳285)
+    F_BERTH   : 4    (৳656)
+
+(2) RUPSHA EXPRESS (727) (11:40 AM-05:05 PM) [05h 25m]
+    AC_S      : 4    (৳656)
+    SNIGDHA   : 5    (৳547)
+    S_CHAIR   : 0    (৳285)
+    F_SEAT    : 4    (৳437)
+
+====================================================================================
+
+    From-To   : Natore-Santahar
+
+(1) DRUTOJAN EXPRESS (757) (12:35 AM-01:25 AM) [00h 50m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 5    (৳55)
+
+(2) KURIGRAM EXPRESS (797) (01:16 AM-02:15 AM) [00h 59m]
+    AC_B      : 0    (৳184)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳55)
+
+(3) SIMANTA EXPRESS (747) (02:23 AM-03:10 AM) [00h 47m]
+    AC_B      : 0    (৳184)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(4) PANCHAGARH EXPRESS (793) (03:57 AM-04:40 AM) [00h 43m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳55)
+    AC_B      : 0    (৳184)
+
+(5) TITUMIR EXPRESS (733) (07:52 AM-08:45 PM) [12h 53m]
+    S_CHAIR   : 40   (৳55)
+
+(6) NILSAGAR EXPRESS (765) (11:21 AM-12:30 PM) [01h 09m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(7) RUPSHA EXPRESS (727) (12:15 PM-01:20 PM) [01h 05m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(8) BURIMARI EXPRESS (809) (01:05 PM-02:15 PM) [01h 10m]
+    S_CHAIR   : 20   (৳55)
+
+(9) RANGPUR EXPRESS (771) (01:52 PM-03:05 PM) [01h 13m]
+    S_CHAIR   : 15   (৳55)
+
+(10) EKOTA EXPRESS (705) (03:06 PM-03:55 PM) [00h 49m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 20   (৳55)
+    AC_S      : 0    (৳127)
+
+(11) BARENDRA EXPRESS (731) (04:23 PM-05:20 PM) [00h 57m]
+    S_CHAIR   : 30   (৳55)
+
+(12) BANGLABANDHA EXPRESS (803) (10:24 PM-11:25 PM) [01h 01m]
+    AC_B      : 0    (৳184)
+    S_CHAIR   : 10   (৳55)
+
+====================================================================================
+
+    From-To   : Natore-Akkelpur
+
+(1) TITUMIR EXPRESS (733) (07:52 AM-09:10 AM) [01h 18m]
+    S_CHAIR   : 10   (৳75)
+
+(2) RUPSHA EXPRESS (727) (12:15 PM-01:45 PM) [01h 30m]
+    AC_S      : 0    (৳173)
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 0    (৳75)
+
+====================================================================================
+
+    From-To   : Natore-Joypurhat
+
+(1) DRUTOJAN EXPRESS (757) (12:35 AM-02:06 AM) [01h 31m]
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 5    (৳95)
+
+(2) KURIGRAM EXPRESS (797) (01:16 AM-02:52 AM) [01h 36m]
+    AC_B      : 0    (৳322)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 5    (৳95)
+
+(3) SIMANTA EXPRESS (747) (02:23 AM-03:51 AM) [01h 28m]
+    AC_B      : 0    (৳322)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(4) PANCHAGARH EXPRESS (793) (03:57 AM-05:16 AM) [01h 19m]
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+    AC_B      : 0    (৳322)
+
+(5) TITUMIR EXPRESS (733) (07:52 AM-09:30 AM) [01h 38m]
+    S_CHAIR   : 15   (৳95)
+
+(6) NILSAGAR EXPRESS (765) (11:21 AM-01:11 PM) [01h 50m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 10   (৳95)
+
+(7) RUPSHA EXPRESS (727) (12:15 PM-02:02 PM) [01h 47m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(8) EKOTA EXPRESS (705) (03:06 PM-04:49 PM) [01h 43m]
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 10   (৳95)
+    AC_S      : 0    (৳213)
+
+(9) BARENDRA EXPRESS (731) (04:23 PM-06:06 PM) [01h 43m]
+    S_CHAIR   : 15   (৳95)
+
+(10) BANGLABANDHA EXPRESS (803) (10:24 PM-12:06 AM) [01h 42m]
+    AC_B      : 0    (৳322)
+    S_CHAIR   : 10   (৳95)
+
+====================================================================================
+
+    From-To   : Natore-Birampur
+
+(1) SIMANTA EXPRESS (747) (02:23 AM-04:26 AM) [02h 03m]
+    AC_B      : 0    (৳449)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 0    (৳130)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-10:10 AM) [02h 18m]
+    S_CHAIR   : 10   (৳130)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-01:42 PM) [02h 21m]
+    S_CHAIR   : 5    (৳130)
+
+(4) RUPSHA EXPRESS (727) (12:15 PM-02:33 PM) [02h 18m]
+    AC_S      : 0    (৳299)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 0    (৳130)
+
+(5) BARENDRA EXPRESS (731) (04:23 PM-06:50 PM) [02h 27m]
+    S_CHAIR   : 12   (৳130)
+
+(6) BANGLABANDHA EXPRESS (803) (10:24 PM-12:50 AM) [02h 26m]
+    AC_B      : 0    (৳443)
+    S_CHAIR   : 5    (৳130)
+
+====================================================================================
+
+    From-To   : Natore-Fulbari
+
+(1) SIMANTA EXPRESS (747) (02:23 AM-04:40 AM) [02h 17m]
+    AC_B      : 0    (৳501)
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 5    (৳145)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-10:31 AM) [02h 39m]
+    S_CHAIR   : 10   (৳145)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-01:56 PM) [02h 35m]
+    S_CHAIR   : 5    (৳145)
+
+(4) RUPSHA EXPRESS (727) (12:15 PM-02:46 PM) [02h 31m]
+    AC_S      : 0    (৳334)
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 0    (৳145)
+
+(5) BARENDRA EXPRESS (731) (04:23 PM-07:04 PM) [02h 41m]
+    S_CHAIR   : 12   (৳145)
+
+(6) BANGLABANDHA EXPRESS (803) (10:24 PM-01:04 AM) [02h 40m]
+    AC_B      : 0    (৳483)
+    S_CHAIR   : 5    (৳145)
+
+====================================================================================
+
+    From-To   : Natore-Parbatipur
+
+(1) DRUTOJAN EXPRESS (757) (12:35 AM-03:25 AM) [02h 50m]
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 5    (৳170)
+
+(2) SIMANTA EXPRESS (747) (02:23 AM-05:00 AM) [02h 37m]
+    AC_B      : 0    (৳575)
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 0    (৳170)
+
+(3) PANCHAGARH EXPRESS (793) (03:57 AM-06:20 AM) [02h 23m]
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 10   (৳170)
+    AC_B      : 0    (৳575)
+
+(4) TITUMIR EXPRESS (733) (07:52 AM-11:10 AM) [03h 18m]
+    S_CHAIR   : 10   (৳170)
+
+(5) NILSAGAR EXPRESS (765) (11:21 AM-02:15 PM) [02h 54m]
+    AC_S      : 0    (৳386)
+    SNIGDHA   : 3    (৳322)
+    S_CHAIR   : 5    (৳170)
+
+(6) RUPSHA EXPRESS (727) (12:15 PM-03:05 PM) [02h 50m]
+    AC_S      : 0    (৳386)
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 0    (৳170)
+
+(7) EKOTA EXPRESS (705) (03:06 PM-06:15 PM) [03h 09m]
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 7    (৳170)
+    AC_S      : 0    (৳386)
+
+(8) BARENDRA EXPRESS (731) (04:23 PM-07:25 PM) [03h 02m]
+    S_CHAIR   : 21   (৳170)
+
+(9) BANGLABANDHA EXPRESS (803) (10:24 PM-01:35 AM) [03h 11m]
+    AC_B      : 0    (৳541)
+    S_CHAIR   : 10   (৳170)
+
+====================================================================================
+
+    From-To   : Natore-Saidpur
+
+(1) SIMANTA EXPRESS (747) (02:23 AM-05:27 AM) [03h 04m]
+    AC_B      : 0    (৳639)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 5    (৳185)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-11:47 AM) [03h 55m]
+    S_CHAIR   : 15   (৳185)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-02:42 PM) [03h 21m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 3    (৳357)
+    S_CHAIR   : 5    (৳185)
+
+(4) RUPSHA EXPRESS (727) (12:15 PM-03:32 PM) [03h 17m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 0    (৳185)
+
+(5) BARENDRA EXPRESS (731) (04:23 PM-08:09 PM) [03h 46m]
+    S_CHAIR   : 14   (৳185)
+
+====================================================================================
+
+    From-To   : Natore-Nilphamari
+
+(1) SIMANTA EXPRESS (747) (02:23 AM-05:50 AM) [03h 27m]
+    AC_B      : 0    (৳713)
+    SNIGDHA   : 0    (৳437)
+    S_CHAIR   : 0    (৳210)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-12:11 PM) [04h 19m]
+    S_CHAIR   : 7    (৳210)
+
+(3) RUPSHA EXPRESS (727) (12:15 PM-04:13 PM) [03h 58m]
+    AC_S      : 0    (৳478)
+    SNIGDHA   : 0    (৳437)
+    S_CHAIR   : 0    (৳210)
+
+(4) BARENDRA EXPRESS (731) (04:23 PM-08:32 PM) [04h 09m]
+    S_CHAIR   : 10   (৳210)
+
+====================================================================================
+
+    From-To   : Natore-Domar
+
+(1) TITUMIR EXPRESS (733) (07:52 AM-12:30 PM) [04h 38m]
+    S_CHAIR   : 7    (৳250)
+
+(2) RUPSHA EXPRESS (727) (12:15 PM-04:32 PM) [04h 17m]
+    AC_S      : 0    (৳570)
+    SNIGDHA   : 0    (৳472)
+    S_CHAIR   : 5    (৳250)
+
+(3) BARENDRA EXPRESS (731) (04:23 PM-08:58 PM) [04h 35m]
+    S_CHAIR   : 10   (৳250)
+
+====================================================================================
+
+    From-To   : Natore-Chilahati
+
+(1) SIMANTA EXPRESS (747) (02:23 AM-06:45 AM) [04h 22m]
+    AC_B      : 0    (৳851)
+    SNIGDHA   : 5    (৳472)
+    S_CHAIR   : 5    (৳250)
+
+(2) TITUMIR EXPRESS (733) (07:52 AM-01:00 PM) [05h 08m]
+    S_CHAIR   : 7    (৳250)
+
+(3) NILSAGAR EXPRESS (765) (11:21 AM-04:00 PM) [04h 39m]
+    AC_S      : 0    (৳570)
+    SNIGDHA   : 9    (৳472)
+    S_CHAIR   : 5    (৳250)
+
+(4) RUPSHA EXPRESS (727) (12:15 PM-05:05 PM) [04h 50m]
+    AC_S      : 4    (৳570)
+    SNIGDHA   : 5    (৳472)
+    S_CHAIR   : 10   (৳250)
+    F_SEAT    : 4    (৳380)
+
+(5) BARENDRA EXPRESS (731) (04:23 PM-09:35 PM) [05h 12m]
+    S_CHAIR   : 17   (৳250)
+
+====================================================================================
+No train found for route Santahar-Akkelpur
+====================================================================================
+
+    From-To   : Santahar-Joypurhat
+
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-02:06 AM) [00h 36m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(2) KURIGRAM EXPRESS (797) (02:20 AM-02:52 AM) [00h 32m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+(3) SIMANTA EXPRESS (747) (03:15 AM-03:51 AM) [00h 36m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(4) PANCHAGARH EXPRESS (793) (04:45 AM-05:16 AM) [00h 31m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+    AC_B      : 0    (৳150)
+
+(5) TITUMIR EXPRESS (733) (08:50 AM-09:30 AM) [00h 40m]
+    S_CHAIR   : 30   (৳50)
+
+(6) NILSAGAR EXPRESS (765) (12:35 PM-01:11 PM) [00h 36m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(7) RUPSHA EXPRESS (727) (01:25 PM-02:02 PM) [00h 37m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(8) EKOTA EXPRESS (705) (04:00 PM-04:49 PM) [00h 49m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+    AC_S      : 0    (৳127)
+
+(9) BARENDRA EXPRESS (731) (05:25 PM-06:06 PM) [00h 41m]
+    S_CHAIR   : 20   (৳50)
+
+(10) BANGLABANDHA EXPRESS (803) (11:30 PM-12:06 AM) [00h 36m]
+    AC_B      : 0    (৳150)
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    From-To   : Santahar-Birampur
+
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-02:43 AM) [01h 13m]
+    S_CHAIR   : 5    (৳80)
+
+(2) SIMANTA EXPRESS (747) (03:15 AM-04:26 AM) [01h 11m]
+    AC_B      : 0    (৳276)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 0    (৳80)
+
+(3) TITUMIR EXPRESS (733) (08:50 AM-10:10 AM) [01h 20m]
+    S_CHAIR   : 10   (৳80)
+
+(4) NILSAGAR EXPRESS (765) (12:35 PM-01:42 PM) [01h 07m]
+    S_CHAIR   : 5    (৳80)
+
+(5) RUPSHA EXPRESS (727) (01:25 PM-02:33 PM) [01h 08m]
+    AC_S      : 0    (৳184)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 10   (৳80)
+
+(6) EKOTA EXPRESS (705) (04:00 PM-05:34 PM) [01h 34m]
+    S_CHAIR   : 0    (৳80)
+
+====================================================================================
+
+    From-To   : Santahar-Fulbari
+
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-02:57 AM) [01h 27m]
+    S_CHAIR   : 10   (৳95)
+
+(2) SIMANTA EXPRESS (747) (03:15 AM-04:40 AM) [01h 25m]
+    AC_B      : 0    (৳322)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(3) TITUMIR EXPRESS (733) (08:50 AM-10:34 AM) [01h 44m]
+    S_CHAIR   : 10   (৳95)
+
+(4) NILSAGAR EXPRESS (765) (12:35 PM-01:56 PM) [01h 21m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 5    (৳95)
+
+(5) RUPSHA EXPRESS (727) (01:25 PM-02:46 PM) [01h 21m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 10   (৳95)
+
+(6) BARENDRA EXPRESS (731) (05:25 PM-07:04 PM) [01h 39m]
+    S_CHAIR   : 10   (৳95)
+
+(7) BANGLABANDHA EXPRESS (803) (11:30 PM-01:04 AM) [01h 34m]
+    AC_B      : 0    (৳322)
+    S_CHAIR   : 5    (৳95)
+
+====================================================================================
+
+    From-To   : Santahar-Parbatipur
+
+(1) DRUTOJAN EXPRESS (757) (01:30 AM-03:25 AM) [01h 55m]
+    SNIGDHA   : 0    (৳219)
+    S_CHAIR   : 10   (৳115)
+
+(2) KURIGRAM EXPRESS (797) (02:20 AM-04:05 AM) [01h 45m]
+    AC_B      : 0    (৳397)
+    S_CHAIR   : 10   (৳115)
+
+(3) SIMANTA EXPRESS (747) (03:15 AM-05:00 AM) [01h 45m]
+    AC_B      : 0    (৳397)
+    SNIGDHA   : 0    (৳219)
+    S_CHAIR   : 0    (৳115)
+
+(4) PANCHAGARH EXPRESS (793) (04:45 AM-06:20 AM) [01h 35m]
+    SNIGDHA   : 0    (৳219)
+    S_CHAIR   : 10   (৳115)
+    AC_B      : 0    (৳397)
+
+(5) TITUMIR EXPRESS (733) (08:50 AM-11:10 AM) [02h 20m]
+    S_CHAIR   : 30   (৳115)
+
+(6) NILSAGAR EXPRESS (765) (12:35 PM-02:15 PM) [01h 40m]
+    AC_S      : 0    (৳265)
+    SNIGDHA   : 5    (৳219)
+    S_CHAIR   : 15   (৳115)
+
+(7) RUPSHA EXPRESS (727) (01:25 PM-03:00 PM) [01h 35m]
+    AC_S      : 0    (৳265)
+    SNIGDHA   : 0    (৳219)
+    S_CHAIR   : 0    (৳115)
+
+(8) EKOTA EXPRESS (705) (04:00 PM-06:15 PM) [02h 15m]
+    SNIGDHA   : 5    (৳219)
+    S_CHAIR   : 25   (৳115)
+    AC_S      : 0    (৳265)
+
+(9) BARENDRA EXPRESS (731) (05:25 PM-07:25 PM) [02h 00m]
+    S_CHAIR   : 30   (৳115)
+
+(10) BANGLABANDHA EXPRESS (803) (11:30 PM-01:35 AM) [02h 05m]
+    AC_B      : 0    (৳397)
+    S_CHAIR   : 20   (৳115)
+
+====================================================================================
+
+    From-To   : Santahar-Saidpur
+
+(1) SIMANTA EXPRESS (747) (03:15 AM-05:27 AM) [02h 12m]
+    AC_B      : 0    (৳449)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 40   (৳130)
+
+(2) TITUMIR EXPRESS (733) (08:50 AM-11:47 AM) [02h 57m]
+    S_CHAIR   : 40   (৳130)
+
+(3) NILSAGAR EXPRESS (765) (12:35 PM-02:42 PM) [02h 07m]
+    AC_S      : 0    (৳299)
+    SNIGDHA   : 5    (৳253)
+    S_CHAIR   : 0    (৳130)
+
+(4) RUPSHA EXPRESS (727) (01:25 PM-03:32 PM) [02h 07m]
+    AC_S      : 0    (৳299)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 16   (৳130)
+
+(5) BARENDRA EXPRESS (731) (05:25 PM-08:09 PM) [02h 44m]
+    S_CHAIR   : 30   (৳130)
+
+====================================================================================
+
+    From-To   : Santahar-Nilphamari
+
+(1) SIMANTA EXPRESS (747) (03:15 AM-05:50 AM) [02h 35m]
+    AC_B      : 0    (৳535)
+    SNIGDHA   : 0    (৳340)
+    S_CHAIR   : 10   (৳155)
+
+(2) TITUMIR EXPRESS (733) (08:50 AM-12:11 PM) [03h 21m]
+    S_CHAIR   : 10   (৳155)
+
+(3) NILSAGAR EXPRESS (765) (12:35 PM-03:05 PM) [02h 30m]
+    AC_S      : 0    (৳357)
+    SNIGDHA   : 0    (৳299)
+    S_CHAIR   : 10   (৳155)
+
+(4) RUPSHA EXPRESS (727) (01:25 PM-04:13 PM) [02h 48m]
+    AC_S      : 0    (৳357)
+    SNIGDHA   : 0    (৳340)
+    S_CHAIR   : 5    (৳155)
+
+(5) BARENDRA EXPRESS (731) (05:25 PM-08:32 PM) [03h 07m]
+    S_CHAIR   : 10   (৳155)
+
+====================================================================================
+
+    From-To   : Santahar-Domar
+
+(1) SIMANTA EXPRESS (747) (03:15 AM-06:09 AM) [02h 54m]
+    AC_B      : 0    (৳667)
+    SNIGDHA   : 0    (৳374)
+    S_CHAIR   : 10   (৳195)
+
+(2) TITUMIR EXPRESS (733) (08:50 AM-12:30 PM) [03h 40m]
+    S_CHAIR   : 20   (৳195)
+
+(3) RUPSHA EXPRESS (727) (01:25 PM-04:32 PM) [03h 07m]
+    AC_S      : 0    (৳449)
+    SNIGDHA   : 0    (৳374)
+    S_CHAIR   : 0    (৳195)
+
+====================================================================================
+
+    From-To   : Santahar-Chilahati
+
+(1) SIMANTA EXPRESS (747) (03:15 AM-06:45 AM) [03h 30m]
+    AC_B      : 0    (৳667)
+    SNIGDHA   : 5    (৳374)
+    S_CHAIR   : 0    (৳195)
+
+(2) TITUMIR EXPRESS (733) (08:50 AM-01:00 PM) [04h 10m]
+    S_CHAIR   : 15   (৳195)
+
+(3) NILSAGAR EXPRESS (765) (12:35 PM-04:00 PM) [03h 25m]
+    AC_S      : 4    (৳449)
+    SNIGDHA   : 10   (৳374)
+    S_CHAIR   : 15   (৳195)
+
+(4) RUPSHA EXPRESS (727) (01:25 PM-05:05 PM) [03h 40m]
+    AC_S      : 4    (৳449)
+    SNIGDHA   : 5    (৳374)
+    S_CHAIR   : 0    (৳195)
+    F_SEAT    : 4    (৳299)
+
+(5) BARENDRA EXPRESS (731) (05:25 PM-09:35 PM) [04h 10m]
+    S_CHAIR   : 20   (৳195)
+
+====================================================================================
+No train found for route Akkelpur-Joypurhat
+====================================================================================
+Available 0 tickets for the route Akkelpur-Birampur
+====================================================================================
+
+    From-To   : Akkelpur-Fulbari
+
+(1) DRUTOJAN EXPRESS (757) (01:52 AM-02:57 AM) [01h 05m]
+    S_CHAIR   : 0    (৳75)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-10:31 AM) [01h 19m]
+    S_CHAIR   : 10   (৳75)
+
+(3) BARENDRA EXPRESS (731) (05:52 PM-07:04 PM) [01h 12m]
+    S_CHAIR   : 5    (৳75)
+
+====================================================================================
+
+    From-To   : Akkelpur-Parbatipur
+
+(1) DRUTOJAN EXPRESS (757) (01:52 AM-03:25 AM) [01h 33m]
+    S_CHAIR   : 0    (৳95)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-11:10 AM) [01h 58m]
+    S_CHAIR   : 10   (৳95)
+
+(3) NILSAGAR EXPRESS (765) (12:57 PM-02:15 PM) [01h 18m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 5    (৳95)
+
+(4) RUPSHA EXPRESS (727) (01:47 PM-03:05 PM) [01h 18m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(5) EKOTA EXPRESS (705) (04:22 PM-06:15 PM) [01h 53m]
+    S_CHAIR   : 10   (৳95)
+
+(6) BARENDRA EXPRESS (731) (05:52 PM-07:25 PM) [01h 33m]
+    S_CHAIR   : 5    (৳95)
+
+====================================================================================
+
+    From-To   : Akkelpur-Saidpur
+
+(1) SIMANTA EXPRESS (747) (03:37 AM-05:27 AM) [01h 50m]
+    AC_B      : 0    (৳380)
+    SNIGDHA   : 0    (৳213)
+    S_CHAIR   : 5    (৳110)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-11:47 AM) [02h 35m]
+    S_CHAIR   : 20   (৳110)
+
+(3) NILSAGAR EXPRESS (765) (12:57 PM-02:42 PM) [01h 45m]
+    AC_S      : 0    (৳253)
+    SNIGDHA   : 3    (৳213)
+    S_CHAIR   : 10   (৳110)
+
+(4) RUPSHA EXPRESS (727) (01:47 PM-03:32 PM) [01h 45m]
+    AC_S      : 0    (৳253)
+    SNIGDHA   : 0    (৳213)
+    S_CHAIR   : 0    (৳110)
+
+(5) BARENDRA EXPRESS (731) (05:52 PM-08:09 PM) [02h 17m]
+    S_CHAIR   : 10   (৳110)
+
+====================================================================================
+
+    From-To   : Akkelpur-Nilphamari
+
+(1) TITUMIR EXPRESS (733) (09:12 AM-12:11 PM) [02h 59m]
+    S_CHAIR   : 10   (৳135)
+
+====================================================================================
+
+    From-To   : Akkelpur-Domar
+
+(1) TITUMIR EXPRESS (733) (09:12 AM-12:30 PM) [03h 18m]
+    S_CHAIR   : 5    (৳175)
+
+====================================================================================
+
+    From-To   : Akkelpur-Chilahati
+
+(1) SIMANTA EXPRESS (747) (03:37 AM-06:45 AM) [03h 08m]
+    AC_B      : 0    (৳598)
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 5    (৳175)
+
+(2) TITUMIR EXPRESS (733) (09:12 AM-01:00 PM) [03h 48m]
+    S_CHAIR   : 10   (৳175)
+
+(3) NILSAGAR EXPRESS (765) (12:57 PM-04:00 PM) [03h 03m]
+    AC_S      : 0    (৳397)
+    SNIGDHA   : 2    (৳334)
+    S_CHAIR   : 5    (৳175)
+
+(4) RUPSHA EXPRESS (727) (01:47 PM-05:05 PM) [03h 18m]
+    AC_S      : 0    (৳397)
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 0    (৳175)
+
+(5) BARENDRA EXPRESS (731) (05:52 PM-09:35 PM) [03h 43m]
+    S_CHAIR   : 10   (৳175)
+
+====================================================================================
+
+    From-To   : Joypurhat-Birampur
+
+(1) DRUTOJAN EXPRESS (757) (02:09 AM-02:43 AM) [00h 34m]
+    S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (03:54 AM-04:26 AM) [00h 32m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (09:33 AM-10:10 AM) [00h 37m]
+    S_CHAIR   : 10   (৳50)
+
+(4) RUPSHA EXPRESS (727) (02:05 PM-02:33 PM) [00h 28m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+====================================================================================
+
+    From-To   : Joypurhat-Fulbari
+
+(1) DRUTOJAN EXPRESS (757) (02:09 AM-03:00 AM) [00h 51m]
+    S_CHAIR   : 0    (৳55)
+
+(2) SIMANTA EXPRESS (747) (03:54 AM-04:40 AM) [00h 46m]
+    AC_B      : 0    (৳184)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(3) TITUMIR EXPRESS (733) (09:33 AM-10:31 AM) [00h 58m]
+    S_CHAIR   : 10   (৳55)
+
+(4) RUPSHA EXPRESS (727) (02:05 PM-02:46 PM) [00h 41m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(5) BARENDRA EXPRESS (731) (06:10 PM-07:04 PM) [00h 54m]
+    S_CHAIR   : 15   (৳55)
+
+====================================================================================
+
+    From-To   : Joypurhat-Parbatipur
+
+(1) DRUTOJAN EXPRESS (757) (02:09 AM-03:25 AM) [01h 16m]
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 10   (৳75)
+
+(2) KURIGRAM EXPRESS (797) (02:57 AM-04:05 AM) [01h 08m]
+    AC_B      : 0    (৳259)
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 15   (৳75)
+
+(3) SIMANTA EXPRESS (747) (03:54 AM-05:00 AM) [01h 06m]
+    AC_B      : 0    (৳259)
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 0    (৳75)
+
+(4) PANCHAGARH EXPRESS (793) (05:19 AM-06:20 AM) [01h 01m]
+    SNIGDHA   : 0    (৳180)
+    S_CHAIR   : 10   (৳75)
+
+(5) TITUMIR EXPRESS (733) (09:33 AM-11:10 AM) [01h 37m]
+    S_CHAIR   : 25   (৳75)
+
+(6) NILSAGAR EXPRESS (765) (01:14 PM-02:15 PM) [01h 01m]
+    AC_S      : 0    (৳173)
+    SNIGDHA   : 5    (৳144)
+    S_CHAIR   : 0    (৳75)
+
+(7) RUPSHA EXPRESS (727) (02:05 PM-03:05 PM) [01h 00m]
+    AC_S      : 0    (৳173)
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 0    (৳75)
+
+(8) EKOTA EXPRESS (705) (04:52 PM-06:15 PM) [01h 23m]
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 25   (৳75)
+    AC_S      : 0    (৳173)
+
+(9) BARENDRA EXPRESS (731) (06:10 PM-07:25 PM) [01h 15m]
+    S_CHAIR   : 20   (৳75)
+
+====================================================================================
+
+    From-To   : Joypurhat-Saidpur
+
+(1) SIMANTA EXPRESS (747) (03:54 AM-05:27 AM) [01h 33m]
+    AC_B      : 0    (৳322)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 15   (৳95)
+
+(2) TITUMIR EXPRESS (733) (09:33 AM-11:47 AM) [02h 14m]
+    S_CHAIR   : 35   (৳95)
+
+(3) NILSAGAR EXPRESS (765) (01:14 PM-02:42 PM) [01h 28m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 5    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(4) RUPSHA EXPRESS (727) (02:05 PM-03:32 PM) [01h 27m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳95)
+
+(5) BARENDRA EXPRESS (731) (06:10 PM-08:09 PM) [01h 59m]
+    S_CHAIR   : 18   (৳95)
+
+====================================================================================
+
+    From-To   : Joypurhat-Nilphamari
+
+(1) SIMANTA EXPRESS (747) (03:54 AM-05:50 AM) [01h 56m]
+    AC_B      : 0    (৳403)
+    SNIGDHA   : 0    (৳271)
+    S_CHAIR   : 0    (৳120)
+
+(2) TITUMIR EXPRESS (733) (09:33 AM-12:11 PM) [02h 38m]
+    S_CHAIR   : 20   (৳120)
+
+(3) NILSAGAR EXPRESS (765) (01:14 PM-03:05 PM) [01h 51m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 10   (৳120)
+
+(4) RUPSHA EXPRESS (727) (02:05 PM-04:13 PM) [02h 08m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳271)
+    S_CHAIR   : 5    (৳120)
+
+(5) BARENDRA EXPRESS (731) (06:10 PM-08:32 PM) [02h 22m]
+    S_CHAIR   : 10   (৳120)
+
+====================================================================================
+
+    From-To   : Joypurhat-Domar
+
+(1) SIMANTA EXPRESS (747) (03:54 AM-06:09 AM) [02h 15m]
+    AC_B      : 0    (৳529)
+    SNIGDHA   : 0    (৳299)
+    S_CHAIR   : 0    (৳155)
+
+(2) TITUMIR EXPRESS (733) (09:33 AM-12:30 PM) [02h 57m]
+    S_CHAIR   : 10   (৳155)
+
+(3) RUPSHA EXPRESS (727) (02:05 PM-04:32 PM) [02h 27m]
+    AC_S      : 0    (৳357)
+    SNIGDHA   : 0    (৳299)
+    S_CHAIR   : 0    (৳155)
+
+(4) BARENDRA EXPRESS (731) (06:10 PM-08:58 PM) [02h 48m]
+    S_CHAIR   : 10   (৳155)
+
+====================================================================================
+
+    From-To   : Joypurhat-Chilahati
+
+(1) SIMANTA EXPRESS (747) (03:54 AM-06:45 AM) [02h 51m]
+    AC_B      : 0    (৳529)
+    SNIGDHA   : 5    (৳299)
+    S_CHAIR   : 5    (৳155)
+
+(2) TITUMIR EXPRESS (733) (09:33 AM-01:00 PM) [03h 27m]
+    S_CHAIR   : 10   (৳155)
+
+(3) NILSAGAR EXPRESS (765) (01:14 PM-04:00 PM) [02h 46m]
+    AC_S      : 4    (৳357)
+    SNIGDHA   : 10   (৳299)
+    S_CHAIR   : 10   (৳155)
+
+(4) RUPSHA EXPRESS (727) (02:05 PM-05:05 PM) [03h 00m]
+    AC_S      : 4    (৳357)
+    SNIGDHA   : 5    (৳299)
+    S_CHAIR   : 10   (৳155)
+
+(5) BARENDRA EXPRESS (731) (06:10 PM-09:35 PM) [03h 25m]
+    S_CHAIR   : 42   (৳155)
+
+====================================================================================
+No train found for route Birampur-Fulbari
+====================================================================================
+
+    From-To   : Birampur-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-01:00 AM) [00h 45m]
+    S_CHAIR   : 10   (৳55)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-05:00 AM) [00h 31m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-11:10 AM) [00h 57m]
+    S_CHAIR   : 10   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-02:15 PM) [00h 30m]
+    S_CHAIR   : 5    (৳55)
+
+(5) RUPSHA EXPRESS (727) (02:35 PM-03:05 PM) [00h 30m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(6) EKOTA EXPRESS (705) (05:37 PM-06:15 PM) [00h 38m]
+    S_CHAIR   : 15   (৳50)
+
+(7) BARENDRA EXPRESS (731) (06:53 PM-07:25 PM) [00h 32m]
+    S_CHAIR   : 12   (৳50)
+
+====================================================================================
+
+    From-To   : Birampur-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-01:37 AM) [01h 22m]
+    S_CHAIR   : 0    (৳55)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-05:27 AM) [00h 58m]
+    AC_B      : 0    (৳184)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-11:47 AM) [01h 34m]
+    S_CHAIR   : 32   (৳55)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-02:42 PM) [00h 57m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 3    (৳115)
+    S_CHAIR   : 10   (৳55)
+
+(5) RUPSHA EXPRESS (727) (02:35 PM-03:32 PM) [00h 57m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳55)
+
+(6) BARENDRA EXPRESS (731) (06:53 PM-08:09 PM) [01h 16m]
+    S_CHAIR   : 10   (৳55)
+
+====================================================================================
+
+    From-To   : Birampur-Nilphamari
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-02:01 AM) [01h 46m]
+    S_CHAIR   : 5    (৳80)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-05:50 AM) [01h 21m]
+    AC_B      : 0    (৳265)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳80)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-12:11 PM) [01h 58m]
+    S_CHAIR   : 10   (৳80)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-03:05 PM) [01h 20m]
+    AC_S      : 0    (৳179)
+    SNIGDHA   : 0    (৳150)
+    S_CHAIR   : 5    (৳80)
+
+(5) RUPSHA EXPRESS (727) (02:35 PM-04:13 PM) [01h 38m]
+    AC_S      : 0    (৳179)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 0    (৳80)
+
+(6) BARENDRA EXPRESS (731) (06:53 PM-08:32 PM) [01h 39m]
+    S_CHAIR   : 10   (৳80)
+
+====================================================================================
+Available 0 tickets for the route Birampur-Domar
+====================================================================================
+
+    From-To   : Birampur-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (12:15 AM-03:00 AM) [02h 45m]
+    SNIGDHA   : 10   (৳225)
+    S_CHAIR   : 10   (৳120)
+
+(2) SIMANTA EXPRESS (747) (04:29 AM-06:45 AM) [02h 16m]
+    AC_B      : 0    (৳403)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 22   (৳120)
+
+(3) TITUMIR EXPRESS (733) (10:13 AM-01:00 PM) [02h 47m]
+    S_CHAIR   : 20   (৳120)
+
+(4) NILSAGAR EXPRESS (765) (01:45 PM-04:00 PM) [02h 15m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 7    (৳225)
+    S_CHAIR   : 6    (৳120)
+
+(5) RUPSHA EXPRESS (727) (02:35 PM-05:05 PM) [02h 30m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 10   (৳120)
+
+(6) BARENDRA EXPRESS (731) (06:53 PM-09:35 PM) [02h 42m]
+    S_CHAIR   : 10   (৳120)
+
+====================================================================================
+
+    From-To   : Fulbari-Parbatipur
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-01:00 AM) [00h 31m]
+    S_CHAIR   : 10   (৳50)
+
+(2) TITUMIR EXPRESS (733) (10:34 AM-11:10 AM) [00h 36m]
+    S_CHAIR   : 10   (৳50)
+
+(3) RUPSHA EXPRESS (727) (02:48 PM-03:05 PM) [00h 17m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+(4) EKOTA EXPRESS (705) (05:51 PM-06:15 PM) [00h 24m]
+    S_CHAIR   : 10   (৳50)
+
+(5) BARENDRA EXPRESS (731) (07:07 PM-07:25 PM) [00h 18m]
+    S_CHAIR   : 15   (৳50)
+
+====================================================================================
+
+    From-To   : Fulbari-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-01:37 AM) [01h 08m]
+    S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (04:43 AM-05:27 AM) [00h 44m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 20   (৳50)
+
+(3) TITUMIR EXPRESS (733) (10:34 AM-11:47 AM) [01h 13m]
+    S_CHAIR   : 15   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (01:58 PM-02:42 PM) [00h 44m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 3    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+(5) RUPSHA EXPRESS (727) (02:48 PM-03:32 PM) [00h 44m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(6) BARENDRA EXPRESS (731) (07:07 PM-08:09 PM) [01h 02m]
+    S_CHAIR   : 12   (৳50)
+
+====================================================================================
+
+    From-To   : Fulbari-Nilphamari
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-02:01 AM) [01h 32m]
+    S_CHAIR   : 5    (৳65)
+
+(2) SIMANTA EXPRESS (747) (04:43 AM-05:50 AM) [01h 07m]
+    AC_B      : 0    (৳219)
+    SNIGDHA   : 0    (৳150)
+    S_CHAIR   : 0    (৳65)
+
+(3) TITUMIR EXPRESS (733) (10:34 AM-12:11 PM) [01h 37m]
+    S_CHAIR   : 21   (৳65)
+
+(4) NILSAGAR EXPRESS (765) (01:58 PM-03:05 PM) [01h 07m]
+    AC_S      : 0    (৳150)
+    SNIGDHA   : 0    (৳127)
+    S_CHAIR   : 5    (৳65)
+
+(5) RUPSHA EXPRESS (727) (02:48 PM-04:13 PM) [01h 25m]
+    AC_S      : 0    (৳150)
+    SNIGDHA   : 0    (৳150)
+    S_CHAIR   : 0    (৳65)
+
+(6) BARENDRA EXPRESS (731) (07:07 PM-08:32 PM) [01h 25m]
+    S_CHAIR   : 10   (৳65)
+
+====================================================================================
+
+    From-To   : Fulbari-Domar
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-02:21 AM) [01h 52m]
+    S_CHAIR   : 0    (৳105)
+
+(2) SIMANTA EXPRESS (747) (04:43 AM-06:09 AM) [01h 26m]
+    AC_B      : 0    (৳403)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+(3) TITUMIR EXPRESS (733) (10:34 AM-12:30 PM) [01h 56m]
+    S_CHAIR   : 0    (৳105)
+
+(4) RUPSHA EXPRESS (727) (02:48 PM-04:32 PM) [01h 44m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+(5) BARENDRA EXPRESS (731) (07:07 PM-08:58 PM) [01h 51m]
+    S_CHAIR   : 10   (৳105)
+
+====================================================================================
+
+    From-To   : Fulbari-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (12:29 AM-03:00 AM) [02h 31m]
+    SNIGDHA   : 15   (৳196)
+    S_CHAIR   : 15   (৳105)
+
+(2) SIMANTA EXPRESS (747) (04:43 AM-06:45 AM) [02h 02m]
+    AC_B      : 0    (৳357)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+(3) TITUMIR EXPRESS (733) (10:34 AM-01:00 PM) [02h 26m]
+    S_CHAIR   : 35   (৳105)
+
+(4) NILSAGAR EXPRESS (765) (01:58 PM-04:00 PM) [02h 02m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 7    (৳196)
+    S_CHAIR   : 15   (৳105)
+
+(5) RUPSHA EXPRESS (727) (02:48 PM-05:05 PM) [02h 17m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+(6) BARENDRA EXPRESS (731) (07:07 PM-09:35 PM) [02h 28m]
+    S_CHAIR   : 45   (৳105)
+
+====================================================================================
+
+    From-To   : Parbatipur-Saidpur
+
+(1) CHILAHATI EXPRESS (805) (01:20 AM-01:37 AM) [00h 17m]
+    S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (05:10 AM-05:27 AM) [00h 17m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (11:30 AM-11:47 AM) [00h 17m]
+    S_CHAIR   : 41   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (02:25 PM-02:42 PM) [00h 17m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(5) RUPSHA EXPRESS (727) (03:15 PM-03:32 PM) [00h 17m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 19   (৳50)
+
+(6) BARENDRA EXPRESS (731) (07:40 PM-08:09 PM) [00h 29m]
+    S_CHAIR   : 30   (৳50)
+
+====================================================================================
+
+    From-To   : Parbatipur-Nilphamari
+
+(1) CHILAHATI EXPRESS (805) (01:20 AM-02:01 AM) [00h 41m]
+    S_CHAIR   : 20   (৳50)
+
+(2) SIMANTA EXPRESS (747) (05:10 AM-05:50 AM) [00h 40m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 14   (৳50)
+
+(3) TITUMIR EXPRESS (733) (11:30 AM-12:11 PM) [00h 41m]
+    S_CHAIR   : 10   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (02:25 PM-03:05 PM) [00h 40m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 15   (৳50)
+
+(5) RUPSHA EXPRESS (727) (03:15 PM-04:13 PM) [00h 58m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+(6) BARENDRA EXPRESS (731) (07:40 PM-08:32 PM) [00h 52m]
+    S_CHAIR   : 22   (৳50)
+
+====================================================================================
+
+    From-To   : Parbatipur-Domar
+
+(1) CHILAHATI EXPRESS (805) (01:20 AM-02:21 AM) [01h 01m]
+    S_CHAIR   : 20   (৳80)
+
+(2) SIMANTA EXPRESS (747) (05:10 AM-06:09 AM) [00h 59m]
+    AC_B      : 0    (৳276)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 0    (৳80)
+
+(3) TITUMIR EXPRESS (733) (11:30 AM-12:30 PM) [01h 00m]
+    S_CHAIR   : 30   (৳80)
+
+(4) NILSAGAR EXPRESS (765) (02:25 PM-03:24 PM) [00h 59m]
+    AC_S      : 0    (৳184)
+    SNIGDHA   : 5    (৳156)
+    S_CHAIR   : 20   (৳80)
+
+(5) RUPSHA EXPRESS (727) (03:15 PM-04:32 PM) [01h 17m]
+    AC_S      : 0    (৳184)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 0    (৳80)
+
+(6) BARENDRA EXPRESS (731) (07:40 PM-08:58 PM) [01h 18m]
+    S_CHAIR   : 20   (৳80)
+
+====================================================================================
+
+    From-To   : Parbatipur-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (01:20 AM-03:00 AM) [01h 40m]
+    SNIGDHA   : 55   (৳156)
+    AC_B      : 4    (৳276)
+    S_CHAIR   : 101  (৳80)
+
+(2) SIMANTA EXPRESS (747) (05:10 AM-06:45 AM) [01h 35m]
+    AC_B      : 2    (৳276)
+    SNIGDHA   : 5    (৳156)
+    S_CHAIR   : 10   (৳80)
+    F_BERTH   : 4    (৳184)
+
+(3) TITUMIR EXPRESS (733) (11:30 AM-01:00 PM) [01h 30m]
+    S_CHAIR   : 80   (৳80)
+
+(4) NILSAGAR EXPRESS (765) (02:25 PM-04:00 PM) [01h 35m]
+    AC_S      : 8    (৳184)
+    SNIGDHA   : 33   (৳156)
+    S_CHAIR   : 60   (৳80)
+
+(5) RUPSHA EXPRESS (727) (03:15 PM-05:05 PM) [01h 50m]
+    AC_S      : 4    (৳184)
+    SNIGDHA   : 5    (৳156)
+    S_CHAIR   : 52   (৳80)
+    F_SEAT    : 4    (৳127)
+
+(6) BARENDRA EXPRESS (731) (07:40 PM-09:35 PM) [01h 55m]
+    S_CHAIR   : 117  (৳80)
+
+====================================================================================
+
+    From-To   : Saidpur-Nilphamari
+
+(1) CHILAHATI EXPRESS (805) (01:42 AM-02:01 AM) [00h 19m]
+    S_CHAIR   : 0    (৳50)
+
+(2) SIMANTA EXPRESS (747) (05:31 AM-05:50 AM) [00h 19m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) TITUMIR EXPRESS (733) (11:52 AM-12:11 PM) [00h 19m]
+    S_CHAIR   : 35   (৳50)
+
+(4) NILSAGAR EXPRESS (765) (02:46 PM-03:05 PM) [00h 19m]
+    S_CHAIR   : 0    (৳50)
+
+(5) RUPSHA EXPRESS (727) (03:32 PM-04:16 PM) [00h 44m]
+    AC_S      : 0    (৳127)
+
+(6) RUPSHA EXPRESS (727) (03:37 PM-04:13 PM) [00h 36m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(7) BARENDRA EXPRESS (731) (08:13 PM-08:32 PM) [00h 19m]
+    S_CHAIR   : 30   (৳50)
+
+====================================================================================
+
+    From-To   : Saidpur-Domar
+
+(1) CHILAHATI EXPRESS (805) (01:42 AM-02:21 AM) [00h 39m]
+    S_CHAIR   : 22   (৳65)
+
+(2) SIMANTA EXPRESS (747) (05:31 AM-06:09 AM) [00h 38m]
+    AC_B      : 0    (৳219)
+    SNIGDHA   : 0    (৳127)
+    S_CHAIR   : 0    (৳65)
+
+(3) TITUMIR EXPRESS (733) (11:52 AM-12:30 PM) [00h 38m]
+    S_CHAIR   : 41   (৳65)
+
+(4) NILSAGAR EXPRESS (765) (02:46 PM-03:24 PM) [00h 38m]
+    AC_S      : 0    (৳150)
+    SNIGDHA   : 0    (৳127)
+    S_CHAIR   : 0    (৳65)
+
+(5) RUPSHA EXPRESS (727) (03:32 PM-04:35 PM) [01h 03m]
+    AC_S      : 0    (৳150)
+
+(6) RUPSHA EXPRESS (727) (03:37 PM-04:32 PM) [00h 55m]
+    SNIGDHA   : 0    (৳127)
+    S_CHAIR   : 19   (৳65)
+
+(7) BARENDRA EXPRESS (731) (08:13 PM-08:58 PM) [00h 45m]
+    S_CHAIR   : 20   (৳65)
+
+====================================================================================
+
+    From-To   : Saidpur-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (01:42 AM-03:00 AM) [01h 18m]
+    SNIGDHA   : 64   (৳127)
+    AC_B      : 6    (৳219)
+    S_CHAIR   : 151  (৳65)
+
+(2) SIMANTA EXPRESS (747) (05:31 AM-06:45 AM) [01h 14m]
+    AC_B      : 6    (৳219)
+    SNIGDHA   : 10   (৳127)
+    S_CHAIR   : 190  (৳65)
+    F_BERTH   : 4    (৳150)
+
+(3) TITUMIR EXPRESS (733) (11:52 AM-01:00 PM) [01h 08m]
+    S_CHAIR   : 207  (৳65)
+
+(4) NILSAGAR EXPRESS (765) (02:46 PM-04:00 PM) [01h 14m]
+    AC_S      : 12   (৳150)
+    SNIGDHA   : 83   (৳127)
+    S_CHAIR   : 134  (৳65)
+
+(5) RUPSHA EXPRESS (727) (03:37 PM-05:05 PM) [01h 28m]
+    AC_S      : 8    (৳150)
+    SNIGDHA   : 10   (৳127)
+    S_CHAIR   : 91   (৳65)
+    F_SEAT    : 4    (৳104)
+
+(6) BARENDRA EXPRESS (731) (08:13 PM-09:35 PM) [01h 22m]
+    S_CHAIR   : 179  (৳65)
+
+====================================================================================
+Available 0 tickets for the route Nilphamari-Domar
+====================================================================================
+
+    From-To   : Nilphamari-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (02:05 AM-03:00 AM) [00h 55m]
+    SNIGDHA   : 12   (৳115)
+    AC_B      : 2    (৳150)
+    S_CHAIR   : 70   (৳50)
+
+(2) SIMANTA EXPRESS (747) (05:53 AM-06:45 AM) [00h 52m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 40   (৳50)
+
+(3) TITUMIR EXPRESS (733) (12:14 PM-01:00 PM) [00h 46m]
+    S_CHAIR   : 154  (৳50)
+
+(4) NILSAGAR EXPRESS (765) (03:08 PM-04:00 PM) [00h 52m]
+    SNIGDHA   : 15   (৳115)
+    S_CHAIR   : 77   (৳50)
+
+(5) RUPSHA EXPRESS (727) (04:16 PM-05:05 PM) [00h 49m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 20   (৳50)
+
+(6) BARENDRA EXPRESS (731) (08:35 PM-09:35 PM) [01h 00m]
+    S_CHAIR   : 157  (৳50)
+
+====================================================================================
+
+    From-To   : Domar-Chilahati
+
+(1) CHILAHATI EXPRESS (805) (02:24 AM-03:00 AM) [00h 36m]
+    SNIGDHA   : 10   (৳115)
+    S_CHAIR   : 74   (৳50)
+
+(2) SIMANTA EXPRESS (747) (06:12 AM-06:45 AM) [00h 33m]
+    AC_B      : 0    (৳150)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 32   (৳50)
+
+(3) TITUMIR EXPRESS (733) (12:33 PM-01:00 PM) [00h 27m]
+    S_CHAIR   : 143  (৳50)
+
+(4) NILSAGAR EXPRESS (765) (03:27 PM-04:00 PM) [00h 33m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 10   (৳115)
+    S_CHAIR   : 42   (৳50)
+
+(5) RUPSHA EXPRESS (727) (04:35 PM-05:05 PM) [00h 30m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 24   (৳50)
+
+(6) BARENDRA EXPRESS (731) (09:01 PM-09:35 PM) [00h 34m]
+    S_CHAIR   : 100  (৳50)
 
 
 
