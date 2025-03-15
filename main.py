@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 # import re
 import concurrent.futures
-from datetime import datetime
+from datetime import datetime, timedelta
 from playwright._impl._errors import TimeoutError as PlaywrightTimeoutError
 import time
 # import os
@@ -54,9 +54,9 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         no_trains_el = page.query_selector('span.no-ticket-found-first-msg')
         if no_trains_el:
             if show_no_train_details:
-                output_buffer.write(f"\nFrom-To       : {from_station}-{to_station}\n✗ No train found for selected dates or cities. Please try different dates or cities.\n\n")
+                output_buffer.write(f"\nDate          : {formatted_date}\nFrom-To       : {from_station}-{to_station}\n✗ No train found for selected dates or cities. Please try different dates or cities.\n\n")
             else:
-                output_buffer.write(f"No train found for route {from_station}-{to_station}\n")
+                output_buffer.write(f"Date: {formatted_date} - No train found for route {from_station}-{to_station}\n")
             return output_buffer.getvalue(), False
         
         # Quick check for any available seats using optimized selector
@@ -72,11 +72,12 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
                 ROUTES_WITHOUT_SEATS.value += 1
 
         if not has_available_seats and not show_no_train_details:
-            output_buffer.write(f"Available 0 tickets for the route {from_station}-{to_station}\n")
+            output_buffer.write(f"Date: {formatted_date} - Available 0 tickets for the route {from_station}-{to_station}\n")
             return output_buffer.getvalue(), False
 
         # Only process full details when necessary
-        output_buffer.write(f"\n    From-To   : {from_station}-{to_station}\n\n")
+        output_buffer.write(f"\n    Date      : {formatted_date}\n    From-To   : {from_station}-{to_station}")
+        output_buffer.write(f"\n    URL       : {url}\n\n")
         
         train_elements = page.query_selector_all('app-single-trip')
         for index, train_el in enumerate(train_elements, 1):
@@ -155,20 +156,72 @@ def get_search_date():
     while True:
         use_current = input("Use current date for search? (y/n): ").lower()
         if use_current == 'y':
-            return datetime.now().strftime("%d-%m-%Y")
+            return [datetime.now().strftime("%d-%m-%Y")]
         elif use_current == 'n':
+            # Display next 11 days (including today) as a list
+            today = datetime.now()
+            dates = [(today + timedelta(days=i)) for i in range(11)]
+            
+            print("\nAvailable dates for search:")
+            for idx, date in enumerate(dates, 1):
+                date_str = date.strftime("%d-%m-%Y")
+                print(f"{idx}: {date_str} ({date.strftime('%A')})")
+            
+            print("\nYou can enter:")
+            print("- A specific date number (e.g., '3')")
+            print("- A range of dates (e.g., '1-5')")
+            print("- Multiple dates separated by commas (e.g., '1,3,5')")
+            
             while True:
-                date_str = input("Enter date (dd-mm-yyyy): ")
-                if validate_date(date_str):
-                    return date_str
-                print("Invalid date format. Please use dd-mm-yyyy format.")
+                date_input = input("\nEnter your date selection: ")
+                selected_dates = []
+                
+                # Check if input is a range (e.g., "1-5")
+                if '-' in date_input and ',' not in date_input:
+                    try:
+                        start, end = map(int, date_input.split('-'))
+                        if 1 <= start <= end <= 11:
+                            selected_dates = [dates[i-1].strftime("%d-%m-%Y") for i in range(start, end+1)]
+                        else:
+                            print("Invalid range. Please use numbers between 1 and 11.")
+                            continue
+                    except ValueError:
+                        print("Invalid range format. Use format like '1-5'.")
+                        continue
+                # Check if input is a comma-separated list
+                elif ',' in date_input:
+                    try:
+                        indices = [int(idx.strip()) for idx in date_input.split(',')]
+                        if all(1 <= idx <= 11 for idx in indices):
+                            selected_dates = [dates[idx-1].strftime("%d-%m-%Y") for idx in indices]
+                        else:
+                            print("Invalid selection. Please use numbers between 1 and 11.")
+                            continue
+                    except ValueError:
+                        print("Invalid format. Use comma-separated numbers like '1,3,5'.")
+                        continue
+                # Check if input is a single number
+                else:
+                    try:
+                        idx = int(date_input)
+                        if 1 <= idx <= 11:
+                            selected_dates = [dates[idx-1].strftime("%d-%m-%Y")]
+                        else:
+                            print("Invalid selection. Please use a number between 1 and 11.")
+                            continue
+                    except ValueError:
+                        print("Invalid input. Please enter a number, range, or comma-separated list.")
+                        continue
+                
+                # Confirm dates are in valid format
+                if all(validate_date(date) for date in selected_dates):
+                    return selected_dates
+                
+                print("Invalid date selection. Please try again.")
+        
         print("Please enter 'y' or 'n'")
 
 if __name__ == "__main__":
-    # Reset counters at the start
-    ROUTES_WITH_SEATS.value = 0
-    ROUTES_WITHOUT_SEATS.value = 0
-    
     overall_start = time.time()
     
     with open('stations.txt', 'r') as file:
@@ -180,9 +233,8 @@ if __name__ == "__main__":
         print(f"{idx}: {station}")
     print("")
 
-    date_str = get_search_date()
-    formatted_date = convert_date_format(date_str)
-
+    date_list = get_search_date()
+    
     start_index = int(input("Enter starting station range: ")) - 1
     end_index = int(input("Enter ending station range: ")) - 1
     show_no_train_details = input("Include details for no trains/seats? (y/n): ").lower() == 'y'
@@ -197,52 +249,79 @@ if __name__ == "__main__":
             station_combinations.append((from_station, to_station, route_index))
             route_index += 1
 
-    total_combinations = len(station_combinations)
-    batches = [station_combinations[i:i+BATCH_SIZE] for i in range(0, len(station_combinations), BATCH_SIZE)]
-
-    completed_routes_counter = Value('i', 0)
-    all_results = []
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = [executor.submit(process_batch, batch, formatted_date, completed_routes_counter, total_combinations, show_no_train_details) for batch in batches]
-        
-        for future in concurrent.futures.as_completed(futures):
-            try:
-                batch_results = future.result()
-                all_results.extend(batch_results)
-            except Exception as e:
-                print(f"Batch generated exception: {e}")
-
-    all_results.sort(key=lambda x: x[2])
+    total_combinations = len(station_combinations) * len(date_list)
     
-    # Calculate totals
-    no_train_routes = total_combinations - (ROUTES_WITH_SEATS.value + ROUTES_WITHOUT_SEATS.value)
+    # Dictionary to store results for all dates
+    all_results_by_date = {}
+    
+    for date_str in date_list:
+        # Reset counters for each date
+        ROUTES_WITH_SEATS.value = 0
+        ROUTES_WITHOUT_SEATS.value = 0
+        
+        formatted_date = convert_date_format(date_str)
+        print(f"\nProcessing for date: {formatted_date}\n")
+        
+        batches = [station_combinations[i:i+BATCH_SIZE] for i in range(0, len(station_combinations), BATCH_SIZE)]
+        completed_routes_counter = Value('i', 0)
+        date_results = []
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            futures = [executor.submit(process_batch, batch, formatted_date, completed_routes_counter, len(station_combinations), show_no_train_details) for batch in batches]
+            
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    batch_results = future.result()
+                    date_results.extend(batch_results)
+                except Exception as e:
+                    print(f"Batch generated exception: {e}")
+
+        date_results.sort(key=lambda x: x[2])
+        all_results_by_date[date_str] = {
+            'results': date_results,
+            'with_seats': ROUTES_WITH_SEATS.value,
+            'without_seats': ROUTES_WITHOUT_SEATS.value
+        }
+    
+    # Calculate overall statistics
+    total_routes_with_seats = sum(data['with_seats'] for data in all_results_by_date.values())
+    total_routes_without_seats = sum(data['without_seats'] for data in all_results_by_date.values())
+    total_no_train_routes = total_combinations - (total_routes_with_seats + total_routes_without_seats)
     total_time = time.time() - overall_start
     minutes = total_time / 60
     
     # Print summary once at the end
     print("\n\n\n------------------------------  Summary  ----------------------------------\n")
-    print(f"Routes with available seats: {ROUTES_WITH_SEATS.value}/{total_combinations} ({ROUTES_WITH_SEATS.value/total_combinations*100:.1f}%)")
-    print(f"Routes without available seats: {ROUTES_WITHOUT_SEATS.value}/{total_combinations} ({ROUTES_WITHOUT_SEATS.value/total_combinations*100:.1f}%)")
-    print(f"Routes with no train service: {no_train_routes}/{total_combinations} ({no_train_routes/total_combinations*100:.1f}%)")
+    print(f"Total routes processed: {total_combinations} (across {len(date_list)} date(s))")
+    print(f"Routes with available seats: {total_routes_with_seats}/{total_combinations} ({total_routes_with_seats/total_combinations*100:.1f}%)")
+    print(f"Routes without available seats: {total_routes_without_seats}/{total_combinations} ({total_routes_without_seats/total_combinations*100:.1f}%)")
+    print(f"Routes with no train service: {total_no_train_routes}/{total_combinations} ({total_no_train_routes/total_combinations*100:.1f}%)")
     
-    # Write summary to file
+    # Write to file
     with open('output.txt', 'w', encoding='utf-8') as output_file:
         output_file.write(f"\n{'.' * 84}\n{'.' * 24}|| _______ Md Babla Islam _______ ||{'.' * 24}\n{'.' * 84}\n\n\n\n")
         output_file.write(f"Summary: \n\n")
         output_file.write("Execution date and time             : " + datetime.now().strftime("%Y-%m-%d %I:%M:%S %p") + '\n')
-        output_file.write(f"Journey Date                        : {formatted_date}\n")
+        output_file.write(f"Journey Dates                       : {', '.join(convert_date_format(d) for d in date_list)}\n")
         output_file.write(f"Total number of routes/combinations : {total_combinations}\n")
         output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")
         output_file.write(f"Average execution time per route    : {total_time/total_combinations:.2f} seconds\n")
-        output_file.write(f"Routes with seats                   : {ROUTES_WITH_SEATS.value}\nRoutes without seats                : {ROUTES_WITHOUT_SEATS.value}\nRoutes with no train service        : {no_train_routes}\n\n\n\n\n")
-        for result in all_results:
-            doubleEqualLine(output_file)
-            output_file.write(result[3])
+        output_file.write(f"Routes with seats                   : {total_routes_with_seats}\nRoutes without seats                : {total_routes_without_seats}\nRoutes with no train service        : {total_no_train_routes}\n\n\n\n\n")
+        
+        # Write results for all dates
+        for date_str in date_list:
+            formatted_date = convert_date_format(date_str)
+            output_file.write(f"{'=' * 84}\n")
+            output_file.write(f"RESULTS FOR DATE: {formatted_date}\n")
+            output_file.write(f"{'=' * 84}\n\n")
+            
+            for result in all_results_by_date[date_str]['results']:
+                doubleEqualLine(output_file)
+                output_file.write(result[3])
+                
         endExecution(output_file)
 
     print(f"\nTotal execution time: {total_time:.2f} seconds ({minutes:.2f} minutes) for {total_combinations} routes")
     print(f"Average execution time per route: {total_time/total_combinations:.2f}s")
-    # Removed duplicate summary lines
     print("\n------------------------  Execution completed  ----------------------------\n")
-    print("\nResults are saven in output.txt file.\n\n")
+    print("\nResults are saved in output.txt file.\n\n")
