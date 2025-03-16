@@ -80,6 +80,9 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
         output_buffer.write(f"\n    URL       : {url}\n\n")
         
         train_elements = page.query_selector_all('app-single-trip')
+        
+        # Process and filter trains if we're not showing zero-ticket trains
+        filtered_trains = []
         for index, train_el in enumerate(train_elements, 1):
             train_name = train_el.query_selector('h2[style="text-transform: uppercase;"]')
             journey_duration = train_el.query_selector('.journey-duration').inner_text()
@@ -93,8 +96,6 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
                 return {start, end};
             }''')
             
-            output_buffer.write(f"({index}) {train_name.inner_text()} ({times['start']}-{times['end']}) [{journey_duration}]\n")
-            
             # Consolidated seat data extraction
             seats_data = train_el.evaluate('''el => {
                 return [...el.querySelectorAll('.single-seat-class')].map(seat => ({
@@ -104,7 +105,31 @@ def process_route(page, from_station, to_station, formatted_date, show_no_train_
                 }));
             }''')
             
+            # Check if any tickets are available for this train
+            has_tickets = False
             for seat in seats_data:
+                if seat['count'] != '0':
+                    has_tickets = True
+                    break
+            
+            # If we're not showing zero-ticket trains and this train has no tickets, skip it
+            if not show_no_train_details and not has_tickets:
+                continue
+                
+            # If we get here, the train should be included in the output
+            filtered_trains.append({
+                'index': index,
+                'name': train_name.inner_text(),
+                'times': times,
+                'duration': journey_duration,
+                'seats': seats_data
+            })
+        
+        # Write the filtered trains to the output buffer
+        for idx, train in enumerate(filtered_trains, 1):
+            output_buffer.write(f"({idx}) {train['name']} ({train['times']['start']}-{train['times']['end']}) [{train['duration']}]\n")
+            
+            for seat in train['seats']:
                 output_buffer.write(f"    {seat['class_name']:<10}: {seat['count']:<4} ({seat['fare']})\n")
             output_buffer.write("\n")
 

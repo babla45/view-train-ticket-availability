@@ -1,5 +1,4 @@
 1. RUPSHA EXPRESS (728)  , Chilahati to Khulna :
-
 Chilahati
 Domar
 Nilphamari
@@ -24,12 +23,9 @@ Mubarakganj
 Jashore
 Noapara
 Khulna
-
-
 
 
 2. SIMANTA EXPRESS (748) , Chilahati to Khulna :
-
 Chilahati
 Domar
 Nilphamari
@@ -55,10 +51,7 @@ Daulatpur
 Khulna
 
 
-
-
 3. RUPSHA EXPRESS (727) , Khulna to Chilahati:
-
 Khulna
 Noapara
 Jashore
@@ -85,10 +78,7 @@ Domar
 Chilahati
 
 
-
-
 4. SIMANTA EXPRESS (747) , Khulna to Chilahati:
-
 Khulna
 Daulatpur
 Noapara
@@ -114,8 +104,7 @@ Domar
 Chilahati
 
 
-
-** Mixed from uttarbanga to Dhaka
+5. Mixed from uttarbanga to Dhaka
 Lalmonirhat
 Teesta_Junction
 Kurigram
@@ -141,11 +130,33 @@ Joydebpur
 Dhaka
 
 
+6. Mixed from Dhaka to  Uttarbanga 
+Dhaka
+Joydebpur
+Tangail
+Ibrahimabad
+SH M Monsur Ali
+Ullapara
+Boral_Bridge
+Azim Nagar
+Natore
+Madhnagar
+Santahar
+Talora
+Bogura
+Sonatola
+Bonar_Para
+Gaibandha
+Bamondanga
+Pirgacha
+Kaunia
+Rangpur
+Kurigram
+Teesta_Junction
+Lalmonirhat
 
 
-
-
-5. LALMONI EXPRESS (752) , Lalmonirhat to Dhaka :
+7. LALMONI EXPRESS (752) , Lalmonirhat to Dhaka :
 Lalmonirhat
 Teesta_Junction
 Kaunia
@@ -166,7 +177,8 @@ Tangail
 Joydebpur
 Dhaka
 
-6. BURIMARI EXPRESS (810) , Lalmonirhat to Dhaka :
+
+8. BURIMARI EXPRESS (810) , Lalmonirhat to Dhaka :
 Lalmonirhat
 Burimari
 Patgram
@@ -182,7 +194,7 @@ Natore
 Dhaka
 
 
-7. KURIGRAM EXPRESS (798) , Kurigram to Dhaka :
+9. KURIGRAM EXPRESS (798) , Kurigram to Dhaka :
 Kurigram
 Kaunia
 Rangpur
@@ -195,7 +207,7 @@ Natore
 Dhaka
 
 
-8. RANGPUR EXPRESS (772) , Rangpur to Dhaka :
+10. RANGPUR EXPRESS (772) , Rangpur to Dhaka :
 Rangpur
 Kaunia
 Kurigram
@@ -211,7 +223,8 @@ Natore
 Ibrahimabad
 Dhaka
 
-9. CHITRA EXPRESS (764) , Dhaka to Khulna :
+
+11. CHITRA EXPRESS (764) , Dhaka to Khulna :
 Dhaka
 Biman_Bandar
 Joydebpur
@@ -232,7 +245,8 @@ Jashore
 Noapara
 Khulna
 
-10. SAGARDARI EXPRESS (762) , Rajshahi to Khulna :
+
+12. SAGARDARI EXPRESS (762) , Rajshahi to Khulna :
 Rajshahi
 Abdulpur
 Azim Nagar
@@ -251,7 +265,8 @@ Jashore
 Noapara
 Khulna
 
-11. JAHANABAD EXPRESS (825), Khulna to Dhaka:
+
+13. JAHANABAD EXPRESS (825), Khulna to Dhaka:
 Khulna
 Noapara
 Singia
@@ -261,7 +276,8 @@ Kashiani
 Bhanga_Junction
 Dhaka
 
-12. CHITRA EXPRESS (763), Khulna to Dhaka:
+
+14. CHITRA EXPRESS (763), Khulna to Dhaka:
 Khulna
 Noapara
 Jashore
@@ -273,7 +289,8 @@ Alamdanga
 Poradaha
 Mirpur
 
-13. SUNDARBAN EXPRESS (725), Khulna to Dhaka:
+
+15. SUNDARBAN EXPRESS (725), Khulna to Dhaka:
 Khulna
 Daulatpur
 Noapara
@@ -291,7 +308,7 @@ Bhanga
 Dhaka
 
 
-14 EKOTA EXPRESS (706), Panchagarh to Dhaka:
+16 EKOTA EXPRESS (706), Panchagarh to Dhaka:
 Panchagarh
 Kismat
 Ruhia
@@ -314,7 +331,8 @@ Tangail
 Joydebpur
 Dhaka
 
-15. CHILAHATI EXPRESS (806), Chilahati to Dhaka:
+
+17. CHILAHATI EXPRESS (806), Chilahati to Dhaka:
 Chilahati
 Domar
 Nilphamari
@@ -329,7 +347,8 @@ Ishwardi Bypass
 Joydebpur
 Dhaka
 
-16. DRUTOJAN EXPRESS (758), Panchagarh to Dhaka:
+
+18. DRUTOJAN EXPRESS (758), Panchagarh to Dhaka:
 Panchagarh
 Kismat
 Ruhia
@@ -355,7 +374,8 @@ Tangail
 Joydebpur
 Dhaka
 
-17. PANCHAGARH EXPRESS (794), Panchagarh to Dhaka:
+
+19. PANCHAGARH EXPRESS (794), Panchagarh to Dhaka:
 Panchagarh
 Thakurgaon_Road
 Pirganj
@@ -366,7 +386,8 @@ Santahar
 Natore
 Dhaka
 
-18. NILSAGAR EXPRESS (766), Chilahati to Dhaka:
+
+20. NILSAGAR EXPRESS (766), Chilahati to Dhaka:
 Chilahati
 Domar
 Nilphamari
@@ -384,7 +405,8 @@ Ibrahimabad
 Joydebpur
 Dhaka
 
-19. NILSAGAR EXPRESS (765), Dhaka to Chilahati:
+
+21. NILSAGAR EXPRESS (765), Dhaka to Chilahati:
 Dhaka
 Biman_Bandar
 Joydebpur
@@ -403,7 +425,8 @@ Nilphamari
 Domar
 Chilahati
 
-20. BURIMARI EXPRESS (809), Dhaka to Burimari:
+
+22. BURIMARI EXPRESS (809), Dhaka to Burimari:
 Dhaka
 Biman_Bandar
 Ishwardi Bypass
@@ -420,7 +443,8 @@ Barkhata
 Patgram
 Burimari
 
-21. RANGPUR EXPRESS (771), Dhaka to Rangpur:
+
+23. RANGPUR EXPRESS (771), Dhaka to Rangpur:
 Dhaka
 Biman_Bandar
 Ibrahimabad
@@ -438,7 +462,8 @@ Kaunia
 Kurigram
 Rangpur
 
-22. EKOTA EXPRESS (705), Dhaka to Panchagarh:
+
+24. EKOTA EXPRESS (705), Dhaka to Panchagarh:
 Dhaka
 Biman_Bandar
 Joydebpur
@@ -464,7 +489,8 @@ Ruhia
 Kismat
 Panchagarh
 
-23. CHILAHATI EXPRESS (805), Dhaka to Chilahati:
+
+25. CHILAHATI EXPRESS (805), Dhaka to Chilahati:
 Dhaka
 Biman_Bandar
 Joydebpur
@@ -480,7 +506,8 @@ Nilphamari
 Domar
 Chilahati
 
-24. DRUTOJAN EXPRESS (757), Dhaka to Panchagarh:
+
+26. DRUTOJAN EXPRESS (757), Dhaka to Panchagarh:
 Dhaka
 Biman_Bandar
 Joydebpur
@@ -506,7 +533,8 @@ Ruhia
 Kismat
 Panchagarh
 
-25. KURIGRAM EXPRESS (797), Dhaka to Kurigram:
+
+27. KURIGRAM EXPRESS (797), Dhaka to Kurigram:
 Dhaka
 Biman_Bandar
 Natore
@@ -519,7 +547,8 @@ Rangpur
 Kaunia
 Kurigram
 
-26. PANCHAGARH EXPRESS (793), Dhaka to Panchagarh:
+
+28. PANCHAGARH EXPRESS (793), Dhaka to Panchagarh:
 Dhaka
 Biman_Bandar
 Natore
