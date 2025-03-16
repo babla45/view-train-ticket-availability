@@ -180,7 +180,7 @@ def process_batch(route_batch, formatted_date, completed_routes_counter, total_c
 
 def get_search_date():
     while True:
-        use_current = input("Use current date for search? (y/n): ").lower()
+        use_current = input("\n\nUse current date for search? (y/n): ").lower()
         if use_current == 'y':
             return [datetime.now().strftime("%d-%m-%Y")]
         elif use_current == 'n':
@@ -188,12 +188,13 @@ def get_search_date():
             today = datetime.now()
             dates = [(today + timedelta(days=i)) for i in range(11)]
             
-            print("\nAvailable dates for search:")
+            print(f"\nAvailable dates for search:\n{'='*27}")
             for idx, date in enumerate(dates, 1):
                 date_str = date.strftime("%d-%m-%Y")
                 print(f"{idx}: {date_str} ({date.strftime('%A')})")
+            # print(f"{'='*27}")
             
-            print("\nChoose option: e.g. for single: 5, for range: 2-5, for multiple: 1,3,6")
+            print(f"\nChoose option: e.g. for single: 5, for range: 2-5, for multiple: 1,3,6\n{'='*70}")
             
             while True:
                 date_input = input("Enter your date selection: ")
@@ -316,7 +317,7 @@ def get_stations():
     train_routes = parse_station_list_file()
     
     # Display options to user in a formatted table
-    print("\nUse stations from:\n")
+    print("\nSelect a train to use its route (station list):\n")
     print(" 1.  Default station list         provided in stations.txt")
     
     for i, (route_name, _) in enumerate(train_routes, 2):
@@ -350,8 +351,8 @@ def get_stations():
                 return default_stations
             elif 2 <= choice <= total_options:
                 selected_stations = train_routes[choice - 2][1]
-                print(f"\nSelected: {train_routes[choice - 2][0]}")
-                print(f"Number of stations: {len(selected_stations)}")
+                print(f"\nSelected Train Route : {train_routes[choice - 2][0]}")
+                print(f"Number of stations   : {len(selected_stations)}")
                 return selected_stations
             else:
                 print(f"Please enter a number between 1 and {total_options}.")
@@ -367,13 +368,15 @@ if __name__ == "__main__":
     # Use get_stations instead of directly reading stations.txt
     stations = get_stations()
     
-    print("\nAvailable stations:\n-------------------\n")
+    # Ask for date selection before showing stations
+    date_list = get_search_date()
+    
+    # Now display available stations
+    print(f"\nAvailable stations:\n{'='*19}\n")
     for idx, station in enumerate(stations, 1):
         print(f"{idx}: {station}")
     print("")
 
-    date_list = get_search_date()
-    
     start_index = int(input("Enter starting station range: ")) - 1
     end_index = int(input("Enter ending station range: ")) - 1
     show_no_train_details = input("Include details for no trains/seats? (y/n): ").lower() == 'y'
