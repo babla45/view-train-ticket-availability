@@ -7,6 +7,7 @@ import time
 # import os
 import io
 from multiprocessing import Value
+import re
 
 # Constants for performance tuning
 MAX_WORKERS = 6  # Increased parallel browser instances
@@ -246,13 +247,129 @@ def get_search_date():
         
         print("Please enter 'y' or 'n'")
 
+def parse_station_list_file():
+    """Parse the stationList.txt file to extract train routes and their stations"""
+    train_routes = []
+    mixed_counter = 1  # Counter for Mixed routes
+    
+    try:
+        with open('stationList.txt', 'r') as file:
+            lines = file.readlines()
+            i = 0
+            
+            while i < len(lines):
+                line = lines[i].strip()
+                
+                # Skip empty lines
+                if not line:
+                    i += 1
+                    continue
+                
+                # Check for route headers with numbers (e.g., "5. Mixed from uttarbanga to Dhaka")
+                match = re.match(r'^\d+\.\s+(.+)$', line)
+                if match:
+                    route_name = match.group(1).strip()
+                    
+                    # If the line ends with a colon, it's a standard train entry
+                    if route_name.endswith(':'):
+                        route_name = route_name[:-1].strip()
+                        
+                    # Check if this is a Mixed route and apply special format
+                    if "Mixed" in route_name:
+                        route_name = f"Mixed_{mixed_counter} {route_name.replace('Mixed', '').strip()}"
+                        mixed_counter += 1
+                    
+                    # Collect stations for this route
+                    stations = []
+                    i += 1
+                    
+                    # Keep reading until we hit another numbered entry or end of file
+                    while i < len(lines) and not re.match(r'^\d+\.', lines[i].strip()):
+                        station = lines[i].strip()
+                        if station:  # Only add non-empty lines
+                            stations.append(station)
+                        i += 1
+                    
+                    # Add the route with its stations
+                    if stations:
+                        train_routes.append((route_name, stations))
+                    
+                else:
+                    i += 1  # Move to next line if not a route header
+            
+        return train_routes
+    except FileNotFoundError:
+        print("stationList.txt file not found.")
+        return []
+    except Exception as e:
+        print(f"Error parsing stationList.txt: {str(e)}")
+        return []
+
+def get_stations():
+    """Let user choose which station list to use"""
+    # First, check if default stations.txt exists
+    try:
+        with open('stations.txt', 'r') as file:
+            default_stations = [line.strip() for line in file.readlines()]
+    except FileNotFoundError:
+        print("stations.txt file not found.")
+        default_stations = []
+    
+    # Parse train routes from stationList.txt
+    train_routes = parse_station_list_file()
+    
+    # Display options to user in a formatted table
+    print("\nUse stations from:\n")
+    print(" 1.  Default station list         provided in stations.txt")
+    
+    for i, (route_name, _) in enumerate(train_routes, 2):
+        # Split route name to extract train name and route info
+        parts = route_name.split(",") if "," in route_name else [route_name, ""]
+        
+        # For Mixed routes, split differently
+        if "Mixed_" in parts[0]:
+            # Extract Mixed_N and the route info
+            mixed_parts = parts[0].split(" ", 1)
+            train_name = mixed_parts[0]
+            route_info = mixed_parts[1] if len(mixed_parts) > 1 else ""
+        else:
+            train_name = parts[0].strip()
+            route_info = parts[1].strip() if len(parts) > 1 else ""
+        
+        # Format the output with proper alignment, ensuring consistent spacing
+        # Right-align the number with fixed width to ensure proper alignment for all numbers
+        print(f"{i:>2}.  {train_name:<28} {route_info}")
+    
+    # Get user's choice
+    total_options = len(train_routes) + 1
+    while True:
+        try:
+            choice = int(input(f"\nEnter your choice (1-{total_options}): "))
+            
+            if choice == 1:
+                if not default_stations:
+                    print("Default station list is empty. Please choose another option.")
+                    continue
+                return default_stations
+            elif 2 <= choice <= total_options:
+                selected_stations = train_routes[choice - 2][1]
+                print(f"\nSelected: {train_routes[choice - 2][0]}")
+                print(f"Number of stations: {len(selected_stations)}")
+                return selected_stations
+            else:
+                print(f"Please enter a number between 1 and {total_options}.")
+        except ValueError:
+            print("Please enter a valid number.")
+
 if __name__ == "__main__":
     overall_start = time.time()
     
-    with open('stations.txt', 'r') as file:
-        stations = [line.strip() for line in file.readlines()]
-    
+    # Show the welcome banner at the beginning
     print(f"\n{'.' * 116}\n{'.' * 40}|| _______  Find Tickets  _______ ||{'.' * 40}\n{'.' * 116}\n")
+    
+    # Use get_stations instead of directly reading stations.txt
+    stations = get_stations()
+    
     print("\nAvailable stations:\n-------------------\n")
     for idx, station in enumerate(stations, 1):
         print(f"{idx}: {station}")
