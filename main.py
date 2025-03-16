@@ -193,13 +193,10 @@ def get_search_date():
                 date_str = date.strftime("%d-%m-%Y")
                 print(f"{idx}: {date_str} ({date.strftime('%A')})")
             
-            print("\nYou can enter:")
-            print("- A specific date number (e.g., '3')")
-            print("- A range of dates (e.g., '1-5')")
-            print("- Multiple dates separated by commas (e.g., '1,3,5')")
+            print("\nChoose option: e.g. for single: 5, for range: 2-5, for multiple: 1,3,6")
             
             while True:
-                date_input = input("\nEnter your date selection: ")
+                date_input = input("Enter your date selection: ")
                 selected_dates = []
                 
                 # Check if input is a range (e.g., "1-5")
