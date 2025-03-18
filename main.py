@@ -359,6 +359,140 @@ def get_stations():
         except ValueError:
             print("Please enter a valid number.")
 
+def find_intermediate_routes(stations, src_idx, dst_idx, range_val):
+    """Find routes using intermediate stations based on user input"""
+    # Define source station range
+    src_start = max(0, src_idx - range_val)
+    src_end = min(len(stations) - 1, src_idx + range_val)
+    
+    # Define destination station range
+    dst_start = max(0, dst_idx - range_val)
+    dst_end = min(len(stations) - 1, dst_idx + range_val)
+    
+    # Define intermediate station range (all stations between source and destination)
+    intermediate_start = src_idx + 1
+    intermediate_end = dst_idx - 1
+    
+    # If there are no valid intermediate stations
+    if intermediate_start > intermediate_end:
+        return []
+    
+    # Generate all possible routes through intermediate stations
+    routes = []
+    for src in range(src_start, src_end + 1):
+        for dst in range(dst_start, dst_end + 1):
+            for mid in range(intermediate_start, intermediate_end + 1):
+                # Add route: source -> intermediate -> destination
+                routes.append((stations[src], stations[mid], stations[dst]))
+    
+    return routes
+
+def extract_train_names(route_text):
+    """Extract train names from route text output"""
+    train_names = []
+    lines = route_text.split('\n')
+    
+    for line in lines:
+        # Look for lines that start with a train listing pattern like "(1) TRAIN_NAME"
+        if re.match(r'^\(\d+\)\s+[A-Z\s]+\s+\(', line):
+            # Extract the train name between the number and the time
+            match = re.match(r'^\(\d+\)\s+([A-Z\s]+)\s+\(', line)
+            if match:
+                train_name = match.group(1).strip()
+                train_names.append(train_name)
+    
+    return train_names
+
+def filter_route_for_common_trains(route_text, common_trains):
+    """Filter route text to only include information about common trains"""
+    filtered_lines = []
+    include_section = False
+    current_train = None
+    
+    # Get header lines (Date, From-To, URL)
+    header_lines = []
+    for line in route_text.split('\n')[:5]:
+        if line.strip() and not line.startswith('('):
+            header_lines.append(line)
+    
+    filtered_lines.extend(header_lines)
+    filtered_lines.append("")  # Empty line after header
+    
+    # Process each line to filter for common trains
+    for line in route_text.split('\n'):
+        # Check if this is a train line (starts with a number in parentheses)
+        if re.match(r'^\(\d+\)\s+', line):
+            # Extract train name
+            match = re.match(r'^\(\d+\)\s+([A-Z\s]+)\s+\(', line)
+            if match:
+                train_name = match.group(1).strip()
+                # Check if this train is in the common trains list
+                if train_name in common_trains:
+                    include_section = True
+                    current_train = train_name
+                    filtered_lines.append(line)
+                else:
+                    include_section = False
+        # If we're in a section for a common train, include seat details
+        elif include_section and line.strip() and '    ' in line:
+            filtered_lines.append(line)
+        # Include empty line after a train's details to maintain formatting
+        elif include_section and line.strip() == '':
+            filtered_lines.append(line)
+    
+    return '\n'.join(filtered_lines)
+
+def process_intermediate_routes(all_results_by_date, intermediate_routes, formatted_date):
+    """Process intermediate routes using already retrieved data instead of making new requests"""
+    intermediate_date_results = []
+    
+    # Get the direct route results for this date
+    direct_results = {(r[0], r[1]): (r[3], r[4]) for r in all_results_by_date['results']}
+    
+    # For each intermediate route
+    for idx, (src, mid, dst) in enumerate(intermediate_routes):
+        # Try to find first leg (source to intermediate)
+        first_result = direct_results.get((src, mid), (f"No data found for route {src} to {mid}", False))
+        first_leg, first_has_seats = first_result
+        
+        # Try to find second leg (intermediate to destination)
+        second_result = direct_results.get((mid, dst), (f"No data found for route {mid} to {dst}", False))
+        second_leg, second_has_seats = second_result
+        
+        # Skip routes with no train or no available seats on at least one leg
+        if not first_has_seats or not second_has_seats:
+            print(f"Skipping intermediate route {idx+1}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no train or seats available)")
+            continue
+        
+        # Extract train names from both legs
+        first_leg_trains = extract_train_names(first_leg)
+        second_leg_trains = extract_train_names(second_leg)
+        
+        # Find common trains between the two legs
+        common_trains = set(first_leg_trains).intersection(set(second_leg_trains))
+        
+        # Skip if there are no common trains
+        if not common_trains:
+            print(f"Skipping intermediate route {idx+1}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no common trains)")
+            continue
+        
+        # Filter the leg details to only include common trains
+        filtered_first_leg = filter_route_for_common_trains(first_leg, common_trains)
+        filtered_second_leg = filter_route_for_common_trains(second_leg, common_trains)
+            
+        # Combine the results of viable routes
+        combined_output = f"\nINTERMEDIATE ROUTE: {src}-{mid}-{dst}\n"
+        combined_output += f"Date: {formatted_date}\n"
+        combined_output += f"Common trains: {', '.join(common_trains)}\n\n"
+        combined_output += "FIRST LEG:\n==========\n" + filtered_first_leg + "\n\n"
+        combined_output += "SECOND LEG:\n==========\n" + filtered_second_leg + "\n"
+        
+        # Add to results
+        intermediate_date_results.append((src, dst, idx, combined_output, True))
+        print(f"Processed intermediate route {idx+1}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (found {len(common_trains)} common trains)")
+    
+    return intermediate_date_results
+
 if __name__ == "__main__":
     overall_start = time.time()
     
@@ -380,6 +514,52 @@ if __name__ == "__main__":
     start_index = int(input("Enter starting station range: ")) - 1
     end_index = int(input("Enter ending station range: ")) - 1
     show_no_train_details = input("Include details for no trains/seats? (y/n): ").lower() == 'y'
+    
+    # Ask for intermediate routing input
+    use_intermediate = input("Find routes with intermediate stations? (y/n): ").lower()
+    intermediate_routes = []
+    
+    if use_intermediate == 'y':
+        # Format: source_idx destination_idx range
+        try:
+            route_input = input("Enter source destination range (e.g., '4 15 2'): ")
+            src, dst, range_val = map(int, route_input.split())
+            
+            # Adjust to 0-based indexing
+            src_idx = src - 1
+            dst_idx = dst - 1
+            
+            # Validate input values
+            if 0 <= src_idx < len(stations) and 0 <= dst_idx < len(stations) and src_idx < dst_idx:
+                intermediate_routes = find_intermediate_routes(stations, src_idx, dst_idx, range_val)
+                print(f"Found {len(intermediate_routes)} possible intermediate routes")
+            else:
+                print("Invalid station indices. Using default values.")
+                # Use first and last station in the selected range with default range=2
+                src_idx = start_index
+                dst_idx = end_index
+                range_val = 2
+                intermediate_routes = find_intermediate_routes(stations, src_idx, dst_idx, range_val)
+                print(f"Using default intermediate route: {stations[src_idx]} to {stations[dst_idx]} with range {range_val}")
+                print(f"Found {len(intermediate_routes)} possible intermediate routes")
+        except ValueError:
+            print("Invalid input format. Using default values.")
+            # Use first and last station in the selected range with default range=2
+            src_idx = start_index
+            dst_idx = end_index
+            range_val = 2
+            intermediate_routes = find_intermediate_routes(stations, src_idx, dst_idx, range_val)
+            print(f"Using default intermediate route: {stations[src_idx]} to {stations[dst_idx]} with range {range_val}")
+            print(f"Found {len(intermediate_routes)} possible intermediate routes")
+    else:
+        # Use default values if user doesn't press 'y', but with range=0
+        src_idx = start_index
+        dst_idx = end_index
+        range_val = 0  # Changed from 2 to 0 as requested
+        intermediate_routes = find_intermediate_routes(stations, src_idx, dst_idx, range_val)
+        print(f"Using default intermediate route: {stations[src_idx]} to {stations[dst_idx]} with range {range_val}")
+        print(f"Found {len(intermediate_routes)} possible intermediate routes")
+    
     print("\nProcessing routes...\n")
 
     station_combinations = []
@@ -425,6 +605,24 @@ if __name__ == "__main__":
             'without_seats': ROUTES_WITHOUT_SEATS.value
         }
     
+    # Process intermediate routes using already retrieved data
+    intermediate_results = {}
+    if intermediate_routes:
+        print("\nProcessing intermediate routes using existing data...\n")
+        
+        for date_str in date_list:
+            formatted_date = convert_date_format(date_str)
+            print(f"\nProcessing intermediate routes for date: {formatted_date}")
+            
+            # Process intermediate routes using already retrieved data
+            intermediate_date_results = process_intermediate_routes(
+                all_results_by_date[date_str], 
+                intermediate_routes, 
+                formatted_date
+            )
+            
+            intermediate_results[date_str] = intermediate_date_results
+    
     # Calculate overall statistics
     total_routes_with_seats = sum(data['with_seats'] for data in all_results_by_date.values())
     total_routes_without_seats = sum(data['without_seats'] for data in all_results_by_date.values())
@@ -438,6 +636,9 @@ if __name__ == "__main__":
     print(f"Routes with available seats: {total_routes_with_seats}/{total_combinations} ({total_routes_with_seats/total_combinations*100:.1f}%)")
     print(f"Routes without available seats: {total_routes_without_seats}/{total_combinations} ({total_routes_without_seats/total_combinations*100:.1f}%)")
     print(f"Routes with no train service: {total_no_train_routes}/{total_combinations} ({total_no_train_routes/total_combinations*100:.1f}%)")
+    
+    if intermediate_routes:
+        print(f"Intermediate routes processed: {len(intermediate_routes)}")
     
     # Write to file
     with open('output.txt', 'w', encoding='utf-8') as output_file:
@@ -460,6 +661,22 @@ if __name__ == "__main__":
             for result in all_results_by_date[date_str]['results']:
                 doubleEqualLine(output_file)
                 output_file.write(result[3])
+        
+        # Write intermediate route results if any
+        if intermediate_routes:
+            output_file.write(f"\n\n{'=' * 84}\n")
+            output_file.write(f"INTERMEDIATE ROUTE RESULTS\n")
+            output_file.write(f"{'=' * 84}\n\n")
+            
+            for date_str in date_list:
+                formatted_date = convert_date_format(date_str)
+                output_file.write(f"{'=' * 84}\n")
+                output_file.write(f"INTERMEDIATE ROUTES FOR DATE: {formatted_date}\n")
+                output_file.write(f"{'=' * 84}\n\n")
+                
+                for result in intermediate_results[date_str]:
+                    doubleEqualLine(output_file)
+                    output_file.write(result[3])
                 
         endExecution(output_file)
 

@@ -7,27 +7,220 @@
 
 Summary: 
 
-Execution date and time             : 2025-03-16 10:37:16 PM
-Journey Dates                       : 16-Mar-2025
-Total number of routes/combinations : 1
-Total execution time                : 45.53 seconds (0.76 minutes)
-Average execution time per route    : 45.53 seconds
-Routes with seats                   : 0
-Routes without seats                : 0
-Routes with no train service        : 1
+Execution date and time             : 2025-03-18 11:15:30 AM
+Journey Dates                       : 28-Mar-2025
+Total number of routes/combinations : 6
+Total execution time                : 40.57 seconds (0.68 minutes)
+Average execution time per route    : 6.76 seconds
+Routes with seats                   : 5
+Routes without seats                : 1
+Routes with no train service        : 0
 
 
 
 
 ====================================================================================
-RESULTS FOR DATE: 16-Mar-2025
+RESULTS FOR DATE: 28-Mar-2025
 ====================================================================================
 
 ====================================================================================
 
-Date          : 16-Mar-2025
-From-To       : Chilahati-Domar
-✗ No train found for selected dates or cities. Please try different dates or cities.
+    Date      : 28-Mar-2025
+    From-To   : Chilahati-Domar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Domar&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-05:18 AM) [00h 18m]
+    S_CHAIR   : 100  (৳50)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:18 AM) [00h 18m]
+    AC_S      : 4    (৳127)
+    S_CHAIR   : 46   (৳50)
+    SNIGDHA   : 15   (৳115)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-08:48 AM) [00h 18m]
+    AC_S      : 2    (৳127)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 30   (৳50)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-03:21 PM) [00h 21m]
+    S_CHAIR   : 80   (৳50)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-06:48 PM) [00h 18m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 2    (৳200)
+    SNIGDHA   : 5    (৳115)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-08:18 PM) [00h 18m]
+    S_CHAIR   : 50   (৳50)
+    SNIGDHA   : 15   (৳115)
+    AC_B      : 3    (৳200)
+
+====================================================================================
+
+    Date      : 28-Mar-2025
+    From-To   : Chilahati-Nilphamari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Nilphamari&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-05:36 AM) [00h 36m]
+    S_CHAIR   : 100  (৳50)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:37 AM) [00h 37m]
+    AC_S      : 4    (৳127)
+    S_CHAIR   : 95   (৳50)
+    SNIGDHA   : 20   (৳115)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-09:07 AM) [00h 37m]
+    AC_S      : 2    (৳127)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 30   (৳50)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-03:41 PM) [00h 41m]
+    S_CHAIR   : 80   (৳50)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-07:07 PM) [00h 37m]
+    S_CHAIR   : 52   (৳50)
+    AC_B      : 2    (৳200)
+    SNIGDHA   : 5    (৳115)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-08:37 PM) [00h 37m]
+    S_CHAIR   : 84   (৳50)
+    SNIGDHA   : 20   (৳115)
+    AC_B      : 2    (৳200)
+
+====================================================================================
+
+    Date      : 28-Mar-2025
+    From-To   : Chilahati-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-06:04 AM) [01h 04m]
+    S_CHAIR   : 355  (৳65)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:59 AM) [00h 59m]
+    AC_S      : 16   (৳150)
+    S_CHAIR   : 170  (৳65)
+    SNIGDHA   : 50   (৳127)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-09:30 AM) [01h 00m]
+    AC_S      : 16   (৳150)
+    SNIGDHA   : 15   (৳127)
+    S_CHAIR   : 292  (৳65)
+    F_SEAT    : 8    (৳104)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-04:15 PM) [01h 15m]
+    S_CHAIR   : 400  (৳65)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-07:29 PM) [00h 59m]
+    S_CHAIR   : 155  (৳65)
+    AC_B      : 5    (৳269)
+    SNIGDHA   : 10   (৳127)
+    F_BERTH   : 6    (৳200)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-08:59 PM) [00h 59m]
+    S_CHAIR   : 90   (৳65)
+    SNIGDHA   : 75   (৳127)
+    AC_B      : 10   (৳269)
+
+====================================================================================
+Date: 28-Mar-2025 - Available 0 tickets for the route Domar-Nilphamari
+====================================================================================
+
+    Date      : 28-Mar-2025
+    From-To   : Domar-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-06:04 AM) [00h 43m]
+    S_CHAIR   : 10   (৳65)
+
+(2) TITUMIR EXPRESS (734) (03:24 PM-04:15 PM) [00h 51m]
+    S_CHAIR   : 10   (৳65)
+
+====================================================================================
+
+    Date      : 28-Mar-2025
+    From-To   : Nilphamari-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-06:04 AM) [00h 25m]
+    S_CHAIR   : 10   (৳50)
+
+(2) CHILAHATI EXPRESS (806) (06:40 AM-06:59 AM) [00h 19m]
+    S_CHAIR   : 5    (৳50)
+
+
+
+====================================================================================
+INTERMEDIATE ROUTE RESULTS
+====================================================================================
+
+====================================================================================
+INTERMEDIATE ROUTES FOR DATE: 28-Mar-2025
+====================================================================================
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Chilahati-Domar-Saidpur
+Date: 28-Mar-2025
+Common trains: BARENDRA EXPRESS, TITUMIR EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Mar-2025    From-To   : Chilahati-Domar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Domar&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-05:18 AM) [00h 18m]
+    S_CHAIR   : 100  (৳50)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-03:21 PM) [00h 21m]
+    S_CHAIR   : 80   (৳50)
+
+
+SECOND LEG:
+==========
+    Date      : 28-Mar-2025
+    From-To   : Domar-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-06:04 AM) [00h 43m]
+    S_CHAIR   : 10   (৳65)
+
+(2) TITUMIR EXPRESS (734) (03:24 PM-04:15 PM) [00h 51m]
+    S_CHAIR   : 10   (৳65)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Chilahati-Nilphamari-Saidpur
+Date: 28-Mar-2025
+Common trains: BARENDRA EXPRESS, CHILAHATI EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Mar-2025
+    From-To   : Chilahati-Nilphamari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Nilphamari&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-05:36 AM) [00h 36m]
+    S_CHAIR   : 100  (৳50)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:37 AM) [00h 37m]
+    AC_S      : 4    (৳127)
+    S_CHAIR   : 95   (৳50)
+    SNIGDHA   : 20   (৳115)
+
+
+SECOND LEG:
+==========
+    Date      : 28-Mar-2025
+    From-To   : Nilphamari-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-06:04 AM) [00h 25m]
+    S_CHAIR   : 10   (৳50)
+
+(2) CHILAHATI EXPRESS (806) (06:40 AM-06:59 AM) [00h 19m]
+    S_CHAIR   : 5    (৳50)
+
 
 
 
