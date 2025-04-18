@@ -1,0 +1,251 @@
+
+....................................................................................
+........................|| _______ Intermediate Routes _______ ||........................
+....................................................................................
+
+
+
+Summary: 
+
+Execution date and time             : 2025-04-19 02:06:07 AM
+Selected Train Route                : (6) Mixed_2 from Dhaka to  Uttarbanga
+Selected station range (from-to)    : (1-23) (Dhaka ==> Lalmonirhat)
+Journey Date                        : 28-Apr-2025
+
+Station List:
+Dhaka
+Joydebpur
+Tangail
+Ibrahimabad
+SH M Monsur Ali
+Ullapara
+Boral_Bridge
+Azim Nagar
+Natore
+Madhnagar
+Santahar
+Talora
+Bogura
+Sonatola
+Bonar_Para
+Gaibandha
+Bamondanga
+Pirgacha
+Kaunia
+Rangpur
+Kurigram
+Teesta_Junction
+Lalmonirhat
+
+Total potential intermediate routes : 6
+
+
+
+====================================================================================
+INTERMEDIATE ROUTE RESULTS
+====================================================================================
+
+====================================================================================
+INTERMEDIATE ROUTES FOR DATE: 28-Apr-2025
+====================================================================================
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Dhaka ==> Kaunia ==> Kurigram
+Date: 28-Apr-2025
+Common trains: KURIGRAM EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Dhaka-Kaunia
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+
+(2) KURIGRAM EXPRESS (797) (08:00 PM-04:25 AM) [08h 25m]
+    AC_B      : 0    (৳2408)
+    SNIGDHA   : 3    (৳1311)
+    S_CHAIR   : 29   (৳685)
+
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Kaunia-Kurigram
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Kurigram&doj=28-Apr-2025&class=S_CHAIR
+
+(1) KURIGRAM EXPRESS (797) (04:28 AM-05:10 AM) [00h 42m]
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 3    (৳115)
+    S_CHAIR   : 110  (৳50)
+====================================================================================
+
+INTERMEDIATE ROUTE: Dhaka ==> Gaibandha ==> Lalmonirhat
+Date: 28-Apr-2025
+Common trains: LALMONI EXPRESS, BURIMARI EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Dhaka-Gaibandha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Gaibandha&doj=28-Apr-2025&class=S_CHAIR
+
+(1) BURIMARI EXPRESS (809) (08:30 AM-04:28 PM) [07h 58m]
+    AC_S      : 9    (৳1369)
+    S_CHAIR   : 59   (৳595)
+    SNIGDHA   : 15   (৳1139)
+
+(2) LALMONI EXPRESS (751) (09:45 PM-05:37 AM) [07h 52m]
+    AC_B      : 2    (৳2097)
+    SNIGDHA   : 10   (৳1139)
+    S_CHAIR   : 60   (৳595)
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Gaibandha-Lalmonirhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Gaibandha&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (05:40 AM-07:20 AM) [01h 40m]
+    AC_B      : 2    (৳344)
+    SNIGDHA   : 10   (৳167)
+    S_CHAIR   : 50   (৳85)
+
+(3) BURIMARI EXPRESS (809) (04:33 PM-06:10 PM) [01h 37m]
+    AC_S      : 9    (৳196)
+    S_CHAIR   : 125  (৳85)
+    SNIGDHA   : 33   (৳167)
+====================================================================================
+
+INTERMEDIATE ROUTE: Dhaka ==> Ibrahimabad ==> Lalmonirhat
+Date: 28-Apr-2025
+Common trains: LALMONI EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Dhaka-Ibrahimabad
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Ibrahimabad&doj=28-Apr-2025&class=S_CHAIR
+
+(8) LALMONI EXPRESS (751) (09:45 PM-11:54 PM) [02h 09m]
+    AC_B      : 0    (৳528)
+    SNIGDHA   : 0    (৳271)
+    S_CHAIR   : 5    (৳140)
+
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Ibrahimabad-Lalmonirhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ibrahimabad&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (11:56 PM-07:20 AM) [07h 24m]
+    AC_B      : 0    (৳1908)
+    SNIGDHA   : 0    (৳1035)
+    S_CHAIR   : 5    (৳540)
+====================================================================================
+
+INTERMEDIATE ROUTE: Dhaka ==> Joydebpur ==> Lalmonirhat
+Date: 28-Apr-2025
+Common trains: LALMONI EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Dhaka-Joydebpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Joydebpur&doj=28-Apr-2025&class=S_CHAIR
+
+(11) LALMONI EXPRESS (751) (09:45 PM-10:36 PM) [00h 51m]
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 20   (৳50)
+
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Joydebpur-Lalmonirhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joydebpur&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (10:38 PM-07:20 AM) [08h 42m]
+    AC_B      : 0    (৳2247)
+    SNIGDHA   : 0    (৳1219)
+    S_CHAIR   : 19   (৳640)
+====================================================================================
+
+INTERMEDIATE ROUTE: Dhaka ==> Kaunia ==> Lalmonirhat
+Date: 28-Apr-2025
+Common trains: LALMONI EXPRESS, BURIMARI EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Dhaka-Kaunia
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+
+(1) BURIMARI EXPRESS (809) (08:30 AM-05:43 PM) [09h 13m]
+    S_CHAIR   : 20   (৳680)
+    SNIGDHA   : 5    (৳1300)
+
+(3) LALMONI EXPRESS (751) (09:45 PM-06:48 AM) [09h 03m]
+    AC_B      : 0    (৳2385)
+    SNIGDHA   : 0    (৳1300)
+    S_CHAIR   : 30   (৳680)
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Kaunia-Lalmonirhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (06:51 AM-07:20 AM) [00h 29m]
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 80   (৳50)
+
+(3) BURIMARI EXPRESS (809) (05:46 PM-06:10 PM) [00h 24m]
+    S_CHAIR   : 90   (৳50)
+    SNIGDHA   : 13   (৳115)
+====================================================================================
+
+INTERMEDIATE ROUTE: Gaibandha ==> Kaunia ==> Lalmonirhat
+Date: 28-Apr-2025
+Common trains: LALMONI EXPRESS, BURIMARI EXPRESS, KOROTOA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Gaibandha-Kaunia
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Gaibandha&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (05:40 AM-06:48 AM) [01h 08m]
+    S_CHAIR   : 15   (৳85)
+
+(2) KOROTOA EXPRESS (713) (12:04 PM-01:12 PM) [01h 08m]
+    S_CHAIR   : 15   (৳85)
+
+(4) BURIMARI EXPRESS (809) (04:33 PM-05:43 PM) [01h 10m]
+    S_CHAIR   : 35   (৳85)
+    SNIGDHA   : 3    (৳167)
+
+SECOND LEG:
+==========
+    Date      : 28-Apr-2025
+    From-To   : Kaunia-Lalmonirhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+
+(1) LALMONI EXPRESS (751) (06:51 AM-07:20 AM) [00h 29m]
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 80   (৳50)
+
+(2) KOROTOA EXPRESS (713) (01:15 PM-01:40 PM) [00h 25m]
+    S_CHAIR   : 15   (৳50)
+
+(3) BURIMARI EXPRESS (809) (05:46 PM-06:10 PM) [00h 24m]
+    S_CHAIR   : 90   (৳50)
+    SNIGDHA   : 13   (৳115)
+
+
+====================================================================================
+|| ~~~~~~~~~~~~~~~~~~~~~~~~ ||   Finished Execution   || ~~~~~~~~~~~~~~~~~~~~~~~~ ||
+====================================================================================

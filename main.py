@@ -318,7 +318,8 @@ def get_stations():
     
     # Display options to user in a formatted table
     print("\nSelect a train to use its route (station list):\n")
-    print(" 1.  Default station list         provided in stations.txt")
+    # Make the default option more visible with stars
+    print(" 1.  Default station list         provided in stations.txt file")
     
     for i, (route_name, _) in enumerate(train_routes, 2):
         # Split route name to extract train name and route info
@@ -514,8 +515,8 @@ if __name__ == "__main__":
         print(f"{idx}: {station}")
     print("")
 
-    start_index = int(input("Enter starting station range: ")) - 1
-    end_index = int(input("Enter ending station range: ")) - 1
+    start_index = int(input("Enter starting station : ")) - 1
+    end_index = int(input("Enter ending station : ")) - 1
     show_no_train_details = input("Include details for no trains/seats? (y/n): ").lower() == 'y'
     
     # Ask for intermediate routing input
@@ -525,7 +526,7 @@ if __name__ == "__main__":
     if use_intermediate == 'y':
         # Format: source_idx destination_idx range
         try:
-            route_input = input("Enter source destination range (e.g., '4 15 2'): ")
+            route_input = input("Enter { source, destination, range_length} in a single line (e.g., '4 15 2'): ")
             src, dst, range_val = map(int, route_input.split())
             
             # Adjust to 0-based indexing
@@ -651,6 +652,7 @@ if __name__ == "__main__":
         output_file.write(f"Summary: \n\n")
         output_file.write("Execution date and time             : " + datetime.now().strftime("%Y-%m-%d %I:%M:%S %p") + '\n')
         output_file.write(f"Selected Train Route                : {selected_route_name}\n")
+        output_file.write(f"Selected station range (from-to)    : ({start_index+1}-{end_index+1}) ({stations[start_index]} ==> {stations[end_index]})\n")
         output_file.write(f"Journey Dates                       : {', '.join(convert_date_format(d) for d in date_list)}\n")
         output_file.write(f"Total number of routes/combinations : {total_combinations}\n")
         output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")
