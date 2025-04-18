@@ -340,6 +340,8 @@ def get_stations():
     
     # Get user's choice
     total_options = len(train_routes) + 1
+    selected_route_name = "Default station list"
+    
     while True:
         try:
             choice = int(input(f"\nEnter your choice (1-{total_options}): "))
@@ -348,12 +350,13 @@ def get_stations():
                 if not default_stations:
                     print("Default station list is empty. Please choose another option.")
                     continue
-                return default_stations
+                return default_stations, selected_route_name
             elif 2 <= choice <= total_options:
                 selected_stations = train_routes[choice - 2][1]
-                print(f"\nSelected Train Route : {train_routes[choice - 2][0]}")
+                selected_route_name = "("+str(choice-1) + ") " + train_routes[choice - 2][0]
+                print(f"\nSelected Train Route : {selected_route_name}")
                 print(f"Number of stations   : {len(selected_stations)}")
-                return selected_stations
+                return selected_stations, selected_route_name
             else:
                 print(f"Please enter a number between 1 and {total_options}.")
         except ValueError:
@@ -500,7 +503,7 @@ if __name__ == "__main__":
     print(f"\n{'.' * 116}\n{'.' * 40}|| _______  Find Tickets  _______ ||{'.' * 40}\n{'.' * 116}\n")
     
     # Use get_stations instead of directly reading stations.txt
-    stations = get_stations()
+    stations, selected_route_name = get_stations()
     
     # Ask for date selection before showing stations
     date_list = get_search_date()
@@ -565,11 +568,13 @@ if __name__ == "__main__":
     station_combinations = []
     route_index = 0
     for i in range(len(stations)):
-        for j in range(max(i+1, start_index), min(end_index+1, len(stations))):
-            from_station = stations[i]
-            to_station = stations[j]
-            station_combinations.append((from_station, to_station, route_index))
-            route_index += 1
+        # Reverse the inner loop to go from highest index to lowest
+        for j in range(min(end_index, len(stations)-1), max(i, start_index-1), -1):
+            if j > i:  # Ensure we're only creating combinations where j > i
+                from_station = stations[i]
+                to_station = stations[j]
+                station_combinations.append((from_station, to_station, route_index))
+                route_index += 1
 
     total_combinations = len(station_combinations) * len(date_list)
     
@@ -645,6 +650,7 @@ if __name__ == "__main__":
         output_file.write(f"\n{'.' * 84}\n{'.' * 24}|| _______ Md Babla Islam _______ ||{'.' * 24}\n{'.' * 84}\n\n\n\n")
         output_file.write(f"Summary: \n\n")
         output_file.write("Execution date and time             : " + datetime.now().strftime("%Y-%m-%d %I:%M:%S %p") + '\n')
+        output_file.write(f"Selected Train Route                : {selected_route_name}\n")
         output_file.write(f"Journey Dates                       : {', '.join(convert_date_format(d) for d in date_list)}\n")
         output_file.write(f"Total number of routes/combinations : {total_combinations}\n")
         output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")

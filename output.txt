@@ -7,59 +7,446 @@
 
 Summary: 
 
-Execution date and time             : 2025-03-18 11:15:30 AM
-Journey Dates                       : 28-Mar-2025
-Total number of routes/combinations : 6
-Total execution time                : 40.57 seconds (0.68 minutes)
-Average execution time per route    : 6.76 seconds
-Routes with seats                   : 5
-Routes without seats                : 1
-Routes with no train service        : 0
+Execution date and time             : 2025-04-19 12:25:59 AM
+Selected Train Route                : (2) SIMANTA EXPRESS(748) , Chilahati to Khulna
+Journey Dates                       : 25-Apr-2025
+Total number of routes/combinations : 253
+Total execution time                : 202.95 seconds (3.38 minutes)
+Average execution time per route    : 0.80 seconds
+Routes with seats                   : 151
+Routes without seats                : 31
+Routes with no train service        : 71
 
 
 
 
 ====================================================================================
-RESULTS FOR DATE: 28-Mar-2025
+RESULTS FOR DATE: 25-Apr-2025
 ====================================================================================
 
 ====================================================================================
 
-    Date      : 28-Mar-2025
-    From-To   : Chilahati-Domar
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Domar&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:00 AM-05:18 AM) [00h 18m]
-    S_CHAIR   : 100  (৳50)
+(1) RUPSHA EXPRESS (728) (08:30 AM-06:25 PM) [09h 55m]
+    AC_S      : 4    (৳1323)
+    SNIGDHA   : 5    (৳1104)
+    S_CHAIR   : 0    (৳575)
+    F_SEAT    : 4    (৳880)
 
-(2) CHILAHATI EXPRESS (806) (06:00 AM-06:18 AM) [00h 18m]
-    AC_S      : 4    (৳127)
-    S_CHAIR   : 46   (৳50)
-    SNIGDHA   : 15   (৳115)
-
-(3) RUPSHA EXPRESS (728) (08:30 AM-08:48 AM) [00h 18m]
-    AC_S      : 2    (৳127)
-    SNIGDHA   : 5    (৳115)
-    S_CHAIR   : 30   (৳50)
-
-(4) TITUMIR EXPRESS (734) (03:00 PM-03:21 PM) [00h 21m]
-    S_CHAIR   : 80   (৳50)
-
-(5) SIMANTA EXPRESS (748) (06:30 PM-06:48 PM) [00h 18m]
-    S_CHAIR   : 40   (৳50)
-    AC_B      : 2    (৳200)
-    SNIGDHA   : 5    (৳115)
-
-(6) NILSAGAR EXPRESS (766) (08:00 PM-08:18 PM) [00h 18m]
-    S_CHAIR   : 50   (৳50)
-    SNIGDHA   : 15   (৳115)
-    AC_B      : 3    (৳200)
+(2) SIMANTA EXPRESS (748) (06:30 PM-04:10 AM) [09h 40m]
+    S_CHAIR   : 15   (৳575)
+    AC_B      : 2    (৳2028)
+    SNIGDHA   : 7    (৳1104)
+    F_BERTH   : 4    (৳1373)
 
 ====================================================================================
 
-    Date      : 28-Mar-2025
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Daulatpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Daulatpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-03:41 AM) [09h 11m]
+    S_CHAIR   : 5    (৳575)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-03:13 AM) [08h 43m]
+    S_CHAIR   : 5    (৳540)
+    SNIGDHA   : 0    (৳1035)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:30 AM-04:58 PM) [08h 28m]
+    AC_S      : 4    (৳1168)
+    SNIGDHA   : 5    (৳972)
+    S_CHAIR   : 0    (৳510)
+    F_SEAT    : 4    (৳782)
+
+(2) SIMANTA EXPRESS (748) (06:30 PM-02:41 AM) [08h 11m]
+    S_CHAIR   : 16   (৳510)
+    AC_B      : 0    (৳1798)
+    SNIGDHA   : 5    (৳972)
+    F_BERTH   : 0    (৳1218)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-02:04 AM) [07h 34m]
+    S_CHAIR   : 5    (৳485)
+    SNIGDHA   : 0    (৳926)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-01:50 AM) [07h 20m]
+    S_CHAIR   : 5    (৳460)
+    AC_B      : 0    (৳1632)
+    SNIGDHA   : 0    (৳880)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:30 AM-03:45 PM) [07h 15m]
+    AC_S      : 0    (৳989)
+    SNIGDHA   : 5    (৳823)
+    S_CHAIR   : 0    (৳430)
+    F_SEAT    : 4    (৳662)
+
+(2) SIMANTA EXPRESS (748) (06:30 PM-01:24 AM) [06h 54m]
+    S_CHAIR   : 5    (৳430)
+    AC_B      : 0    (৳1528)
+    SNIGDHA   : 5    (৳823)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:30 AM-03:20 PM) [06h 50m]
+    AC_S      : 0    (৳949)
+    SNIGDHA   : 5    (৳788)
+    S_CHAIR   : 0    (৳415)
+    F_SEAT    : 4    (৳633)
+
+(2) SIMANTA EXPRESS (748) (06:30 PM-01:00 AM) [06h 30m]
+    S_CHAIR   : 7    (৳415)
+    AC_B      : 0    (৳1471)
+    SNIGDHA   : 5    (৳788)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Alamdanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Alamdanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-12:40 AM) [06h 10m]
+    S_CHAIR   : 5    (৳395)
+    SNIGDHA   : 0    (৳754)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:30 AM-02:44 PM) [06h 14m]
+    AC_S      : 0    (৳863)
+    SNIGDHA   : 5    (৳719)
+    S_CHAIR   : 0    (৳375)
+    F_SEAT    : 4    (৳575)
+
+(2) SIMANTA EXPRESS (748) (06:30 PM-12:21 AM) [05h 51m]
+    S_CHAIR   : 10   (৳375)
+    AC_B      : 0    (৳1338)
+    SNIGDHA   : 5    (৳719)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Bheramara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Bheramara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:30 PM-12:00 AM) [05h 30m]
+    S_CHAIR   : 5    (৳355)
+    AC_B      : 0    (৳1269)
+    SNIGDHA   : 0    (৳679)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:30 AM-01:40 PM) [05h 10m]
+    AC_S      : 0    (৳656)
+    SNIGDHA   : 4    (৳547)
+    S_CHAIR   : 12   (৳285)
+    F_SEAT    : 8    (৳437)
+
+(2) SIMANTA EXPRESS (748) (06:30 PM-11:20 PM) [04h 50m]
+    S_CHAIR   : 20   (৳285)
+    AC_B      : 0    (৳1034)
+    SNIGDHA   : 5    (৳547)
+    F_BERTH   : 2    (৳706)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-09:32 AM) [04h 32m]
+    S_CHAIR   : 10   (৳250)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-10:01 AM) [04h 01m]
+    S_CHAIR   : 5    (৳250)
+    SNIGDHA   : 15   (৳472)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-12:55 PM) [04h 25m]
+    AC_S      : 4    (৳570)
+    SNIGDHA   : 5    (৳472)
+    S_CHAIR   : 10   (৳250)
+    F_SEAT    : 4    (৳380)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-07:50 PM) [04h 50m]
+    S_CHAIR   : 15   (৳250)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-10:40 PM) [04h 10m]
+    S_CHAIR   : 22   (৳250)
+    AC_B      : 0    (৳901)
+    SNIGDHA   : 5    (৳472)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-12:10 AM) [04h 10m]
+    S_CHAIR   : 7    (৳250)
+    SNIGDHA   : 15   (৳472)
+    AC_B      : 0    (৳901)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-08:40 AM) [03h 40m]
+    S_CHAIR   : 30   (৳195)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-09:15 AM) [03h 15m]
+    AC_S      : 4    (৳449)
+    S_CHAIR   : 10   (৳195)
+    SNIGDHA   : 20   (৳374)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-12:00 PM) [03h 30m]
+    AC_S      : 4    (৳449)
+    SNIGDHA   : 5    (৳374)
+    S_CHAIR   : 0    (৳195)
+    F_SEAT    : 4    (৳299)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-06:55 PM) [03h 55m]
+    S_CHAIR   : 15   (৳195)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-09:55 PM) [03h 25m]
+    S_CHAIR   : 20   (৳195)
+    AC_B      : 2    (৳717)
+    SNIGDHA   : 5    (৳374)
+    F_BERTH   : 2    (৳499)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-11:20 PM) [03h 20m]
+    S_CHAIR   : 30   (৳195)
+    SNIGDHA   : 15   (৳374)
+    AC_B      : 2    (৳717)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-08:15 AM) [03h 15m]
+    S_CHAIR   : 10   (৳175)
+
+(2) RUPSHA EXPRESS (728) (08:30 AM-11:39 AM) [03h 09m]
+    AC_S      : 0    (৳397)
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 10   (৳175)
+
+(3) TITUMIR EXPRESS (734) (03:00 PM-06:33 PM) [03h 33m]
+    S_CHAIR   : 10   (৳175)
+
+(4) SIMANTA EXPRESS (748) (06:30 PM-09:31 PM) [03h 01m]
+    S_CHAIR   : 10   (৳175)
+    AC_B      : 0    (৳648)
+    SNIGDHA   : 0    (৳334)
+
+(5) NILSAGAR EXPRESS (766) (08:00 PM-11:00 PM) [03h 00m]
+    S_CHAIR   : 17   (৳175)
+    SNIGDHA   : 5    (৳334)
+    AC_B      : 0    (৳648)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-07:58 AM) [02h 58m]
+    S_CHAIR   : 20   (৳155)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-08:32 AM) [02h 32m]
+    AC_S      : 4    (৳357)
+    S_CHAIR   : 5    (৳155)
+    SNIGDHA   : 15   (৳299)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-11:22 AM) [02h 52m]
+    AC_S      : 4    (৳357)
+    SNIGDHA   : 5    (৳299)
+    S_CHAIR   : 16   (৳155)
+    F_SEAT    : 4    (৳236)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-06:12 PM) [03h 12m]
+    S_CHAIR   : 24   (৳155)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-09:14 PM) [02h 44m]
+    S_CHAIR   : 10   (৳155)
+    AC_B      : 0    (৳579)
+    SNIGDHA   : 5    (৳299)
+    F_BERTH   : 2    (৳407)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-10:43 PM) [02h 43m]
+    S_CHAIR   : 12   (৳155)
+    SNIGDHA   : 15   (৳299)
+    AC_B      : 2    (৳579)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-07:17 AM) [02h 17m]
+    S_CHAIR   : 17   (৳120)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-08:01 AM) [02h 01m]
+    AC_S      : 4    (৳271)
+    S_CHAIR   : 22   (৳120)
+    SNIGDHA   : 10   (৳225)
+
+(3) TITUMIR EXPRESS (734) (03:00 PM-05:27 PM) [02h 27m]
+    S_CHAIR   : 10   (৳120)
+
+(4) SIMANTA EXPRESS (748) (06:30 PM-08:42 PM) [02h 12m]
+    S_CHAIR   : 10   (৳120)
+    AC_B      : 0    (৳453)
+    SNIGDHA   : 0    (৳225)
+
+(5) NILSAGAR EXPRESS (766) (08:00 PM-10:11 PM) [02h 11m]
+    S_CHAIR   : 16   (৳120)
+    SNIGDHA   : 5    (৳225)
+    AC_B      : 0    (৳453)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-07:03 AM) [02h 03m]
+    S_CHAIR   : 20   (৳105)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-07:48 AM) [01h 48m]
+    S_CHAIR   : 22   (৳105)
+    SNIGDHA   : 10   (৳196)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-10:36 AM) [02h 06m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 5    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-05:13 PM) [02h 13m]
+    S_CHAIR   : 10   (৳105)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-08:28 PM) [01h 58m]
+    S_CHAIR   : 12   (৳105)
+    AC_B      : 0    (৳407)
+    SNIGDHA   : 5    (৳196)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-09:58 PM) [01h 58m]
+    S_CHAIR   : 10   (৳105)
+    SNIGDHA   : 10   (৳196)
+    AC_B      : 0    (৳407)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Parbatipur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Parbatipur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-06:25 AM) [01h 25m]
+    S_CHAIR   : 30   (৳80)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-07:20 AM) [01h 20m]
+    AC_S      : 8    (৳184)
+    S_CHAIR   : 104  (৳80)
+    SNIGDHA   : 60   (৳156)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-09:55 AM) [01h 25m]
+    AC_S      : 8    (৳184)
+    SNIGDHA   : 5    (৳156)
+    S_CHAIR   : 0    (৳80)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-04:35 PM) [01h 35m]
+    S_CHAIR   : 62   (৳80)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-07:50 PM) [01h 20m]
+    S_CHAIR   : 50   (৳80)
+    AC_B      : 4    (৳326)
+    SNIGDHA   : 5    (৳156)
+    F_BERTH   : 4    (৳234)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-09:20 PM) [01h 20m]
+    S_CHAIR   : 70   (৳80)
+    SNIGDHA   : 25   (৳156)
+    AC_B      : 2    (৳326)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Saidpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Saidpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:00 AM-06:04 AM) [01h 04m]
+    S_CHAIR   : 355  (৳65)
+
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:59 AM) [00h 59m]
+    AC_S      : 16   (৳150)
+    S_CHAIR   : 170  (৳65)
+    SNIGDHA   : 50   (৳127)
+
+(3) RUPSHA EXPRESS (728) (08:30 AM-09:30 AM) [01h 00m]
+    AC_S      : 16   (৳150)
+    SNIGDHA   : 15   (৳127)
+    S_CHAIR   : 292  (৳65)
+    F_SEAT    : 8    (৳104)
+
+(4) TITUMIR EXPRESS (734) (03:00 PM-04:15 PM) [01h 15m]
+    S_CHAIR   : 400  (৳65)
+
+(5) SIMANTA EXPRESS (748) (06:30 PM-07:29 PM) [00h 59m]
+    S_CHAIR   : 155  (৳65)
+    AC_B      : 5    (৳269)
+    SNIGDHA   : 10   (৳127)
+    F_BERTH   : 6    (৳200)
+
+(6) NILSAGAR EXPRESS (766) (08:00 PM-08:59 PM) [00h 59m]
+    S_CHAIR   : 182  (৳65)
+    SNIGDHA   : 75   (৳127)
+    AC_B      : 10   (৳269)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
     From-To   : Chilahati-Nilphamari
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Nilphamari&doj=28-Mar-2025&class=S_CHAIR
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Nilphamari&doj=25-Apr-2025&class=S_CHAIR
 
 (1) BARENDRA EXPRESS (732) (05:00 AM-05:36 AM) [00h 36m]
     S_CHAIR   : 100  (৳50)
@@ -89,45 +476,192 @@ RESULTS FOR DATE: 28-Mar-2025
 
 ====================================================================================
 
-    Date      : 28-Mar-2025
-    From-To   : Chilahati-Saidpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Chilahati-Domar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Domar&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:00 AM-06:04 AM) [01h 04m]
-    S_CHAIR   : 355  (৳65)
+(1) BARENDRA EXPRESS (732) (05:00 AM-05:18 AM) [00h 18m]
+    S_CHAIR   : 100  (৳50)
 
-(2) CHILAHATI EXPRESS (806) (06:00 AM-06:59 AM) [00h 59m]
-    AC_S      : 16   (৳150)
-    S_CHAIR   : 170  (৳65)
-    SNIGDHA   : 50   (৳127)
+(2) CHILAHATI EXPRESS (806) (06:00 AM-06:18 AM) [00h 18m]
+    AC_S      : 4    (৳127)
+    S_CHAIR   : 96   (৳50)
+    SNIGDHA   : 15   (৳115)
 
-(3) RUPSHA EXPRESS (728) (08:30 AM-09:30 AM) [01h 00m]
-    AC_S      : 16   (৳150)
-    SNIGDHA   : 15   (৳127)
-    S_CHAIR   : 292  (৳65)
-    F_SEAT    : 8    (৳104)
+(3) RUPSHA EXPRESS (728) (08:30 AM-08:48 AM) [00h 18m]
+    AC_S      : 2    (৳127)
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 30   (৳50)
 
-(4) TITUMIR EXPRESS (734) (03:00 PM-04:15 PM) [01h 15m]
-    S_CHAIR   : 400  (৳65)
+(4) TITUMIR EXPRESS (734) (03:00 PM-03:21 PM) [00h 21m]
+    S_CHAIR   : 80   (৳50)
 
-(5) SIMANTA EXPRESS (748) (06:30 PM-07:29 PM) [00h 59m]
-    S_CHAIR   : 155  (৳65)
-    AC_B      : 5    (৳269)
-    SNIGDHA   : 10   (৳127)
-    F_BERTH   : 6    (৳200)
+(5) SIMANTA EXPRESS (748) (06:30 PM-06:48 PM) [00h 18m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 2    (৳200)
+    SNIGDHA   : 5    (৳115)
 
-(6) NILSAGAR EXPRESS (766) (08:00 PM-08:59 PM) [00h 59m]
-    S_CHAIR   : 90   (৳65)
-    SNIGDHA   : 75   (৳127)
-    AC_B      : 10   (৳269)
+(6) NILSAGAR EXPRESS (766) (08:00 PM-08:18 PM) [00h 18m]
+    S_CHAIR   : 50   (৳50)
+    SNIGDHA   : 15   (৳115)
+    AC_B      : 3    (৳200)
 
 ====================================================================================
-Date: 28-Mar-2025 - Available 0 tickets for the route Domar-Nilphamari
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:51 AM-06:25 PM) [09h 34m]
+    AC_S      : 2    (৳1323)
+    SNIGDHA   : 5    (৳1104)
+    S_CHAIR   : 20   (৳575)
+
+(2) SIMANTA EXPRESS (748) (06:51 PM-04:10 AM) [09h 19m]
+    S_CHAIR   : 20   (৳575)
+    AC_B      : 2    (৳2028)
+    SNIGDHA   : 5    (৳1104)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Noapara
 ====================================================================================
 
-    Date      : 28-Mar-2025
+    Date      : 25-Apr-2025
+    From-To   : Domar-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (08:51 AM-04:58 PM) [08h 07m]
+    AC_S      : 0    (৳1168)
+    SNIGDHA   : 0    (৳972)
+    S_CHAIR   : 10   (৳510)
+
+(2) SIMANTA EXPRESS (748) (06:51 PM-02:41 AM) [07h 50m]
+    S_CHAIR   : 10   (৳510)
+    AC_B      : 0    (৳1798)
+    SNIGDHA   : 0    (৳972)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Darshana_Halt
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (06:51 PM-01:00 AM) [06h 09m]
+    S_CHAIR   : 10   (৳415)
+    AC_B      : 0    (৳1471)
+    SNIGDHA   : 0    (৳788)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Domar-Alamdanga
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Domar-Poradaha
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Domar-Bheramara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Domar-Ishwardi
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-09:32 AM) [04h 11m]
+    S_CHAIR   : 10   (৳250)
+
+(2) CHILAHATI EXPRESS (806) (06:21 AM-10:01 AM) [03h 40m]
+    S_CHAIR   : 5    (৳250)
+
+(3) TITUMIR EXPRESS (734) (03:24 PM-07:50 PM) [04h 26m]
+    S_CHAIR   : 10   (৳250)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-08:40 AM) [03h 19m]
+    S_CHAIR   : 20   (৳195)
+
+(2) CHILAHATI EXPRESS (806) (06:21 AM-09:15 AM) [02h 54m]
+    S_CHAIR   : 10   (৳195)
+
+(3) TITUMIR EXPRESS (734) (03:24 PM-06:55 PM) [03h 31m]
+    S_CHAIR   : 15   (৳195)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (03:24 PM-06:33 PM) [03h 09m]
+    S_CHAIR   : 5    (৳175)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-07:58 AM) [02h 37m]
+    S_CHAIR   : 10   (৳155)
+
+(2) CHILAHATI EXPRESS (806) (06:21 AM-08:32 AM) [02h 11m]
+    S_CHAIR   : 10   (৳155)
+
+(3) TITUMIR EXPRESS (734) (03:24 PM-06:12 PM) [02h 48m]
+    S_CHAIR   : 10   (৳155)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (03:24 PM-05:27 PM) [02h 03m]
+    S_CHAIR   : 5    (৳120)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-07:03 AM) [01h 42m]
+    S_CHAIR   : 10   (৳105)
+
+(2) TITUMIR EXPRESS (734) (03:24 PM-05:13 PM) [01h 49m]
+    S_CHAIR   : 5    (৳105)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Domar-Parbatipur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Parbatipur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:21 AM-06:25 AM) [01h 04m]
+    S_CHAIR   : 10   (৳80)
+
+(2) CHILAHATI EXPRESS (806) (06:21 AM-07:20 AM) [00h 59m]
+    S_CHAIR   : 5    (৳80)
+
+(3) TITUMIR EXPRESS (734) (03:24 PM-04:35 PM) [01h 11m]
+    S_CHAIR   : 10   (৳80)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
     From-To   : Domar-Saidpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Saidpur&doj=25-Apr-2025&class=S_CHAIR
 
 (1) BARENDRA EXPRESS (732) (05:21 AM-06:04 AM) [00h 43m]
     S_CHAIR   : 10   (৳65)
@@ -136,10 +670,186 @@ Date: 28-Mar-2025 - Available 0 tickets for the route Domar-Nilphamari
     S_CHAIR   : 10   (৳65)
 
 ====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Domar-Nilphamari
+====================================================================================
 
-    Date      : 28-Mar-2025
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:10 AM-06:25 PM) [09h 15m]
+    AC_S      : 2    (৳1237)
+    SNIGDHA   : 1    (৳1030)
+    S_CHAIR   : 8    (৳540)
+
+(2) SIMANTA EXPRESS (748) (07:10 PM-04:10 AM) [09h 00m]
+    S_CHAIR   : 12   (৳540)
+    AC_B      : 2    (৳1902)
+    SNIGDHA   : 5    (৳1030)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:10 AM-04:58 PM) [07h 48m]
+    AC_S      : 0    (৳1081)
+    SNIGDHA   : 0    (৳903)
+    S_CHAIR   : 9    (৳470)
+
+(2) SIMANTA EXPRESS (748) (07:10 PM-02:41 AM) [07h 31m]
+    S_CHAIR   : 20   (৳470)
+    AC_B      : 0    (৳1672)
+    SNIGDHA   : 0    (৳903)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Darshana_Halt
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:10 AM-03:20 PM) [06h 10m]
+    AC_S      : 0    (৳863)
+    SNIGDHA   : 0    (৳719)
+    S_CHAIR   : 10   (৳375)
+
+(2) SIMANTA EXPRESS (748) (07:10 PM-01:00 AM) [05h 50m]
+    S_CHAIR   : 10   (৳375)
+    AC_B      : 0    (৳1338)
+    SNIGDHA   : 0    (৳719)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Nilphamari-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (07:10 PM-12:21 AM) [05h 11m]
+    S_CHAIR   : 10   (৳340)
+    AC_B      : 0    (৳1212)
+    SNIGDHA   : 0    (৳667)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Nilphamari-Bheramara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Nilphamari-Ishwardi
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-09:32 AM) [03h 53m]
+    S_CHAIR   : 20   (৳210)
+
+(2) CHILAHATI EXPRESS (806) (06:40 AM-10:01 AM) [03h 21m]
+    S_CHAIR   : 5    (৳210)
+
+(3) TITUMIR EXPRESS (734) (03:44 PM-07:50 PM) [04h 06m]
+    S_CHAIR   : 10   (৳210)
+
+(4) NILSAGAR EXPRESS (766) (08:40 PM-12:10 AM) [03h 30m]
+    S_CHAIR   : 6    (৳210)
+    SNIGDHA   : 0    (৳397)
+    AC_B      : 0    (৳763)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-08:40 AM) [03h 01m]
+    S_CHAIR   : 20   (৳155)
+
+(2) CHILAHATI EXPRESS (806) (06:40 AM-09:15 AM) [02h 35m]
+    S_CHAIR   : 10   (৳155)
+
+(3) TITUMIR EXPRESS (734) (03:44 PM-06:55 PM) [03h 11m]
+    S_CHAIR   : 15   (৳155)
+
+(4) NILSAGAR EXPRESS (766) (08:40 PM-11:20 PM) [02h 40m]
+    S_CHAIR   : 7    (৳155)
+    SNIGDHA   : 0    (৳299)
+    AC_B      : 0    (৳585)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (03:44 PM-06:33 PM) [02h 49m]
+    S_CHAIR   : 5    (৳135)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-07:58 AM) [02h 19m]
+    S_CHAIR   : 20   (৳120)
+
+(2) CHILAHATI EXPRESS (806) (06:40 AM-08:32 AM) [01h 52m]
+    S_CHAIR   : 5    (৳120)
+
+(3) TITUMIR EXPRESS (734) (03:44 PM-06:12 PM) [02h 28m]
+    S_CHAIR   : 10   (৳120)
+
+(4) NILSAGAR EXPRESS (766) (08:40 PM-10:43 PM) [02h 03m]
+    S_CHAIR   : 7    (৳120)
+    SNIGDHA   : 0    (৳225)
+    AC_B      : 0    (৳453)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (03:44 PM-05:27 PM) [01h 43m]
+    S_CHAIR   : 5    (৳80)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (03:44 PM-05:13 PM) [01h 29m]
+    S_CHAIR   : 10   (৳65)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Parbatipur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Parbatipur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (05:39 AM-06:25 AM) [00h 46m]
+    S_CHAIR   : 10   (৳50)
+
+(2) TITUMIR EXPRESS (734) (03:44 PM-04:35 PM) [00h 51m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
     From-To   : Nilphamari-Saidpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Saidpur&doj=25-Apr-2025&class=S_CHAIR
 
 (1) BARENDRA EXPRESS (732) (05:39 AM-06:04 AM) [00h 25m]
     S_CHAIR   : 10   (৳50)
@@ -147,6 +857,2098 @@ Date: 28-Mar-2025 - Available 0 tickets for the route Domar-Nilphamari
 (2) CHILAHATI EXPRESS (806) (06:40 AM-06:59 AM) [00h 19m]
     S_CHAIR   : 5    (৳50)
 
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-06:25 PM) [08h 50m]
+    AC_S      : 12   (৳1179)
+    SNIGDHA   : 5    (৳984)
+    S_CHAIR   : 8    (৳515)
+    F_SEAT    : 4    (৳788)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-04:10 AM) [08h 36m]
+    S_CHAIR   : 29   (৳515)
+    AC_B      : 3    (৳1816)
+    SNIGDHA   : 4    (৳984)
+    F_BERTH   : 6    (৳1229)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Saidpur-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Saidpur-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:58 PM) [07h 23m]
+    AC_S      : 0    (৳1024)
+    SNIGDHA   : 0    (৳857)
+    S_CHAIR   : 29   (৳445)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-02:41 AM) [07h 07m]
+    S_CHAIR   : 25   (৳445)
+    AC_B      : 0    (৳1586)
+    SNIGDHA   : 0    (৳857)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Saidpur-Mubarakganj
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:45 PM) [06h 10m]
+    AC_S      : 0    (৳846)
+    SNIGDHA   : 0    (৳708)
+    S_CHAIR   : 15   (৳370)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:20 PM) [05h 45m]
+    AC_S      : 0    (৳805)
+    SNIGDHA   : 0    (৳673)
+    S_CHAIR   : 20   (৳350)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Alamdanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Alamdanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:02 PM) [05h 27m]
+    AC_S      : 0    (৳759)
+    SNIGDHA   : 0    (৳633)
+    S_CHAIR   : 10   (৳330)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-02:44 PM) [05h 09m]
+    AC_S      : 0    (৳719)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 13   (৳315)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-12:21 AM) [04h 47m]
+    S_CHAIR   : 22   (৳315)
+    AC_B      : 0    (৳1126)
+    SNIGDHA   : 0    (৳598)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Bheramara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Bheramara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-02:24 PM) [04h 49m]
+    AC_S      : 0    (৳673)
+    SNIGDHA   : 0    (৳558)
+    S_CHAIR   : 12   (৳295)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-12:00 AM) [04h 26m]
+    S_CHAIR   : 10   (৳295)
+    AC_B      : 0    (৳1057)
+    SNIGDHA   : 0    (৳558)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-01:40 PM) [04h 05m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳432)
+    S_CHAIR   : 35   (৳225)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-11:20 PM) [03h 46m]
+    S_CHAIR   : 13   (৳225)
+    AC_B      : 0    (৳821)
+    SNIGDHA   : 0    (৳432)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-09:32 AM) [03h 24m]
+    S_CHAIR   : 42   (৳185)
+
+(2) CHILAHATI EXPRESS (806) (07:04 AM-10:01 AM) [02h 57m]
+    S_CHAIR   : 4    (৳185)
+
+(3) TITUMIR EXPRESS (734) (04:19 PM-07:50 PM) [03h 31m]
+    S_CHAIR   : 51   (৳185)
+
+(4) NILSAGAR EXPRESS (766) (09:04 PM-12:10 AM) [03h 06m]
+    S_CHAIR   : 5    (৳185)
+    SNIGDHA   : 5    (৳357)
+    AC_B      : 0    (৳689)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-08:40 AM) [02h 32m]
+    S_CHAIR   : 42   (৳130)
+
+(2) CHILAHATI EXPRESS (806) (07:04 AM-09:15 AM) [02h 11m]
+    S_CHAIR   : 14   (৳130)
+    SNIGDHA   : 4    (৳253)
+
+(3) TITUMIR EXPRESS (734) (04:19 PM-06:55 PM) [02h 36m]
+    S_CHAIR   : 42   (৳130)
+
+(4) NILSAGAR EXPRESS (766) (09:04 PM-11:20 PM) [02h 16m]
+    S_CHAIR   : 9    (৳130)
+    SNIGDHA   : 5    (৳253)
+    AC_B      : 0    (৳499)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-08:15 AM) [02h 07m]
+    S_CHAIR   : 20   (৳110)
+
+(2) TITUMIR EXPRESS (734) (04:19 PM-06:33 PM) [02h 14m]
+    S_CHAIR   : 30   (৳110)
+
+(3) SIMANTA EXPRESS (748) (07:34 PM-09:31 PM) [01h 57m]
+    S_CHAIR   : 15   (৳110)
+    AC_B      : 0    (৳430)
+    SNIGDHA   : 0    (৳213)
+
+(4) NILSAGAR EXPRESS (766) (09:04 PM-11:00 PM) [01h 56m]
+    S_CHAIR   : 10   (৳110)
+    SNIGDHA   : 0    (৳213)
+    AC_B      : 0    (৳430)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-07:58 AM) [01h 50m]
+    S_CHAIR   : 30   (৳95)
+
+(2) CHILAHATI EXPRESS (806) (07:04 AM-08:32 AM) [01h 28m]
+    S_CHAIR   : 7    (৳95)
+    SNIGDHA   : 5    (৳179)
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-11:22 AM) [01h 47m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 30   (৳95)
+
+(4) TITUMIR EXPRESS (734) (04:19 PM-06:12 PM) [01h 53m]
+    S_CHAIR   : 37   (৳95)
+
+(5) NILSAGAR EXPRESS (766) (09:04 PM-10:43 PM) [01h 39m]
+    S_CHAIR   : 20   (৳95)
+    SNIGDHA   : 0    (৳179)
+    AC_B      : 0    (৳372)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-07:17 AM) [01h 09m]
+    S_CHAIR   : 22   (৳55)
+
+(2) CHILAHATI EXPRESS (806) (07:04 AM-08:01 AM) [00h 57m]
+    S_CHAIR   : 5    (৳55)
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-10:50 AM) [01h 15m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 25   (৳55)
+
+(4) TITUMIR EXPRESS (734) (04:19 PM-05:27 PM) [01h 08m]
+    S_CHAIR   : 30   (৳55)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-07:03 AM) [00h 55m]
+    S_CHAIR   : 30   (৳50)
+
+(2) RUPSHA EXPRESS (728) (09:35 AM-10:36 AM) [01h 01m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 25   (৳50)
+
+(3) TITUMIR EXPRESS (734) (04:19 PM-05:13 PM) [00h 54m]
+    S_CHAIR   : 30   (৳50)
+
+(4) SIMANTA EXPRESS (748) (07:34 PM-08:28 PM) [00h 54m]
+    S_CHAIR   : 20   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+(5) NILSAGAR EXPRESS (766) (09:04 PM-09:58 PM) [00h 54m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
+    AC_B      : 0    (৳200)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Parbatipur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Parbatipur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:08 AM-06:25 AM) [00h 17m]
+    S_CHAIR   : 40   (৳50)
+
+(2) CHILAHATI EXPRESS (806) (07:04 AM-07:20 AM) [00h 16m]
+    S_CHAIR   : 40   (৳50)
+
+(3) TITUMIR EXPRESS (734) (04:19 PM-04:35 PM) [00h 16m]
+    S_CHAIR   : 20   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:15 AM-06:25 PM) [08h 10m]
+    AC_S      : 4    (৳1133)
+    SNIGDHA   : 3    (৳943)
+    S_CHAIR   : 0    (৳495)
+
+(2) SIMANTA EXPRESS (748) (08:10 PM-04:10 AM) [08h 00m]
+    S_CHAIR   : 0    (৳495)
+    AC_B      : 3    (৳1747)
+    SNIGDHA   : 3    (৳943)
+    F_BERTH   : 4    (৳1183)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Parbatipur-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Parbatipur-Noapara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Parbatipur-Jashore
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Parbatipur-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Parbatipur-Kotchandpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-01:24 AM) [05h 14m]
+    S_CHAIR   : 5    (৳350)
+    AC_B      : 0    (৳1258)
+    SNIGDHA   : 0    (৳673)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-01:00 AM) [04h 50m]
+    S_CHAIR   : 3    (৳335)
+    AC_B      : 0    (৳1200)
+    SNIGDHA   : 0    (৳639)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Parbatipur-Alamdanga
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Parbatipur-Poradaha
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Parbatipur-Bheramara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-11:20 PM) [03h 10m]
+    S_CHAIR   : 5    (৳210)
+    AC_B      : 0    (৳763)
+    SNIGDHA   : 0    (৳397)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:45 AM-09:32 AM) [02h 47m]
+    S_CHAIR   : 10   (৳170)
+
+(2) CHILAHATI EXPRESS (806) (07:30 AM-10:01 AM) [02h 31m]
+    S_CHAIR   : 12   (৳170)
+
+(3) DRUTOJAN EXPRESS (758) (10:45 AM-01:38 PM) [02h 53m]
+    S_CHAIR   : 8    (৳170)
+
+(4) BANGLABANDHA EXPRESS (804) (12:20 PM-03:35 PM) [03h 15m]
+    S_CHAIR   : 10   (৳170)
+
+(5) PANCHAGARH EXPRESS (794) (03:20 PM-05:36 PM) [02h 16m]
+    S_CHAIR   : 20   (৳170)
+
+(6) TITUMIR EXPRESS (734) (04:55 PM-07:50 PM) [02h 55m]
+    S_CHAIR   : 12   (৳170)
+
+(7) SIMANTA EXPRESS (748) (08:10 PM-10:40 PM) [02h 30m]
+    S_CHAIR   : 1    (৳170)
+    AC_B      : 0    (৳625)
+    SNIGDHA   : 0    (৳322)
+
+(8) EKOTA EXPRESS (706) (11:55 PM-02:41 AM) [02h 46m]
+    S_CHAIR   : 1    (৳170)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:45 AM-08:40 AM) [01h 55m]
+    S_CHAIR   : 10   (৳115)
+
+(2) CHILAHATI EXPRESS (806) (07:30 AM-09:15 AM) [01h 45m]
+    S_CHAIR   : 20   (৳115)
+    SNIGDHA   : 5    (৳219)
+
+(3) KURIGRAM EXPRESS (798) (09:45 AM-11:20 AM) [01h 35m]
+    AC_S      : 0    (৳265)
+    SNIGDHA   : 5    (৳219)
+    S_CHAIR   : 24   (৳115)
+
+(4) DRUTOJAN EXPRESS (758) (10:45 AM-12:35 PM) [01h 50m]
+    SNIGDHA   : 0    (৳219)
+    S_CHAIR   : 10   (৳115)
+
+(5) BANGLABANDHA EXPRESS (804) (12:20 PM-02:40 PM) [02h 20m]
+    S_CHAIR   : 10   (৳115)
+
+(6) PANCHAGARH EXPRESS (794) (03:20 PM-04:50 PM) [01h 30m]
+    S_CHAIR   : 20   (৳115)
+
+(7) TITUMIR EXPRESS (734) (04:55 PM-06:55 PM) [02h 00m]
+    S_CHAIR   : 15   (৳115)
+
+(8) SIMANTA EXPRESS (748) (08:10 PM-09:55 PM) [01h 45m]
+    S_CHAIR   : 5    (৳115)
+    AC_B      : 0    (৳447)
+    SNIGDHA   : 0    (৳219)
+
+(9) NILSAGAR EXPRESS (766) (09:40 PM-11:20 PM) [01h 40m]
+    S_CHAIR   : 10   (৳115)
+    SNIGDHA   : 0    (৳219)
+    AC_B      : 0    (৳447)
+
+(10) EKOTA EXPRESS (706) (11:55 PM-01:55 AM) [02h 00m]
+    S_CHAIR   : 5    (৳115)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:45 AM-08:15 AM) [01h 30m]
+    S_CHAIR   : 10   (৳95)
+
+(2) DRUTOJAN EXPRESS (758) (10:45 AM-12:09 PM) [01h 24m]
+    S_CHAIR   : 5    (৳95)
+
+(3) TITUMIR EXPRESS (734) (04:55 PM-06:33 PM) [01h 38m]
+    S_CHAIR   : 10   (৳95)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (06:45 AM-07:58 AM) [01h 13m]
+    S_CHAIR   : 10   (৳75)
+
+(2) CHILAHATI EXPRESS (806) (07:30 AM-08:32 AM) [01h 02m]
+    S_CHAIR   : 10   (৳75)
+    SNIGDHA   : 5    (৳144)
+
+(3) KURIGRAM EXPRESS (798) (09:45 AM-10:42 AM) [00h 57m]
+    AC_S      : 0    (৳173)
+    SNIGDHA   : 0    (৳144)
+    S_CHAIR   : 31   (৳75)
+
+(4) DRUTOJAN EXPRESS (758) (10:45 AM-11:53 AM) [01h 08m]
+    S_CHAIR   : 8    (৳75)
+
+(5) PANCHAGARH EXPRESS (794) (03:20 PM-04:13 PM) [00h 53m]
+    S_CHAIR   : 20   (৳75)
+
+(6) TITUMIR EXPRESS (734) (04:55 PM-06:12 PM) [01h 17m]
+    S_CHAIR   : 32   (৳75)
+
+(7) NILSAGAR EXPRESS (766) (09:40 PM-10:43 PM) [01h 03m]
+    S_CHAIR   : 10   (৳75)
+    SNIGDHA   : 0    (৳144)
+    AC_B      : 0    (৳309)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHILAHATI EXPRESS (806) (07:30 AM-08:01 AM) [00h 31m]
+    S_CHAIR   : 10   (৳50)
+
+(2) DRUTOJAN EXPRESS (758) (10:45 AM-11:17 AM) [00h 32m]
+    S_CHAIR   : 5    (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHILAHATI EXPRESS (806) (07:30 AM-07:48 AM) [00h 18m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-06:25 PM) [07h 46m]
+    AC_S      : 0    (৳1093)
+    SNIGDHA   : 3    (৳909)
+    S_CHAIR   : 0    (৳475)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-04:10 AM) [07h 39m]
+    S_CHAIR   : 5    (৳475)
+    AC_B      : 0    (৳1689)
+    SNIGDHA   : 5    (৳909)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-04:58 PM) [06h 19m]
+    AC_S      : 0    (৳938)
+    SNIGDHA   : 0    (৳782)
+    S_CHAIR   : 3    (৳410)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Darshana_Halt
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-03:20 PM) [04h 41m]
+    AC_S      : 0    (৳719)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 3    (৳315)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-01:00 AM) [04h 29m]
+    S_CHAIR   : 5    (৳315)
+    AC_B      : 0    (৳1126)
+    SNIGDHA   : 0    (৳598)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Alamdanga
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Poradaha
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Bheramara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-01:40 PM) [03h 01m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 7    (৳185)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-11:20 PM) [02h 49m]
+    S_CHAIR   : 5    (৳185)
+    AC_B      : 0    (৳689)
+    SNIGDHA   : 0    (৳357)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (07:06 AM-09:32 AM) [02h 26m]
+    S_CHAIR   : 10   (৳145)
+
+(2) CHILAHATI EXPRESS (806) (07:50 AM-10:01 AM) [02h 11m]
+    S_CHAIR   : 3    (৳145)
+
+(3) RUPSHA EXPRESS (728) (10:39 AM-12:55 PM) [02h 16m]
+    AC_S      : 0    (৳334)
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 5    (৳145)
+
+(4) BANGLABANDHA EXPRESS (804) (12:41 PM-03:35 PM) [02h 54m]
+    S_CHAIR   : 10   (৳145)
+
+(5) TITUMIR EXPRESS (734) (05:16 PM-07:50 PM) [02h 34m]
+    S_CHAIR   : 10   (৳145)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (07:06 AM-08:40 AM) [01h 34m]
+    S_CHAIR   : 10   (৳95)
+
+(2) CHILAHATI EXPRESS (806) (07:50 AM-09:15 AM) [01h 25m]
+    S_CHAIR   : 5    (৳95)
+
+(3) BANGLABANDHA EXPRESS (804) (12:41 PM-02:40 PM) [01h 59m]
+    S_CHAIR   : 10   (৳95)
+
+(4) TITUMIR EXPRESS (734) (05:16 PM-06:55 PM) [01h 39m]
+    S_CHAIR   : 10   (৳95)
+
+(5) SIMANTA EXPRESS (748) (08:31 PM-09:55 PM) [01h 24m]
+    S_CHAIR   : 5    (৳95)
+    AC_B      : 0    (৳372)
+    SNIGDHA   : 0    (৳179)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (05:16 PM-06:33 PM) [01h 17m]
+    S_CHAIR   : 5    (৳75)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (05:16 PM-06:12 PM) [00h 56m]
+    S_CHAIR   : 10   (৳55)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Fulbari-Birampur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:53 AM-06:25 PM) [07h 32m]
+    AC_S      : 0    (৳1064)
+    SNIGDHA   : 0    (৳886)
+    S_CHAIR   : 14   (৳465)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:53 AM-04:58 PM) [06h 05m]
+    AC_S      : 0    (৳909)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 4    (৳395)
+
+(2) SIMANTA EXPRESS (748) (08:45 PM-02:41 AM) [05h 56m]
+    S_CHAIR   : 10   (৳395)
+    AC_B      : 0    (৳1413)
+    SNIGDHA   : 0    (৳759)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Birampur-Darshana_Halt
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Birampur-Chuadanga
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Alamdanga
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Poradaha
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Bheramara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Birampur-Ishwardi
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (07:20 AM-09:32 AM) [02h 12m]
+    S_CHAIR   : 10   (৳130)
+
+(2) BANGLABANDHA EXPRESS (804) (12:55 PM-03:35 PM) [02h 40m]
+    S_CHAIR   : 9    (৳130)
+
+(3) TITUMIR EXPRESS (734) (05:30 PM-07:50 PM) [02h 20m]
+    S_CHAIR   : 20   (৳130)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (07:20 AM-08:40 AM) [01h 20m]
+    S_CHAIR   : 12   (৳80)
+
+(2) CHILAHATI EXPRESS (806) (08:03 AM-09:15 AM) [01h 12m]
+    S_CHAIR   : 5    (৳80)
+
+(3) TITUMIR EXPRESS (734) (05:30 PM-06:55 PM) [01h 25m]
+    S_CHAIR   : 10   (৳80)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Birampur-Akkelpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHILAHATI EXPRESS (806) (08:03 AM-08:32 AM) [00h 29m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-06:25 PM) [07h 00m]
+    AC_S      : 4    (৳972)
+    SNIGDHA   : 0    (৳811)
+    S_CHAIR   : 3    (৳425)
+    F_SEAT    : 4    (৳650)
+
+(2) SIMANTA EXPRESS (748) (09:17 PM-04:10 AM) [06h 53m]
+    S_CHAIR   : 0    (৳425)
+    AC_B      : 0    (৳1505)
+    SNIGDHA   : 1    (৳811)
+    F_BERTH   : 2    (৳1022)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-04:58 PM) [05h 33m]
+    AC_S      : 0    (৳817)
+    SNIGDHA   : 0    (৳685)
+    S_CHAIR   : 9    (৳355)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Joypurhat-Darshana_Halt
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-03:20 PM) [03h 55m]
+    AC_S      : 0    (৳598)
+    SNIGDHA   : 0    (৳501)
+    S_CHAIR   : 1    (৳260)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-02:44 PM) [03h 19m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 9    (৳225)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Bheramara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-01:40 PM) [02h 15m]
+    AC_S      : 0    (৳305)
+    SNIGDHA   : 0    (৳259)
+    S_CHAIR   : 3    (৳135)
+
+(2) SIMANTA EXPRESS (748) (09:17 PM-11:20 PM) [02h 03m]
+    S_CHAIR   : 5    (৳135)
+    AC_B      : 0    (৳510)
+    SNIGDHA   : 0    (৳259)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (08:01 AM-09:32 AM) [01h 31m]
+    S_CHAIR   : 20   (৳95)
+
+(2) CHILAHATI EXPRESS (806) (08:35 AM-10:01 AM) [01h 26m]
+    S_CHAIR   : 4    (৳95)
+
+(3) DRUTOJAN EXPRESS (758) (11:56 AM-01:38 PM) [01h 42m]
+    S_CHAIR   : 5    (৳95)
+
+(4) BANGLABANDHA EXPRESS (804) (01:46 PM-03:35 PM) [01h 49m]
+    S_CHAIR   : 11   (৳95)
+
+(5) PANCHAGARH EXPRESS (794) (04:16 PM-05:36 PM) [01h 20m]
+    S_CHAIR   : 10   (৳95)
+
+(6) TITUMIR EXPRESS (734) (06:15 PM-07:50 PM) [01h 35m]
+    S_CHAIR   : 37   (৳95)
+
+(7) SIMANTA EXPRESS (748) (09:17 PM-10:40 PM) [01h 23m]
+    S_CHAIR   : 5    (৳95)
+
+(8) NILSAGAR EXPRESS (766) (10:46 PM-12:10 AM) [01h 24m]
+    S_CHAIR   : 6    (৳95)
+    SNIGDHA   : 0    (৳179)
+    AC_B      : 0    (৳372)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (08:01 AM-08:40 AM) [00h 39m]
+    S_CHAIR   : 10   (৳50)
+
+(2) CHILAHATI EXPRESS (806) (08:35 AM-09:15 AM) [00h 40m]
+    S_CHAIR   : 5    (৳50)
+
+(3) KURIGRAM EXPRESS (798) (10:45 AM-11:20 AM) [00h 35m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 16   (৳50)
+
+(4) DRUTOJAN EXPRESS (758) (11:56 AM-12:35 PM) [00h 39m]
+    S_CHAIR   : 10   (৳50)
+
+(5) PANCHAGARH EXPRESS (794) (04:16 PM-04:50 PM) [00h 34m]
+    S_CHAIR   : 40   (৳50)
+
+(6) TITUMIR EXPRESS (734) (06:15 PM-06:55 PM) [00h 40m]
+    S_CHAIR   : 32   (৳50)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Joypurhat-Akkelpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Akkelpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Akkelpur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (09:33 PM-04:10 AM) [06h 37m]
+    S_CHAIR   : 9    (৳405)
+    AC_B      : 0    (৳1448)
+    SNIGDHA   : 0    (৳777)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Akkelpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Akkelpur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:41 AM-04:58 PM) [05h 17m]
+    AC_S      : 0    (৳782)
+    SNIGDHA   : 0    (৳650)
+    S_CHAIR   : 10   (৳340)
+
+(2) SIMANTA EXPRESS (748) (09:33 PM-02:41 AM) [05h 08m]
+    S_CHAIR   : 8    (৳340)
+    AC_B      : 0    (৳1218)
+    SNIGDHA   : 0    (৳650)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Akkelpur-Darshana_Halt
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Akkelpur-Chuadanga
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Alamdanga
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Poradaha
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Akkelpur-Bheramara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Akkelpur-Ishwardi
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Akkelpur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Akkelpur&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (08:17 AM-09:32 AM) [01h 15m]
+    S_CHAIR   : 10   (৳75)
+
+(2) BANGLABANDHA EXPRESS (804) (02:14 PM-03:35 PM) [01h 21m]
+    S_CHAIR   : 10   (৳75)
+
+(3) TITUMIR EXPRESS (734) (06:35 PM-07:50 PM) [01h 15m]
+    S_CHAIR   : 20   (৳75)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Akkelpur-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Akkelpur&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(1) TITUMIR EXPRESS (734) (06:35 PM-06:55 PM) [00h 20m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (12:05 PM-06:25 PM) [06h 20m]
+    AC_S      : 1    (৳880)
+    SNIGDHA   : 3    (৳736)
+    S_CHAIR   : 0    (৳385)
+    F_SEAT    : 4    (৳587)
+
+(2) SIMANTA EXPRESS (748) (10:00 PM-04:10 AM) [06h 10m]
+    S_CHAIR   : 0    (৳385)
+    AC_B      : 2    (৳1367)
+    SNIGDHA   : 1    (৳736)
+    F_BERTH   : 2    (৳930)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Noapara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Santahar-Jashore
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Kotchandpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (10:00 PM-01:24 AM) [03h 24m]
+    S_CHAIR   : 4    (৳240)
+    AC_B      : 0    (৳867)
+    SNIGDHA   : 0    (৳455)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (10:00 PM-01:00 AM) [03h 00m]
+    S_CHAIR   : 10   (৳220)
+    AC_B      : 0    (৳809)
+    SNIGDHA   : 0    (৳420)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (10:00 PM-12:21 AM) [02h 21m]
+    S_CHAIR   : 5    (৳185)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Santahar-Bheramara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Santahar-Ishwardi
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BARENDRA EXPRESS (732) (08:45 AM-09:32 AM) [00h 47m]
+    S_CHAIR   : 72   (৳55)
+
+(2) CHILAHATI EXPRESS (806) (09:20 AM-10:01 AM) [00h 41m]
+    S_CHAIR   : 19   (৳55)
+
+(3) DRUTOJAN EXPRESS (758) (12:40 PM-01:38 PM) [00h 58m]
+    S_CHAIR   : 5    (৳55)
+
+(4) BANGLABANDHA EXPRESS (804) (02:45 PM-03:35 PM) [00h 50m]
+    S_CHAIR   : 20   (৳55)
+
+(5) PANCHAGARH EXPRESS (794) (04:55 PM-05:36 PM) [00h 41m]
+    S_CHAIR   : 40   (৳55)
+
+(6) TITUMIR EXPRESS (734) (07:00 PM-07:50 PM) [00h 50m]
+    S_CHAIR   : 57   (৳55)
+
+(7) SIMANTA EXPRESS (748) (10:00 PM-10:40 PM) [00h 40m]
+    S_CHAIR   : 6    (৳55)
+
+(8) NILSAGAR EXPRESS (766) (11:25 PM-12:10 AM) [00h 45m]
+    S_CHAIR   : 7    (৳55)
+    SNIGDHA   : 0    (৳115)
+    AC_B      : 0    (৳234)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-06:25 PM) [05h 25m]
+    AC_S      : 3    (৳765)
+    SNIGDHA   : 3    (৳639)
+    S_CHAIR   : 0    (৳335)
+    F_SEAT    : 1    (৳512)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-04:10 AM) [05h 27m]
+    S_CHAIR   : 22   (৳335)
+    AC_B      : 0    (৳1195)
+    SNIGDHA   : 5    (৳639)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Natore-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Natore-Noapara
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Natore-Jashore
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Natore-Mubarakganj
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Natore-Kotchandpur
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Natore-Darshana_Halt
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Natore-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (10:43 PM-01:00 AM) [02h 17m]
+    S_CHAIR   : 5    (৳170)
+    AC_B      : 0    (৳637)
+    SNIGDHA   : 0    (৳328)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Natore-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Natore-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-02:44 PM) [01h 44m]
+    AC_S      : 0    (৳305)
+    SNIGDHA   : 0    (৳253)
+    S_CHAIR   : 10   (৳135)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Natore-Bheramara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Natore-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (10:43 PM-11:20 PM) [00h 37m]
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-12:10 PM) [04h 40m]
+    S_CHAIR   : 50   (৳290)
+    AC_S      : 3    (৳667)
+
+(2) RUPSHA EXPRESS (728) (02:00 PM-06:25 PM) [04h 25m]
+    AC_S      : 0    (৳667)
+    SNIGDHA   : 4    (৳558)
+    S_CHAIR   : 32   (৳290)
+    F_SEAT    : 8    (৳449)
+
+(3) SIMANTA EXPRESS (748) (11:40 PM-04:10 AM) [04h 30m]
+    S_CHAIR   : 24   (৳290)
+    AC_B      : 0    (৳1051)
+    SNIGDHA   : 5    (৳558)
+    F_BERTH   : 2    (৳717)
+
+(4) CHITRA EXPRESS (764) (11:55 PM-04:40 AM) [04h 45m]
+    SNIGDHA   : 15   (৳558)
+    AC_B      : 4    (৳1051)
+    S_CHAIR   : 20   (৳290)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Ishwardi-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (11:55 PM-03:40 AM) [03h 45m]
+    SNIGDHA   : 0    (৳489)
+    S_CHAIR   : 5    (৳255)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-10:35 AM) [03h 05m]
+    S_CHAIR   : 10   (৳225)
+
+(2) SIMANTA EXPRESS (748) (11:40 PM-02:41 AM) [03h 01m]
+    S_CHAIR   : 20   (৳225)
+    AC_B      : 0    (৳821)
+    SNIGDHA   : 0    (৳432)
+
+(3) CHITRA EXPRESS (764) (11:55 PM-03:07 AM) [03h 12m]
+    SNIGDHA   : 15   (৳432)
+    AC_B      : 0    (৳821)
+    S_CHAIR   : 15   (৳225)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (11:55 PM-02:30 AM) [02h 35m]
+    SNIGDHA   : 0    (৳363)
+    S_CHAIR   : 5    (৳190)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (11:40 PM-01:50 AM) [02h 10m]
+    S_CHAIR   : 10   (৳175)
+    AC_B      : 0    (৳648)
+    SNIGDHA   : 0    (৳334)
+
+(2) CHITRA EXPRESS (764) (11:55 PM-02:16 AM) [02h 21m]
+    SNIGDHA   : 0    (৳334)
+    S_CHAIR   : 5    (৳175)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-09:20 AM) [01h 50m]
+    S_CHAIR   : 4    (৳145)
+
+(2) RUPSHA EXPRESS (728) (02:00 PM-03:45 PM) [01h 45m]
+    AC_S      : 0    (৳334)
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 20   (৳145)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-08:56 AM) [01h 26m]
+    S_CHAIR   : 4    (৳130)
+
+(2) RUPSHA EXPRESS (728) (02:00 PM-03:20 PM) [01h 20m]
+    AC_S      : 0    (৳294)
+    SNIGDHA   : 0    (৳248)
+    S_CHAIR   : 10   (৳130)
+
+(3) SIMANTA EXPRESS (748) (11:40 PM-01:00 AM) [01h 20m]
+    S_CHAIR   : 5    (৳130)
+    AC_B      : 0    (৳487)
+    SNIGDHA   : 0    (৳248)
+
+(4) CHITRA EXPRESS (764) (11:55 PM-01:24 AM) [01h 29m]
+    SNIGDHA   : 10   (৳248)
+    AC_B      : 0    (৳487)
+    S_CHAIR   : 15   (৳130)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Alamdanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Alamdanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-08:38 AM) [01h 08m]
+    S_CHAIR   : 3    (৳110)
+
+(2) CHITRA EXPRESS (764) (11:55 PM-01:05 AM) [01h 10m]
+    SNIGDHA   : 0    (৳207)
+    S_CHAIR   : 5    (৳110)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:30 AM-08:19 AM) [00h 49m]
+    S_CHAIR   : 5    (৳90)
+
+(2) MADHUMATI EXPRESS (756) (08:00 AM-08:50 AM) [00h 50m]
+    S_CHAIR   : 10   (৳90)
+
+(3) TUNGIPARA EXPRESS (784) (04:40 PM-05:20 PM) [00h 40m]
+    SHOVAN    : 10   (৳75)
+    S_CHAIR   : 0    (৳90)
+
+(4) CHITRA EXPRESS (764) (11:55 PM-12:46 AM) [00h 51m]
+    SNIGDHA   : 5    (৳173)
+    AC_B      : 0    (৳361)
+    S_CHAIR   : 10   (৳90)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Ishwardi-Bheramara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:03 AM-04:10 AM) [04h 07m]
+    S_CHAIR   : 16   (৳225)
+    AC_B      : 0    (৳815)
+    SNIGDHA   : 0    (৳426)
+
+(2) CHITRA EXPRESS (764) (12:28 AM-04:40 AM) [04h 12m]
+    SNIGDHA   : 10   (৳426)
+    AC_B      : 0    (৳815)
+    S_CHAIR   : 10   (৳225)
+
+(3) SAGARDARI EXPRESS (762) (07:57 AM-12:10 PM) [04h 13m]
+    S_CHAIR   : 34   (৳225)
+
+(4) RUPSHA EXPRESS (728) (02:27 PM-06:25 PM) [03h 58m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 9    (৳225)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Bheramara-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Bheramara-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:28 AM-03:07 AM) [02h 39m]
+    SNIGDHA   : 5    (৳299)
+    AC_B      : 0    (৳585)
+    S_CHAIR   : 5    (৳155)
+
+(2) SAGARDARI EXPRESS (762) (07:57 AM-10:35 AM) [02h 38m]
+    S_CHAIR   : 10   (৳155)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:28 AM-02:30 AM) [02h 02m]
+    S_CHAIR   : 5    (৳125)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Bheramara-Kotchandpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (07:57 AM-09:20 AM) [01h 23m]
+    S_CHAIR   : 10   (৳80)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:28 AM-01:24 AM) [00h 56m]
+    SNIGDHA   : 5    (৳115)
+    AC_B      : 0    (৳257)
+    S_CHAIR   : 5    (৳60)
+
+(2) SAGARDARI EXPRESS (762) (07:57 AM-08:56 AM) [00h 59m]
+    S_CHAIR   : 3    (৳60)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Bheramara-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:28 AM-12:46 AM) [00h 18m]
+    S_CHAIR   : 5    (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:24 AM-04:10 AM) [03h 46m]
+    S_CHAIR   : 24   (৳205)
+    AC_B      : 0    (৳746)
+    SNIGDHA   : 5    (৳386)
+
+(2) CHITRA EXPRESS (764) (12:49 AM-04:40 AM) [03h 51m]
+    SNIGDHA   : 25   (৳386)
+    AC_B      : 2    (৳746)
+    S_CHAIR   : 32   (৳205)
+
+(3) SAGARDARI EXPRESS (762) (08:22 AM-12:10 PM) [03h 48m]
+    S_CHAIR   : 45   (৳205)
+
+(4) SUNDARBAN EXPRESS (726) (11:53 AM-03:40 PM) [03h 47m]
+    AC_S      : 4    (৳466)
+    S_CHAIR   : 19   (৳205)
+    SNIGDHA   : 25   (৳386)
+
+(5) RUPSHA EXPRESS (728) (02:47 PM-06:25 PM) [03h 38m]
+    AC_S      : 0    (৳466)
+    SNIGDHA   : 5    (৳386)
+    S_CHAIR   : 9    (৳205)
+    F_SEAT    : 4    (৳311)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Poradaha-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-03:40 AM) [02h 51m]
+    SNIGDHA   : 10   (৳322)
+    S_CHAIR   : 5    (৳170)
+
+(2) SUNDARBAN EXPRESS (726) (11:53 AM-02:41 PM) [02h 48m]
+    S_CHAIR   : 5    (৳170)
+    SNIGDHA   : 5    (৳322)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:24 AM-02:41 AM) [02h 17m]
+    S_CHAIR   : 10   (৳135)
+    AC_B      : 0    (৳516)
+    SNIGDHA   : 0    (৳259)
+
+(2) CHITRA EXPRESS (764) (12:49 AM-03:07 AM) [02h 18m]
+    SNIGDHA   : 5    (৳259)
+    AC_B      : 0    (৳516)
+    S_CHAIR   : 10   (৳135)
+
+(3) BENAPOLE EXPRESS (796) (03:23 AM-05:35 AM) [02h 12m]
+    S_CHAIR   : 15   (৳135)
+    SNIGDHA   : 10   (৳259)
+
+(4) SAGARDARI EXPRESS (762) (08:22 AM-10:35 AM) [02h 13m]
+    S_CHAIR   : 10   (৳135)
+
+(5) SUNDARBAN EXPRESS (726) (11:53 AM-02:04 PM) [02h 11m]
+    AC_S      : 4    (৳311)
+    S_CHAIR   : 10   (৳135)
+    SNIGDHA   : 15   (৳259)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-02:30 AM) [01h 41m]
+    SNIGDHA   : 5    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+(2) SUNDARBAN EXPRESS (726) (11:53 AM-01:30 PM) [01h 37m]
+    S_CHAIR   : 5    (৳105)
+    SNIGDHA   : 5    (৳196)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:24 AM-01:50 AM) [01h 26m]
+    S_CHAIR   : 10   (৳90)
+    AC_B      : 0    (৳349)
+    SNIGDHA   : 0    (৳167)
+
+(2) CHITRA EXPRESS (764) (12:49 AM-02:16 AM) [01h 27m]
+    SNIGDHA   : 5    (৳167)
+    S_CHAIR   : 5    (৳90)
+
+(3) BENAPOLE EXPRESS (796) (03:23 AM-04:44 AM) [01h 21m]
+    S_CHAIR   : 12   (৳90)
+    SNIGDHA   : 0    (৳167)
+
+(4) SUNDARBAN EXPRESS (726) (11:53 AM-01:16 PM) [01h 23m]
+    AC_S      : 0    (৳202)
+    S_CHAIR   : 10   (৳90)
+    SNIGDHA   : 8    (৳167)
+
+(5) RUPSHA EXPRESS (728) (02:47 PM-04:14 PM) [01h 27m]
+    AC_S      : 0    (৳202)
+    SNIGDHA   : 0    (৳167)
+    S_CHAIR   : 19   (৳90)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (08:22 AM-09:20 AM) [00h 58m]
+    S_CHAIR   : 10   (৳55)
+
+(2) SUNDARBAN EXPRESS (726) (11:53 AM-12:50 PM) [00h 57m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 10   (৳55)
+    SNIGDHA   : 5    (৳115)
+
+(3) RUPSHA EXPRESS (728) (02:47 PM-03:45 PM) [00h 58m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 16   (৳55)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:24 AM-01:00 AM) [00h 36m]
+    S_CHAIR   : 5    (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+(2) CHITRA EXPRESS (764) (12:49 AM-01:24 AM) [00h 35m]
+    SNIGDHA   : 5    (৳115)
+    AC_B      : 0    (৳200)
+    S_CHAIR   : 5    (৳50)
+
+(3) BENAPOLE EXPRESS (796) (03:23 AM-03:52 AM) [00h 29m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(4) SAGARDARI EXPRESS (762) (08:22 AM-08:56 AM) [00h 34m]
+    S_CHAIR   : 5    (৳50)
+
+(5) SUNDARBAN EXPRESS (726) (11:53 AM-12:27 PM) [00h 34m]
+    S_CHAIR   : 20   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Poradaha-Alamdanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Alamdanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Alamdanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:42 AM-04:10 AM) [03h 28m]
+    S_CHAIR   : 5    (৳185)
+    AC_B      : 0    (৳677)
+    SNIGDHA   : 0    (৳351)
+
+(2) CHITRA EXPRESS (764) (01:07 AM-04:40 AM) [03h 33m]
+    SNIGDHA   : 10   (৳351)
+    AC_B      : 0    (৳677)
+    S_CHAIR   : 7    (৳185)
+
+(3) SAGARDARI EXPRESS (762) (08:40 AM-12:10 PM) [03h 30m]
+    S_CHAIR   : 30   (৳185)
+
+(4) SUNDARBAN EXPRESS (726) (12:11 PM-03:40 PM) [03h 29m]
+    S_CHAIR   : 9    (৳185)
+    SNIGDHA   : 13   (৳351)
+
+(5) RUPSHA EXPRESS (728) (03:04 PM-06:25 PM) [03h 21m]
+    AC_S      : 0    (৳420)
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 7    (৳185)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Alamdanga-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Alamdanga-Noapara
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Alamdanga-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Alamdanga&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (01:07 AM-03:07 AM) [02h 00m]
+    SNIGDHA   : 0    (৳225)
+    AC_B      : 0    (৳453)
+    S_CHAIR   : 5    (৳120)
+
+(2) SAGARDARI EXPRESS (762) (08:40 AM-10:35 AM) [01h 55m]
+    S_CHAIR   : 15   (৳120)
+
+(3) SUNDARBAN EXPRESS (726) (12:11 PM-02:04 PM) [01h 53m]
+    S_CHAIR   : 8    (৳120)
+    SNIGDHA   : 10   (৳225)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Alamdanga-Mubarakganj
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Alamdanga-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Alamdanga&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (01:07 AM-02:16 AM) [01h 09m]
+    S_CHAIR   : 5    (৳70)
+
+(2) SUNDARBAN EXPRESS (726) (12:11 PM-01:16 PM) [01h 05m]
+    S_CHAIR   : 5    (৳70)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Alamdanga-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Alamdanga&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (08:40 AM-09:20 AM) [00h 40m]
+    S_CHAIR   : 5    (৳50)
+
+(2) SUNDARBAN EXPRESS (726) (12:11 PM-12:50 PM) [00h 39m]
+    S_CHAIR   : 5    (৳50)
+    SNIGDHA   : 0    (৳115)
+
+====================================================================================
+Date: 25-Apr-2025 - Available 0 tickets for the route Alamdanga-Chuadanga
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-04:10 AM) [03h 07m]
+    S_CHAIR   : 20   (৳165)
+    AC_B      : 0    (৳614)
+    SNIGDHA   : 5    (৳317)
+
+(2) CHITRA EXPRESS (764) (01:27 AM-04:40 AM) [03h 13m]
+    SNIGDHA   : 55   (৳317)
+    AC_B      : 6    (৳614)
+    S_CHAIR   : 37   (৳165)
+
+(3) SAGARDARI EXPRESS (762) (08:59 AM-12:10 PM) [03h 11m]
+    S_CHAIR   : 44   (৳165)
+    AC_S      : 2    (৳380)
+
+(4) SUNDARBAN EXPRESS (726) (12:30 PM-03:40 PM) [03h 10m]
+    AC_S      : 8    (৳380)
+    S_CHAIR   : 36   (৳165)
+    SNIGDHA   : 51   (৳317)
+
+(5) RUPSHA EXPRESS (728) (03:23 PM-06:25 PM) [03h 02m]
+    AC_S      : 0    (৳380)
+    SNIGDHA   : 3    (৳317)
+    S_CHAIR   : 15   (৳165)
+    F_SEAT    : 2    (৳253)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Chuadanga-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (01:27 AM-03:40 AM) [02h 13m]
+    SNIGDHA   : 5    (৳248)
+    S_CHAIR   : 10   (৳130)
+
+(2) SAGARDARI EXPRESS (762) (08:59 AM-11:07 AM) [02h 08m]
+    S_CHAIR   : 5    (৳130)
+
+(3) SUNDARBAN EXPRESS (726) (12:30 PM-02:41 PM) [02h 11m]
+    AC_S      : 0    (৳299)
+    S_CHAIR   : 5    (৳130)
+    SNIGDHA   : 5    (৳248)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-02:41 AM) [01h 38m]
+    S_CHAIR   : 30   (৳100)
+    AC_B      : 0    (৳585)
+    SNIGDHA   : 0    (৳184)
+
+(2) CHITRA EXPRESS (764) (01:27 AM-03:07 AM) [01h 40m]
+    SNIGDHA   : 10   (৳184)
+    AC_B      : 0    (৳384)
+    S_CHAIR   : 15   (৳100)
+
+(3) BENAPOLE EXPRESS (796) (03:55 AM-05:35 AM) [01h 40m]
+    S_CHAIR   : 28   (৳100)
+    SNIGDHA   : 10   (৳184)
+
+(4) SAGARDARI EXPRESS (762) (08:59 AM-10:35 AM) [01h 36m]
+    S_CHAIR   : 10   (৳100)
+
+(5) SUNDARBAN EXPRESS (726) (12:30 PM-02:04 PM) [01h 34m]
+    AC_S      : 0    (৳225)
+    S_CHAIR   : 40   (৳100)
+    SNIGDHA   : 13   (৳184)
+
+(6) RUPSHA EXPRESS (728) (03:23 PM-04:58 PM) [01h 35m]
+    AC_S      : 0    (৳225)
+    SNIGDHA   : 0    (৳184)
+    S_CHAIR   : 20   (৳100)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-02:04 AM) [01h 01m]
+    S_CHAIR   : 10   (৳65)
+
+(2) CHITRA EXPRESS (764) (01:27 AM-02:30 AM) [01h 03m]
+    SNIGDHA   : 5    (৳127)
+    S_CHAIR   : 5    (৳65)
+
+(3) BENAPOLE EXPRESS (796) (03:55 AM-04:58 AM) [01h 03m]
+    S_CHAIR   : 10   (৳65)
+    SNIGDHA   : 0    (৳127)
+
+(4) SAGARDARI EXPRESS (762) (08:59 AM-10:05 AM) [01h 06m]
+    S_CHAIR   : 10   (৳65)
+
+(5) SUNDARBAN EXPRESS (726) (12:30 PM-01:30 PM) [01h 00m]
+    AC_S      : 0    (৳150)
+    S_CHAIR   : 6    (৳65)
+    SNIGDHA   : 5    (৳127)
+
+(6) RUPSHA EXPRESS (728) (03:23 PM-04:28 PM) [01h 05m]
+    AC_S      : 0    (৳150)
+    SNIGDHA   : 0    (৳127)
+    S_CHAIR   : 4    (৳65)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-01:50 AM) [00h 47m]
+    S_CHAIR   : 5    (৳50)
+    AC_B      : 0    (৳223)
+    SNIGDHA   : 0    (৳115)
+
+(2) CHITRA EXPRESS (764) (01:27 AM-02:16 AM) [00h 49m]
+    SNIGDHA   : 5    (৳115)
+    AC_B      : 0    (৳223)
+    S_CHAIR   : 5    (৳50)
+
+(3) BENAPOLE EXPRESS (796) (03:55 AM-04:44 AM) [00h 49m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(4) SAGARDARI EXPRESS (762) (08:59 AM-09:51 AM) [00h 52m]
+    S_CHAIR   : 10   (৳50)
+
+(5) SUNDARBAN EXPRESS (726) (12:30 PM-01:16 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 5    (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(6) RUPSHA EXPRESS (728) (03:23 PM-04:14 PM) [00h 51m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SUNDARBAN EXPRESS (726) (12:30 PM-12:50 PM) [00h 20m]
+    S_CHAIR   : 8    (৳50)
+    SNIGDHA   : 5    (৳115)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:26 AM-04:10 AM) [02h 44m]
+    S_CHAIR   : 15   (৳150)
+    AC_B      : 0    (৳556)
+    SNIGDHA   : 5    (৳282)
+
+(2) SAGARDARI EXPRESS (762) (09:23 AM-12:10 PM) [02h 47m]
+    S_CHAIR   : 36   (৳150)
+    AC_S      : 8    (৳340)
+
+(3) SUNDARBAN EXPRESS (726) (12:53 PM-03:40 PM) [02h 47m]
+    AC_S      : 4    (৳340)
+    S_CHAIR   : 23   (৳150)
+    SNIGDHA   : 18   (৳282)
+
+(4) RUPSHA EXPRESS (728) (03:48 PM-06:25 PM) [02h 37m]
+    AC_S      : 0    (৳340)
+    SNIGDHA   : 1    (৳282)
+    S_CHAIR   : 9    (৳150)
+    F_SEAT    : 4    (৳225)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Darshana_Halt-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (09:23 AM-11:07 AM) [01h 44m]
+    S_CHAIR   : 10   (৳115)
+
+(2) SUNDARBAN EXPRESS (726) (12:53 PM-02:41 PM) [01h 48m]
+    S_CHAIR   : 5    (৳115)
+    SNIGDHA   : 5    (৳219)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BENAPOLE EXPRESS (796) (04:19 AM-05:35 AM) [01h 16m]
+    S_CHAIR   : 10   (৳80)
+    SNIGDHA   : 0    (৳156)
+
+(2) SAGARDARI EXPRESS (762) (09:23 AM-10:35 AM) [01h 12m]
+    S_CHAIR   : 20   (৳80)
+
+(3) SUNDARBAN EXPRESS (726) (12:53 PM-02:04 PM) [01h 11m]
+    AC_S      : 0    (৳184)
+    S_CHAIR   : 20   (৳80)
+    SNIGDHA   : 10   (৳156)
+
+(4) RUPSHA EXPRESS (728) (03:48 PM-04:58 PM) [01h 10m]
+    AC_S      : 0    (৳184)
+    SNIGDHA   : 0    (৳156)
+    S_CHAIR   : 19   (৳80)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SAGARDARI EXPRESS (762) (09:23 AM-10:05 AM) [00h 42m]
+    S_CHAIR   : 10   (৳50)
+
+(2) SUNDARBAN EXPRESS (726) (12:53 PM-01:30 PM) [00h 37m]
+    S_CHAIR   : 5    (৳50)
+    SNIGDHA   : 4    (৳115)
+
+(3) RUPSHA EXPRESS (728) (03:48 PM-04:28 PM) [00h 40m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 15   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BENAPOLE EXPRESS (796) (04:19 AM-04:44 AM) [00h 25m]
+    S_CHAIR   : 5    (৳50)
+
+(2) SAGARDARI EXPRESS (762) (09:23 AM-09:51 AM) [00h 28m]
+    S_CHAIR   : 10   (৳50)
+
+(3) SUNDARBAN EXPRESS (726) (12:53 PM-01:16 PM) [00h 23m]
+    S_CHAIR   : 5    (৳50)
+    SNIGDHA   : 5    (৳115)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:52 AM-04:10 AM) [02h 18m]
+    S_CHAIR   : 25   (৳120)
+    AC_B      : 0    (৳453)
+    SNIGDHA   : 0    (৳225)
+
+(2) CHITRA EXPRESS (764) (02:18 AM-04:40 AM) [02h 22m]
+    SNIGDHA   : 5    (৳225)
+    AC_B      : 0    (৳453)
+    S_CHAIR   : 15   (৳120)
+
+(3) SAGARDARI EXPRESS (762) (09:53 AM-12:10 PM) [02h 17m]
+    S_CHAIR   : 29   (৳120)
+
+(4) SUNDARBAN EXPRESS (726) (01:18 PM-03:40 PM) [02h 22m]
+    AC_S      : 0    (৳271)
+    S_CHAIR   : 15   (৳120)
+    SNIGDHA   : 17   (৳225)
+
+(5) RUPSHA EXPRESS (728) (04:16 PM-06:25 PM) [02h 09m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 1    (৳120)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Kotchandpur-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:18 AM-03:40 AM) [01h 22m]
+    SNIGDHA   : 5    (৳161)
+    S_CHAIR   : 5    (৳85)
+
+(2) SAGARDARI EXPRESS (762) (09:53 AM-11:07 AM) [01h 14m]
+    S_CHAIR   : 10   (৳85)
+
+(3) SUNDARBAN EXPRESS (726) (01:18 PM-02:41 PM) [01h 23m]
+    S_CHAIR   : 7    (৳85)
+    SNIGDHA   : 5    (৳161)
+
+(4) RUPSHA EXPRESS (728) (04:16 PM-05:36 PM) [01h 20m]
+    AC_S      : 0    (৳190)
+    SNIGDHA   : 0    (৳161)
+    S_CHAIR   : 16   (৳85)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:52 AM-02:41 AM) [00h 49m]
+    S_CHAIR   : 5    (৳50)
+    AC_B      : 0    (৳223)
+    SNIGDHA   : 0    (৳115)
+
+(2) CHITRA EXPRESS (764) (02:18 AM-03:07 AM) [00h 49m]
+    SNIGDHA   : 5    (৳115)
+    AC_B      : 0    (৳223)
+    S_CHAIR   : 0    (৳50)
+
+(3) BENAPOLE EXPRESS (796) (04:46 AM-05:35 AM) [00h 49m]
+    S_CHAIR   : 12   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(4) SAGARDARI EXPRESS (762) (09:53 AM-10:35 AM) [00h 42m]
+    S_CHAIR   : 10   (৳50)
+
+(5) SUNDARBAN EXPRESS (726) (01:18 PM-02:04 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 15   (৳50)
+    SNIGDHA   : 10   (৳115)
+
+(6) RUPSHA EXPRESS (728) (04:16 PM-04:58 PM) [00h 42m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Mubarakganj&doj=25-Apr-2025&class=S_CHAIR
+
+(1) BENAPOLE EXPRESS (796) (04:46 AM-04:58 AM) [00h 12m]
+    S_CHAIR   : 10   (৳50)
+
+(2) SUNDARBAN EXPRESS (726) (01:18 PM-01:30 PM) [00h 12m]
+    S_CHAIR   : 8    (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Mubarakganj-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:06 AM-04:10 AM) [02h 04m]
+    S_CHAIR   : 5    (৳105)
+
+(2) CHITRA EXPRESS (764) (02:32 AM-04:40 AM) [02h 08m]
+    SNIGDHA   : 5    (৳196)
+    AC_B      : 0    (৳401)
+    S_CHAIR   : 15   (৳105)
+
+(3) SAGARDARI EXPRESS (762) (10:07 AM-12:10 PM) [02h 03m]
+    S_CHAIR   : 28   (৳105)
+
+(4) SUNDARBAN EXPRESS (726) (01:33 PM-03:40 PM) [02h 07m]
+    AC_S      : 0    (৳236)
+    S_CHAIR   : 14   (৳105)
+    SNIGDHA   : 19   (৳196)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Mubarakganj-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Mubarakganj-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:32 AM-03:40 AM) [01h 08m]
+    SNIGDHA   : 5    (৳133)
+    S_CHAIR   : 5    (৳70)
+
+(2) SAGARDARI EXPRESS (762) (10:07 AM-11:07 AM) [01h 00m]
+    S_CHAIR   : 10   (৳70)
+
+(3) SUNDARBAN EXPRESS (726) (01:33 PM-02:41 PM) [01h 08m]
+    S_CHAIR   : 5    (৳70)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Mubarakganj-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:32 AM-03:07 AM) [00h 35m]
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(2) BENAPOLE EXPRESS (796) (05:00 AM-05:35 AM) [00h 35m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(3) SAGARDARI EXPRESS (762) (10:07 AM-10:35 AM) [00h 28m]
+    S_CHAIR   : 20   (৳50)
+
+(4) SUNDARBAN EXPRESS (726) (01:33 PM-02:04 PM) [00h 31m]
+    S_CHAIR   : 14   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(5) RUPSHA EXPRESS (728) (04:30 PM-04:58 PM) [00h 28m]
+    S_CHAIR   : 11   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-04:10 AM) [01h 25m]
+    S_CHAIR   : 136  (৳70)
+    AC_B      : 2    (৳286)
+    SNIGDHA   : 5    (৳133)
+    F_BERTH   : 2    (৳206)
+
+(2) CHITRA EXPRESS (764) (03:12 AM-04:40 AM) [01h 28m]
+    SNIGDHA   : 95   (৳133)
+    AC_B      : 4    (৳286)
+    S_CHAIR   : 85   (৳70)
+
+(3) SAGARDARI EXPRESS (762) (10:39 AM-12:10 PM) [01h 31m]
+    S_CHAIR   : 202  (৳70)
+    AC_S      : 12   (৳156)
+
+(4) SUNDARBAN EXPRESS (726) (02:08 PM-03:40 PM) [01h 32m]
+    AC_S      : 8    (৳156)
+    S_CHAIR   : 99   (৳70)
+    SNIGDHA   : 92   (৳133)
+
+(5) RUPSHA EXPRESS (728) (05:08 PM-06:25 PM) [01h 17m]
+    AC_S      : 1    (৳156)
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 161  (৳70)
+    F_SEAT    : 2    (৳104)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Jashore-Daulatpur
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-03:13 AM) [00h 28m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+(2) CHITRA EXPRESS (764) (03:12 AM-03:40 AM) [00h 28m]
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(3) SAGARDARI EXPRESS (762) (10:39 AM-11:07 AM) [00h 28m]
+    S_CHAIR   : 45   (৳50)
+
+(4) SUNDARBAN EXPRESS (726) (02:08 PM-02:41 PM) [00h 33m]
+    S_CHAIR   : 40   (৳50)
+
+====================================================================================
+
+    Date      : 25-Apr-2025
+    From-To   : Noapara-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Noapara&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (03:16 AM-04:10 AM) [00h 54m]
+    S_CHAIR   : 45   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+(2) CHITRA EXPRESS (764) (03:43 AM-04:40 AM) [00h 57m]
+    SNIGDHA   : 30   (৳115)
+    AC_B      : 0    (৳200)
+    S_CHAIR   : 30   (৳50)
+
+(3) SAGARDARI EXPRESS (762) (11:10 AM-12:10 PM) [01h 00m]
+    S_CHAIR   : 110  (৳50)
+
+(4) SUNDARBAN EXPRESS (726) (02:44 PM-03:40 PM) [00h 56m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 77   (৳50)
+    SNIGDHA   : 20   (৳115)
+
+(5) RUPSHA EXPRESS (728) (05:39 PM-06:25 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 19   (৳50)
+
+(6) JAHANABAD EXPRESS (826) (10:56 PM-11:45 PM) [00h 49m]
+    S_CHAIR   : 12   (৳50)
+    SNIGDHA   : 10   (৳115)
+
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Noapara-Daulatpur
+====================================================================================
+Date: 25-Apr-2025 - No train found for route Daulatpur-Khulna
 
 
 ====================================================================================
@@ -154,72 +2956,1040 @@ INTERMEDIATE ROUTE RESULTS
 ====================================================================================
 
 ====================================================================================
-INTERMEDIATE ROUTES FOR DATE: 28-Mar-2025
+INTERMEDIATE ROUTES FOR DATE: 25-Apr-2025
 ====================================================================================
 
 ====================================================================================
 
-INTERMEDIATE ROUTE: Chilahati-Domar-Saidpur
-Date: 28-Mar-2025
-Common trains: BARENDRA EXPRESS, TITUMIR EXPRESS
+INTERMEDIATE ROUTE: Nilphamari-Jashore-Noapara
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Mar-2025    From-To   : Chilahati-Domar
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Domar&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:00 AM-05:18 AM) [00h 18m]
-    S_CHAIR   : 100  (৳50)
+(2) SIMANTA EXPRESS (748) (07:10 PM-02:41 AM) [07h 31m]
+    S_CHAIR   : 20   (৳470)
+    AC_B      : 0    (৳1672)
+    SNIGDHA   : 0    (৳903)
 
-(4) TITUMIR EXPRESS (734) (03:00 PM-03:21 PM) [00h 21m]
-    S_CHAIR   : 80   (৳50)
 
 
 SECOND LEG:
 ==========
-    Date      : 28-Mar-2025
-    From-To   : Domar-Saidpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Domar&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:21 AM-06:04 AM) [00h 43m]
-    S_CHAIR   : 10   (৳65)
-
-(2) TITUMIR EXPRESS (734) (03:24 PM-04:15 PM) [00h 51m]
-    S_CHAIR   : 10   (৳65)
-
+(1) SIMANTA EXPRESS (748) (02:45 AM-03:13 AM) [00h 28m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
 
 ====================================================================================
 
-INTERMEDIATE ROUTE: Chilahati-Nilphamari-Saidpur
-Date: 28-Mar-2025
-Common trains: BARENDRA EXPRESS, CHILAHATI EXPRESS
+INTERMEDIATE ROUTE: Nilphamari-Poradaha-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Mar-2025
-    From-To   : Chilahati-Nilphamari
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chilahati&tocity=Nilphamari&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:00 AM-05:36 AM) [00h 36m]
-    S_CHAIR   : 100  (৳50)
+(1) SIMANTA EXPRESS (748) (07:10 PM-12:21 AM) [05h 11m]
+    S_CHAIR   : 10   (৳340)
+    AC_B      : 0    (৳1212)
+    SNIGDHA   : 0    (৳667)
 
-(2) CHILAHATI EXPRESS (806) (06:00 AM-06:37 AM) [00h 37m]
-    AC_S      : 4    (৳127)
-    S_CHAIR   : 95   (৳50)
-    SNIGDHA   : 20   (৳115)
 
 
 SECOND LEG:
 ==========
-    Date      : 28-Mar-2025
-    From-To   : Nilphamari-Saidpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Saidpur&doj=28-Mar-2025&class=S_CHAIR
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
 
-(1) BARENDRA EXPRESS (732) (05:39 AM-06:04 AM) [00h 25m]
-    S_CHAIR   : 10   (৳50)
+(1) SIMANTA EXPRESS (748) (12:24 AM-04:10 AM) [03h 46m]
+    S_CHAIR   : 24   (৳205)
+    AC_B      : 0    (৳746)
+    SNIGDHA   : 5    (৳386)
 
-(2) CHILAHATI EXPRESS (806) (06:40 AM-06:59 AM) [00h 19m]
-    S_CHAIR   : 5    (৳50)
+====================================================================================
+
+INTERMEDIATE ROUTE: Nilphamari-Chuadanga-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:10 AM-03:20 PM) [06h 10m]
+    AC_S      : 0    (৳863)
+    SNIGDHA   : 0    (৳719)
+    S_CHAIR   : 10   (৳375)
+
+(2) SIMANTA EXPRESS (748) (07:10 PM-01:00 AM) [05h 50m]
+    S_CHAIR   : 10   (৳375)
+    AC_B      : 0    (৳1338)
+    SNIGDHA   : 0    (৳719)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-04:10 AM) [03h 07m]
+    S_CHAIR   : 20   (৳165)
+    AC_B      : 0    (৳614)
+    SNIGDHA   : 5    (৳317)
+
+(5) RUPSHA EXPRESS (728) (03:23 PM-06:25 PM) [03h 02m]
+    AC_S      : 0    (৳380)
+    SNIGDHA   : 3    (৳317)
+    S_CHAIR   : 15   (৳165)
+    F_SEAT    : 2    (৳253)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Nilphamari-Jashore-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Nilphamari-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:10 AM-04:58 PM) [07h 48m]
+    AC_S      : 0    (৳1081)
+    SNIGDHA   : 0    (৳903)
+    S_CHAIR   : 9    (৳470)
+
+(2) SIMANTA EXPRESS (748) (07:10 PM-02:41 AM) [07h 31m]
+    S_CHAIR   : 20   (৳470)
+    AC_B      : 0    (৳1672)
+    SNIGDHA   : 0    (৳903)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-04:10 AM) [01h 25m]
+    S_CHAIR   : 136  (৳70)
+    AC_B      : 2    (৳286)
+    SNIGDHA   : 5    (৳133)
+    F_BERTH   : 2    (৳206)
+
+(5) RUPSHA EXPRESS (728) (05:08 PM-06:25 PM) [01h 17m]
+    AC_S      : 1    (৳156)
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 161  (৳70)
+    F_SEAT    : 2    (৳104)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Kotchandpur-Noapara
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(4) RUPSHA EXPRESS (728) (04:16 PM-05:36 PM) [01h 20m]
+    AC_S      : 0    (৳190)
+    SNIGDHA   : 0    (৳161)
+    S_CHAIR   : 16   (৳85)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Jashore-Noapara
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-02:41 AM) [07h 07m]
+    S_CHAIR   : 25   (৳445)
+    AC_B      : 0    (৳1586)
+    SNIGDHA   : 0    (৳857)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-03:13 AM) [00h 28m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Fulbari-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Fulbari
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Fulbari&doj=25-Apr-2025&class=S_CHAIR
+
+(2) RUPSHA EXPRESS (728) (09:35 AM-10:36 AM) [01h 01m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 25   (৳50)
+
+(4) SIMANTA EXPRESS (748) (07:34 PM-08:28 PM) [00h 54m]
+    S_CHAIR   : 20   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-06:25 PM) [07h 46m]
+    AC_S      : 0    (৳1093)
+    SNIGDHA   : 3    (৳909)
+    S_CHAIR   : 0    (৳475)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-04:10 AM) [07h 39m]
+    S_CHAIR   : 5    (৳475)
+    AC_B      : 0    (৳1689)
+    SNIGDHA   : 5    (৳909)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Birampur-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Birampur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Birampur&doj=25-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-10:50 AM) [01h 15m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 25   (৳55)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:53 AM-06:25 PM) [07h 32m]
+    AC_S      : 0    (৳1064)
+    SNIGDHA   : 0    (৳886)
+    S_CHAIR   : 14   (৳465)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Joypurhat-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Joypurhat
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Joypurhat&doj=25-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-11:22 AM) [01h 47m]
+    AC_S      : 0    (৳213)
+    SNIGDHA   : 0    (৳179)
+    S_CHAIR   : 30   (৳95)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Joypurhat-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joypurhat&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (11:25 AM-06:25 PM) [07h 00m]
+    AC_S      : 4    (৳972)
+    SNIGDHA   : 0    (৳811)
+    S_CHAIR   : 3    (৳425)
+    F_SEAT    : 4    (৳650)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Akkelpur-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Akkelpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Akkelpur&doj=25-Apr-2025&class=S_CHAIR
+
+(3) SIMANTA EXPRESS (748) (07:34 PM-09:31 PM) [01h 57m]
+    S_CHAIR   : 15   (৳110)
+    AC_B      : 0    (৳430)
+    SNIGDHA   : 0    (৳213)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Akkelpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Akkelpur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (09:33 PM-04:10 AM) [06h 37m]
+    S_CHAIR   : 9    (৳405)
+    AC_B      : 0    (৳1448)
+    SNIGDHA   : 0    (৳777)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Ishwardi-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-01:40 PM) [04h 05m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳432)
+    S_CHAIR   : 35   (৳225)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-11:20 PM) [03h 46m]
+    S_CHAIR   : 13   (৳225)
+    AC_B      : 0    (৳821)
+    SNIGDHA   : 0    (৳432)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(2) RUPSHA EXPRESS (728) (02:00 PM-06:25 PM) [04h 25m]
+    AC_S      : 0    (৳667)
+    SNIGDHA   : 4    (৳558)
+    S_CHAIR   : 32   (৳290)
+    F_SEAT    : 8    (৳449)
+
+(3) SIMANTA EXPRESS (748) (11:40 PM-04:10 AM) [04h 30m]
+    S_CHAIR   : 24   (৳290)
+    AC_B      : 0    (৳1051)
+    SNIGDHA   : 5    (৳558)
+    F_BERTH   : 2    (৳717)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Bheramara-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Bheramara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Bheramara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-02:24 PM) [04h 49m]
+    AC_S      : 0    (৳673)
+    SNIGDHA   : 0    (৳558)
+    S_CHAIR   : 12   (৳295)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-12:00 AM) [04h 26m]
+    S_CHAIR   : 10   (৳295)
+    AC_B      : 0    (৳1057)
+    SNIGDHA   : 0    (৳558)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Bheramara-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Bheramara&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:03 AM-04:10 AM) [04h 07m]
+    S_CHAIR   : 16   (৳225)
+    AC_B      : 0    (৳815)
+    SNIGDHA   : 0    (৳426)
+
+(4) RUPSHA EXPRESS (728) (02:27 PM-06:25 PM) [03h 58m]
+    AC_S      : 0    (৳512)
+    SNIGDHA   : 0    (৳426)
+    S_CHAIR   : 9    (৳225)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Poradaha-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Poradaha
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Poradaha&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-02:44 PM) [05h 09m]
+    AC_S      : 0    (৳719)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 13   (৳315)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-12:21 AM) [04h 47m]
+    S_CHAIR   : 22   (৳315)
+    AC_B      : 0    (৳1126)
+    SNIGDHA   : 0    (৳598)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Poradaha-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (12:24 AM-04:10 AM) [03h 46m]
+    S_CHAIR   : 24   (৳205)
+    AC_B      : 0    (৳746)
+    SNIGDHA   : 5    (৳386)
+
+(5) RUPSHA EXPRESS (728) (02:47 PM-06:25 PM) [03h 38m]
+    AC_S      : 0    (৳466)
+    SNIGDHA   : 5    (৳386)
+    S_CHAIR   : 9    (৳205)
+    F_SEAT    : 4    (৳311)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Alamdanga-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Alamdanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Alamdanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:02 PM) [05h 27m]
+    AC_S      : 0    (৳759)
+    SNIGDHA   : 0    (৳633)
+    S_CHAIR   : 10   (৳330)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Alamdanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Alamdanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (03:04 PM-06:25 PM) [03h 21m]
+    AC_S      : 0    (৳420)
+    SNIGDHA   : 0    (৳351)
+    S_CHAIR   : 7    (৳185)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Chuadanga-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:20 PM) [05h 45m]
+    AC_S      : 0    (৳805)
+    SNIGDHA   : 0    (৳673)
+    S_CHAIR   : 20   (৳350)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (03:23 PM-06:25 PM) [03h 02m]
+    AC_S      : 0    (৳380)
+    SNIGDHA   : 3    (৳317)
+    S_CHAIR   : 15   (৳165)
+    F_SEAT    : 2    (৳253)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Darshana_Halt-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-03:45 PM) [06h 10m]
+    AC_S      : 0    (৳846)
+    SNIGDHA   : 0    (৳708)
+    S_CHAIR   : 15   (৳370)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(4) RUPSHA EXPRESS (728) (03:48 PM-06:25 PM) [02h 37m]
+    AC_S      : 0    (৳340)
+    SNIGDHA   : 1    (৳282)
+    S_CHAIR   : 9    (৳150)
+    F_SEAT    : 4    (৳225)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Kotchandpur-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Kotchandpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (04:16 PM-06:25 PM) [02h 09m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 1    (৳120)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur-Jashore-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Saidpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:58 PM) [07h 23m]
+    AC_S      : 0    (৳1024)
+    SNIGDHA   : 0    (৳857)
+    S_CHAIR   : 29   (৳445)
+
+(2) SIMANTA EXPRESS (748) (07:34 PM-02:41 AM) [07h 07m]
+    S_CHAIR   : 25   (৳445)
+    AC_B      : 0    (৳1586)
+    SNIGDHA   : 0    (৳857)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-04:10 AM) [01h 25m]
+    S_CHAIR   : 136  (৳70)
+    AC_B      : 2    (৳286)
+    SNIGDHA   : 5    (৳133)
+    F_BERTH   : 2    (৳206)
+
+(5) RUPSHA EXPRESS (728) (05:08 PM-06:25 PM) [01h 17m]
+    AC_S      : 1    (৳156)
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 161  (৳70)
+    F_SEAT    : 2    (৳104)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur-Santahar-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(8) SIMANTA EXPRESS (748) (08:10 PM-09:55 PM) [01h 45m]
+    S_CHAIR   : 5    (৳115)
+    AC_B      : 0    (৳447)
+    SNIGDHA   : 0    (৳219)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(2) SIMANTA EXPRESS (748) (10:00 PM-04:10 AM) [06h 10m]
+    S_CHAIR   : 0    (৳385)
+    AC_B      : 2    (৳1367)
+    SNIGDHA   : 1    (৳736)
+    F_BERTH   : 2    (৳930)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur-Natore-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(7) SIMANTA EXPRESS (748) (08:10 PM-10:40 PM) [02h 30m]
+    S_CHAIR   : 1    (৳170)
+    AC_B      : 0    (৳625)
+    SNIGDHA   : 0    (৳322)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-04:10 AM) [05h 27m]
+    S_CHAIR   : 22   (৳335)
+    AC_B      : 0    (৳1195)
+    SNIGDHA   : 5    (৳639)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur-Ishwardi-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-11:20 PM) [03h 10m]
+    S_CHAIR   : 5    (৳210)
+    AC_B      : 0    (৳763)
+    SNIGDHA   : 0    (৳397)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(3) SIMANTA EXPRESS (748) (11:40 PM-04:10 AM) [04h 30m]
+    S_CHAIR   : 24   (৳290)
+    AC_B      : 0    (৳1051)
+    SNIGDHA   : 5    (৳558)
+    F_BERTH   : 2    (৳717)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur-Chuadanga-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-01:00 AM) [04h 50m]
+    S_CHAIR   : 3    (৳335)
+    AC_B      : 0    (৳1200)
+    SNIGDHA   : 0    (৳639)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-04:10 AM) [03h 07m]
+    S_CHAIR   : 20   (৳165)
+    AC_B      : 0    (৳614)
+    SNIGDHA   : 5    (৳317)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur-Darshana_Halt-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Parbatipur-Darshana_Halt
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Darshana_Halt&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (08:10 PM-01:24 AM) [05h 14m]
+    S_CHAIR   : 5    (৳350)
+    AC_B      : 0    (৳1258)
+    SNIGDHA   : 0    (৳673)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Darshana_Halt-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Darshana_Halt&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:26 AM-04:10 AM) [02h 44m]
+    S_CHAIR   : 15   (৳150)
+    AC_B      : 0    (৳556)
+    SNIGDHA   : 5    (৳282)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Fulbari-Santahar-Khulna
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Santahar
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Santahar&doj=25-Apr-2025&class=S_CHAIR
+
+(5) SIMANTA EXPRESS (748) (08:31 PM-09:55 PM) [01h 24m]
+    S_CHAIR   : 5    (৳95)
+    AC_B      : 0    (৳372)
+    SNIGDHA   : 0    (৳179)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Santahar-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Santahar&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(2) SIMANTA EXPRESS (748) (10:00 PM-04:10 AM) [06h 10m]
+    S_CHAIR   : 0    (৳385)
+    AC_B      : 2    (৳1367)
+    SNIGDHA   : 1    (৳736)
+    F_BERTH   : 2    (৳930)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Fulbari-Natore-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Natore&doj=25-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (10:39 AM-12:55 PM) [02h 16m]
+    AC_S      : 0    (৳334)
+    SNIGDHA   : 0    (৳276)
+    S_CHAIR   : 5    (৳145)
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-06:25 PM) [05h 25m]
+    AC_S      : 3    (৳765)
+    SNIGDHA   : 3    (৳639)
+    S_CHAIR   : 0    (৳335)
+    F_SEAT    : 1    (৳512)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Fulbari-Ishwardi-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Ishwardi
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Ishwardi&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-01:40 PM) [03h 01m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 7    (৳185)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-11:20 PM) [02h 49m]
+    S_CHAIR   : 5    (৳185)
+    AC_B      : 0    (৳689)
+    SNIGDHA   : 0    (৳357)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Ishwardi-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ishwardi&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(2) RUPSHA EXPRESS (728) (02:00 PM-06:25 PM) [04h 25m]
+    AC_S      : 0    (৳667)
+    SNIGDHA   : 4    (৳558)
+    S_CHAIR   : 32   (৳290)
+    F_SEAT    : 8    (৳449)
+
+(3) SIMANTA EXPRESS (748) (11:40 PM-04:10 AM) [04h 30m]
+    S_CHAIR   : 24   (৳290)
+    AC_B      : 0    (৳1051)
+    SNIGDHA   : 5    (৳558)
+    F_BERTH   : 2    (৳717)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Fulbari-Chuadanga-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Chuadanga
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Chuadanga&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-03:20 PM) [04h 41m]
+    AC_S      : 0    (৳719)
+    SNIGDHA   : 0    (৳598)
+    S_CHAIR   : 3    (৳315)
+
+(2) SIMANTA EXPRESS (748) (08:31 PM-01:00 AM) [04h 29m]
+    S_CHAIR   : 5    (৳315)
+    AC_B      : 0    (৳1126)
+    SNIGDHA   : 0    (৳598)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Chuadanga-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Chuadanga&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (01:03 AM-04:10 AM) [03h 07m]
+    S_CHAIR   : 20   (৳165)
+    AC_B      : 0    (৳614)
+    SNIGDHA   : 5    (৳317)
+
+(5) RUPSHA EXPRESS (728) (03:23 PM-06:25 PM) [03h 02m]
+    AC_S      : 0    (৳380)
+    SNIGDHA   : 3    (৳317)
+    S_CHAIR   : 15   (৳165)
+    F_SEAT    : 2    (৳253)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Fulbari-Jashore-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Fulbari-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Fulbari&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:39 AM-04:58 PM) [06h 19m]
+    AC_S      : 0    (৳938)
+    SNIGDHA   : 0    (৳782)
+    S_CHAIR   : 3    (৳410)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (05:08 PM-06:25 PM) [01h 17m]
+    AC_S      : 1    (৳156)
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 161  (৳70)
+    F_SEAT    : 2    (৳104)
+
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Birampur-Jashore-Noapara
+Date: 25-Apr-2025
+Common trains: SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(2) SIMANTA EXPRESS (748) (08:45 PM-02:41 AM) [05h 56m]
+    S_CHAIR   : 10   (৳395)
+    AC_B      : 0    (৳1413)
+    SNIGDHA   : 0    (৳759)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Noapara&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-03:13 AM) [00h 28m]
+    S_CHAIR   : 40   (৳50)
+    AC_B      : 0    (৳200)
+    SNIGDHA   : 0    (৳115)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Birampur-Jashore-Khulna
+Date: 25-Apr-2025
+Common trains: RUPSHA EXPRESS, SIMANTA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Birampur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Birampur&tocity=Jashore&doj=25-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:53 AM-04:58 PM) [06h 05m]
+    AC_S      : 0    (৳909)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 4    (৳395)
+
+(2) SIMANTA EXPRESS (748) (08:45 PM-02:41 AM) [05h 56m]
+    S_CHAIR   : 10   (৳395)
+    AC_B      : 0    (৳1413)
+    SNIGDHA   : 0    (৳759)
+
+
+
+SECOND LEG:
+==========
+    Date      : 25-Apr-2025
+    From-To   : Jashore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Jashore&tocity=Khulna&doj=25-Apr-2025&class=S_CHAIR
+
+(1) SIMANTA EXPRESS (748) (02:45 AM-04:10 AM) [01h 25m]
+    S_CHAIR   : 136  (৳70)
+    AC_B      : 2    (৳286)
+    SNIGDHA   : 5    (৳133)
+    F_BERTH   : 2    (৳206)
+
+(5) RUPSHA EXPRESS (728) (05:08 PM-06:25 PM) [01h 17m]
+    AC_S      : 1    (৳156)
+    SNIGDHA   : 0    (৳133)
+    S_CHAIR   : 161  (৳70)
+    F_SEAT    : 2    (৳104)
 
 
 
