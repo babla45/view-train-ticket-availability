@@ -229,7 +229,7 @@ def find_intermediate_routes(routes, src_station, dst_station, range_val):
     
     return intermediate_routes
 
-def extract_train_specific_stations(parsed_data):
+def extract_train_specific_stations(parsed_data, silent=False):
     """
     Extract stations relevant to the selected train route
     based on the route ID and train name from the summary
@@ -238,31 +238,46 @@ def extract_train_specific_stations(parsed_data):
     
     # If no selected route or it's "Default station list", return all stations
     if not selected_route or selected_route == "Default station list":
-        print("Using all available stations (no specific train route selected)")
+        if not silent:
+            print("Using all available stations (no specific train route selected)")
         return parsed_data['stations']
     
     # Try to extract the train route information
     match = re.match(r'\((\d+)\)\s+(.+)', selected_route)
     if not match:
-        print(f"Could not parse train route format: {selected_route}, using all available stations")
+        if not silent:
+            print(f"Could not parse train route format: {selected_route}, using all available stations")
         return parsed_data['stations']
     
     route_number = match.group(1)
     train_name = match.group(2)
-    print(f"Processing for train route #{route_number}: {train_name}")
+    if not silent:
+        print(f"Processing for train route #{route_number}: {train_name}")
     
     # Extract stations for this specific train route from stationList.txt
     try:
         with open('stationList.txt', 'r') as file:
             content = file.read()
             
+            # Handle Mixed routes specially by removing the _N part from the name
+            search_train_name = train_name
+            if "Mixed_" in train_name:
+                # Convert "Mixed_2 from..." to "Mixed from..."
+                search_train_name = "Mixed" + train_name[train_name.find(" "):]
+            
             # Find the section for this train route
             # Look for patterns like "1. TRAIN_NAME" or similar
-            pattern = rf"{route_number}\.\s+{re.escape(train_name)}"
+            pattern = rf"{route_number}\.\s+{re.escape(search_train_name)}"
             section_match = re.search(pattern, content)
             
+            # If not found with the modified name, try with the original name
+            if not section_match and "Mixed_" in train_name:
+                pattern = rf"{route_number}\.\s+{re.escape(train_name)}"
+                section_match = re.search(pattern, content)
+            
             if not section_match:
-                print(f"Could not find train route {route_number} in stationList.txt, using all available stations")
+                if not silent:
+                    print(f"Could not find train route {route_number} in stationList.txt, using all available stations")
                 return parsed_data['stations']
             
             # Find the start position of this section
@@ -281,17 +296,21 @@ def extract_train_specific_stations(parsed_data):
             specific_stations = [line.strip() for line in station_lines if line.strip()]
             
             if not specific_stations:
-                print(f"No stations found for train route {route_number}, using all available stations")
+                if not silent:
+                    print(f"No stations found for train route {route_number}, using all available stations")
                 return parsed_data['stations']
             
-            print(f"Found {len(specific_stations)} stations specific to train route {route_number}")
+            if not silent:
+                print(f"Found {len(specific_stations)} stations specific to train route {route_number}")
             return specific_stations
             
     except FileNotFoundError:
-        print("stationList.txt not found, using all available stations")
+        if not silent:
+            print("stationList.txt not found, using all available stations")
         return parsed_data['stations']
     except Exception as e:
-        print(f"Error extracting train-specific stations: {str(e)}, using all available stations")
+        if not silent:
+            print(f"Error extracting train-specific stations: {str(e)}, using all available stations")
         return parsed_data['stations']
 
 def process_intermediate_routes(parsed_data, src_station=None, dst_station=None, range_val=None):
@@ -303,7 +322,7 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
     formatted_date = parsed_data['date']
     
     # Get train-specific stations from stationList.txt if possible
-    all_stations = extract_train_specific_stations(parsed_data)
+    all_stations = extract_train_specific_stations(parsed_data, silent=True)
     
     if not all_stations:
         # Fallback to extracting stations from routes if no station list was found
@@ -318,8 +337,9 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
         sel_stations = parsed_data['selected_stations']
         print(f"\nSelected station range from output.txt: ({sel_stations['start_idx']}-{sel_stations['end_idx']}) ({sel_stations['start_station']} ==> {sel_stations['end_station']})")
     
-    # Don't show the full station list again since we've already displayed the stations within the selected range
-    # Just prompt the user directly
+    # Stations are already displayed by display_selected_station_range(), no need to show them again
+    
+    # Prompt the user for source and destination stations
     try:
         src_idx = int(input("\nEnter source station number: ")) - 1
         dst_idx = int(input("Enter destination station number: ")) - 1
@@ -350,6 +370,7 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
     # Find potential intermediate routes
     intermediate_routes = find_intermediate_routes(routes, src_station, dst_station, range_val)
     intermediate_results = []
+    failed_routes = []
     
     # Process each intermediate route
     for idx, route in enumerate(intermediate_routes, 1):
@@ -361,7 +382,13 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
         
         # Skip routes where either leg doesn't have seats
         if not first_leg['has_seats'] or not second_leg['has_seats']:
-            print(f"Skipping intermediate route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no train or seats available)")
+            print(f"[✗] Route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no train or seats available)")
+            failed_routes.append({
+                'src': src,
+                'mid': mid,
+                'dst': dst,
+                'reason': 'no train or seats available'
+            })
             continue
         
         # Extract train names from both legs
@@ -373,7 +400,13 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
         
         # Skip if there are no common trains
         if not common_trains:
-            print(f"Skipping intermediate route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no common trains)")
+            print(f"[✗] Route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (no common trains)")
+            failed_routes.append({
+                'src': src,
+                'mid': mid,
+                'dst': dst,
+                'reason': 'no common trains'
+            })
             continue
         
         # Filter the leg details to only include common trains
@@ -395,11 +428,11 @@ def process_intermediate_routes(parsed_data, src_station=None, dst_station=None,
             'common_trains': common_trains
         })
         
-        print(f"Processed intermediate route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (found {len(common_trains)} common trains)")
+        print(f"[✓] Route {idx}/{len(intermediate_routes)}: {src} -> {mid} -> {dst} (found {len(common_trains)} common trains)")
     
-    return intermediate_results
+    return intermediate_results, failed_routes
 
-def write_results(intermediate_results, output_file_path, parsed_data):
+def write_results(intermediate_results, failed_routes, output_file_path, parsed_data):
     """Write the intermediate route results to a file"""
     with open(output_file_path, 'w', encoding='utf-8') as file:
         # Write header
@@ -420,16 +453,59 @@ def write_results(intermediate_results, output_file_path, parsed_data):
         # Add station list to output
         if parsed_data.get('stations'):
             file.write("\nStation List:\n")
-            train_specific_stations = extract_train_specific_stations(parsed_data)
+            train_specific_stations = extract_train_specific_stations(parsed_data, silent=True)
             for station in train_specific_stations:
                 file.write(f"{station}\n")
             file.write("\n")
             
-        file.write(f"Total potential intermediate routes : {len(intermediate_results)}\n\n\n\n")
+        file.write(f"Total potential intermediate routes : {len(intermediate_results) + len(failed_routes)}\n")
+        file.write(f"Successful routes                   : {len(intermediate_results)}\n")
+        file.write(f"Failed routes                       : {len(failed_routes)}\n\n")
         
-        # Write intermediate route results
+        # Write route processing results - Terminal output style
         file.write(f"{'=' * 84}\n")
-        file.write(f"INTERMEDIATE ROUTE RESULTS\n")
+        file.write(f"ROUTE PROCESSING RESULTS\n")
+        file.write(f"{'=' * 84}\n\n")
+        
+        # First list successful routes with checkmarks
+        if intermediate_results:
+            file.write("Successful Routes (with common trains):\n")
+            file.write("-" * 60 + "\n")
+            for idx, result in enumerate(intermediate_results, 1):
+                train_count = len(result['common_trains'])
+                train_text = "train" if train_count == 1 else "trains"
+                file.write(f"[✓] Route {idx}: {result['src']} -> {result['mid']} -> {result['dst']} (found {train_count} common {train_text})\n")
+            file.write("\n")
+        
+        # Then list failed routes with crosses
+        if failed_routes:
+            file.write("Failed Routes:\n")
+            file.write("-" * 60 + "\n")
+            for idx, route in enumerate(failed_routes, 1):
+                file.write(f"[✗] Route {idx}: {route['src']} -> {route['mid']} -> {route['dst']} ({route['reason']})\n")
+            file.write("\n")
+        
+        # Count successful routes with common trains per train
+        train_counts = {}
+        for result in intermediate_results:
+            for train in result['common_trains']:
+                if train in train_counts:
+                    train_counts[train] += 1
+                else:
+                    train_counts[train] = 1
+                    
+        # Print train-specific summary
+        if train_counts:
+            file.write("\nCommon trains found:\n")
+            file.write("-" * 60 + "\n")
+            for train, count in sorted(train_counts.items(), key=lambda x: x[1], reverse=True):
+                route_text = "route" if count == 1 else "routes"
+                file.write(f"  - {train}: {count} {route_text}\n")
+            file.write("\n")
+        
+        # Write detailed intermediate route results
+        file.write(f"\n{'=' * 84}\n")
+        file.write(f"INTERMEDIATE ROUTE DETAILS\n")
         file.write(f"{'=' * 84}\n\n")
         
         file.write(f"{'=' * 84}\n")
@@ -480,9 +556,20 @@ def display_selected_station_range(parsed_data):
         with open('stationList.txt', 'r') as file:
             content = file.read()
             
+            # Handle Mixed routes specially by removing the _N part from the name
+            search_train_name = train_name
+            if "Mixed_" in train_name:
+                # Convert "Mixed_2 from..." to "Mixed from..."
+                search_train_name = "Mixed" + train_name[train_name.find(" "):]
+            
             # Find the section for this train route
-            pattern = rf"{route_number}\.\s+{re.escape(train_name)}"
+            pattern = rf"{route_number}\.\s+{re.escape(search_train_name)}"
             section_match = re.search(pattern, content)
+            
+            # If not found with the modified name, try with the original name
+            if not section_match and "Mixed_" in train_name:
+                pattern = rf"{route_number}\.\s+{re.escape(train_name)}"
+                section_match = re.search(pattern, content)
             
             if not section_match:
                 print(f"Could not find train route {route_number} in stationList.txt")
@@ -553,17 +640,58 @@ def main():
     print("Processing intermediate routes...")
     
     # Get user input for source, destination, and range
-    intermediate_results = process_intermediate_routes(parsed_data)
+    intermediate_results, failed_routes = process_intermediate_routes(parsed_data)
     
-    if not intermediate_results:
-        print("No viable intermediate routes found matching your criteria.")
+    if not intermediate_results and not failed_routes:
+        print("\n[✗] No intermediate routes found matching your criteria.")
         return
     
-    print(f"Found {len(intermediate_results)} viable intermediate routes with common trains")
+    if not intermediate_results:
+        print("\n[✗] No viable intermediate routes found with common trains.")
+        print(f"    Found {len(failed_routes)} routes, but none had common trains.")
+        
+        write_results(intermediate_results, failed_routes, output_file, parsed_data)
+        print(f"\n[✓] Results written to {output_file}")
+        print("="*84)
+        return
     
-    write_results(intermediate_results, output_file, parsed_data)
+    # Count successful routes with common trains per train
+    train_counts = {}
+    for result in intermediate_results:
+        for train in result['common_trains']:
+            if train in train_counts:
+                train_counts[train] += 1
+            else:
+                train_counts[train] = 1
     
-    print(f"Results written to {output_file}")
+    # Print summary with checkmarks
+    print("\n" + "="*84)
+    print("SUMMARY")
+    print("="*84)
+    print(f"[✓] Found {len(intermediate_results)} viable intermediate routes with common trains")
+    
+    if failed_routes:
+        print(f"[✗] Found {len(failed_routes)} routes without common trains")
+    
+    # Print train-specific summary
+    print("\nCommon trains found:")
+    for train, count in sorted(train_counts.items(), key=lambda x: x[1], reverse=True):
+        # Use proper pluralization
+        route_text = "route" if count == 1 else "routes"
+        print(f"  - {train}: {count} {route_text}")
+    
+    # Print selected train route information
+    train_route = parsed_data.get('selected_route', 'Unknown')
+    print(f"\nSelected Train Route: {train_route}")
+    
+    # Get station count silently (without printing redundant logs)
+    stations = extract_train_specific_stations(parsed_data, silent=True)
+    print(f"Number of stations: {len(stations)}")
+    
+    write_results(intermediate_results, failed_routes, output_file, parsed_data)
+    
+    print(f"\n[✓] Results written to {output_file}")
+    print("="*84)
 
 if __name__ == "__main__":
     main()

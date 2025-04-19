@@ -657,7 +657,13 @@ if __name__ == "__main__":
         output_file.write(f"Total number of routes/combinations : {total_combinations}\n")
         output_file.write(f"Total execution time                : {total_time:.2f} seconds ({minutes:.2f} minutes)\n")
         output_file.write(f"Average execution time per route    : {total_time/total_combinations:.2f} seconds\n")
-        output_file.write(f"Routes with seats                   : {total_routes_with_seats}\nRoutes without seats                : {total_routes_without_seats}\nRoutes with no train service        : {total_no_train_routes}\n\n\n\n\n")
+        output_file.write(f"Routes with seats                   : {total_routes_with_seats}\nRoutes without seats                : {total_routes_without_seats}\nRoutes with no train service        : {total_no_train_routes}\n\n")
+        
+        # Add station list
+        output_file.write("Station List:\n")
+        for station in stations[start_index:end_index+1]:
+            output_file.write(f"{station}\n")
+        output_file.write("\n\n\n")
         
         # Write results for all dates
         for date_str in date_list:

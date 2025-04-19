@@ -7,243 +7,948 @@
 
 Summary: 
 
-Execution date and time             : 2025-04-19 02:06:07 AM
-Selected Train Route                : (6) Mixed_2 from Dhaka to  Uttarbanga
-Selected station range (from-to)    : (1-23) (Dhaka ==> Lalmonirhat)
-Journey Date                        : 28-Apr-2025
+Execution date and time             : 2025-04-19 06:22:46 PM
+Selected Train Route                : (2) SIMANTA EXPRESS(748) , Chilahati to Khulna
+Selected station range (from-to)    : (1-23) (Chilahati ==> Khulna)
+Journey Date                        : 29-Apr-2025
 
 Station List:
-Dhaka
-Joydebpur
-Tangail
-Ibrahimabad
-SH M Monsur Ali
-Ullapara
-Boral_Bridge
-Azim Nagar
-Natore
-Madhnagar
+Chilahati
+Domar
+Nilphamari
+Saidpur
+Parbatipur
+Fulbari
+Birampur
+Joypurhat
+Akkelpur
 Santahar
-Talora
-Bogura
-Sonatola
-Bonar_Para
-Gaibandha
-Bamondanga
-Pirgacha
-Kaunia
-Rangpur
-Kurigram
-Teesta_Junction
-Lalmonirhat
+Natore
+Ishwardi
+Bheramara
+Poradaha
+Alamdanga
+Chuadanga
+Darshana_Halt
+Kotchandpur
+Mubarakganj
+Jashore
+Noapara
+Daulatpur
+Khulna
 
-Total potential intermediate routes : 6
+Total potential intermediate routes : 24
+Successful routes                   : 24
+Failed routes                       : 0
 
+====================================================================================
+ROUTE PROCESSING RESULTS
+====================================================================================
+
+Successful Routes (with common trains):
+------------------------------------------------------------
+[✓] Route 1: Nilphamari -> Natore -> Jashore (found 2 common trains)
+[✓] Route 2: Nilphamari -> Natore -> Khulna (found 2 common trains)
+[✓] Route 3: Nilphamari -> Natore -> Kotchandpur (found 1 common train)
+[✓] Route 4: Parbatipur -> Kotchandpur -> Jashore (found 1 common train)
+[✓] Route 5: Parbatipur -> Natore -> Jashore (found 2 common trains)
+[✓] Route 6: Parbatipur -> Kotchandpur -> Khulna (found 1 common train)
+[✓] Route 7: Parbatipur -> Natore -> Khulna (found 2 common trains)
+[✓] Route 8: Parbatipur -> Natore -> Kotchandpur (found 1 common train)
+[✓] Route 9: Parbatipur -> Kotchandpur -> Mubarakganj (found 1 common train)
+[✓] Route 10: Poradaha -> Kotchandpur -> Jashore (found 5 common trains)
+[✓] Route 11: Poradaha -> Mubarakganj -> Jashore (found 4 common trains)
+[✓] Route 12: Poradaha -> Kotchandpur -> Khulna (found 4 common trains)
+[✓] Route 13: Poradaha -> Mubarakganj -> Khulna (found 3 common trains)
+[✓] Route 14: Poradaha -> Noapara -> Khulna (found 4 common trains)
+[✓] Route 15: Poradaha -> Kotchandpur -> Mubarakganj (found 3 common trains)
+[✓] Route 16: Saidpur -> Kotchandpur -> Jashore (found 1 common train)
+[✓] Route 17: Saidpur -> Mubarakganj -> Jashore (found 1 common train)
+[✓] Route 18: Saidpur -> Natore -> Jashore (found 2 common trains)
+[✓] Route 19: Saidpur -> Kotchandpur -> Khulna (found 1 common train)
+[✓] Route 20: Saidpur -> Mubarakganj -> Khulna (found 1 common train)
+[✓] Route 21: Saidpur -> Natore -> Khulna (found 2 common trains)
+[✓] Route 22: Saidpur -> Noapara -> Khulna (found 1 common train)
+[✓] Route 23: Saidpur -> Natore -> Kotchandpur (found 1 common train)
+[✓] Route 24: Saidpur -> Kotchandpur -> Mubarakganj (found 1 common train)
+
+
+Common trains found:
+------------------------------------------------------------
+  - RUPSHA EXPRESS: 24 routes
+  - SIMANTA EXPRESS: 6 routes
+  - SUNDARBAN EXPRESS: 6 routes
+  - CHITRA EXPRESS: 5 routes
+  - KAPOTAKSHA EXPRESS: 3 routes
+  - BENAPOLE EXPRESS: 3 routes
 
 
 ====================================================================================
-INTERMEDIATE ROUTE RESULTS
+INTERMEDIATE ROUTE DETAILS
 ====================================================================================
 
 ====================================================================================
-INTERMEDIATE ROUTES FOR DATE: 28-Apr-2025
+INTERMEDIATE ROUTES FOR DATE: 29-Apr-2025
 ====================================================================================
 
 ====================================================================================
 
-INTERMEDIATE ROUTE: Dhaka ==> Kaunia ==> Kurigram
-Date: 28-Apr-2025
-Common trains: KURIGRAM EXPRESS
+INTERMEDIATE ROUTE: Nilphamari ==> Natore ==> Jashore
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Dhaka-Kaunia
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Nilphamari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
 
-(2) KURIGRAM EXPRESS (797) (08:00 PM-04:25 AM) [08h 25m]
-    AC_B      : 0    (৳2408)
-    SNIGDHA   : 3    (৳1311)
-    S_CHAIR   : 29   (৳685)
+(3) RUPSHA EXPRESS (728) (09:10 AM-12:55 PM) [03h 45m]
+    AC_S      : 0    (৳478)
+    SNIGDHA   : 0    (৳397)
+    S_CHAIR   : 0    (৳210)
+
+(5) SIMANTA EXPRESS (748) (07:10 PM-10:40 PM) [03h 30m]
+    S_CHAIR   : 0    (৳210)
+    SNIGDHA   : 0    (৳437)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:58 PM) [03h 58m]
+    AC_S      : 0    (৳610)
+    SNIGDHA   : 0    (৳512)
+    S_CHAIR   : 20   (৳265)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-02:41 AM) [03h 58m]
+    S_CHAIR   : 0    (৳265)
+    SNIGDHA   : 0    (৳512)
+====================================================================================
+
+INTERMEDIATE ROUTE: Nilphamari ==> Natore ==> Khulna
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Nilphamari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:10 AM-12:55 PM) [03h 45m]
+    AC_S      : 0    (৳478)
+    SNIGDHA   : 0    (৳397)
+    S_CHAIR   : 0    (৳210)
+
+(5) SIMANTA EXPRESS (748) (07:10 PM-10:40 PM) [03h 30m]
+    S_CHAIR   : 0    (৳210)
+    SNIGDHA   : 0    (৳437)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-06:25 PM) [05h 25m]
+    AC_S      : 4    (৳765)
+    SNIGDHA   : 5    (৳639)
+    S_CHAIR   : 17   (৳335)
+    F_SEAT    : 4    (৳512)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-04:10 AM) [05h 27m]
+    S_CHAIR   : 24   (৳335)
+    SNIGDHA   : 5    (৳639)
+====================================================================================
+
+INTERMEDIATE ROUTE: Nilphamari ==> Natore ==> Kotchandpur
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Nilphamari-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Nilphamari&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:10 AM-12:55 PM) [03h 45m]
+    AC_S      : 0    (৳478)
+    SNIGDHA   : 0    (৳397)
+    S_CHAIR   : 0    (৳210)
 
 
 SECOND LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Kaunia-Kurigram
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Kurigram&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Natore-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
 
-(1) KURIGRAM EXPRESS (797) (04:28 AM-05:10 AM) [00h 42m]
-    AC_B      : 0    (৳200)
-    SNIGDHA   : 3    (৳115)
-    S_CHAIR   : 110  (৳50)
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:14 PM) [03h 14m]
+    AC_S      : 0    (৳501)
+    SNIGDHA   : 0    (৳414)
+    S_CHAIR   : 0    (৳220)
 ====================================================================================
 
-INTERMEDIATE ROUTE: Dhaka ==> Gaibandha ==> Lalmonirhat
-Date: 28-Apr-2025
-Common trains: LALMONI EXPRESS, BURIMARI EXPRESS
+INTERMEDIATE ROUTE: Parbatipur ==> Kotchandpur ==> Jashore
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Dhaka-Gaibandha
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Gaibandha&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
 
-(1) BURIMARI EXPRESS (809) (08:30 AM-04:28 PM) [07h 58m]
-    AC_S      : 9    (৳1369)
-    S_CHAIR   : 59   (৳595)
-    SNIGDHA   : 15   (৳1139)
-
-(2) LALMONI EXPRESS (751) (09:45 PM-05:37 AM) [07h 52m]
-    AC_B      : 2    (৳2097)
-    SNIGDHA   : 10   (৳1139)
-    S_CHAIR   : 60   (৳595)
+(1) RUPSHA EXPRESS (728) (10:15 AM-04:14 PM) [05h 59m]
+    AC_S      : 0    (৳874)
+    SNIGDHA   : 0    (৳731)
+    S_CHAIR   : 0    (৳380)
 
 SECOND LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Gaibandha-Lalmonirhat
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Gaibandha&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
 
-(1) LALMONI EXPRESS (751) (05:40 AM-07:20 AM) [01h 40m]
-    AC_B      : 2    (৳344)
-    SNIGDHA   : 10   (৳167)
-    S_CHAIR   : 50   (৳85)
-
-(3) BURIMARI EXPRESS (809) (04:33 PM-06:10 PM) [01h 37m]
-    AC_S      : 9    (৳196)
-    S_CHAIR   : 125  (৳85)
-    SNIGDHA   : 33   (৳167)
-====================================================================================
-
-INTERMEDIATE ROUTE: Dhaka ==> Ibrahimabad ==> Lalmonirhat
-Date: 28-Apr-2025
-Common trains: LALMONI EXPRESS
-
-FIRST LEG:
-==========
-    Date      : 28-Apr-2025
-    From-To   : Dhaka-Ibrahimabad
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Ibrahimabad&doj=28-Apr-2025&class=S_CHAIR
-
-(8) LALMONI EXPRESS (751) (09:45 PM-11:54 PM) [02h 09m]
-    AC_B      : 0    (৳528)
-    SNIGDHA   : 0    (৳271)
-    S_CHAIR   : 5    (৳140)
-
-
-SECOND LEG:
-==========
-    Date      : 28-Apr-2025
-    From-To   : Ibrahimabad-Lalmonirhat
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Ibrahimabad&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
-
-(1) LALMONI EXPRESS (751) (11:56 PM-07:20 AM) [07h 24m]
-    AC_B      : 0    (৳1908)
-    SNIGDHA   : 0    (৳1035)
-    S_CHAIR   : 5    (৳540)
-====================================================================================
-
-INTERMEDIATE ROUTE: Dhaka ==> Joydebpur ==> Lalmonirhat
-Date: 28-Apr-2025
-Common trains: LALMONI EXPRESS
-
-FIRST LEG:
-==========
-    Date      : 28-Apr-2025
-    From-To   : Dhaka-Joydebpur
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Joydebpur&doj=28-Apr-2025&class=S_CHAIR
-
-(11) LALMONI EXPRESS (751) (09:45 PM-10:36 PM) [00h 51m]
-    AC_B      : 0    (৳200)
+(5) RUPSHA EXPRESS (728) (04:16 PM-04:58 PM) [00h 42m]
+    AC_S      : 0    (৳127)
     SNIGDHA   : 0    (৳115)
-    S_CHAIR   : 20   (৳50)
+    S_CHAIR   : 10   (৳50)
 
-
-SECOND LEG:
-==========
-    Date      : 28-Apr-2025
-    From-To   : Joydebpur-Lalmonirhat
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Joydebpur&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
-
-(1) LALMONI EXPRESS (751) (10:38 PM-07:20 AM) [08h 42m]
-    AC_B      : 0    (৳2247)
-    SNIGDHA   : 0    (৳1219)
-    S_CHAIR   : 19   (৳640)
 ====================================================================================
 
-INTERMEDIATE ROUTE: Dhaka ==> Kaunia ==> Lalmonirhat
-Date: 28-Apr-2025
-Common trains: LALMONI EXPRESS, BURIMARI EXPRESS
+INTERMEDIATE ROUTE: Parbatipur ==> Natore ==> Jashore
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Dhaka-Kaunia
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Dhaka&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
 
-(1) BURIMARI EXPRESS (809) (08:30 AM-05:43 PM) [09h 13m]
-    S_CHAIR   : 20   (৳680)
-    SNIGDHA   : 5    (৳1300)
+(3) RUPSHA EXPRESS (728) (10:15 AM-12:55 PM) [02h 40m]
+    AC_S      : 0    (৳386)
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 0    (৳170)
 
-(3) LALMONI EXPRESS (751) (09:45 PM-06:48 AM) [09h 03m]
-    AC_B      : 0    (৳2385)
-    SNIGDHA   : 0    (৳1300)
-    S_CHAIR   : 30   (৳680)
+(8) SIMANTA EXPRESS (748) (08:10 PM-10:40 PM) [02h 30m]
+    S_CHAIR   : 5    (৳170)
+    SNIGDHA   : 0    (৳322)
+
 
 SECOND LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Kaunia-Lalmonirhat
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Natore-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
 
-(1) LALMONI EXPRESS (751) (06:51 AM-07:20 AM) [00h 29m]
-    AC_B      : 0    (৳200)
-    SNIGDHA   : 0    (৳115)
-    S_CHAIR   : 80   (৳50)
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:58 PM) [03h 58m]
+    AC_S      : 0    (৳610)
+    SNIGDHA   : 0    (৳512)
+    S_CHAIR   : 20   (৳265)
 
-(3) BURIMARI EXPRESS (809) (05:46 PM-06:10 PM) [00h 24m]
-    S_CHAIR   : 90   (৳50)
-    SNIGDHA   : 13   (৳115)
+(2) SIMANTA EXPRESS (748) (10:43 PM-02:41 AM) [03h 58m]
+    S_CHAIR   : 0    (৳265)
+    SNIGDHA   : 0    (৳512)
 ====================================================================================
 
-INTERMEDIATE ROUTE: Gaibandha ==> Kaunia ==> Lalmonirhat
-Date: 28-Apr-2025
-Common trains: LALMONI EXPRESS, BURIMARI EXPRESS, KOROTOA EXPRESS
+INTERMEDIATE ROUTE: Parbatipur ==> Kotchandpur ==> Khulna
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
 
 FIRST LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Gaibandha-Kaunia
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Gaibandha&tocity=Kaunia&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
 
-(1) LALMONI EXPRESS (751) (05:40 AM-06:48 AM) [01h 08m]
-    S_CHAIR   : 15   (৳85)
-
-(2) KOROTOA EXPRESS (713) (12:04 PM-01:12 PM) [01h 08m]
-    S_CHAIR   : 15   (৳85)
-
-(4) BURIMARI EXPRESS (809) (04:33 PM-05:43 PM) [01h 10m]
-    S_CHAIR   : 35   (৳85)
-    SNIGDHA   : 3    (৳167)
+(1) RUPSHA EXPRESS (728) (10:15 AM-04:14 PM) [05h 59m]
+    AC_S      : 0    (৳874)
+    SNIGDHA   : 0    (৳731)
+    S_CHAIR   : 0    (৳380)
 
 SECOND LEG:
 ==========
-    Date      : 28-Apr-2025
-    From-To   : Kaunia-Lalmonirhat
-    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kaunia&tocity=Lalmonirhat&doj=28-Apr-2025&class=S_CHAIR
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
 
-(1) LALMONI EXPRESS (751) (06:51 AM-07:20 AM) [00h 29m]
-    AC_B      : 0    (৳200)
+(4) RUPSHA EXPRESS (728) (04:16 PM-06:25 PM) [02h 09m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 10   (৳120)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur ==> Natore ==> Khulna
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (10:15 AM-12:55 PM) [02h 40m]
+    AC_S      : 0    (৳386)
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 0    (৳170)
+
+(8) SIMANTA EXPRESS (748) (08:10 PM-10:40 PM) [02h 30m]
+    S_CHAIR   : 5    (৳170)
+    SNIGDHA   : 0    (৳322)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-06:25 PM) [05h 25m]
+    AC_S      : 4    (৳765)
+    SNIGDHA   : 5    (৳639)
+    S_CHAIR   : 17   (৳335)
+    F_SEAT    : 4    (৳512)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-04:10 AM) [05h 27m]
+    S_CHAIR   : 24   (৳335)
+    SNIGDHA   : 5    (৳639)
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur ==> Natore ==> Kotchandpur
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (10:15 AM-12:55 PM) [02h 40m]
+    AC_S      : 0    (৳386)
+    SNIGDHA   : 0    (৳322)
+    S_CHAIR   : 0    (৳170)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:14 PM) [03h 14m]
+    AC_S      : 0    (৳501)
+    SNIGDHA   : 0    (৳414)
+    S_CHAIR   : 0    (৳220)
+====================================================================================
+
+INTERMEDIATE ROUTE: Parbatipur ==> Kotchandpur ==> Mubarakganj
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Parbatipur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Parbatipur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (10:15 AM-04:14 PM) [05h 59m]
+    AC_S      : 0    (৳874)
+    SNIGDHA   : 0    (৳731)
+    S_CHAIR   : 0    (৳380)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (04:16 PM-04:28 PM) [00h 12m]
+    AC_S      : 0    (৳127)
     SNIGDHA   : 0    (৳115)
-    S_CHAIR   : 80   (৳50)
+    S_CHAIR   : 0    (৳50)
+====================================================================================
 
-(2) KOROTOA EXPRESS (713) (01:15 PM-01:40 PM) [00h 25m]
+INTERMEDIATE ROUTE: Poradaha ==> Kotchandpur ==> Jashore
+Date: 29-Apr-2025
+Common trains: KAPOTAKSHA EXPRESS, CHITRA EXPRESS, BENAPOLE EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-02:16 AM) [01h 27m]
+    SNIGDHA   : 5    (৳167)
+    S_CHAIR   : 5    (৳90)
+
+(2) BENAPOLE EXPRESS (796) (03:23 AM-04:44 AM) [01h 21m]
+    S_CHAIR   : 12   (৳90)
+    SNIGDHA   : 0    (৳167)
+
+(3) SUNDARBAN EXPRESS (726) (11:53 AM-01:16 PM) [01h 23m]
+    AC_S      : 0    (৳202)
+    S_CHAIR   : 10   (৳90)
+    SNIGDHA   : 8    (৳167)
+
+(4) RUPSHA EXPRESS (728) (02:47 PM-04:14 PM) [01h 27m]
+    AC_S      : 0    (৳202)
+    SNIGDHA   : 0    (৳167)
+    S_CHAIR   : 19   (৳90)
+
+(5) KAPOTAKSHA EXPRESS (716) (04:37 PM-06:14 PM) [01h 37m]
+    S_CHAIR   : 5    (৳90)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:18 AM-03:07 AM) [00h 49m]
+    SNIGDHA   : 5    (৳115)
+    AC_B      : 0    (৳223)
+    S_CHAIR   : 0    (৳50)
+
+(2) BENAPOLE EXPRESS (796) (04:46 AM-05:35 AM) [00h 49m]
+    S_CHAIR   : 12   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(4) SUNDARBAN EXPRESS (726) (01:18 PM-02:04 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 15   (৳50)
+    SNIGDHA   : 10   (৳115)
+
+(5) RUPSHA EXPRESS (728) (04:16 PM-04:58 PM) [00h 42m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+(6) KAPOTAKSHA EXPRESS (716) (06:16 PM-07:05 PM) [00h 49m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+====================================================================================
+
+INTERMEDIATE ROUTE: Poradaha ==> Mubarakganj ==> Jashore
+Date: 29-Apr-2025
+Common trains: BENAPOLE EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS, CHITRA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-02:30 AM) [01h 41m]
+    SNIGDHA   : 5    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+(2) BENAPOLE EXPRESS (796) (03:23 AM-04:58 AM) [01h 35m]
+    S_CHAIR   : 0    (৳105)
+
+(3) SUNDARBAN EXPRESS (726) (11:53 AM-01:30 PM) [01h 37m]
+    S_CHAIR   : 5    (৳105)
+    SNIGDHA   : 5    (৳196)
+
+(4) RUPSHA EXPRESS (728) (02:47 PM-04:28 PM) [01h 41m]
+    AC_S      : 0    (৳230)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Mubarakganj-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:32 AM-03:07 AM) [00h 35m]
+    SNIGDHA   : 5    (৳115)
+    S_CHAIR   : 0    (৳50)
+
+(2) BENAPOLE EXPRESS (796) (05:00 AM-05:35 AM) [00h 35m]
+    S_CHAIR   : 10   (৳50)
+    SNIGDHA   : 0    (৳115)
+
+(4) SUNDARBAN EXPRESS (726) (01:33 PM-02:04 PM) [00h 31m]
+    S_CHAIR   : 14   (৳50)
+    SNIGDHA   : 5    (৳115)
+
+(5) RUPSHA EXPRESS (728) (04:30 PM-04:58 PM) [00h 28m]
     S_CHAIR   : 15   (৳50)
 
-(3) BURIMARI EXPRESS (809) (05:46 PM-06:10 PM) [00h 24m]
-    S_CHAIR   : 90   (৳50)
-    SNIGDHA   : 13   (৳115)
+====================================================================================
+
+INTERMEDIATE ROUTE: Poradaha ==> Kotchandpur ==> Khulna
+Date: 29-Apr-2025
+Common trains: KAPOTAKSHA EXPRESS, CHITRA EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-02:16 AM) [01h 27m]
+    SNIGDHA   : 5    (৳167)
+    S_CHAIR   : 5    (৳90)
+
+(3) SUNDARBAN EXPRESS (726) (11:53 AM-01:16 PM) [01h 23m]
+    AC_S      : 0    (৳202)
+    S_CHAIR   : 10   (৳90)
+    SNIGDHA   : 8    (৳167)
+
+(4) RUPSHA EXPRESS (728) (02:47 PM-04:14 PM) [01h 27m]
+    AC_S      : 0    (৳202)
+    SNIGDHA   : 0    (৳167)
+    S_CHAIR   : 19   (৳90)
+
+(5) KAPOTAKSHA EXPRESS (716) (04:37 PM-06:14 PM) [01h 37m]
+    S_CHAIR   : 5    (৳90)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:18 AM-04:40 AM) [02h 22m]
+    SNIGDHA   : 5    (৳225)
+    AC_B      : 0    (৳453)
+    S_CHAIR   : 15   (৳120)
+
+(3) SUNDARBAN EXPRESS (726) (01:18 PM-03:40 PM) [02h 22m]
+    AC_S      : 0    (৳271)
+    S_CHAIR   : 25   (৳120)
+    SNIGDHA   : 18   (৳225)
+
+(4) RUPSHA EXPRESS (728) (04:16 PM-06:25 PM) [02h 09m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 10   (৳120)
+
+(5) KAPOTAKSHA EXPRESS (716) (06:16 PM-08:25 PM) [02h 09m]
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 20   (৳120)
+====================================================================================
+
+INTERMEDIATE ROUTE: Poradaha ==> Mubarakganj ==> Khulna
+Date: 29-Apr-2025
+Common trains: CHITRA EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-02:30 AM) [01h 41m]
+    SNIGDHA   : 5    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+(3) SUNDARBAN EXPRESS (726) (11:53 AM-01:30 PM) [01h 37m]
+    S_CHAIR   : 5    (৳105)
+    SNIGDHA   : 5    (৳196)
+
+(4) RUPSHA EXPRESS (728) (02:47 PM-04:28 PM) [01h 41m]
+    AC_S      : 0    (৳230)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 0    (৳105)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Mubarakganj-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (02:32 AM-04:40 AM) [02h 08m]
+    SNIGDHA   : 5    (৳196)
+    AC_B      : 0    (৳401)
+    S_CHAIR   : 15   (৳105)
+
+(3) SUNDARBAN EXPRESS (726) (01:33 PM-03:40 PM) [02h 07m]
+    AC_S      : 0    (৳236)
+    S_CHAIR   : 24   (৳105)
+    SNIGDHA   : 19   (৳196)
+
+(4) RUPSHA EXPRESS (728) (04:30 PM-06:25 PM) [01h 55m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Poradaha ==> Noapara ==> Khulna
+Date: 29-Apr-2025
+Common trains: KAPOTAKSHA EXPRESS, CHITRA EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Noapara&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (12:49 AM-03:40 AM) [02h 51m]
+    SNIGDHA   : 10   (৳322)
+    S_CHAIR   : 5    (৳170)
+
+(2) SUNDARBAN EXPRESS (726) (11:53 AM-02:41 PM) [02h 48m]
+    S_CHAIR   : 5    (৳170)
+    SNIGDHA   : 5    (৳322)
+
+(3) RUPSHA EXPRESS (728) (02:47 PM-05:36 PM) [02h 49m]
+    AC_S      : 0    (৳466)
+    SNIGDHA   : 0    (৳386)
+    S_CHAIR   : 0    (৳170)
+
+(4) KAPOTAKSHA EXPRESS (716) (04:37 PM-07:38 PM) [03h 01m]
+    S_CHAIR   : 5    (৳170)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Noapara-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Noapara&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) CHITRA EXPRESS (764) (03:43 AM-04:40 AM) [00h 57m]
+    SNIGDHA   : 30   (৳115)
+    AC_B      : 0    (৳200)
+    S_CHAIR   : 30   (৳50)
+
+(3) SUNDARBAN EXPRESS (726) (02:44 PM-03:40 PM) [00h 56m]
+    AC_S      : 0    (৳127)
+    S_CHAIR   : 77   (৳50)
+    SNIGDHA   : 20   (৳115)
+
+(4) RUPSHA EXPRESS (728) (05:39 PM-06:25 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 39   (৳50)
+
+(5) KAPOTAKSHA EXPRESS (716) (07:41 PM-08:25 PM) [00h 44m]
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 50   (৳50)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Poradaha ==> Kotchandpur ==> Mubarakganj
+Date: 29-Apr-2025
+Common trains: BENAPOLE EXPRESS, SUNDARBAN EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Poradaha-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Poradaha&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(2) BENAPOLE EXPRESS (796) (03:23 AM-04:44 AM) [01h 21m]
+    S_CHAIR   : 12   (৳90)
+    SNIGDHA   : 0    (৳167)
+
+(3) SUNDARBAN EXPRESS (726) (11:53 AM-01:16 PM) [01h 23m]
+    AC_S      : 0    (৳202)
+    S_CHAIR   : 10   (৳90)
+    SNIGDHA   : 8    (৳167)
+
+(4) RUPSHA EXPRESS (728) (02:47 PM-04:14 PM) [01h 27m]
+    AC_S      : 0    (৳202)
+    SNIGDHA   : 0    (৳167)
+    S_CHAIR   : 19   (৳90)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(1) BENAPOLE EXPRESS (796) (04:46 AM-04:58 AM) [00h 12m]
+    S_CHAIR   : 10   (৳50)
+
+(2) SUNDARBAN EXPRESS (726) (01:18 PM-01:30 PM) [00h 12m]
+    S_CHAIR   : 8    (৳50)
+
+(3) RUPSHA EXPRESS (728) (04:16 PM-04:28 PM) [00h 12m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Kotchandpur ==> Jashore
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (04:16 PM-04:58 PM) [00h 42m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 10   (৳50)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Mubarakganj ==> Jashore
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:28 PM) [06h 53m]
+    AC_S      : 0    (৳949)
+    SNIGDHA   : 0    (৳788)
+    S_CHAIR   : 0    (৳415)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Mubarakganj-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(5) RUPSHA EXPRESS (728) (04:30 PM-04:58 PM) [00h 28m]
+    S_CHAIR   : 15   (৳50)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Natore ==> Jashore
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-12:55 PM) [03h 20m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 32   (৳185)
+
+(5) SIMANTA EXPRESS (748) (07:34 PM-10:40 PM) [03h 06m]
+    S_CHAIR   : 0    (৳185)
+    SNIGDHA   : 0    (৳357)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Jashore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Jashore&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:58 PM) [03h 58m]
+    AC_S      : 0    (৳610)
+    SNIGDHA   : 0    (৳512)
+    S_CHAIR   : 20   (৳265)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-02:41 AM) [03h 58m]
+    S_CHAIR   : 0    (৳265)
+    SNIGDHA   : 0    (৳512)
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Kotchandpur ==> Khulna
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(4) RUPSHA EXPRESS (728) (04:16 PM-06:25 PM) [02h 09m]
+    AC_S      : 0    (৳271)
+    SNIGDHA   : 0    (৳225)
+    S_CHAIR   : 10   (৳120)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Mubarakganj ==> Khulna
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:28 PM) [06h 53m]
+    AC_S      : 0    (৳949)
+    SNIGDHA   : 0    (৳788)
+    S_CHAIR   : 0    (৳415)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Mubarakganj-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Mubarakganj&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(4) RUPSHA EXPRESS (728) (04:30 PM-06:25 PM) [01h 55m]
+    AC_S      : 0    (৳236)
+    SNIGDHA   : 0    (৳196)
+    S_CHAIR   : 5    (৳105)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Natore ==> Khulna
+Date: 29-Apr-2025
+Common trains: SIMANTA EXPRESS, RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-12:55 PM) [03h 20m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 32   (৳185)
+
+(5) SIMANTA EXPRESS (748) (07:34 PM-10:40 PM) [03h 06m]
+    S_CHAIR   : 0    (৳185)
+    SNIGDHA   : 0    (৳357)
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-06:25 PM) [05h 25m]
+    AC_S      : 4    (৳765)
+    SNIGDHA   : 5    (৳639)
+    S_CHAIR   : 17   (৳335)
+    F_SEAT    : 4    (৳512)
+
+(2) SIMANTA EXPRESS (748) (10:43 PM-04:10 AM) [05h 27m]
+    S_CHAIR   : 24   (৳335)
+    SNIGDHA   : 5    (৳639)
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Noapara ==> Khulna
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Noapara
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Noapara&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-05:36 PM) [08h 01m]
+    AC_S      : 0    (৳1099)
+    SNIGDHA   : 0    (৳915)
+    S_CHAIR   : 0    (৳480)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Noapara-Khulna
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Noapara&tocity=Khulna&doj=29-Apr-2025&class=S_CHAIR
+
+(4) RUPSHA EXPRESS (728) (05:39 PM-06:25 PM) [00h 46m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 39   (৳50)
+
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Natore ==> Kotchandpur
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Natore
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Natore&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (09:35 AM-12:55 PM) [03h 20m]
+    AC_S      : 0    (৳426)
+    SNIGDHA   : 0    (৳357)
+    S_CHAIR   : 32   (৳185)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Natore-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Natore&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (01:00 PM-04:14 PM) [03h 14m]
+    AC_S      : 0    (৳501)
+    SNIGDHA   : 0    (৳414)
+    S_CHAIR   : 0    (৳220)
+====================================================================================
+
+INTERMEDIATE ROUTE: Saidpur ==> Kotchandpur ==> Mubarakganj
+Date: 29-Apr-2025
+Common trains: RUPSHA EXPRESS
+
+FIRST LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Saidpur-Kotchandpur
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Saidpur&tocity=Kotchandpur&doj=29-Apr-2025&class=S_CHAIR
+
+(1) RUPSHA EXPRESS (728) (09:35 AM-04:14 PM) [06h 39m]
+    AC_S      : 0    (৳915)
+    SNIGDHA   : 0    (৳759)
+    S_CHAIR   : 10   (৳400)
+
+
+SECOND LEG:
+==========
+    Date      : 29-Apr-2025
+    From-To   : Kotchandpur-Mubarakganj
+    URL       : https://eticket.railway.gov.bd/booking/train/search?fromcity=Kotchandpur&tocity=Mubarakganj&doj=29-Apr-2025&class=S_CHAIR
+
+(3) RUPSHA EXPRESS (728) (04:16 PM-04:28 PM) [00h 12m]
+    AC_S      : 0    (৳127)
+    SNIGDHA   : 0    (৳115)
+    S_CHAIR   : 0    (৳50)
 
 
 ====================================================================================
